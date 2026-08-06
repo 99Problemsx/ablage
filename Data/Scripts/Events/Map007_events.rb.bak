@@ -1,0 +1,28 @@
+# Events für Map 007 — Cedolan City
+# Generiert vom ScEditor (Template-Engine); wird von [SC] Map Events Import geladen.
+
+MapEvents.define(7) do |m|
+  m.event 501, "Item POTION" do |e|
+    e.position 5, 15
+    e.graphic "Object ball", direction: :down
+    e.trigger :action
+    e.page :default do |pg|
+      pg.condition_self_switch 'A', false
+      pg.script "pbItemBall(:POTION)"
+      pg.command :set_self_switch, 'A', true
+    end
+    e.page :taken do |pg|
+      pg.condition_self_switch 'A', true
+    end
+  end
+end
+
+MapEvents.define(7) do |m|
+  m.event 502, "Warp" do |e|
+    e.position 5, 15
+    e.trigger :player_touch
+    e.page :default do |pg|
+      pg.script "pbFadeOutIn { pbWarp(1, 5, 5) }"
+    end
+  end
+end

@@ -1,0 +1,86 @@
+[2026-08-02 21:57:02] [WARN] 
+Unable to play animation for: STATUP
+Backtrace:
+[Elite Battle: DX] STATUP.rb:18:in `block (2 levels) in <main>'
+[Elite Battle: DX] STATUP.rb:12:in `each'
+[Elite Battle: DX] STATUP.rb:12:in `block in <main>'
+[Luka's Scripting Utilities] CallbackWrapper.rb:13:in `instance_eval'
+[Luka's Scripting Utilities] CallbackWrapper.rb:13:in `execute'
+[Elite Battle: DX] Animation Core.rb:69:in `withCommonParams'
+[Elite Battle: DX] Animation Core.rb:173:in `playCommonAnimation'
+[Elite Battle: DX] Animation Core.rb:209:in `pbCommonAnimation'
+001_Battle.rb:1027:in `pbCommonAnimation'
+005_Battler_StatStages.rb:62:in `pbRaiseStatStage'
+[2026-08-02 21:59:52] [WARN] 
+Unable to play animation for: STATUP
+Backtrace:
+[Elite Battle: DX] STATUP.rb:18:in `block (2 levels) in <main>'
+[Elite Battle: DX] STATUP.rb:12:in `each'
+[Elite Battle: DX] STATUP.rb:12:in `block in <main>'
+[Luka's Scripting Utilities] CallbackWrapper.rb:13:in `instance_eval'
+[Luka's Scripting Utilities] CallbackWrapper.rb:13:in `execute'
+[Elite Battle: DX] Animation Core.rb:69:in `withCommonParams'
+[Elite Battle: DX] Animation Core.rb:173:in `playCommonAnimation'
+[Elite Battle: DX] Animation Core.rb:209:in `pbCommonAnimation'
+001_Battle.rb:1027:in `pbCommonAnimation'
+005_Battler_StatStages.rb:62:in `pbRaiseStatStage'
+[2026-08-02 21:59:55] [WARN] 
+Unable to play animation for: STATUP
+Backtrace:
+[Elite Battle: DX] STATUP.rb:18:in `block (2 levels) in <main>'
+[Elite Battle: DX] STATUP.rb:12:in `each'
+[Elite Battle: DX] STATUP.rb:12:in `block in <main>'
+[Luka's Scripting Utilities] CallbackWrapper.rb:13:in `instance_eval'
+[Luka's Scripting Utilities] CallbackWrapper.rb:13:in `execute'
+[Elite Battle: DX] Animation Core.rb:69:in `withCommonParams'
+[Elite Battle: DX] Animation Core.rb:173:in `playCommonAnimation'
+[Elite Battle: DX] Animation Core.rb:209:in `pbCommonAnimation'
+001_Battle.rb:1027:in `pbCommonAnimation'
+005_Battler_StatStages.rb:62:in `pbRaiseStatStage'
+[2026-08-02 22:00:58] [WARN] 
+Unable to play animation for: THUNDERWAVE
+Backtrace:
+[Elite Battle: DX] THUNDERWAVE.rb:89:in `block (3 levels) in <main>'
+[Elite Battle: DX] THUNDERWAVE.rb:80:in `each'
+[Elite Battle: DX] THUNDERWAVE.rb:80:in `block (2 levels) in <main>'
+[Elite Battle: DX] THUNDERWAVE.rb:62:in `each'
+[Elite Battle: DX] THUNDERWAVE.rb:62:in `block in <main>'
+[Luka's Scripting Utilities] CallbackWrapper.rb:13:in `instance_eval'
+[Luka's Scripting Utilities] CallbackWrapper.rb:13:in `execute'
+[Elite Battle: DX] Animation Core.rb:38:in `withMoveParams'
+[Elite Battle: DX] Animation Core.rb:126:in `playMoveAnimation'
+[Elite Battle: DX] Animation Core Legacy.rb:158:in `pbAnimation'
+[2026-08-02 22:00:58] [WARN] 
+Unable to play animation for: THUNDERWAVE
+Backtrace:
+[Elite Battle: DX] THUNDERWAVE.rb:89:in `block (3 levels) in <main>'
+[Elite Battle: DX] THUNDERWAVE.rb:80:in `each'
+[Elite Battle: DX] THUNDERWAVE.rb:80:in `block (2 levels) in <main>'
+[Elite Battle: DX] THUNDERWAVE.rb:62:in `each'
+[Elite Battle: DX] THUNDERWAVE.rb:62:in `block in <main>'
+[Luka's Scripting Utilities] CallbackWrapper.rb:13:in `instance_eval'
+[Luka's Scripting Utilities] CallbackWrapper.rb:13:in `execute'
+[Elite Battle: DX] Animation Core.rb:38:in `withMoveParams'
+[Elite Battle: DX] Animation Core.rb:126:in `playMoveAnimation'
+[Elite Battle: DX] Animation Core.rb:188:in `mapMoveGlobal'
+[2026-08-02 22:00:59] [WARN] 
+Unable to play animation for: PARALYSIS
+Backtrace:
+[Elite Battle: DX] PARALYSIS.rb:32:in `block (3 levels) in <main>'
+[Elite Battle: DX] PARALYSIS.rb:25:in `each'
+[Elite Battle: DX] PARALYSIS.rb:25:in `block (2 levels) in <main>'
+[Elite Battle: DX] PARALYSIS.rb:23:in `each'
+[Elite Battle: DX] PARALYSIS.rb:23:in `block in <main>'
+[Luka's Scripting Utilities] CallbackWrapper.rb:13:in `instance_eval'
+[Luka's Scripting Utilities] CallbackWrapper.rb:13:in `execute'
+[Elite Battle: DX] Animation Core.rb:69:in `withCommonParams'
+[Elite Battle: DX] Animation Core.rb:173:in `playCommonAnimation'
+[Elite Battle: DX] Animation Core.rb:209:in `pbCommonAnimation'
+[2026-08-02 23:04:14] [DEBUG] No EBDX Move Animation found for: LIFEDEW
+[2026-08-03 00:22:21] [WARN] Could not find the Trainer sprite: Graphics/Trainers/AITESTER_F
+[2026-08-03 00:25:11] [DEBUG] No EBDX Move Animation found for: PYROBALL
+[2026-08-03 00:27:11] [WARN] Could not find the Trainer sprite: Graphics/Trainers/AITESTER_F
+[2026-08-03 00:27:24] [DEBUG] No EBDX Move Animation found for: PYROBALL
+[2026-08-03 00:35:30] [WARN] Could not find the Trainer sprite: Graphics/Trainers/AITESTER_F
+[2026-08-03 23:04:12] [DEBUG] No EBDX Move Animation found for: TELEPORT
+[2026-08-03 23:48:19] [DEBUG] No EBDX Common Animation found for: CRITICALHITRATEUP

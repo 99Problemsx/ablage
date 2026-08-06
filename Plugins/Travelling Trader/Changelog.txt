@@ -1,0 +1,17 @@
+v1.0 - Initial Release
+ - Added the Travelling Trader system
+ - Added a moving trader who can appear at configured locations
+ - Added a timer system that moves the trader after a set amount of active game time.
+ - Added safety checks to prevent the trader from visibly appearing or disappearing on the currently loaded map.
+ - Added player-requested trader destinations.
+ - Added a normal money shop with badge-based stock tiers.
+ - Added custom Trader Token currency.
+ - Added Trader Token exchange shop.
+ - Added custom Mart-style exchange shop interface for custom currencies.
+ - Added script calls for giving Trader Tokens.
+ - Added script calls for unlocking, locking, enabling, disabling, and moving the trader.
+ - Added optional Town Map marker support.
+ - Added optional marker blinking.
+ - Added optional support for Arcky's Region Map for displaying Town Map Marker.
+ - Added optional Voltseon's Pause Menu integration for displaying Trader Tokens.
+ - Added debug script calls for testing trader location, movement, currency, and Town Map marker behaviour.

@@ -1,0 +1,5 @@
+Name       = Challenge Modes
+Version    = 2.2.1
+Essentials = 21.99
+Website    = https://www.youtube.com/watch?v=dQw4w9WgXcQ
+Credits    = Nononever, Golisopod User, Luka S.J. 

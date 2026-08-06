@@ -1,0 +1,29 @@
+# --- Generierte/kompilierte Daten (werden aus Plugins/PBS neu erzeugt) ---
+Data/PluginScripts.rxdata
+Data/Scripts.rxdata
+
+# --- Laufzeit / Logs / Saves ---
+errorlog.txt
+traceback.log
+*.rxdata.bak
+*.v21bak
+Game.vanilla.bak
+mkxp.log
+save*.rxdata
+Data/*.rxdata.tmp
+
+# --- OS / Editor ---
+.DS_Store
+Thumbs.db
+*~
+
+# --- Docs ---
+*.md
+README*
+readme*
+
+# --- Shattered Crowns Editor (eigenes Tool, nicht Teil des Repos) ---
+Editor/
+
+# --- Story-Skripte ---
+Data/Scripts/Story/

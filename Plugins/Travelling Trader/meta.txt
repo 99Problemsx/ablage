@@ -1,0 +1,4 @@
+Name		= Travelling Trader
+Version		= 1.0
+Essentials 	= 21.99
+Credits 	= BoydALoyd

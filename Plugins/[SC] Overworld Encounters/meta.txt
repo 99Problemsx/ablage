@@ -1,0 +1,6 @@
+Name       = SC Overworld Encounters
+Version    = 1.0.0
+Essentials = 21.99
+Requires   = Shattered Crowns Script System,2.0.0
+Requires   = Shattered Crowns Companion Pokemon,4.0.0
+Credits    = 99Problemsx

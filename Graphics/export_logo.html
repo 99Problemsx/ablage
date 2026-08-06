@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Shattered Crowns Logo - PNG Export</title>
+<style>
+  body { 
+    margin: 0; padding: 40px; 
+    background: #1a1a1a; 
+    display: flex; flex-direction: column; 
+    align-items: center; font-family: Arial, sans-serif; color: #fff;
+  }
+  #preview { 
+    border: 1px dashed #555; margin: 20px 0; 
+    background: repeating-conic-gradient(#808080 0% 25%, transparent 0% 50%) 50% / 20px 20px;
+  }
+  canvas { display: none; }
+  button {
+    padding: 12px 30px; font-size: 18px; cursor: pointer;
+    background: linear-gradient(135deg, #d94fa0, #7b7fdb);
+    border: none; border-radius: 8px; color: white; font-weight: bold;
+    margin: 5px;
+  }
+  button:hover { opacity: 0.85; }
+  .controls { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .note { color: #888; font-size: 13px; margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<h1>Shattered Crowns Logo - Transparent PNG Export</h1>
+<p>Preview (checkered = transparent):</p>
+
+<div id="preview">
+  <svg id="logoSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
+    <defs>
+      <linearGradient id="crownsGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#d94fa0;stop-opacity:1" />
+        <stop offset="35%" style="stop-color:#c44aaf;stop-opacity:1" />
+        <stop offset="65%" style="stop-color:#9b5fc7;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#7b7fdb;stop-opacity:1" />
+      </linearGradient>
+      <filter id="textShadow" x="-5%" y="-5%" width="110%" height="110%">
+        <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.5"/>
+      </filter>
+    </defs>
+    <text x="450" y="120" font-family="'Times New Roman', 'Georgia', 'Garamond', serif" font-weight="400" font-size="130" fill="#e8e4e8" text-anchor="middle" letter-spacing="8" filter="url(#textShadow)">
+      <tspan font-size="140" font-weight="400">S</tspan><tspan font-size="105" font-weight="400">HATTERED</tspan>
+    </text>
+    <text x="450" y="245" font-family="'Times New Roman', 'Georgia', 'Garamond', serif" font-weight="400" font-size="130" fill="url(#crownsGradient)" text-anchor="middle" letter-spacing="10" filter="url(#textShadow)">
+      <tspan font-size="140" font-weight="400">C</tspan><tspan font-size="105" font-weight="400">ROWNS</tspan>
+    </text>
+  </svg>
+</div>
+
+<canvas id="canvas"></canvas>
+
+<div class="controls">
+  <button onclick="exportPNG(1)">Download PNG (1x - 900x280)</button>
+  <button onclick="exportPNG(2)">Download PNG (2x - 1800x560)</button>
+  <button onclick="exportPNG(4)">Download PNG (4x - 3600x1120)</button>
+</div>
+<p class="note">All exports have transparent backgrounds.</p>
+
+<script>
+function exportPNG(scale) {
+  const svg = document.getElementById('logoSvg');
+  const canvas = document.getElementById('canvas');
+  const ctx = canvas.getContext('2d');
+  
+  const w = 900 * scale;
+  const h = 280 * scale;
+  canvas.width = w;
+  canvas.height = h;
+  
+  const svgData = new XMLSerializer().serializeToString(svg);
+  const svgBlob = new Blob([svgData], {type: 'image/svg+xml;charset=utf-8'});
+  const url = URL.createObjectURL(svgBlob);
+  
+  const img = new Image();
+  img.onload = function() {
+    ctx.clearRect(0, 0, w, h);
+    ctx.drawImage(img, 0, 0, w, h);
+    URL.revokeObjectURL(url);
+    
+    canvas.toBlob(function(blob) {
+      const link = document.createElement('a');
+      link.download = `shattered_crowns_logo_${w}x${h}.png`;
+      link.href = URL.createObjectURL(blob);
+      link.click();
+      URL.revokeObjectURL(link.href);
+    }, 'image/png');
+  };
+  img.src = url;
+}
+</script>
+
+</body>
+</html>

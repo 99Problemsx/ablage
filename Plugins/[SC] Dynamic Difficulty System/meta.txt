@@ -1,0 +1,6 @@
+Name         = Dynamic Difficulty System
+Version      = 1.4.0
+Essentials   = 21.99
+Requires     = Advanced AI System,2.6
+Website      = https://github.com/99Problemsx/Pokemon-Shattered-Crowns
+Credits      = Nononever
