@@ -35,6 +35,10 @@ end
 #===============================================================================
 #  Safari Zone compatibility
 #===============================================================================
+class Battle::FakeBattler
+  def stages; return Hash.new(0); end
+end
+
 class SafariBattle
   attr_accessor :opponents, :players, :scene, :battlescene
   alias initialize_ebdx initialize unless self.method_defined?(:initialize_ebdx)
@@ -48,6 +52,7 @@ class SafariBattle
   end
   def doublebattle?; return (@maxSize > 1); end
   def triplebattle?; return (@maxSize > 2); end
+  def singleBattle?; return (@maxSize <= 1); end
   def pbMaxSize(index = nil); return @maxSize; end
   def pbWeather; return self.weather; end
   #-----------------------------------------------------------------------------

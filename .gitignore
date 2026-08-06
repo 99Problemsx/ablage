@@ -5,6 +5,7 @@ Data/Scripts.rxdata
 # --- Laufzeit / Logs / Saves ---
 errorlog.txt
 traceback.log
+*.log
 *.rxdata.bak
 *.v21bak
 Game.vanilla.bak

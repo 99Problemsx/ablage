@@ -37,7 +37,7 @@ class Battle::Scene
     @sprites["trainer_Anim"].opacity -= 8 if @introdone && @sprites["trainer_Anim"].opacity > 0
     @idleTimer += 1 if @idleTimer >= 0
     @lastMotion = nil if @idleTimer < 0
-    @sprites["player_"].x += (40-@sprites["player_"].x)/4 if @safaribattle && @sprites["player_"] && @playerfix
+    @sprites["player_0"].x += (40-@sprites["player_0"].x)/4 if @safaribattle && @sprites["player_0"] && @playerfix
     # update battler sprites
     @battle.battlers.each_with_index do |b, i|
       if b

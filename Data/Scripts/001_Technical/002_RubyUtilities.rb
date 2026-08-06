@@ -416,6 +416,7 @@ class << Kernel
     if a.is_a?(Range)
       lo = a.min
       hi = a.max
+      return a.begin if hi.nil? || lo.nil?   # Empty range (e.g. 1...1)
       return lo + oldRand(hi - lo + 1)
     elsif a.is_a?(Numeric)
       if b.is_a?(Numeric)
