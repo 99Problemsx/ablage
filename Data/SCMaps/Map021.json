@@ -1,0 +1,822 @@
+{
+  "formatVersion": 1,
+  "id": 21,
+  "name": "Route 2",
+  "parentId": 0,
+  "order": 21,
+  "width": 39,
+  "height": 77,
+  "tilesets": [
+    {
+      "tilesetId": 1
+    }
+  ],
+  "layers": [
+    {
+      "name": "Ground",
+      "role": "ground",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        "wp*7 wz x0*3 x1 wp*5 ws wz x0*2 x1 wp*9 wt ws*3 wt ap mi mh",
+        "wp*18 ws wp*12 wt ws*3 wt ap ma m9",
+        "wp*13 ws*17 x4 x1 ws*3 wt ap mi mh",
+        "wp*3 x4 x0*5 x5 wp*7 ws*3 x4 x0*9 x1 ws*4 wt ap ma m9",
+        "wp*3 wt wp*5 wr ws*2 x4 x0*3 x5 ws*3 wt ws x4 x0*6 x5 ws*3 x4 x0 x1 ap mi mh",
+        "wp*2 x4 x1 wp*5 wz x0*2 x1 wp*2 ws wz x5 ws*2 wt x4 x1 x4 ap*4 x5 wz x5 ws*2 wt x4 ap*2 ma m9",
+        "wp*2 wt wp*11 ws*3 wz x0*2 x1 wt x4 ap au*4 ap x5 wr ws*2 wt ap mi mh mg mh",
+        "wp*2 wt wp*3 x4 x0*8 x5 ws*5 wt ap au*6 ap wr ws*2 wt ap ma m9 m8 m9",
+        "wp x4 x1 wp*3 wt x4 ap*6 x5 wz x0*5 x1 ap au*6 ap wr ws*2 wt ap mi mh mg mh",
+        "wp wt wp*4 wt ap au*6 ap*9 au*6 aq wr ws*2 wt aq ma m9 m8 m9",
+        "wp wt wp*4 wt ap au*13 ap au*7 aq wz x0*2 x1 ap mi mh mg mh",
+        "wp wt wp*4 wt ap au*6 ar au*2 ar au*2 aq au*4 aq ap au*2 aq*2 ap*3 aq mq mr mq mr",
+        "wp wt wp*4 wt ap au*4 ap at aq at ap*2 aq ar aq ap at as ap at ap aq ap*4 at ar 7y ex ey*3",
+        "wp xc wl wp*3 xc*2 au*4 as*2 ar ap aq au*4 ap*2 at ar as ar ap*3 ar ap*2 ar at f5 f6*3",
+        "wp*2 wt wp*5 wt au*2 ap aq at aq ap*5 au*3 ap aq ap*2 at ap ar ap*4 at fd fe*3",
+        "wp*2 xc wl wp*4 wt ap u8 u9*3 ua ap wp*4 ap au ap au ap as at ar at ap*2 at ap ar at*5",
+        "wp*3 wt wp*4 wt ap ug uh*3 ui ap wj wk*3 xc ap*2 au*2 ar aq ap aq ap*2 aq*2 ap 7y mi mj mi mj",
+        "wp*3 wt wp*4 wt ap ug uh*3 ui ap wr wp*6 wt au ap aq ap wr ws*4 wt aq ma m9 m8 m9",
+        "wp*3 wt wp*4 wt ap ug uh*3 ui ap wr wp*6 wt*2 w1 w2 wr*2 ws*4 wt aq mi mh mg mh",
+        "wp*3 xc wk*2 wl wp wt ap tv*5 ap wr wp*6 ap y9 ap as y9*2 ws*4 wt aq ma m9 m8 m9",
+        "wp*6 wt wp wt ap tv*5 ap wz x0 x5 wp*4 ap ar at ar ap*2 x0*4 x1 aq mi mh mg mh",
+        "wp*6 wt wp wt ap u4 u3*3 tw ap*2 x5 wr wp*4 aq*2 as ap*2 x4 ap aq*2 ap aq*2 ma m9 m8 m9",
+        "wp*6 wt wp wt ap ug uh*3 ui mi mj ap wr wp*4 aq*3 ar ap aq mi mj mi mj mi mj mi mh mg mh",
+        "wp*4 x4 x0 x1 x4 x1 ap ug uh*3 ui mq mr ap wz x0*4 aq ap*2 aq at aq ma m9 m8 m9 m8 m9 m8 m9 m8 m9",
+        "wp*4 wt x4 x0 x1 wp ap y9*5 at ap*9 w9 wa ap aq mi mh mg mh mg mh mg mh mg mh",
+        "wp*4 wt*2 x4 ap*3 mq mr ap aq at ap ar ap*3 7y ap 7y ap aq at aq au*2 ma m9 m8 m9 m8 m9 m8 m9 m8 m9",
+        "wp*3 x4 x1 wt ap mi mj mi mj au aq ap at ap*3 aq as at ar ap aq*2 ap ar au*2 mi mh mg mh mg mh mg mh mg mh",
+        "wp x4 x0 x1 wp wt ap ma m9 m8 mb au ap as ar ap aq ar aq*2 ap aq*2 ar aq at aq au*2 mq mr mq mr mq mp mo mr ma m9",
+        "wp wt wp*3 wt ap mi mh mg mj au*2 ap at ar ap*2 7y x4 x0*5 w9 wa x0*5 x5 au mi mj au mi mh",
+        "x0 x1 wp*3 wt ap ma m9 m8 mb au*2 as*2 aq ap*2 x4 x1 x4 ap*4 w9 wa ap*4 x5 wz x5 mo mr au ma m9",
+        "wp*3 x4 x0 x1 ap mi mh mg mj au*2 at aq ap 7u x4 x1 x4 ap u8 u9 ua as ap aq as u8 u9 ua ap x5 wz x5 mi mj mi mh",
+        "wp*2 x4 x1 x4 ap*2 ma m9 m8 mb mi mj ap ar ap 7k wt x4 ap u8 uo uh uq u9*4 uo uh uq ua ap x5 wr ma m9 m8 m9",
+        "x0*2 x1 wp ap mi mj mi mh mg mj mq mr as*2 ap 7w wt ap u8 uo uh*10 uq ua ap wr mi mh mg mh",
+        "wp*2 x4 ap*2 ma m9 m8 m9 m8 mb au aq as at aq ap wt ap ug uh*12 ui ap wr ma m9 m8 m9",
+        "ap*3 mi mj mi mh mg mh mg mj au at ap*2 aq ap wt ap ug uh*6 y8 y9*8 mi mh mg mh",
+        "mj mi mj ma m9 m8 m9 m8 m9 m8 mb au*2 ap ar*3 wt ap ug uh*5 wr ap 7y au mq mp mo mp mo mp mo mr ma m9",
+        "m9 m8 m9 mg mh mg mh mg mh mg mj au*3 aq*2 as wt ap tv*5 y8 wr as aq au*2 mi mh mg mh mg mj au mi mh",
+        "mh mg mh m8 m9 m8 m9 m8 m9 m8 mb au*3 aq as ap wt ap tv*5 ap wr ap at ar au mq mr mq mr mq mp au ma m9",
+        "m9 m8 m9 mg mh mg mh mg mh mg mj mi mj mi mj mi mj wt ap tv*5 ap wz x0*7 x5 au mi mj mi mh",
+        "mh mg mh m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb wt ap u4 u3*3 tw ap*8 x5 wz x5 ma m9 m8 m9",
+        "m9 m8 m9 mg mh mg mh mg mh mg mh mg mh mg mh mg mj wt ap ug uh*3 uq u9*2 tv*3 u9*2 ua ap x5 wr mi mh mg mh",
+        "mh mg mh m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb wt ap ug uh*6 tv*3 uh*2 uq ua ap wr ma m9 m8 m9",
+        "m9 m8 m9 mg mh mg mh mg mh mg mh mg mh mg mh mg mj y9 ya ug uh*6 tv*3 uh*3 ui y8 y9 mi mh mg mh",
+        "mh mg mh m8 m9 m8 m9 m8 m9 m8 mb mq mr mq mr ma m9 m8 mb wt uh*6 tv*3 uh*3 wr ma m9 m8 m9 m8 m9",
+        "m9 m8 m9 mg mh mg mh mg mh mg mj au*4 mi mh mg mj y9*14 mi mh mg mh mg mh",
+        "mh mg mh m8 m9 m8 m9 m8 m9 m8 mb au*4 mq mr mq mr mq mr mq mr as at ap ar as ap au*2 ma m9 m8 m9 m8 m9 m8 m9",
+        "m9 m8 m9 mg mh mg mh mg mh mg mj au*8 ar*2 ap as ar*2 ap aq at au*3 mi mh mg mh mg mh mg mh",
+        "mh mg mh m8 m9 m8 m9 m8 m9 m8 mb au*7 ap as ap aq at ap*2 au*6 mq mr mq mr mq mr mq mr",
+        "m9 m8 m9 mg mh mg mh mg mh mg mj au*4 ap aq at ap aq at ar aq au*8 x4 x0*7",
+        "mh mg mh m8 m9 m8 m9 m8 m9 m8 mb au*3 as ar aq ap 7y ap as ap au*6 x4 x0*2 x1 x4 gq*6",
+        "m9 m8 m9 mg mh mg mh mg mh mg mj au*3 aq*2 ap 7y x4 x0*9 x1 x4 gq*9",
+        "mh mg mh mq mr mq mr mq mr mq mr x4 x0*6 x1 x4 gq*19",
+        "mr mq mr x4 x0*7 x1 x4 gq*23 xd wp*2",
+        "x0*3 x1 x4 gq*16 y8 y9*12 wp wj wk*3",
+        "gq*20 wr aq at aq ap*4 7y ma m9 m8 mb ap wp wr wp*3",
+        "gq*12 y8 y9*6 xd wr 7y at as ar at as aq ap mi mh mg mj ap wj xd wp*3",
+        "gq*3 y8 y9*8 au ap aq as at au ap wp wr ap aq ar ap*2 aq ar aq mq mr ma mb ap wr wp*4",
+        "gq*2 wr ma m9 m8 m9 m8 m9 m8 mb au*3 ap at aq au ap x5 wz x0 w9 wa x0*2 x5 aq*2 au*2 mi mj ap wr wp wj wk wl",
+        "y9*3 mi mh mg mh mg mh mg mj au*4 ap as au*2 ap*3 w9 wa ap x5 wr ap au*3 mq mr ap wr wp wr wp xc",
+        "mp mo mp mo mp mo mr mq mr ma mb au*5 aq ar ap*2 7y ap*3 au ap wr as au*3 xd wk xd*2 wp wz x5 wp",
+        "y9*6 ya au*2 mi mj au*6 aq ar at ap as au*3 ap wr ap*2 au ap wr wp*5 wz x0",
+        "m9 m8 m9 m8 m9 m8 m9 wt au mq mr au*6 ap aq ap at aq au*3 ap wr aq at ap*2 wz x5 wp*6",
+        "mh mg mh mg mh mg mh y9*10 ya ap*2 as ar au*2 y8 y9*2 ap ar ap*2 wp wz x0*6",
+        "mr mq mr mq mr mq mp mq mr mq mr mq mr au*3 at 7y wt ap aq ap au wr ap aq*2 ap ar 7u ap*9",
+        "x0*5 x5 mi mh mg mh mg mj au*3 as at ap wt ap*4 wr aq ap as ap aq 7w mi mj mi mj mi mj mi mj mi",
+        "ap*4 x5 wr mq mr m8 m9 m8 m9 au*2 ap at ap aq wt ap*4 wr aq*2 ap*4 ma m9 m8 m9 m8 m9 m8 m9 m8",
+        "mi mj mi mj ap wz x0 x5 mi mh mg mj au*2 at ar ap ar wt ap*4 wr at ar at ap mi mj mi mh mg mh mg mh mg mh mg",
+        "m8 m9 m8 mb ap*2 x5 wr mq mr mq mr au*2 ap as ar ap wt ap aq ar ap wr ap 7v 7l 7x mq mr ma m9 m8 m9 m8 m9 m8 m9 m8",
+        "mg mh mg mj mi mj ap wz x0*6 w9 wa x0*2 x1 ap as*2 ap wz x0*5 x5 mi mh mg mh mg mh mg mh mg",
+        "mo mp mo mp mo mr ap*8 w9 wa ap*5 aq ap*6 x5 wr mq mr mq mr mq mr m8 m9 m8",
+        "mh mg mh mg mh mg mj mi mj mi mj au*2 aq ar ap*3 aq at*2 ap*2 au mi mj mi mj ap wz x0*5 x5 mg mh mg",
+        "m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb au*2 ap*3 as ap aq ar ap*2 7u au ma m9 m8 m9 ap*6 x5 wr mq mr mq",
+        "mh mg mh mg mh mg mh mg mh mg mj au*4 aq ar*2 at*2 ap ar 7w au mi mh mg mj mi mj mi mj mi mj ap wz x0*3",
+        "m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb au*4 aq as ap aq ap*2 as ap au mq mp mo mp mo mp mo mp mo mr ap*5",
+        "mh mg mh mg mh mg mh mg mh mg mj mi mj mi mj mi mj mi mj aw ax*2 ay mi mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh",
+        "m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb b4 b5*2 b6 ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9",
+        "mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mj b4 b5*2 b6 mi mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh"
+      ]
+    },
+    {
+      "name": "Decor",
+      "role": "decor",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*13 xz .*12 y7 .*9 wq .*2",
+        ".*27 xz .*8 wq .*2",
+        ".*36 wq .*2",
+        ".*36 wq .*2",
+        ".*31 xj .*4 wq .*2",
+        ".*13 xj .*10 wx*4 .*7 wx wy .*2",
+        ".*3 xj .*19 wy .*4 ww .*5 wq .*4",
+        ".*22 wq .*6 wo .*4 wq .*4",
+        ".*8 wx*6 .*8 wq .*6 wo .*4 wq .*4",
+        ".*7 wq .*6 ww wx*7 wy .*6 wo .*4 wq .*4",
+        ".*7 wq .*21 wo .*4 wq .*4",
+        ".*7 wq .*21 ww wx*4 wy .*4",
+        ".*7 wq .*31",
+        ".*8 wi .*30",
+        ".*9 wi .*5 wg wh*4 wi .*18",
+        ".*9 wq vc vd*3 ve wo .*4 wq .*14 1ao 1ap*3",
+        ".*4 xz .*4 wq vk .*3 vm wo .*5 wh*2 wi .*4 wg wh*4 wi .*5",
+        ".*5 xj .*3 wq vk .*3 vm wo .*8 wi .*2 wg .*6 wi .*4",
+        ".*9 wq vk .*3 vm wo .*18 wq .*4",
+        ".*9 wq vk .*3 vm wo .*7 wq .*3 xb wo .*5 wq .*4",
+        ".*9 wq vk .*3 vm wo .*7 wq .*4 ww .*5 wq .*4",
+        ".*3 xb .*5 wq vk .*3 vm ww wx .*6 wq .*5 wx*5 wy .*4",
+        ".*9 wq vk .*3 vm .*2 wo .*5 wq .*4 wq .*10",
+        ".*9 wq vk .*3 vm .*2 wo .*5 wy .*4 wq .*10",
+        ".*9 wq .*7 ww wx*7 .*2 wx wy .*10",
+        ".*7 wx*2 wy .*29",
+        ".*6 wq .*32",
+        ".*6 wq .*32",
+        ".*6 wq .*32",
+        ".*6 wq .*14 wx*4 .*2 wx*4 .*8",
+        ".*6 wq .*13 wy vc vd ve .*4 vc vd ve ww .*7",
+        ".*5 wx wy .*12 wy vc vs . vu vd*4 vs . vu ve ww .*6",
+        ".*4 wq .*13 wq vc vs .*10 vu ve wo .*5",
+        ".*3 wx wy .*13 wq vk .*12 vm wo .*5",
+        "wx*2 wy .*15 wq vk .*5 wg 1bp*4 .*9",
+        ".*18 wq vk .*4 wg .*14",
+        ".*18 wq vk .*3 vf wo .*14",
+        ".*18 wq vk .*3 vm wo .*14",
+        ".*18 wq vk .*3 vm wo .*14",
+        ".*18 wq vk .*3 vm ww wx*7 .*7",
+        ".*18 wq vk .*3 vu vd*7 ve ww .*6",
+        ".*18 wq vk .*11 vu ve wo .*5",
+        ".*19 vk .*2 15u 15v .*8 wg .*6",
+        ".*20 wi . 162 163 .*7 wg .*7",
+        ".*22 1bp*4 .*3 1bp*3 .*7",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*33 wx*6",
+        ".*30 wx*2 wy .*6",
+        ".*20 wx*9 wy .*6 wg wh*2",
+        ".*13 wx*6 wy .*13 wg wh*2 .*3",
+        ".*5 wx*7 wy .*7 wg 1bp*9 .*3 wo .*5",
+        "wx*4 wy .*14 wg .*13 wo xb .*4",
+        ".*11 wg 1bp*2 .*3 1bp*2 .*14 wo .*5",
+        ".*2 wg .*7 1bp*2 .*6 wo .*14 wo .*5",
+        ". wg .*16 ww .*14 wo .*5",
+        ".*19 ww wx*2 .*2 wx .*8 wo .*5",
+        ".*25 wo .*4 wg*2 .*7",
+        ".*7 wi .*17 wo .*4 wo .*4 xb y7 .*2",
+        ".*8 wi .*16 wo .*4 wo .*8",
+        ".*12 1bp*6 wi .*4 wg 1bp*3 .*3 wo .*8",
+        ".*19 wi .*2 wg .*7 ww wx*8",
+        ".*19 wq .*2 wo .*16",
+        "wx*4 .*15 wq .*2 wo .*16",
+        ".*4 wo .*14 wq .*2 wo .*16",
+        ".*4 ww wx .*13 wq .*2 wo .*16",
+        ".*6 wo .*12 wq .*2 wo .*16",
+        ".*6 ww wx*7 .*2 wx*3 wy .*2 ww wx*5 .*11",
+        ".*28 wo .*10",
+        ".*28 ww wx*5 .*5",
+        ".*34 wo .*4",
+        ".*34 ww wx*4",
+        ".*39",
+        ".*39",
+        ".*39"
+      ]
+    },
+    {
+      "name": "Overlay",
+      "role": "overlay",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*35 mc md .*2",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*31 18w 18y .*6",
+        ".*31 18w 18y .*6",
+        ".*31 18w 18y .*6",
+        ".*31 18w 18y .*6",
+        ".*31 18w 18y .*6",
+        ".*31 18w 18y .*2 mc md mc md",
+        ".*39",
+        ".*39",
+        ".*8 197*9 .*22",
+        ".*8 19n*9 .*22",
+        ".*39",
+        ".*15 mc md .*12 mc md mc md mc md .*4",
+        ".*39",
+        ".*10 mc md .*27",
+        ".*10 mk ml uz*3 .*24",
+        ".*7 mc md mc md .*28",
+        ".*39",
+        ".*34 mc md .*3",
+        ".*39",
+        ".*35 mc md .*2",
+        ".*11 mc md .*26",
+        ".*5 mc md .*32",
+        ".*39",
+        ".*3 mc md .*24 mc md mc md mc md .*4",
+        "md mc md .*26 mk ml mk ml mk ml .*4",
+        ".*17 197*9 .*4 mc md mc md mc md .*3",
+        ".*17 19f*9 .*13",
+        ".*11 mc md mc md mc md 19n*9 .*9 mc md .*2",
+        ".*26 18w 18x 18y .*10",
+        ".*26 18w 18x 18y .*10",
+        ".*24 15u 15v 18w 18x 18y .*10",
+        ".*17 mc md .*5 162 163 18w 18x 18y .*4 mc md .*4",
+        ".*17 mk ml wi .*4 16k . 18w 18x 18y .*4 mk ml .*4",
+        ".*19 mc md mc md .*3 18w 18x 18y .*2 mc md .*6",
+        ".*19 mk ml mk ml .*3 uz*3 .*2 mk ml .*6",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*14 190 191 192 .*22",
+        ".*14 190 191 192 .*12 mc md mc md .*6",
+        ".*14 190 191 192 .*12 mk ml mk ml .*6",
+        ".*14 190 191 192 .*22",
+        ".*3 mc md mc md mc md mc md .*3 uz*3 . wg .*20",
+        ".*3 mk ml mk ml mk ml mk ml .*28",
+        "md mc md .*36",
+        "ml mk ml .*36",
+        "md mc md mc md mc md .*32",
+        "ml mk ml mk ml mk ml .*32",
+        ".*7 mc md mc md mc md .*26",
+        ".*7 mk ml mk ml mk ml .*26",
+        ".*6 mc md mc md mc md .*18 mc md mc md mc md mc md mc",
+        ".*18 197*6 .*15",
+        "mc md mc md .*14 19f*6 .*4 mc md .*9",
+        ".*18 19n*6 .*15",
+        ".*4 mc md .*33",
+        ".*39",
+        "md mc md mc md mc md mc md mc md .*13 mc md mc md .*11",
+        ".*39",
+        ".*28 mc md mc md mc md .*5",
+        ".*39",
+        ".*11 mc md mc md mc md mc md .*4 mc md mc md mc md mc md mc md mc md mc md mc md",
+        ".*39",
+        ".*39",
+        ".*39"
+      ]
+    },
+    {
+      "name": "Canopy",
+      "role": "canopy",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39"
+      ]
+    },
+    {
+      "name": "Sky",
+      "role": "sky",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39"
+      ]
+    }
+  ],
+  "bgm": {
+    "name": "Route 2",
+    "volume": 80,
+    "pitch": 100
+  },
+  "bgs": null,
+  "autoplayBgm": true,
+  "autoplayBgs": false,
+  "connections": [
+    {
+      "edge": "E",
+      "offset": 0,
+      "toMapId": 23,
+      "toEdge": "W",
+      "toOffset": 1
+    },
+    {
+      "edge": "S",
+      "offset": 0,
+      "toMapId": 7,
+      "toEdge": "N",
+      "toOffset": 21
+    },
+    {
+      "edge": "E",
+      "offset": 77,
+      "toMapId": 47,
+      "toEdge": "W",
+      "toOffset": 0
+    }
+  ],
+  "weather": {
+    "kind": "Rain",
+    "power": 5,
+    "chance": 100
+  },
+  "lighting": {
+    "enabled": false,
+    "ambient": 0,
+    "tintByHour": {},
+    "lights": []
+  },
+  "encounters": [
+    {
+      "type": "Land",
+      "step": 21,
+      "slots": [
+        {
+          "probability": 50,
+          "species": "RATTATA",
+          "minLevel": 12,
+          "maxLevel": 15
+        },
+        {
+          "probability": 30,
+          "species": "POOCHYENA",
+          "minLevel": 11,
+          "maxLevel": 15
+        },
+        {
+          "probability": 10,
+          "species": "SHINX",
+          "minLevel": 10,
+          "maxLevel": 12
+        },
+        {
+          "probability": 10,
+          "species": "SHINX",
+          "minLevel": 10,
+          "maxLevel": 11
+        }
+      ]
+    },
+    {
+      "type": "Water",
+      "step": 2,
+      "slots": [
+        {
+          "probability": 60,
+          "species": "MAGIKARP",
+          "minLevel": 7,
+          "maxLevel": 10
+        },
+        {
+          "probability": 30,
+          "species": "GOLDEEN",
+          "minLevel": 11,
+          "maxLevel": 14
+        },
+        {
+          "probability": 10,
+          "species": "STARYU",
+          "minLevel": 12,
+          "maxLevel": 15
+        }
+      ]
+    },
+    {
+      "type": "OldRod",
+      "step": 0,
+      "slots": [
+        {
+          "probability": 70,
+          "species": "MAGIKARP",
+          "minLevel": 7,
+          "maxLevel": 10
+        },
+        {
+          "probability": 30,
+          "species": "MAGIKARP",
+          "minLevel": 9,
+          "maxLevel": 15
+        }
+      ]
+    },
+    {
+      "type": "GoodRod",
+      "step": 0,
+      "slots": [
+        {
+          "probability": 60,
+          "species": "GOLDEEN",
+          "minLevel": 12,
+          "maxLevel": 14
+        },
+        {
+          "probability": 20,
+          "species": "FINNEON",
+          "minLevel": 12,
+          "maxLevel": 15
+        },
+        {
+          "probability": 20,
+          "species": "MAGIKARP",
+          "minLevel": 12,
+          "maxLevel": 17
+        }
+      ]
+    },
+    {
+      "type": "SuperRod",
+      "step": 0,
+      "slots": [
+        {
+          "probability": 40,
+          "species": "FINNEON",
+          "minLevel": 12,
+          "maxLevel": 15
+        },
+        {
+          "probability": 40,
+          "species": "GOLDEEN",
+          "minLevel": 12,
+          "maxLevel": 14
+        },
+        {
+          "probability": 15,
+          "species": "STARYU",
+          "minLevel": 12,
+          "maxLevel": 15
+        },
+        {
+          "probability": 5,
+          "species": "STARYU",
+          "minLevel": 14,
+          "maxLevel": 17
+        }
+      ]
+    },
+    {
+      "type": "HeadbuttLow",
+      "step": 0,
+      "slots": [
+        {
+          "probability": 50,
+          "species": "PINECO",
+          "minLevel": 11,
+          "maxLevel": 13
+        },
+        {
+          "probability": 30,
+          "species": "LEDYBA",
+          "minLevel": 6,
+          "maxLevel": 8
+        },
+        {
+          "probability": 19,
+          "species": "SPINARAK",
+          "minLevel": 9,
+          "maxLevel": 12
+        },
+        {
+          "probability": 1,
+          "species": "MUNCHLAX",
+          "minLevel": 11,
+          "maxLevel": 14
+        }
+      ]
+    },
+    {
+      "type": "HeadbuttHigh",
+      "step": 0,
+      "slots": [
+        {
+          "probability": 50,
+          "species": "PINECO",
+          "minLevel": 11,
+          "maxLevel": 13
+        },
+        {
+          "probability": 30,
+          "species": "WURMPLE",
+          "minLevel": 6,
+          "maxLevel": 8
+        },
+        {
+          "probability": 20,
+          "species": "SPINARAK",
+          "minLevel": 9,
+          "maxLevel": 12
+        }
+      ]
+    },
+    {
+      "type": "PokeRadar",
+      "step": 10,
+      "slots": [
+        {
+          "probability": 100,
+          "species": "STANTLER",
+          "minLevel": 14,
+          "maxLevel": 14
+        }
+      ]
+    }
+  ],
+  "encounterStep": 30,
+  "metadata": {
+    "extra": {},
+    "name": "Route 2",
+    "mapPosition": [0,14,8],
+    "mapSize": {
+      "width": 1,
+      "layout": "11"
+    },
+    "outdoor": true,
+    "showArea": true,
+    "locationSign": "Pt route",
+    "weatherPBS": [
+      "Rain",
+      100
+    ],
+    "battleBack": "field"
+  },
+  "events": [
+    {
+      "id": 1,
+      "name": "Galarian Yamask evo left size(1,4)",
+      "x": 30,
+      "y": 15,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[6,-1,6]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbEvolutionEvent(2)"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Galarian Yamask evo left size(1,4)"}],["@y",15],["@x",30],["@id",1]]}
+    },
+    {
+      "id": 2,
+      "name": "Galarian Yamask evo right size(1,4)",
+      "x": 33,
+      "y": 15,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[6,-1,4]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbEvolutionEvent(2)"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Galarian Yamask evo right size(1,4)"}],["@y",15],["@x",33],["@id",2]]}
+    },
+    {
+      "id": 4,
+      "name": "EV004 size(1,4)",
+      "x": 20,
+      "y": 49,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"This event is size 1x4. It is 1 tile wide and 4 tiles tall. "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"An event's size can be set by adding \"size(x,y)\" in the "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"event's name, where x and y are numbers."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"The event's placed position determines the bottom "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"left tile occupied by the event in-game."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"There are a lot of reasons to change an event's size. "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Here, it is covering the whole path with just one "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"event, rather than needing four events that do the "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"same thing."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBridgeOn"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"EV004 size(1,4)"}],["@y",49],["@x",20],["@id",4]]}
+    },
+    {
+      "id": 7,
+      "name": "EV007 size(3,1)",
+      "x": 14,
+      "y": 31,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"This event is size 3x1. It is 3 tiles wide and 1 tile tall. "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"An event's size can be set by adding \"size(x,y)\" in the "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"event's name, where x and y are numbers."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"The event's placed position determines the bottom "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"left tile occupied by the event in-game."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"There are a lot of reasons to change an event's size. "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Here, it is covering the whole path with just one "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"event, rather than needing three events that do the "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"same thing."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBridgeOff"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"EV007 size(3,1)"}],["@y",31],["@x",14],["@id",7]]}
+    },
+    {
+      "id": 10,
+      "name": "EV010 size(3,1)",
+      "x": 14,
+      "y": 32,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"This event is size 3x1. It is 3 tiles wide and 1 tile tall. "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"An event's size can be set by adding \"size(x,y)\" in the "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"event's name, where x and y are numbers."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"The event's placed position determines the bottom "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"left tile occupied by the event in-game."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"There are a lot of reasons to change an event's size. "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Here, it is covering the whole path with just one "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"event, rather than needing three events that do the "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"same thing."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBridgeOn"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"EV010 size(3,1)"}],["@y",32],["@x",14],["@id",10]]}
+    },
+    {
+      "id": 13,
+      "name": "HeadbuttTree",
+      "x": 13,
+      "y": 31,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbHeadbutt"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"Object tree 2"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"HeadbuttTree"}],["@y",31],["@x",13],["@id",13]]}
+    },
+    {
+      "id": 14,
+      "name": "HeadbuttTree",
+      "x": 13,
+      "y": 32,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbHeadbutt"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"Object tree 2"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"HeadbuttTree"}],["@y",32],["@x",13],["@id",14]]}
+    },
+    {
+      "id": 15,
+      "name": "Item",
+      "x": 27,
+      "y": 36,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"pbItemBall(:LEFTOVERS)"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"A"},0]}],["@indent",1],["@code",123]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"Object ball"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]},{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",true],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",true]]}]}],["@name",{"$":"str","v":"Item"}],["@y",36],["@x",27],["@id",15]]}
+    },
+    {
+      "id": 16,
+      "name": "Item",
+      "x": 24,
+      "y": 6,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"pbItemBall(:GREATBALL)"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"A"},0]}],["@indent",1],["@code",123]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"Object ball"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]},{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",true],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Item"}],["@y",6],["@x",24],["@id",16]]}
+    },
+    {
+      "id": 17,
+      "name": "HiddenItem",
+      "x": 14,
+      "y": 11,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"pbItemBall(:RARECANDY)"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"A"},0]}],["@indent",1],["@code",123]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",true]]},{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",true],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",true]]}]}],["@name",{"$":"str","v":"HiddenItem"}],["@y",11],["@x",14],["@id",17]]}
+    },
+    {
+      "id": 18,
+      "name": "HiddenItem",
+      "x": 25,
+      "y": 12,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"pbItemBall(:POTION)"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"A"},0]}],["@indent",1],["@code",123]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",true]]},{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",true],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",true]]}]}],["@name",{"$":"str","v":"HiddenItem"}],["@y",12],["@x",25],["@id",18]]}
+    },
+    {
+      "id": 20,
+      "name": "EV020 size(2,1)",
+      "x": 22,
+      "y": 58,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"This event is size 2x1. It is 2 tiles wide and 1 tile tall. "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"An event's size can be set by adding \"size(x,y)\" in the "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"event's name, where x and y are numbers."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"The event's placed position determines the bottom "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"left tile occupied by the event in-game."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"There are a lot of reasons to change an event's size. "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Here, it is covering the whole width of the stairs with "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"just one event, rather than needing two events that "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"do the same thing."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBridgeOff"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"EV020 size(2,1)"}],["@y",58],["@x",22],["@id",20]]}
+    },
+    {
+      "id": 22,
+      "name": "EV022 size(2,1)",
+      "x": 22,
+      "y": 57,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"This event is size 2x1. It is 2 tiles wide and 1 tile tall. "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"An event's size can be set by adding \"size(x,y)\" in the "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"event's name, where x and y are numbers."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"The event's placed position determines the bottom "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"left tile occupied by the event in-game."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"There are a lot of reasons to change an event's size. "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Here, it is covering the whole width of the stairs with "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"just one event, rather than needing two events that "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"do the same thing."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBridgeOn"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"EV022 size(2,1)"}],["@y",57],["@x",22],["@id",22]]}
+    },
+    {
+      "id": 23,
+      "name": "EV023 size(2,1)",
+      "x": 14,
+      "y": 69,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"This event is size 2x1. It is 2 tiles wide and 1 tile tall. "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"An event's size can be set by adding \"size(x,y)\" in the "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"event's name, where x and y are numbers."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"The event's placed position determines the bottom "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"left tile occupied by the event in-game."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"There are a lot of reasons to change an event's size. "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Here, it is covering the whole width of the stairs with "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"just one event, rather than needing two events that "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"do the same thing."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBridgeOff"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"EV023 size(2,1)"}],["@y",69],["@x",14],["@id",23]]}
+    },
+    {
+      "id": 25,
+      "name": "EV025 size(2,1)",
+      "x": 14,
+      "y": 68,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"This event is size 2x1. It is 2 tiles wide and 1 tile tall. "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"An event's size can be set by adding \"size(x,y)\" in the "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"event's name, where x and y are numbers."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"The event's placed position determines the bottom "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"left tile occupied by the event in-game."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"There are a lot of reasons to change an event's size. "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Here, it is covering the whole width of the stairs with "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"just one event, rather than needing two events that "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"do the same thing."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBridgeOn"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"EV025 size(2,1)"}],["@y",68],["@x",14],["@id",25]]}
+    },
+    {
+      "id": 27,
+      "name": "HiddenItem",
+      "x": 29,
+      "y": 62,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"pbItemBall(:RARECANDY, 2)"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"A"},0]}],["@indent",1],["@code",123]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",true]]},{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",true],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",true]]}]}],["@name",{"$":"str","v":"HiddenItem"}],["@y",62],["@x",29],["@id",27]]}
+    },
+    {
+      "id": 28,
+      "name": "EV028 size(1,4)",
+      "x": 19,
+      "y": 49,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"This event is size 1x4. It is 1 tile wide and 4 tiles tall. "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"An event's size can be set by adding \"size(x,y)\" in the "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"event's name, where x and y are numbers."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"The event's placed position determines the bottom "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"left tile occupied by the event in-game."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"There are a lot of reasons to change an event's size. "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Here, it is covering the whole path with just one "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"event, rather than needing four events that do the "}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"same thing."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBridgeOff"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"EV028 size(1,4)"}],["@y",49],["@x",19],["@id",28]]}
+    }
+  ],
+  "notes": ""
+}

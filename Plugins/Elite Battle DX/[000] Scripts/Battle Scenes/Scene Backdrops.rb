@@ -438,7 +438,8 @@ class BattleSceneRoom
   #-----------------------------------------------------------------------------
   def updateSky
     return if !@data.try_key?("sky", "outdoor")
-    minutes = Time.now.hour*60 + Time.now.min
+    game_time = pbGetTimeNow
+    minutes = game_time.hour * 60 + game_time.min
     # animates twinkling stars
     for i in 0...24
       break if !(PBDayNight.isNight? && @data.try_key?("outdoor"))

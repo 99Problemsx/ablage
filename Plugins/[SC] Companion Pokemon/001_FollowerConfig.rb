@@ -77,8 +77,44 @@ module CompanionFollower
   SHOW_TOGGLE_IN_OPTIONS  = true
 
   #=============================================================================
+  # ACTIVATION & SCRIPT CONTROL
+  # See 009_ScriptCommands.rb for the event/script commands themselves.
+  #=============================================================================
+  # Whether a new game starts with the follower enabled.
+  ENABLED_BY_DEFAULT      = true
+
+  # Game switch ID that force-disables the follower while it is ON.
+  # Handy for whole chapters/cutscene areas. nil = no switch used.
+  DISABLE_SWITCH          = nil
+
+  # Game switch ID that only HIDES the follower while it is ON. The follower
+  # stays logically enabled and pops back out when the switch goes off.
+  # nil = no switch used.
+  HIDE_SWITCH             = nil
+
+  # While the follower is locked off by script (pbDisableFollower), also hide
+  # the Options entry so the player cannot turn it back on there.
+  LOCK_HIDES_OPTION       = true
+
+  #=============================================================================
   # VISUAL SETTINGS
   #=============================================================================
+  # Push the follower sprite a few pixels away from the player so large
+  # Pokemon don't overlap the player sprite. Uses FOLLOWER_DISTANCE_OFFSET
+  # and FOLLOWER_DISTANCE_EXCEPTIONS below.
+  USE_DISTANCE_OFFSET     = true
+
+  # Mirror the follower on water surfaces (like the player does)
+  SHOW_REFLECTION         = true
+
+  # Hide very large Pokemon inside buildings/caves where they wouldn't fit
+  HIDE_LARGE_POKEMON_INDOORS = true
+  # Height in meters above which a Pokemon counts as "too large" indoors
+  LARGE_POKEMON_HEIGHT    = 3.0
+
+  # Hide the follower while riding the bicycle
+  HIDE_ON_BICYCLE         = true
+
   # Whether the follower always stays in walk animation (like HGSS)
   ALWAYS_ANIMATE          = true
 
@@ -101,9 +137,21 @@ module CompanionFollower
   TONE_PARALYSIS          = [204, 152, 44]
   TONE_FROZEN             = [56, 160, 193]
   TONE_SLEEP              = [0, 0, 0]
+  # Let the status tone pulse instead of staying at a constant strength
+  STATUS_TONE_PULSE       = true
+  # Overall strength of the status tint (0.0 - 1.0)
+  STATUS_TONE_INTENSITY   = 0.55
 
   # Dust animation when landing from a jump
   DUST_ANIMATION_ID       = Settings::DUST_ANIMATION_ID rescue 6
+
+  #=============================================================================
+  # SOUND EFFECTS — set any of these to nil for silence
+  #=============================================================================
+  SE_TOGGLE_ON            = nil
+  SE_TOGGLE_OFF           = nil
+  SE_CYCLE_PARTY          = "GUI party switch"
+  SE_SWAP_CONTROL         = "GUI party switch"
 
   #=============================================================================
   # DISTANCE SETTINGS

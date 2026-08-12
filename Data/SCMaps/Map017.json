@@ -1,0 +1,211 @@
+{
+  "formatVersion": 1,
+  "id": 17,
+  "name": "Cedolan Dept. 4F",
+  "parentId": 14,
+  "order": 17,
+  "width": 20,
+  "height": 17,
+  "tilesets": [
+    {
+      "tilesetId": 10
+    }
+  ],
+  "layers": [
+    {
+      "name": "Ground",
+      "role": "ground",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        "ap aq*4 ar as at aq*4 au ao*7",
+        "ax ay*4 az b0 b1 ay*2 d5 d6 b2 ao*7",
+        "ax dv dw b6*2 b7 bi b9 b6*2 dd de b2 ao*7",
+        "b5 e3 e4 be*7 dl dm ba ao*7",
+        ".*3 bf*7 .*3 ao*7",
+        "bx*3 by bo*6 bx*3 ao*7",
+        "bx bo*9 c5*3 ao*7",
+        "bx bo*2 bq bo*4 bq bo*3 bq ao*7",
+        "bx*3 by bo c5*3 c6 c5*3 c6 ao*7",
+        "bx*3 by bo*4 bq bo*3 bq ao*7",
+        "bx c5*2 c6 bo c5*3 c6 c5*3 c6 ao*7",
+        "bx bo*12 ao*7",
+        "bx*7 bo bq bo*4 ao*7",
+        "bx c5*6 bx by bo*4 ao*7",
+        "bx bo*6 bx by bo*4 ao*7",
+        "ao*20",
+        "ao*20"
+      ]
+    },
+    {
+      "name": "Decor",
+      "role": "decor",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*4 eu .*15",
+        ".*4 f2 .*15",
+        ".*20",
+        ". ca cb e5 .*5 dk c9 ca .*8",
+        "ci*2 cj .*7 ch ci*2 .*7",
+        "cq*2 cr .*7 cp cq*2 .*7",
+        ". fy fz .*2 h0 h2 h3 . h0 h2 h3 .*8",
+        ". g6 g7 .*2 h8 ha hb . h8 ha hb .*8",
+        ". ge gf .*2 h0 h2 h3 . h0 h2 h3 .*8",
+        ". gm gn .*2 h8 ha hb . h8 ha hb .*8",
+        ".*20",
+        "e9 eq*2 es eq*3 eb .*12",
+        "ex ey*2 f0 ey*3 ej .*4 da .*7",
+        ".*7 eo . fg*2 . di .*7",
+        ".*7 ew . fo*2 . dq .*7",
+        ".*20",
+        ".*20"
+      ]
+    },
+    {
+      "name": "Overlay",
+      "role": "overlay",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*10 gb gc gd .*7",
+        ".*10 gj gk gl .*7",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    },
+    {
+      "name": "Canopy",
+      "role": "canopy",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    },
+    {
+      "name": "Sky",
+      "role": "sky",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    }
+  ],
+  "bgm": {
+    "name": "Poke Mart",
+    "volume": 80,
+    "pitch": 100
+  },
+  "bgs": null,
+  "autoplayBgm": true,
+  "autoplayBgs": false,
+  "connections": [],
+  "weather": {
+    "kind": "None",
+    "power": 0,
+    "chance": 100
+  },
+  "lighting": {
+    "enabled": false,
+    "ambient": 0,
+    "tintByHour": {},
+    "lights": []
+  },
+  "encounters": [],
+  "encounterStep": 30,
+  "metadata": {
+    "extra": {},
+    "name": "Cedolan City",
+    "mapPosition": [0,13,10]
+  },
+  "events": [
+    {
+      "id": 1,
+      "name": "Elevator door",
+      "x": 6,
+      "y": 1,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"This sets the player's current floor, so that the ","e":"UTF-8"}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"elevator knows how many floors to go up/down (this ","e":"UTF-8"}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"affects the wall animation).","e":"UTF-8"}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[10,10,0,0,4]}],["@indent",0],["@code",122]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",100],["@name",{"$":"str","v":"Door slide"}],["@pitch",100]]}]}],["@code",44]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[2]}],["@code",15]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",17]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[2]}],["@code",15]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",18]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[2]}],["@code",15]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",19]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[2]}],["@code",15]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",true],["@repeat",false]]}]}],["@indent",0],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":19}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":23}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":25}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":27}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":29}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":31}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":33}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":35}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",37]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",4]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",38]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",true],["@repeat",false]]}]}],["@indent",0],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":61}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":63}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":65}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0]}],["@indent",0],["@code",208]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Followers.follow_into_door","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[2]}],["@code",15]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",18]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[2]}],["@code",15]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",17]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[2]}],["@code",15]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",16]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[2]}],["@code",15]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",true],["@repeat",false]]}]}],["@indent",0],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":88}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":90}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":92}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":94}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":96}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":98}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":100}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1]}],["@indent",0],["@code",208]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,20,2,5,8,1]}],["@indent",0],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"doors9"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]},{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"get_self.onEvent?","e":"UTF-8"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0]}],["@indent",1],["@code",208]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Followers.hide_followers","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",100],["@name",{"$":"str","v":"Door slide"}],["@pitch",100]]}]}],["@code",44]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[2]}],["@code",15]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",17]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[2]}],["@code",15]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",18]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[2]}],["@code",15]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",19]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[2]}],["@code",15]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",true],["@repeat",false]]}]}],["@indent",1],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":156}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":160}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":162}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":164}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":166}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":168}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":170}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":172}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1]}],["@indent",1],["@code",208]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",1]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",true],["@repeat",false]]}]}],["@indent",1],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":200}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Followers.put_followers_on_player","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",18]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[2]}],["@code",15]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",17]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[2]}],["@code",15]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",16]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[2]}],["@code",15]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",true],["@repeat",false]]}]}],["@indent",1],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":215}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":217}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":219}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":221}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":223}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":225}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"setTempSwitchOn(\"A\")","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",22],["@switch1_valid",true],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",3],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"doors9"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Elevator door"}],["@y",1],["@x",6],["@id",1]]}
+    },
+    {
+      "id": 2,
+      "name": "Stairs down",
+      "x": 2,
+      "y": 2,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",37]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",39]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",17]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",2]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",38]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",40]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",0],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":8}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":10}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":12}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":14}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":16}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":18}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit","e":"UTF-8"}],["@pitch",100]]}]}],["@indent",0],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,16,3,2,6,1]}],["@indent",0],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Stairs down","e":"UTF-8"}],["@y",2],["@x",2],["@id",2]]}
+    },
+    {
+      "id": 3,
+      "name": "Stairs up",
+      "x": 10,
+      "y": 2,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",37]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",39]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",18]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",8]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",38]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",40]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",0],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":8}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":10}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":12}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":14}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":16}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":18}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit","e":"UTF-8"}],["@pitch",100]]}]}],["@indent",0],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,18,9,2,4,1]}],["@indent",0],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Stairs up","e":"UTF-8"}],["@y",2],["@x",10],["@id",3]]}
+    },
+    {
+      "id": 4,
+      "name": "Floor sign",
+      "x": 4,
+      "y": 1,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\sign[signskin]Express yourself with gifts!\\n4F: Wise ","e":"UTF-8"}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Man Gifts","e":"UTF-8"}]}],["@indent",0],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\sign[signskin]Evolution Special!\\nElement Stones on ","e":"UTF-8"}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"sale now!","e":"UTF-8"}]}],["@indent",0],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Floor sign","e":"UTF-8"}],["@y",1],["@x",4],["@id",4]]}
+    },
+    {
+      "id": 5,
+      "name": "Cashier",
+      "x": 3,
+      "y": 13,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbPokemonMart([","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  :POKEDOLL,","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  :AIRMAIL, :TUNNELMAIL, :BLOOMMAIL,","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  :FIRESTONE, :THUNDERSTONE,","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  :WATERSTONE, :LEAFSTONE","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"])","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"NPC 19","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",8],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Cashier","e":"UTF-8"}],["@y",13],["@x",3],["@id",5]]}
+    }
+  ],
+  "notes": ""
+}

@@ -1,0 +1,183 @@
+{
+  "formatVersion": 1,
+  "id": 56,
+  "name": "Battle Tower arena",
+  "parentId": 55,
+  "order": 52,
+  "width": 20,
+  "height": 15,
+  "tilesets": [
+    {
+      "tilesetId": 20
+    }
+  ],
+  "layers": [
+    {
+      "name": "Ground",
+      "role": "ground",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        "h9 h6 h7*7 h8 h9 ay*9",
+        "hh he hf*7 hg hh ay*9",
+        "iz hm hn*7 ho iz ay*9",
+        "ii ix ip*8 iq ay*9",
+        "ii i8*10 ay*9",
+        "ii i8*10 ay*9",
+        "ii i8*10 ay*9",
+        "ii i8*10 ay*9",
+        "ii i8*10 ay*9",
+        "ii i8*10 ay*9",
+        "ay*20",
+        "ay*20",
+        "ay*20",
+        "ay*20",
+        "ay*20"
+      ]
+    },
+    {
+      "name": "Decor",
+      "role": "decor",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ".*20",
+        ".*5 hj .*14",
+        "hj .*2 hj . hr . hj .*2 hj .*9",
+        "hr .*2 hr .*3 hr .*2 hr .*9",
+        ".*20",
+        ".*20",
+        "hj .*2 hj .*3 hj .*2 hj .*9",
+        "hr .*2 hr . hj . hr .*2 hr .*9",
+        ".*5 hr .*14",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    },
+    {
+      "name": "Overlay",
+      "role": "overlay",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    },
+    {
+      "name": "Canopy",
+      "role": "canopy",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    },
+    {
+      "name": "Sky",
+      "role": "sky",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    }
+  ],
+  "bgm": {
+    "name": "Battle Frontier",
+    "volume": 80,
+    "pitch": 100
+  },
+  "bgs": null,
+  "autoplayBgm": true,
+  "autoplayBgs": false,
+  "connections": [],
+  "weather": {
+    "kind": "None",
+    "power": 0,
+    "chance": 100
+  },
+  "lighting": {
+    "enabled": false,
+    "ambient": 0,
+    "tintByHour": {},
+    "lights": []
+  },
+  "encounters": [],
+  "encounterStep": 30,
+  "metadata": {
+    "extra": {
+      "Flags": "DisableBoxLink"
+    },
+    "name": "Battle Frontier",
+    "mapPosition": [0,17,10],
+    "battleBack": "indoor1"
+  },
+  "events": [
+    {
+      "id": 1,
+      "name": "Guide",
+      "x": 0,
+      "y": 5,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[3]}],["@code",29]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",37]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[255]}],["@code",42]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",3]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",38]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",0],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":8}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":10}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":12}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":14}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":16}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",37]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[255]}],["@code",42]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",3]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",38]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",0],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":34}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":36}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":38}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":40}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbSet(1,","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  pbBattleChallenge.battleNumber","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":")","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1,1,0,1,0]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[3]}],["@code",29]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",37]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",18]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",3]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",3]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",38]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",1],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":69}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":71}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":73}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":75}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":77}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":79}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",411]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",19]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",1],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":105}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",16]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",1],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":115}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Choice Menu","e":"UTF-8"}]}],["@indent",1],["@code",119]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Next Opponent","e":"UTF-8"}]}],["@indent",0],["@code",118]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[2,0,10,6,0]}],["@indent",0],["@code",202]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBattleChallengeGraphic(get_character(2))","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[2,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",37]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",2]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",2]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",2]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",38]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",0],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":142}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":144}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":146}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":148}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":150}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbSet(1,","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  pbBattleChallengeBeginSpeech","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":")","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\v[1]","e":"UTF-8"}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"pbBattleChallengeBattle","e":"UTF-8"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBattleChallenge.pbAddWin","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"pbBattleChallenge.pbMatchOver?","e":"UTF-8"}]}],["@indent",1],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBattleChallenge.setDecision(1)","e":"UTF-8"}]}],["@indent",2],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",2],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit","e":"UTF-8"}],["@pitch",100]]}]}],["@indent",2],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",2],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",2],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBattleChallenge.pbGoToStart","e":"UTF-8"}]}],["@indent",2],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",2],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",2],["@code",115]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",2],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",411]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[2,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",37]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",18]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",3]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",3]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",3]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"","e":"UTF-8"},0,2,0]}],["@code",41]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",38]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",2],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":217}]}],["@indent",2],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":219}]}],["@indent",2],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":221}]}],["@indent",2],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":223}]}],["@indent",2],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":225}]}],["@indent",2],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":227}]}],["@indent",2],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":230}]}],["@indent",2],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[3]}],["@code",29]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",37]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",17]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",2]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",2]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",19]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",38]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",2],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":252}]}],["@indent",2],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":254}]}],["@indent",2],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":256}]}],["@indent",2],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":258}]}],["@indent",2],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":260}]}],["@indent",2],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":262}]}],["@indent",2],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":264}]}],["@indent",2],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",2],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",16]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",2],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":288}]}],["@indent",2],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\rThanks for playing. Let me heal your party.","e":"UTF-8"}]}],["@indent",2],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",2],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",2],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0]}],["@indent",2],["@code",314]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",2],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",2],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Choice Menu","e":"UTF-8"}]}],["@indent",2],["@code",118]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbSet(1,","e":"UTF-8"}]}],["@indent",2],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  pbBattleChallenge.battleNumber","e":"UTF-8"}]}],["@indent",2],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":")","e":"UTF-8"}]}],["@indent",2],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"================================"}]}],["@indent",2],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"if $game_temp.last_battle_record.nil?"}]}],["@indent",2],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  hide_choice(4)"}]}],["@indent",2],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"end"}]}],["@indent",2],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\rBattle number \\v[1] is next. Are you ready?"}]}],["@indent",2],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"arr","v":[{"$":"str","v":"Go on"},{"$":"str","v":"Rest"},{"$":"str","v":"Retire"},{"$":"str","v":"Record"}]},0]}],["@indent",2],["@code",102]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"ref","i":339}]}],["@indent",2],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBattleChallenge.pbGoOn","e":"UTF-8"}]}],["@indent",3],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",18]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",3],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":352}]}],["@indent",3],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[3]}],["@code",29]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",37]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",18]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",3]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",3]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",38]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",3],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":362}]}],["@indent",3],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":364}]}],["@indent",3],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":366}]}],["@indent",3],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":368}]}],["@indent",3],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":370}]}],["@indent",3],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":372}]}],["@indent",3],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Next Opponent","e":"UTF-8"}]}],["@indent",3],["@code",119]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",3],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1,{"$":"ref","i":340}]}],["@indent",2],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\rWould you like to save the game and continue later?","e":"UTF-8"}]}],["@indent",3],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"arr","v":[{"$":"str","v":"Yes","e":"UTF-8"},{"$":"str","v":"No","e":"UTF-8"}]},2]}],["@indent",3],["@code",102]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"ref","i":401}]}],["@indent",3],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBattleChallenge.pbRest","e":"UTF-8"}]}],["@indent",4],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Your game has been saved.","e":"UTF-8"}]}],["@indent",4],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",4],["@code",354]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",4],["@code",115]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",4],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1,{"$":"ref","i":402}]}],["@indent",3],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Choice Menu","e":"UTF-8"}]}],["@indent",4],["@code",119]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",4],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",3],["@code",404]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Choice Menu","e":"UTF-8"}]}],["@indent",3],["@code",119]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",3],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[2,{"$":"ref","i":341}]}],["@indent",2],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\rAre you sure you want to quit your challenge?","e":"UTF-8"}]}],["@indent",3],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"arr","v":[{"$":"str","v":"Yes","e":"UTF-8"},{"$":"str","v":"No","e":"UTF-8"}]},2]}],["@indent",3],["@code",102]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"ref","i":439}]}],["@indent",3],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBattleChallenge.setDecision(2)","e":"UTF-8"}]}],["@indent",4],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit","e":"UTF-8"}],["@pitch",100]]}]}],["@indent",4],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",4],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",4],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBattleChallenge.pbGoToStart","e":"UTF-8"}]}],["@indent",4],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",4],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",4],["@code",115]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",4],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1,{"$":"ref","i":440}]}],["@indent",3],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Choice Menu","e":"UTF-8"}]}],["@indent",4],["@code",119]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",4],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",3],["@code",404]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",3],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[3,{"$":"ref","i":342}]}],["@indent",2],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\rWould you like to record your last battle?","e":"UTF-8"}]}],["@indent",3],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"arr","v":[{"$":"str","v":"Yes","e":"UTF-8"},{"$":"str","v":"No","e":"UTF-8"}]},2]}],["@indent",3],["@code",102]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"ref","i":484}]}],["@indent",3],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbRecordLastBattle","e":"UTF-8"}]}],["@indent",4],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\se[Pkmn exp full]The battle was recorded.","e":"UTF-8"}]}],["@indent",4],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",4],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1,{"$":"ref","i":485}]}],["@indent",3],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",4],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",3],["@code",404]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Choice Menu","e":"UTF-8"}]}],["@indent",3],["@code",119]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",3],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",2],["@code",404]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",2],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",411]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBattleChallenge.setDecision(2)","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit","e":"UTF-8"}],["@pitch",100]]}]}],["@indent",1],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",1],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",1],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBattleChallenge.pbGoToStart","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",1],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",3],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"NPC 23"}],["@pattern",0],["@tile_id",0],["@direction",6],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Guide"}],["@y",5],["@x",0],["@id",1]]}
+    },
+    {
+      "id": 2,
+      "name": "Opponent",
+      "x": 10,
+      "y": 6,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Opponent","e":"UTF-8"}],["@y",6],["@x",10],["@id",2]]}
+    }
+  ],
+  "notes": ""
+}

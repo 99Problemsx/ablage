@@ -262,7 +262,6 @@ def pbExportMapLightsToScript(map_id)
     kw << "beam" if e.beam
     kw << "window" if e.window
     kw << "reflect" if e.water_reflect
-    kw << "shadows" if e.shadows
     kw << "pulse:#{e.pulse}" if e.pulse
     kw << "group:#{e.group}" if e.group
     kw << "switch:#{e.switch}" if e.switch

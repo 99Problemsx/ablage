@@ -1,0 +1,254 @@
+{
+  "formatVersion": 1,
+  "id": 39,
+  "name": "Route 4",
+  "parentId": 0,
+  "order": 36,
+  "width": 44,
+  "height": 23,
+  "tilesets": [
+    {
+      "tilesetId": 1
+    }
+  ],
+  "layers": [
+    {
+      "name": "Ground",
+      "role": "ground",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        "40*6 4o 20 ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9",
+        "40*6 4o 20 mi mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh",
+        "40*5 44 52 20 ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9",
+        "40*5 4o 1g 2e mi mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh",
+        "40*5 4o 3c y8 mq mr mq mr mq mr mq mr mq mr mq mr mq mr mq mr mq mr mq mr mq mr mq mr mq mr mq mr mq mr mq mr ma m9 m8 m9",
+        "40*5 4o 20 ap*33 mi mh mg mh",
+        "40*5 4o 20 aq as ex ey ez ap*5 ex ey*7 ez as ap at ar au*9 ar ma m9 m8 m9",
+        "40*5 4o 20 at ap f5 f6 fg ey*5 fi f6*7 f7 aq ar aq ap au*9 aq mi mh mg mh",
+        "40*5 4o 20 aq ar f5 f6*10 f0 fe*4 ff ap at as aq au*9 as ma m9 m8 m9",
+        "40*5 4o 20 ap as fd fe*10 ff ap as aq ap at ar aq ap ar ap aq as ap ar aq ap at ap aq mi mh mg mh",
+        "40*5 4o 20 ar aq ap as aq ap ar at ap aq ar ap aq ap as ar ap as aq ap aq as ap at ap aq ar ap as ar aq ar ap ma m9 m8 m9",
+        "40*5 4o 20 ap*29 at aq ap as mi mh mg mh",
+        "40*5 4o 20 ar aq ap as aq ap as at aq ap as aq at ap aq ar as ap*11 as ap ar at aq mq mr mq mr",
+        "40*5 4o 20 ap at ex ey ez at aq ap ar ex ey*16 ez ar*2 aq as ap ar ap at ar aq",
+        "40*5 4o 20 aq as f5 f6 f7 ap ar as ap f5 f6*16 f7 ap aq ap ar aq at as aq ap at",
+        "40*5 4o 20 at ap f5 f6 f7 aq at aq ar f5 f6*3 f0 fe*12 ff as ar at ap ar ap as ap aq ar",
+        "40*5 4o 20 ap aq f5 f6 f7 as ap as ap f5 f6*3 f7 ap*19 aq ar at ap",
+        "40*5 4o 20 aq ar f5 f6 f7 aq ar ap aq f5 f6*3 f7 ap mi mj mi mj mi mj mi mj mi mj mi mj mi mj mi mj mi mj mi mj mi mj",
+        "40*5 4o 20 as ap f5 f6 fg ey*4 fi f6*3 f7 ar ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9",
+        "40*5 4o 20 aq at f5 f6*10 f7 aq mi mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh",
+        "40*5 4o 20 ar ap f5 f6 f0 fe*4 f2 f6 f0 fe ff ap ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9",
+        "40*5 4o 20 as aq lp lq lr ap at aq as lp lq lr aq as at mi mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh",
+        "40*5 4o 20 ap at lx ly lz as ap ar ap lx ly lz ap ar aq mq mr mq mr mq mr mq mr mq mr mq mr mq mr mq mr mq mr ma m9 m8 m9"
+      ]
+    },
+    {
+      "name": "Decor",
+      "role": "decor",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*6 vf .*5 1kw 1kx 1ky*2 1kz .*27",
+        ".*7 1a2 1ap*4 1l4 1l6*3 1l7 1ap*22 1a5 .*4",
+        ".*7 1a8 .*4 1lc 1le*3 1lf .*22 1a9 .*4",
+        ".*7 1a8 .*31 1a9 .*4",
+        ".*7 1a8 .*31 1a9 .*4",
+        ".*7 1a8 .*31 1a9 .*4",
+        ".*7 1a8 .*31 1a9 .*4",
+        ".*7 1aa 1ap*27 1a7 .*3 1a9 .*4",
+        ".*7 1a8 .*16 2jk 2lc 2ld*4 2le nv*4 1ag .*3 1bc .*4",
+        ".*7 1a8 .*16 2js 2jt 2ju 2jv*2 2jw 2jx 2jy .*12",
+        ".*7 1a8 .*16 2k0 2kw 2kx*4 2ky 2k6 .*12",
+        ".*7 1a8 .*16 2k8 2m0 2m1*4 2m2 2ke .*12",
+        ".*7 1a8 .*13 1a6 1ap*17 1aq .*4",
+        ".*7 1a8 .*13 1a9 .*22",
+        ".*7 1a8 .*13 1a9 .*22",
+        ".*7 1a8 .*13 1a9 .*22",
+        ".*7 1a8 .*13 1a9 .*22",
+        ".*7 1a8 .*13 1a9 .*22",
+        ".*7 1a8 .*13 1a9 .*22"
+      ]
+    },
+    {
+      "name": "Overlay",
+      "role": "overlay",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*25 2l4 2l5*4 2l6 .*13",
+        ".*31 2jq .*12",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*22 mc md mc md mc md mc md mc md mc md mc md mc md mc md mc md mc md",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*7 134 135 .*11 136 137 .*22"
+      ]
+    },
+    {
+      "name": "Canopy",
+      "role": "canopy",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44"
+      ]
+    },
+    {
+      "name": "Sky",
+      "role": "sky",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44",
+        ".*44"
+      ]
+    }
+  ],
+  "bgm": {
+    "name": "Route 2",
+    "volume": 80,
+    "pitch": 100
+  },
+  "bgs": null,
+  "autoplayBgm": true,
+  "autoplayBgs": false,
+  "connections": [
+    {
+      "edge": "E",
+      "offset": 0,
+      "toMapId": 35,
+      "toEdge": "W",
+      "toOffset": 11
+    }
+  ],
+  "weather": {
+    "kind": "None",
+    "power": 0,
+    "chance": 100
+  },
+  "lighting": {
+    "enabled": false,
+    "ambient": 0,
+    "tintByHour": {},
+    "lights": []
+  },
+  "encounters": [
+    {
+      "type": "Land",
+      "step": 21,
+      "slots": [
+        {
+          "probability": 50,
+          "species": "SHELLOS_1",
+          "minLevel": 12,
+          "maxLevel": 15
+        },
+        {
+          "probability": 40,
+          "species": "GRIMER",
+          "minLevel": 13,
+          "maxLevel": 15
+        },
+        {
+          "probability": 10,
+          "species": "MURKROW",
+          "minLevel": 12,
+          "maxLevel": 14
+        }
+      ]
+    }
+  ],
+  "encounterStep": 30,
+  "metadata": {
+    "extra": {},
+    "name": "Route 4",
+    "mapPosition": [0,11,6],
+    "mapSize": {
+      "width": 2,
+      "layout": "11"
+    },
+    "outdoor": true,
+    "showArea": true,
+    "locationSign": "Pt route",
+    "battleBack": "field"
+  },
+  "events": [
+    {
+      "id": 1,
+      "name": "Gate entrance",
+      "x": 30,
+      "y": 14,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit"}],["@pitch",100]]}]}],["@indent",0],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,46,11,6,0,1]}],["@indent",0],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Gate entrance"}],["@y",14],["@x",30],["@id",1]]}
+    }
+  ],
+  "notes": ""
+}

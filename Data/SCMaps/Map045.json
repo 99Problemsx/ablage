@@ -1,0 +1,230 @@
+{
+  "formatVersion": 1,
+  "id": 45,
+  "name": "Route 6 Cycling Road",
+  "parentId": 44,
+  "order": 41,
+  "width": 39,
+  "height": 24,
+  "tilesets": [
+    {
+      "tilesetId": 1
+    }
+  ],
+  "layers": [
+    {
+      "name": "Ground",
+      "role": "ground",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        "4o 1c 54 52 1c*2 20 aq 7y as ap as aq at aq as 7y as 1s 1c*3 54 52 4y 50 20 ar ap mi mh mg mh mg mh mg mh mg mh",
+        "4o 1c 4y 50 1c*2 20 as*2 7y at ar as ap as 7y aq ap 1s 1c*5 54 52 20 aq ap ma m9 m8 m9 m8 m9 m8 m9 m8 m9",
+        "42 50 54 52 1c*2 20 aq 7y ap at aq*2 ar ap*2 7y at 1s 1c*7 20 ar ap mi mh mg mh mg mh mg mh mg mh",
+        "40 4o 1c 4y 50 1c 20 at aq 7y ap ar ap ar as 7y aq*2 1s 1c*7 20 ap*2 ma m9 m8 m9 m8 m9 m8 m9 m8 m9",
+        "40 42 50 54 52 1c 20 as 7y as aq at aq at aq as 7y ar 1s 1c*7 20 ar ap mi mh mg mh mg mh mg mh mg mh",
+        "40*2 4o 1c 4y 50 20 ap*2 7y as ap as ap as 7y ap*2 1s 1c*7 20 ap*2 mq mr mq mr mq mr mq mr mq mr",
+        "40*2 4o 1c 54 52 20 at 7y aq*2 ar aq ar ap aq 7y ar 2g 24*7 2e ar ap*11",
+        "40 44 52 4y 50 1c 20 ar as ex ey*5 ez ap*2 y9*9 ap*12",
+        "40 4o 1c 54 52 1c 20 ap ex fi f6*5 fg ey*23",
+        "44 52 4y 50 1c*2 20 ar f5 f6*30",
+        "4o 1c 54 52 1c*2 20 ap f5 f6*16 f0 fe*13",
+        "4o 1c 4y 50 1c*2 1e 1w*19 as ap*11 ar",
+        "4o 1c 54 52 1c*20 4y 50 20 at as ap as ap as ar aq ap ar as ap",
+        "4o 1c 4y 50 1c*20 54 52 20 ap*2 au*6 at aq ar ap",
+        "4o 1c 54 52 1c*22 20 aq at au*6 ap*2 mi mj",
+        "42 50 1c*2 4y 50 1c*5 4y 50 4y 50 1c*4 4y 50 4y 50 1c*2 4y 40 at ap au*6 aq at ma m9",
+        "40 42 50 1c 54 52 4y 50 1c*3 54 52 54 52 4y 50 4y 50 54 52 54 52 4y 50 54 40 ap aq au*6 as ap mi mh",
+        "40*2 4o 1c*3 54 52 4y 50 4y 50 1c*3 54 52 54 52 1c*4 54 52 1c 20 aq as ap ar as ap as ap as aq mq mr",
+        "40*2 42 50 1c*4 54 52 54 52 4y 50 4y 50 1c*2 4y 4k*3 50 1c 4y 50 20 as ap*8 as*2 1w",
+        "40*3 42 4k*3 50 1c*4 54 52 54 52 1c 4y 41 40*3 42 50 54 52 1e 1w*10 1d 4y",
+        "40*7 42 4k*4 41 40*2 42 4k 41 40*5 4o 1c*2 4y 4k*11 41",
+        "40*23 42 4k*2 41 40*12",
+        "40*39",
+        "40*39"
+      ]
+    },
+    {
+      "name": "Decor",
+      "role": "decor",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*2 94 92 .*3 1a8 .*9 1a9 .*4 162 163 8y 90 . 1a8 nv .*10",
+        ".*2 8y 90 .*3 1a8 .*9 1a9 .*6 94 92 . 1a8 nv .*10",
+        ".*2 94 8p .*3 1a8 .*9 1a9 .*9 1a8 nv .*10",
+        ".*3 8h 90 .*2 1a8 .*9 1a9 .*9 1a8 nv .*10",
+        ".*3 94 8p .*2 1a8 .*9 1a9 .*9 1a8 nv .*10",
+        ".*4 8h 90 . 1a8 .*9 1a9 .*9 1a8 nv .*10",
+        ".*4 94 92 . 1a8 .*9 1a9 .*9 1a8 nv*3 2l4 2l5*4 2l6 nv*2",
+        ".*3 15u 15v .*2 1a8 .*9 1ah .*9 1ai 1ap*3 2lc 2ld*4 2le 1ap 1aq",
+        ".*3 162 163 .*2 1a8 .*22 2js 2jt 2ju 2jv*2 2jw 2jx 2jy .",
+        ".*2 8y 90 .*3 1a8 .*22 2k0 2kw 2kx*4 2ky 2k6 .",
+        ".*2 94 92 .*3 1ag .*22 2k8 2m0 2m1*4 2m2 2ke .",
+        ".*2 15u 15v .*22 2d 1b7 1bp*9 .*2",
+        ".*2 162 163 .*20 8y 90 . 1bf .*11",
+        ".*2 8y 90 .*20 94 92 . 1bf .*11",
+        ".*2 94 92 .*23 1bf .*8 1b9 .*2",
+        ".*4 15u 15v .*5 15u 15v 15u 15v .*4 8y 90 15u 15v .*3 vm 1bf .*8 1bg .*2",
+        ".*4 162 163 8y 90 .*3 162 163 162 163 8y 90 15u 15v 94 92 162 163 15u 15v . vm 1bf .*8 1bg .*2",
+        ".*6 94 8u 8m 90 15u 15v .*3 94 92 162 163 .*4 162 163 .*2 1bf .*8 1bg .*2",
+        ".*8 94 92 162 163 8y 90 15u 15v .*8 8y 90 . 1bn 1bp*8 1bo 2j .",
+        ".*12 94 92 162 163 .*8 94 92 .*13",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39"
+      ]
+    },
+    {
+      "name": "Overlay",
+      "role": "overlay",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*30 2jk .*6 2jq .",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*37 mc md",
+        ".*39",
+        ".*25 8y 90 .*12",
+        ".*25 94 92 .*12",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39"
+      ]
+    },
+    {
+      "name": "Canopy",
+      "role": "canopy",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39"
+      ]
+    },
+    {
+      "name": "Sky",
+      "role": "sky",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39",
+        ".*39"
+      ]
+    }
+  ],
+  "bgm": {
+    "name": "Bicycle",
+    "volume": 80,
+    "pitch": 100
+  },
+  "bgs": null,
+  "autoplayBgm": true,
+  "autoplayBgs": false,
+  "connections": [
+    {
+      "edge": "N",
+      "offset": 0,
+      "toMapId": 41,
+      "toEdge": "S",
+      "toOffset": 6
+    }
+  ],
+  "weather": {
+    "kind": "None",
+    "power": 0,
+    "chance": 100
+  },
+  "lighting": {
+    "enabled": false,
+    "ambient": 0,
+    "tintByHour": {},
+    "lights": []
+  },
+  "encounters": [],
+  "encounterStep": 30,
+  "metadata": {
+    "extra": {},
+    "name": "Route 6",
+    "mapPosition": [0,11,10],
+    "outdoor": true,
+    "showArea": true,
+    "locationSign": "Pt route",
+    "bicycleAlways": true
+  },
+  "events": [
+    {
+      "id": 1,
+      "name": "Gate entrance",
+      "x": 31,
+      "y": 9,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit"}],["@pitch",100]]}]}],["@indent",0],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,74,1,6,0,1]}],["@indent",0],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Gate entrance"}],["@y",9],["@x",31],["@id",1]]}
+    }
+  ],
+  "notes": ""
+}

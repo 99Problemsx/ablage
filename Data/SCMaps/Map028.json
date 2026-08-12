@@ -1,0 +1,548 @@
+{
+  "formatVersion": 1,
+  "id": 28,
+  "name": "Natural Park",
+  "parentId": 0,
+  "order": 27,
+  "width": 50,
+  "height": 45,
+  "tilesets": [
+    {
+      "tilesetId": 1
+    }
+  ],
+  "layers": [
+    {
+      "name": "Ground",
+      "role": "ground",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        "mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg",
+        "m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb mq mr mq mr mq mr mq mr ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8",
+        "mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mj ap at aq at as ap at aq mi mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg",
+        "m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb ar as ap ar aq at ar as ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8",
+        "mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mj at as*2 at*2 aq as ap mi mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg",
+        "mr mq mr ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb mq mr aq at ar ap aq ap at ar mq mr ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8",
+        "ap*3 mi mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mj at*2 ap aq as at ap at ar at ap*2 mi mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg",
+        "u9 ua as ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb aq 7n 7l 7x ap aq as ap 7v 7l 7p ap ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8",
+        "uh ui at mi mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mj at 7k ar at ap as*2 at as ap 7k ap mi mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg",
+        "uc ui as ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb mq mr mq mr ap 7k as aq at as ar ap*2 at 7k as mq mr mq mr ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8",
+        "ug ui ap mi mh mg mh mg mh mg mh mg mh mg mh mg mj at ap as*2 ar 7w aq ap ar aq ar*2 as ap 7w ar*2 ap*2 aq mi mh mg mh mg mh mg mh mg mh mg mh mg",
+        "y9*2 ap ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb mq mr ap 7n 7l*2 7x aq ar at aq ap as at aq ar as 7v 7l*2 7p ap mq mr ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8",
+        "ap mi mj mi mh mg mh mg mh mg mh mg mh mg mj at ap at 7w ap aq at ar ap b3*6 at ap at ap as 7w aq at ar mi mh mg mh mg mh mg mh mg mh mg",
+        "ap mq mr ma m9 m8 m9 m8 m9 m8 m9 m8 mb mq mr ap 7n 7x as ar at as ap aq b3*6 aq at aq ar ap ar 7v 7p ap mq mr ma m9 m8 m9 m8 m9 m8 m9 m8",
+        "ez as at mi mh mg mh mg mh mg mh mg mj at aq as 7w ar aq ap b3*14 ap ar ap 7w aq as ap mi mh mg mh mg mh mg mh mg",
+        "f7 as ap ma m9 m8 m9 m8 m9 m8 mb mq mr ap 7n 7x ar ap aq ar b3*14 ap as ar aq 7v 7p at mq mr ma m9 m8 m9 m8 m9 m8",
+        "ff ar as mi mh mg mh mg mh mg mj at aq ar 7w at ap ar b3*18 at as ar 7w ar aq ar mi mh mg mh mg mh mg",
+        "ap aq at ma m9 m8 m9 m8 m9 m8 mb ap 7n 7x as aq ap as b3*6 ap as ar ap aq at b3*6 ap*4 7v 7p ap ma m9 m8 m9 m8 m9 m8",
+        "at 7y ap mi mh mg mh mg mh mg mj as 7k ar at ap b3*8 ar aq ap ar at ap b3*8 aq ar ap 7k as mi mh mg mh mg mh mg",
+        "7x as ap ma m9 m8 mb mq mr mq mr ap 7k ap aq ar b3*6 ar as aq as u8 ua aq as ar at b3*6 at ap as 7k aq ma m9 m8 m9 m8 m9 m8",
+        "ar 7y at mi mh mg mj aq*2 ap as ap 7w at b3*8 at ap ar at ug ui ar at ap aq b3*8 aq 7k ap mi mh mg mh mg mh mg",
+        "7x as ap mq mr mq mr as 7v 7l*2 7x ar*2 b3*6 ar aq as ar u8 u9 uo uq u9 ua ap ar as aq b3*6 at 7k ar ma m9 m8 m9 m8 m9 m8",
+        "as ap*2 ar aq ap ar ap aq ar aq ar aq ap b3*6 at ap*2 as ug uh*4 ui as ap at ap b3*6 ap 7k aq mi mh mg mh mg mh mg",
+        "ey*2 ez ar aq ap aq ar*2 ap ar as at*2 aq as at ar aq as aq ar u8 u9 uo ub y8 ya uc uq u9 ua ar ap*2 aq ap ar as aq ar 7k aq ma m9 m8 m9 m8 m9 m8",
+        "f6*2 f7 ap ar aq as ar at*2 ap aq ap aq ar aq as at ap aq ar ap ug uh*2 ui ap*2 ug uh*2 ui at as ap*2 at aq ap as*2 7k as mi mh mg mh mg mh mg",
+        "fe*2 ff ap*5 ar aq as ar at aq au*6 ar as y9 ya uc uq u9*2 uo ub y8 y9 ar as au*6 ap 7k ap ma m9 m8 m9 m8 m9 m8",
+        "ar at ar mi mj mi mj aq 7v 7l*2 7x ap aq au*6 at aq at as ug uh*4 ui ap ar aq*2 au*6 ar 7k as mi mh mg mh mg mh mg",
+        "aq as ap ma m9 m8 mb as ap ar at as 7u at au*8 ar aq y9 ya uc ub y8 y9 as aq au*8 at 7k ar ma m9 m8 m9 m8 m9 m8",
+        "aq 7y aq mi mh mg mj mi mj mi mj ar 7k ar au*8 as ap as ar ug ui at aq as ar au*8 ap 7k ar mi mh mg mh mg mh mg",
+        "ar aq ap ma m9 m8 m9 m8 m9 m8 mb ap 7k aq*2 as au*8 aq as y9*2 ar as au*8 ap aq as 7k at ma m9 m8 m9 m8 m9 m8",
+        "ap 7y as mi mh mg mh mg mh mg mj as 7t 7x ap ar au*8 at as ar ap aq ar au*8 as ar 7v 7r ap mi mh mg mh mg mh mg",
+        "ez aq at ma m9 m8 m9 m8 m9 m8 mb ap*2 as 7u at ap ar au*18 aq at ap 7u aq as ar ma m9 m8 m9 m8 m9 m8",
+        "f7 ar as mi mh mg mh mg mh mg mj mi mj aq 7t 7x ar aq au*18 as ar 7v 7r at mi mj mi mh mg mh mg mh mg",
+        "ff ar ap ma m9 m8 m9 m8 m9 m8 m9 m8 mb ar ap ar 7u as ap aq au*14 ap*2 ar 7u ap ar ap ma m9 m8 m9 m8 m9 m8 m9 m8",
+        "aq*2 at mi mh mg mh mg mh mg mh mg mj mi mj at 7t 7x at ar au*14 ap at 7v 7r as mi mj mi mh mg mh mg mh mg mh mg",
+        "7l 7p ap ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb as ap at 7u ap aq at ap as au*6 ap ar as*2 aq 7u ap ar aq ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8",
+        "aq 7w ar mi mh mg mh mg mh mg mh mg mh mg mj mi mj aq 7t 7l*2 7x ar aq au*6 aq ar 7v 7l*2 7r ar mi mj mi mh mg mh mg mh mg mh mg mh mg",
+        "ap aq*2 ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb ar ap aq ar ap 7u as ap ar ap ar aq ap as 7u ap aq ap ar as ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8",
+        "mj mi mj mi mh mg mh mg mh mg mh mg mh mg mh mg mj mi mj mi mj at 7t 7l*8 7r at mi mj mi mj mi mh mg mh mg mh mg mh mg mh mg mh mg",
+        "m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb aq ap ar at aq ap*3 ar aq ap aq ma m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8",
+        "mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mj mi mj mi mj mi mj mi mj mi mj mi mj mi mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg",
+        "m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8",
+        "mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg",
+        "m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8",
+        "mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg"
+      ]
+    },
+    {
+      "name": "Decor",
+      "role": "decor",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*50",
+        ".*23 2l4 2l5*6 2l6 .*19",
+        ".*23 2lc 2ld*6 2le .*19",
+        ".*23 2jt 2ju*6 2jx .*19",
+        ".*23 2k1 2ko 2kp 2kq 2ko 2kp 2kq 2k5 .*19",
+        ".*23 2ls 2lt 2l0 2l1*2 2l2 2lt 2lu .*19",
+        "1ap*2 1a7 .*18 1a2 1aq 2k9 2m1 2ka 2kb*2 2kc 2m1 2kd 1ao 1a5 .*17",
+        ".*2 1a8 .*18 1a8 .*3 2ki 2kj*2 2kk .*3 1a9 .*17",
+        ".*2 1a8 .*18 1a8 .*10 1a9 .*17",
+        ".*2 1a8 .*18 1a8 .*10 1a9 .*17",
+        "1gd . 1a8 .*14 1a2 1ap*3 1an .*10 1am 1ap*3 1a5 .*13",
+        "1gl 1ap 1an .*14 1a8 .*6 av*6 .*6 1a9 .*13",
+        "1gt .*14 1a2 1ap 1an .*6 av*6 .*6 1am 1ap 1a5 .*11",
+        "1h1 .*14 1a8 .*4 av*14 .*4 1a9 .*11",
+        ".*2 1a1 .*10 1a2 1ap 1an .*4 av*14 .*4 1am 1ap 1a5 .*9",
+        ".*2 1a9 .*10 1a8 .*4 av*18 .*4 1a9 .*9",
+        ".*2 1a9 .*8 1a2 1ap 1an .*4 av*6 .*6 av*6 .*4 1am 1ap 1a5 .*7",
+        ".*2 1a9 .*8 1a8 .*4 av*8 .*6 av*8 .*4 1a9 .*7",
+        ".*2 1a9 .*8 1a8 .*4 av*6 .*3 1a6 1ap*2 1a7 .*3 av*6 .*4 1a9 .*7",
+        ".*2 1a9 .*8 1a8 .*2 av*8 .*3 1a9 vc ve 1a8 .*3 av*8 .*2 1a9 .*7",
+        ".*2 1a9 .*4 1a2 1ap*3 1an .*2 av*6 .*3 1a6 1ap 1al vk vm 1ai 1ap 1a7 .*3 av*6 .*2 1a9 .*7",
+        ".*2 1ah 2l5*4 1ag .*6 av*6 .*3 1a9 vc vd vs vu vd ve 1a8 .*3 av*6 .*2 1a9 .*7",
+        ". 2jk 2lc 2ld*4 2le 2jq .*12 1a6 1ap 1al vk .*4 vm 1ai 1ap 1a7 .*9 1a9 .*7",
+        ". 2js 2jt 2ju*4 2jx 2jy .*12 1a9 vc vd vs vf .*2 vg vu vd ve 1a8 .*9 1a9 .*7",
+        ". 2k0 2kw 2kx*4 2ky 2k6 .*12 1a9 vk .*2 vm .*2 vk .*2 vm 1a8 .*9 1a9 .*7",
+        ". 2k8 2m0 2m1*4 2m2 2ke .*12 1am 1ap 1a5 vg vu vd*2 vs vf 1a2 1ap 1an .*9 1a9 .*7",
+        ".*2 1a1 .*4 1a0 .*15 1a9 vk .*4 vm 1a8 .*11 1a9 .*7",
+        "1gd . 1a9 .*4 1ai 1ap*3 1a7 .*11 1am 1ap 1a5 vg vf 1a2 1ap 1an .*11 1a9 .*7",
+        "1gl . 1a9 .*8 1a8 .*13 1a9 vk vm 1a8 .*13 1a9 .*7",
+        "1gt . 1a9 .*8 1a8 .*13 1am*3 1an .*13 1a9 .*7",
+        "1h1 . 1a9 .*8 1a8 .*30 1a9 .*7",
+        ".*2 1a9 .*8 1ai 1ap 1a7 .*26 1a6 1ap 1al .*7",
+        ".*2 1a9 .*10 1a8 .*26 1a9 .*9",
+        ".*2 1a9 .*10 1ai 1ap 1a7 .*22 1a6 1ap 1al .*9",
+        "tq tr 1a9 .*12 1a8 .*22 1a9 .*11",
+        ".*2 1a9 .*12 1ai 1ap 1a7 .*18 1a6 1ap 1al .*11",
+        ".*2 1a9 .*14 1a8 .*18 1a9 .*13",
+        "1ap*2 1al .*14 1ai 1ap*3 1a7 .*10 1a6 1ap*3 1al .*13",
+        ".*21 1a8 .*10 1a9 .*17",
+        ".*21 1ai 1ap*10 1al .*17",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50"
+      ]
+    },
+    {
+      "name": "Overlay",
+      "role": "overlay",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ". mc md .*47",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*2 2l4 .*4 2l6 .*18 12u 12v .*22",
+        ".*26 132 133 .*22",
+        ".*26 13a 13b .*22",
+        ".*26 13i 13j .*22",
+        ".*3 mc md mc md .*43",
+        ".*50",
+        ".*7 mc md mc md .*39",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*11 mc md .*28 mc md .*7",
+        ".*50",
+        ".*13 mc md .*24 mc md .*9",
+        ".*50",
+        ".*15 mc md .*20 mc md .*11",
+        ".*50",
+        "md mc md .*14 mc md mc md .*12 mc md mc md .*13",
+        ".*50",
+        ".*21 mc md mc md mc md mc md mc md mc md .*17",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50"
+      ]
+    },
+    {
+      "name": "Canopy",
+      "role": "canopy",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50"
+      ]
+    },
+    {
+      "name": "Sky",
+      "role": "sky",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50",
+        ".*50"
+      ]
+    }
+  ],
+  "bgm": {
+    "name": "Natural Park",
+    "volume": 80,
+    "pitch": 100
+  },
+  "bgs": null,
+  "autoplayBgm": true,
+  "autoplayBgs": false,
+  "connections": [],
+  "weather": {
+    "kind": "None",
+    "power": 0,
+    "chance": 100
+  },
+  "lighting": {
+    "enabled": false,
+    "ambient": 0,
+    "tintByHour": {},
+    "lights": []
+  },
+  "encounters": [
+    {
+      "type": "Land",
+      "step": 21,
+      "slots": [
+        {
+          "probability": 20,
+          "species": "CATERPIE",
+          "minLevel": 10,
+          "maxLevel": 10
+        },
+        {
+          "probability": 20,
+          "species": "SUNKERN",
+          "minLevel": 12,
+          "maxLevel": 12
+        },
+        {
+          "probability": 20,
+          "species": "WEEDLE",
+          "minLevel": 10,
+          "maxLevel": 10
+        },
+        {
+          "probability": 15,
+          "species": "PIDGEY",
+          "minLevel": 10,
+          "maxLevel": 14
+        },
+        {
+          "probability": 15,
+          "species": "PIDGEY",
+          "minLevel": 12,
+          "maxLevel": 14
+        },
+        {
+          "probability": 5,
+          "species": "KAKUNA",
+          "minLevel": 10,
+          "maxLevel": 10
+        },
+        {
+          "probability": 5,
+          "species": "METAPOD",
+          "minLevel": 10,
+          "maxLevel": 10
+        }
+      ]
+    },
+    {
+      "type": "LandNight",
+      "step": 21,
+      "slots": [
+        {
+          "probability": 30,
+          "species": "HOOTHOOT",
+          "minLevel": 10,
+          "maxLevel": 14
+        },
+        {
+          "probability": 30,
+          "species": "SPINARAK",
+          "minLevel": 10,
+          "maxLevel": 15
+        },
+        {
+          "probability": 20,
+          "species": "PINECO",
+          "minLevel": 9,
+          "maxLevel": 13
+        },
+        {
+          "probability": 10,
+          "species": "DROWZEE",
+          "minLevel": 9,
+          "maxLevel": 15
+        },
+        {
+          "probability": 10,
+          "species": "NATU",
+          "minLevel": 12,
+          "maxLevel": 14
+        }
+      ]
+    },
+    {
+      "type": "LandMorning",
+      "step": 21,
+      "slots": [
+        {
+          "probability": 25,
+          "species": "CATERPIE",
+          "minLevel": 10,
+          "maxLevel": 12
+        },
+        {
+          "probability": 25,
+          "species": "WEEDLE",
+          "minLevel": 10,
+          "maxLevel": 12
+        },
+        {
+          "probability": 20,
+          "species": "PIDGEY",
+          "minLevel": 10,
+          "maxLevel": 14
+        },
+        {
+          "probability": 15,
+          "species": "KAKUNA",
+          "minLevel": 10,
+          "maxLevel": 10
+        },
+        {
+          "probability": 15,
+          "species": "METAPOD",
+          "minLevel": 10,
+          "maxLevel": 10
+        }
+      ]
+    },
+    {
+      "type": "BugContest",
+      "step": 21,
+      "slots": [
+        {
+          "probability": 20,
+          "species": "CATERPIE",
+          "minLevel": 7,
+          "maxLevel": 18
+        },
+        {
+          "probability": 20,
+          "species": "WEEDLE",
+          "minLevel": 7,
+          "maxLevel": 18
+        },
+        {
+          "probability": 10,
+          "species": "KAKUNA",
+          "minLevel": 9,
+          "maxLevel": 18
+        },
+        {
+          "probability": 10,
+          "species": "METAPOD",
+          "minLevel": 9,
+          "maxLevel": 18
+        },
+        {
+          "probability": 10,
+          "species": "PARAS",
+          "minLevel": 10,
+          "maxLevel": 17
+        },
+        {
+          "probability": 10,
+          "species": "VENONAT",
+          "minLevel": 10,
+          "maxLevel": 16
+        },
+        {
+          "probability": 5,
+          "species": "BEEDRILL",
+          "minLevel": 12,
+          "maxLevel": 15
+        },
+        {
+          "probability": 5,
+          "species": "BUTTERFREE",
+          "minLevel": 12,
+          "maxLevel": 15
+        },
+        {
+          "probability": 5,
+          "species": "PINSIR",
+          "minLevel": 13,
+          "maxLevel": 14
+        },
+        {
+          "probability": 5,
+          "species": "SCYTHER",
+          "minLevel": 13,
+          "maxLevel": 14
+        }
+      ]
+    },
+    {
+      "type": "PokeRadar",
+      "step": 40,
+      "slots": [
+        {
+          "probability": 50,
+          "species": "BUTTERFREE",
+          "minLevel": 15,
+          "maxLevel": 18
+        },
+        {
+          "probability": 50,
+          "species": "BEEDRILL",
+          "minLevel": 15,
+          "maxLevel": 18
+        }
+      ]
+    }
+  ],
+  "encounterStep": 30,
+  "metadata": {
+    "extra": {
+      "Flags": "MossRock,BugContest"
+    },
+    "name": "Natural Park",
+    "mapPosition": [0,16,8],
+    "outdoor": true,
+    "showArea": true,
+    "locationSign": "Pt park",
+    "battleBack": "field"
+  },
+  "events": [
+    {
+      "id": 1,
+      "name": "North door left",
+      "x": 26,
+      "y": 6,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit","e":"UTF-8"}],["@pitch",100]]}]}],["@indent",0],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,30,5,8,8,1]}],["@indent",0],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"","e":"UTF-8"}],["@pattern",3],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]},{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"get_self.onEvent?","e":"UTF-8"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Followers.hide_followers","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit","e":"UTF-8"}],["@pitch",100]]}]}],["@code",44]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",1]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",true],["@repeat",false]]}]}],["@indent",1],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":40}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":44}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Followers.put_followers_on_player","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"setTempSwitchOn(\"A\")","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",22],["@switch1_valid",true],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",3],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"","e":"UTF-8"}],["@pattern",3],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"North door left","e":"UTF-8"}],["@y",6],["@x",26],["@id",1]]}
+    },
+    {
+      "id": 2,
+      "name": "North door right",
+      "x": 27,
+      "y": 6,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit","e":"UTF-8"}],["@pitch",100]]}]}],["@indent",0],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,30,5,8,8,1]}],["@indent",0],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"","e":"UTF-8"}],["@pattern",3],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]},{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"get_self.onEvent?","e":"UTF-8"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Followers.hide_followers","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit","e":"UTF-8"}],["@pitch",100]]}]}],["@code",44]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",1]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",true],["@repeat",false]]}]}],["@indent",1],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":40}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":44}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Followers.put_followers_on_player","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"setTempSwitchOn(\"A\")","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",22],["@switch1_valid",true],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",3],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"","e":"UTF-8"}],["@pattern",3],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"North door right","e":"UTF-8"}],["@y",6],["@x",27],["@id",2]]}
+    },
+    {
+      "id": 3,
+      "name": "Bug Contest door",
+      "x": 7,
+      "y": 24,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit","e":"UTF-8"}],["@pitch",100]]}]}],["@indent",0],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,29,11,5,0,1]}],["@indent",0],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Bug Contest door","e":"UTF-8"}],["@y",24],["@x",7],["@id",3]]}
+    }
+  ],
+  "notes": ""
+}

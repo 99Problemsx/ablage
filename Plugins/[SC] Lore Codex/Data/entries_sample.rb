@@ -88,8 +88,10 @@ CodexRegistry.add(:MALACHAR_PROFILE,
             "not Nidhoggr itself. Malachar believes that only a world consumed and " \
             "remade can be free of suffering, and he has spent decades laying the " \
             "ritual that would crack the Eternal Seal and let Nidhoggr through. " \
-            "Where his three Generals — Shade, Dread, and Ruin — were instruments, " \
-            "Malachar is the hand that wields them."
+            "Where his three public Generals — Shade, Dread, and Ruin — were " \
+            "instruments, Malachar is the hand that wields them. Vex, the hidden " \
+            "fourth General and a survivor of the original sealing party, answers " \
+            "to Malachar outside the public hierarchy."
 )
 
 # ─── Locations ───────────────────────────────────────────────────────────────
@@ -120,7 +122,8 @@ CodexRegistry.add(:THE_SHATTERED_HAND,
             "into the wrist of every initiate — a wound that mirrors the cracks " \
             "they intend to drive into the Seal itself. Led by Malachar and his " \
             "three Generals (Shade, Dread, Ruin), they believe the world must end " \
-            "so a new one can be born. Tragic at their roots, devastating at " \
+            "so a new one can be born. Three Generals are known publicly; Vex " \
+            "operates as Malachar's hidden fourth. Tragic at their roots, devastating at " \
             "their edge."
 )
 

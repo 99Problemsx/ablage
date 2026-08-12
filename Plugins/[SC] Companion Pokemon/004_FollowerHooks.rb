@@ -260,9 +260,10 @@ class Scene_Map
                              !$game_player.moving? &&
                              !pbMapInterpreterRunning?
 
-    # Toggle key
+    # Toggle key — ignored while an event/script has the follower locked off
     t_key = CompanionFollower::TOGGLE_KEY
-    if t_key && follower_input_allowed && Input.trigger?(t_key)
+    if t_key && follower_input_allowed && !CompanionFollower.script_disabled? &&
+       Input.trigger?(t_key)
       CompanionFollower.toggle
     end
 
@@ -455,7 +456,12 @@ MenuHandlers.add(:options_menu, :follower_toggle, {
   "parameters"  => [_INTL("On"), _INTL("Off")],
   "description" => _INTL("Let the first Pokemon in your party follow you in the overworld."),
   "category"    => OptionsCategories::PLUGINS,
-  "condition"   => proc { CompanionFollower.can_check? && CompanionFollower.get_event && CompanionFollower::SHOW_TOGGLE_IN_OPTIONS },
+  "condition"   => proc {
+    next false if !CompanionFollower.can_check? || !CompanionFollower.get_event
+    next false if !CompanionFollower::SHOW_TOGGLE_IN_OPTIONS
+    next false if CompanionFollower::LOCK_HIDES_OPTION && CompanionFollower.script_disabled?
+    next true
+  },
   "get_proc"    => proc { next ($PokemonGlobal&.follower_toggled ? 0 : 1) },
   "set_proc"    => proc { |value, _scene|
     next if !CompanionFollower.can_check?
@@ -488,7 +494,7 @@ EventHandlers.add(:on_game_load, :sc_follower_init, proc {
   pkmn = CompanionFollower.get_pokemon
   next if !pkmn
   # Default to toggled on for new games
-  $PokemonGlobal.follower_toggled = true if $PokemonGlobal.follower_toggled.nil?
+  $PokemonGlobal.follower_toggled = CompanionFollower::ENABLED_BY_DEFAULT if $PokemonGlobal.follower_toggled.nil?
   # Remove stale FP-EX follower data
   $PokemonGlobal.followers.reject! { |f|
     f.event_name == "FollowerPkmn" || f.name == "FollowerPkmn"
@@ -527,7 +533,7 @@ EventHandlers.add(:on_enter_map, :sc_follower_map_refresh, proc {
   # Auto-create follower data if it's missing (e.g. after receiving starter)
   pkmn = CompanionFollower.get_pokemon
   if !CompanionFollower.get && pkmn
-    $PokemonGlobal.follower_toggled = true if $PokemonGlobal.follower_toggled.nil?
+    $PokemonGlobal.follower_toggled = CompanionFollower::ENABLED_BY_DEFAULT if $PokemonGlobal.follower_toggled.nil?
     has_follower = $PokemonGlobal.followers.any? { |f| f.event_name == "FollowingPkmn" }
     if !has_follower
       behind_dir = 10 - $game_player.direction

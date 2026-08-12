@@ -28,3 +28,10 @@ Editor/
 
 # --- Story-Skripte ---
 Data/Scripts/Story/
+
+# Die kanonische Hauptstory und ihre Dokumentation müssen versioniert bleiben.
+!Data/Scripts/Story/
+!Data/Scripts/Story/Main_Story.rb
+!STORY_BIBLE.md
+!STORY_AUDIT.md
+!STORY_BIBLE_RECONSTRUCTED.md

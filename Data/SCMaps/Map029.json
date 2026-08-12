@@ -1,0 +1,197 @@
+{
+  "formatVersion": 1,
+  "id": 29,
+  "name": "Natural Park Entrance",
+  "parentId": 28,
+  "order": 28,
+  "width": 20,
+  "height": 15,
+  "tilesets": [
+    {
+      "tilesetId": 3
+    }
+  ],
+  "layers": [
+    {
+      "name": "Ground",
+      "role": "ground",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        "f2 1oo*2 1op 1oq 1oo*3 1ot 1ou 1oo*2 f2*8",
+        "f2 1ow*2 1ox 1oy 1ow*3 1p1 1p2 1ow*2 f2*8",
+        "f2 1pp*11 f2*8",
+        "f2 1pp 1pg 1pp*7 1pq 1pg f2*8",
+        "f2 1pp 1pg x7 x8*5 x9 1py 1pg f2*8",
+        "f2 1pp 1pg xf xg*5 xh 1pg*2 f2*8",
+        "f2 1pp 1pg xn xo*5 xp 1pg*2 f2*8",
+        "f2 1pp*10 1pi f2*8",
+        "f2 1pp 1px*9 1py f2*8",
+        "f2*20",
+        "f2*20",
+        "f2*20",
+        "f2*20",
+        "f2*20",
+        "f2*20"
+      ]
+    },
+    {
+      "name": "Decor",
+      "role": "decor",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ". 1d6 . 1js .*5 1js . 1d6 .*8",
+        ". 1de . 1k1 1jm*5 1k3 . 1de .*8",
+        ".*3 1k9 1ka*5 1kb .*10",
+        "xy xz .*9 xa xb .*7",
+        "y6 y7 .*9 xi xj .*7",
+        "ye yf 1jl 1jm*7 1jn xq xr .*7",
+        ". 1d6 1k9 1ka*7 1kb 1d6 .*8",
+        ". 1de .*9 1de .*8",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    },
+    {
+      "name": "Overlay",
+      "role": "overlay",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*2 1b1 .*17",
+        ".*2 1b9 .*17",
+        ".*2 1bh .*17",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    },
+    {
+      "name": "Canopy",
+      "role": "canopy",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    },
+    {
+      "name": "Sky",
+      "role": "sky",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    }
+  ],
+  "bgm": {
+    "name": "Natural Park",
+    "volume": 100,
+    "pitch": 100
+  },
+  "bgs": null,
+  "autoplayBgm": true,
+  "autoplayBgs": false,
+  "connections": [],
+  "weather": {
+    "kind": "None",
+    "power": 0,
+    "chance": 100
+  },
+  "lighting": {
+    "enabled": false,
+    "ambient": 0,
+    "tintByHour": {},
+    "lights": []
+  },
+  "encounters": [],
+  "encounterStep": 30,
+  "metadata": {
+    "extra": {
+      "Bicycle": "true",
+      "Flags": "BugContestReception"
+    },
+    "name": "Natural Park",
+    "mapPosition": [0,16,8]
+  },
+  "events": [
+    {
+      "id": 1,
+      "name": "Exit left",
+      "x": 0,
+      "y": 5,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit"}],["@pitch",100]]}]}],["@indent",0],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,23,32,21,0,1]}],["@indent",0],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Exit left"}],["@y",5],["@x",0],["@id",1]]}
+    },
+    {
+      "id": 2,
+      "name": "Exit right",
+      "x": 12,
+      "y": 5,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit"}],["@pitch",100]]}]}],["@indent",0],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,28,8,24,0,1]}],["@indent",0],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Exit right"}],["@y",5],["@x",12],["@id",2]]}
+    },
+    {
+      "id": 3,
+      "name": "PC",
+      "x": 2,
+      "y": 1,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbPokeCenterPC"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"PC"}],["@y",1],["@x",2],["@id",3]]}
+    },
+    {
+      "id": 4,
+      "name": "Man",
+      "x": 6,
+      "y": 2,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"pbIsWeekday(1, 2, 4, 6)"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Today is Tuesday (2), Thursday (4) or Saturday (6), "}]}],["@indent",1],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"and the Bug Contest is running today. The weekday's "}]}],["@indent",1],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"name is put in Game Variable 1."}]}],["@indent",1],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"pbBugContestState.pbContestHeld?"}]}],["@indent",1],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bWe hope you'll take part in a Bug-Catching Contest "}]}],["@indent",2],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"in the future!"}]}],["@indent",2],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",2],["@code",115]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",2],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bToday's \\v[1]."}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bThat means the Bug-Catching Contest is on today."}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bThe rules are simple."}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bUsing one of your Pokémon, catch a Bug-type "}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Pokémon to be judged."}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bWould you like to give it a try?"}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"arr","v":[{"$":"str","v":"Yes"},{"$":"str","v":"No"}]},2]}],["@indent",1],["@code",102]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"ref","i":52}]}],["@indent",1],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"pbBoxesFull?"}]}],["@indent",2],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bSorry, your PC boxes are full."}]}],["@indent",3],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",3],["@code",115]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",3],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",2],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bYou are only allowed to take 1 Pokémon into the "}]}],["@indent",2],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Contest."}]}],["@indent",2],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bPlease choose which Pokémon you want to enter "}]}],["@indent",2],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"with."}]}],["@indent",2],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Opens a screen for choosing an able Pokémon (i.e. a "}]}],["@indent",2],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"non-egg, non-fainted Pokémon)."}]}],["@indent",2],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"The party index of the chosen Pokémon is put in "}]}],["@indent",2],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Game Variable 1, and the chosen Pokémon's name is "}]}],["@indent",2],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"put in Game Variable 2."}]}],["@indent",2],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbChooseAblePokemon(1, 2)"}]}],["@indent",2],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1,1,0,0,4]}],["@indent",2],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Cancelled choosing a Pokémon."}]}],["@indent",3],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bOK. We hope you'll take part in the future."}]}],["@indent",3],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",3],["@code",115]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",3],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",2],["@code",411]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bYou will be entering with \\v[2], then."}]}],["@indent",3],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bWe'll hold your other Pokémon while you compete."}]}],["@indent",3],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\PN's Pokémon were left with the Contest "}]}],["@indent",3],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Helper.\\se[Pkmn exp full]\\wtnp[20]"}]}],["@indent",3],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bHere are the Sport Balls for the Contest."}]}],["@indent",3],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\PN received 20 Sport Balls.\\me[Item get]\\wtnp[40]"}]}],["@indent",3],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bThe person who gets the strongest bug Pokémon is "}]}],["@indent",3],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"the winner."}]}],["@indent",3],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bYou have 20 minutes."}]}],["@indent",3],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bIf you run out of Sport Balls, you're done."}]}],["@indent",3],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bYou can keep the last Pokémon you catch as your "}]}],["@indent",3],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"own."}]}],["@indent",3],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bGo out and catch the strongest Bug-type Pokémon "}]}],["@indent",3],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"you can find!"}]}],["@indent",3],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"- Set the map ID and X/Y coordinates of the spot the "}]}],["@indent",3],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"player is teleported to at the end for judging."}]}],["@indent",3],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"- Set the map IDs of reception maps which, if you "}]}],["@indent",3],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"enter them, will not immediately end the contest "}]}],["@indent",3],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"(those maps should prompt the player to go back into "}]}],["@indent",3],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"the contest's map or to end the contest)."}]}],["@indent",3],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"- Set the map ID of the map where the contest takes "}]}],["@indent",3],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"place (there can only be one). NPC participants have "}]}],["@indent",3],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"random wild Pokémon found on this map."}]}],["@indent",3],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"- Set the party index of the Pokémon chosen by the "}]}],["@indent",3],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"player to use in the contest."}]}],["@indent",3],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"- Start the contest with 20 Sport Balls."}]}],["@indent",3],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"contest = pbBugContestState"}]}],["@indent",3],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"contest.pbSetJudgingPoint(30, 5, 6)"}]}],["@indent",3],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"contest.pbSetReception("}]}],["@indent",3],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  \"BugContestReception\""}]}],["@indent",3],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":")"}]}],["@indent",3],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"contest.pbSetContestMap("}]}],["@indent",3],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  \"BugContest\""}]}],["@indent",3],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":")"}]}],["@indent",3],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"contest.pbSetPokemon(pbGet(1))"}]}],["@indent",3],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"contest.pbStart(20)"}]}],["@indent",3],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",37]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",1]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",3]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",3]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",3]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",3]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",3]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[0]}],["@code",42]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",38]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",3],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":224}]}],["@indent",3],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":226}]}],["@indent",3],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":228}]}],["@indent",3],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":230}]}],["@indent",3],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":232}]}],["@indent",3],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":234}]}],["@indent",3],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":236}]}],["@indent",3],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":238}]}],["@indent",3],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":240}]}],["@indent",3],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",3],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit"}],["@pitch",100]]}]}],["@indent",3],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",3],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",3],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[255]}],["@code",42]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",3],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":277}]}],["@indent",3],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,28,8,24,0,1]}],["@indent",3],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",3],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",3],["@code",115]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",3],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",2],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",2],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1,{"$":"ref","i":53}]}],["@indent",1],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bOK. We hope you'll take part in the future."}]}],["@indent",2],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",2],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",404]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",411]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Today is not a Contest day."}]}],["@indent",1],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bWe hold contests regularly in the Park. You should "}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"give it a shot."}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"NPC 01"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]},{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Event page called when the contest is still in "}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"progress."}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[20]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bYou still have some time left. Do you want to finish "}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"now?"}]}],["@indent",0],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"arr","v":[{"$":"str","v":"Yes"},{"$":"str","v":"No"}]},2]}],["@indent",0],["@code",102]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"ref","i":351}]}],["@indent",0],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bOK. Please wait in the pavillion for the "}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"announcement of the winners."}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbBugContestState.pbStartJudging"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1,{"$":"ref","i":352}]}],["@indent",0],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bOK. Please go back outside and finish up."}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",18]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[4]}],["@code",15]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[0]}],["@code",42]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",1],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":375}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":377}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":379}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit"}],["@pitch",100]]}]}],["@indent",1],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",1],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",1],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[255]}],["@code",42]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",1],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":404}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,28,8,24,0,1]}],["@indent",1],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",1],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",404]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",26],["@switch1_valid",true],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",3],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"NPC 01"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Man"}],["@y",2],["@x",6],["@id",4]]}
+    }
+  ],
+  "notes": ""
+}

@@ -1,0 +1,189 @@
+{
+  "formatVersion": 1,
+  "id": 74,
+  "name": "Route 6 Cycling Road gate",
+  "parentId": 44,
+  "order": 42,
+  "width": 20,
+  "height": 15,
+  "tilesets": [
+    {
+      "tilesetId": 3
+    }
+  ],
+  "layers": [
+    {
+      "name": "Ground",
+      "role": "ground",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        "f2 1oo*2 1op 1oq 1oo*3 1ot 1ou 1oo*2 f2*8",
+        "f2 1ow*2 1ox 1oy 1ow*3 1p1 1p2 1ow*2 f2*8",
+        "f2 1pp*11 f2*8",
+        "f2 1pp*10 1pq f2*8",
+        "f2 1pp 1px*9 1py f2*8",
+        "f2 1pp 1pg*10 f2*8",
+        "f2 1pp 1pg*10 f2*8",
+        "f2 1pp 1pg*10 f2*8",
+        "f2 1pp 1pg*10 f2*8",
+        "f2 1pp*10 1pq f2*8",
+        "f2 1pp 1px*9 1py f2*8",
+        "f2*20",
+        "f2*20",
+        "f2*20",
+        "f2*20"
+      ]
+    },
+    {
+      "name": "Decor",
+      "role": "decor",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ". 1d6 .*9 1d6 .*8",
+        ". 1de 1jl 1jm*7 1jn 1de .*8",
+        ".*2 1k9 1ka*7 1kb .*9",
+        ".*20",
+        "xy xz xs xt*7 xu xa xb .*7",
+        "y6 y7 y0 y1*7 y2 xi xj .*7",
+        "ye yf y8 y9*7 ya xq xr .*7",
+        ".*2 1jl 1jm*7 1jn .*9",
+        ". 1d6 1k9 1ka*7 1kb 1d6 .*8",
+        ". 1de .*9 1de .*8",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    },
+    {
+      "name": "Overlay",
+      "role": "overlay",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    },
+    {
+      "name": "Canopy",
+      "role": "canopy",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    },
+    {
+      "name": "Sky",
+      "role": "sky",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    }
+  ],
+  "bgm": {
+    "name": "Route 2",
+    "volume": 80,
+    "pitch": 100
+  },
+  "bgs": null,
+  "autoplayBgm": true,
+  "autoplayBgs": false,
+  "connections": [],
+  "weather": {
+    "kind": "None",
+    "power": 0,
+    "chance": 100
+  },
+  "lighting": {
+    "enabled": false,
+    "ambient": 0,
+    "tintByHour": {},
+    "lights": []
+  },
+  "encounters": [],
+  "encounterStep": 30,
+  "metadata": {
+    "extra": {
+      "Bicycle": "true"
+    },
+    "name": "Route 6",
+    "mapPosition": [0,12,10]
+  },
+  "events": [
+    {
+      "id": 1,
+      "name": "Counter(6)",
+      "x": 6,
+      "y": 2,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"This event can notice the player at a distance even ","e":"UTF-8"}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"though an impassable tile (the desk) is in the way. ","e":"UTF-8"}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"This is because this event's name contains the text ","e":"UTF-8"}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\"Counter(X)\", where \"X\" is the number of tiles in front ","e":"UTF-8"}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"of itself that it can see.","e":"UTF-8"}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"$bag.has?(:BICYCLE)","e":"UTF-8"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"setTempSwitchOn(\"A\")","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",411]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbExclaim(get_self)","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bSorry, you can't enter Cycle Road without a ","e":"UTF-8"}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Bicycle.","e":"UTF-8"}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",18]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",3]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",1],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":42}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":44}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",2],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"NPC 01","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]},{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bCycling Road is a great ride.","e":"UTF-8"}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",21],["@switch1_valid",true],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"NPC 01","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Counter(6)","e":"UTF-8"}],["@y",2],["@x",6],["@id",1]]}
+    },
+    {
+      "id": 3,
+      "name": "Exit north left",
+      "x": 0,
+      "y": 6,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit","e":"UTF-8"}],["@pitch",100]]}]}],["@indent",0],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,45,30,9,0,1]}],["@indent",0],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Exit north left","e":"UTF-8"}],["@y",6],["@x",0],["@id",3]]}
+    },
+    {
+      "id": 4,
+      "name": "Exit north right",
+      "x": 12,
+      "y": 6,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit","e":"UTF-8"}],["@pitch",100]]}]}],["@indent",0],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,44,37,17,0,1]}],["@indent",0],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Exit north right","e":"UTF-8"}],["@y",6],["@x",12],["@id",4]]}
+    }
+  ],
+  "notes": ""
+}

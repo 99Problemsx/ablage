@@ -207,6 +207,9 @@ module SCScripts
     MET_MAGNUS                   = 240
     FIRST_SEAL_DISCOVERED        = 241
     IRONPEAK_CULT_DEFEATED       = 242
+    ALDRIC_DIED                  = 243
+    RAGNAR_DIED                  = 244
+    ELENA_DIED                   = 245
     
     #---------------------------------------------------------------------------
     # Companion Switches (250+)

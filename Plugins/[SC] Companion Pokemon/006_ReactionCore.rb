@@ -1050,12 +1050,15 @@ def pbToggleCompanion
   CompanionFollower.toggle
 end
 
-def pbHideCompanion
-  CompanionFollower.toggle_off
+# Hide/show for cutscenes. These lock the follower away, so the player cannot
+# bring it back with the toggle key or the Options entry until pbShowCompanion
+# runs. See 009_ScriptCommands.rb for the full command list.
+def pbHideCompanion(anim = true)
+  CompanionFollower.set_script_disabled(true, anim)
 end
 
-def pbShowCompanion
-  CompanionFollower.toggle_on
+def pbShowCompanion(anim = true)
+  CompanionFollower.set_script_disabled(false, anim)
 end
 
 AdvancedAI.log("Companion Pokemon System loaded", "CompanionPkmn") if defined?(AdvancedAI)

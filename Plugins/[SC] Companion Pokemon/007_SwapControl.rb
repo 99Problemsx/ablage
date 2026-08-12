@@ -68,7 +68,7 @@ module CompanionFollower
     @@swapped = true
     # Idle animation for the Pokemon sprite on the player
     $game_player.instance_variable_set(:@step_anime, true) if ALWAYS_ANIMATE
-    pbSEPlay("GUI party switch") rescue pbSEPlay("Choose")
+    play_se(SE_SWAP_CONTROL)
   end
 
   def self.unswap_internal(silent = false)
@@ -89,7 +89,7 @@ module CompanionFollower
       change_sprite(pkmn) if pkmn
       event.instance_variable_set(:@step_anime, true) if ALWAYS_ANIMATE
     end
-    pbSEPlay("GUI party switch") rescue pbSEPlay("Choose") unless silent
+    play_se(SE_SWAP_CONTROL) unless silent
   end
 
   def self.apply_pokemon_sprite_to_player(pkmn)

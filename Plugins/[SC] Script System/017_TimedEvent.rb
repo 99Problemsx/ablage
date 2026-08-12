@@ -29,7 +29,7 @@ module GameData
     # Check and trigger all applicable events
     #---------------------------------------------------------------------------
     def self.check_all
-      now = Time.now
+      now = pbGetTimeNow
       @events.each do |id, event|
         next unless should_trigger?(event, now)
         trigger(id)
@@ -39,7 +39,7 @@ module GameData
     #---------------------------------------------------------------------------
     # Check if event should trigger
     #---------------------------------------------------------------------------
-    def self.should_trigger?(event, now = Time.now)
+    def self.should_trigger?(event, now = pbGetTimeNow)
       # Check time of day
       if event[:hours]
         return false unless event[:hours].include?(now.hour)
@@ -79,27 +79,27 @@ module GameData
     # Time helpers
     #---------------------------------------------------------------------------
     def self.is_morning?
-      (6..11).include?(Time.now.hour)
+      (6..11).include?(pbGetTimeNow.hour)
     end
     
     def self.is_afternoon?
-      (12..17).include?(Time.now.hour)
+      (12..17).include?(pbGetTimeNow.hour)
     end
     
     def self.is_evening?
-      (18..20).include?(Time.now.hour)
+      (18..20).include?(pbGetTimeNow.hour)
     end
     
     def self.is_night?
-      !(6..20).include?(Time.now.hour)
+      !(6..20).include?(pbGetTimeNow.hour)
     end
     
     def self.is_weekend?
-      [0, 6].include?(Time.now.wday)
+      [0, 6].include?(pbGetTimeNow.wday)
     end
     
     def self.is_weekday?
-      (1..5).include?(Time.now.wday)
+      (1..5).include?(pbGetTimeNow.wday)
     end
   end
   

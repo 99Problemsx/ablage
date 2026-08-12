@@ -2,6 +2,15 @@
 # Integration with Scene_Map
 # ===============================================================================
 
+module LightingTransitionMemory
+  @tone = nil
+  def self.store(tone); @tone = tone ? tone.dup : nil; end
+  def self.consume; tone = @tone; @tone = nil; return tone; end
+  def self.clear; @tone = nil; end
+end
+
+EventHandlers.add(:on_start_new_game, :clear_lighting_transition_memory, proc { LightingTransitionMemory.clear })
+
 class Scene_Map
   alias lighting_createSpritesets createSpritesets unless method_defined?(:lighting_createSpritesets)
   def createSpritesets
@@ -16,6 +25,7 @@ class Scene_Map
 
   alias lighting_transfer_player transfer_player unless method_defined?(:lighting_transfer_player)
   def transfer_player(cancelVehicles = true)
+    LightingTransitionMemory.store(@spritesetGlobal&.lighting&.current_tone)
     lighting_transfer_player(cancelVehicles)
     # Note: createSpritesets (called internally) already builds a fresh
     # Lighting object with full setup, so no extra refresh_all needed here.

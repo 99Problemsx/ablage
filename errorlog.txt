@@ -1,0 +1,42 @@
+
+=================
+
+[2026-08-09 14:44:31 +0200]
+[Pokémon Essentials version 21.99]
+
+Error in Plugin: [Dynamic Lighting System]
+Exception: LoadError
+Message: cannot load such file -- json
+
+Backtrace:
+[Dynamic Lighting System] [007] Prism_Lights.rb:73:in `require'
+[Dynamic Lighting System] [007] Prism_Lights.rb:73:in `load_all'
+[Dynamic Lighting System] [007] Prism_Lights.rb:168:in `<main>'
+005_PluginManager.rb:671:in `eval'
+005_PluginManager.rb:671:in `block (2 levels) in runPlugins'
+005_PluginManager.rb:661:in `each'
+005_PluginManager.rb:661:in `block in runPlugins'
+005_PluginManager.rb:652:in `each'
+005_PluginManager.rb:652:in `runPlugins'
+999_Main.rb:38:in `mainFunctionDebug'
+
+=================
+
+[2026-08-09 14:44:39 +0200]
+[Pokémon Essentials version 21.99]
+
+Error in Plugin: [Dynamic Lighting System]
+Exception: LoadError
+Message: cannot load such file -- json
+
+Backtrace:
+[Dynamic Lighting System] [007] Prism_Lights.rb:73:in `require'
+[Dynamic Lighting System] [007] Prism_Lights.rb:73:in `load_all'
+[Dynamic Lighting System] [007] Prism_Lights.rb:168:in `<main>'
+005_PluginManager.rb:671:in `eval'
+005_PluginManager.rb:671:in `block (2 levels) in runPlugins'
+005_PluginManager.rb:661:in `each'
+005_PluginManager.rb:661:in `block in runPlugins'
+005_PluginManager.rb:652:in `each'
+005_PluginManager.rb:652:in `runPlugins'
+999_Main.rb:38:in `mainFunctionDebug'

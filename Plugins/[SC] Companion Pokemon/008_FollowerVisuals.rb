@@ -129,7 +129,8 @@ class Sprite_Character < RPG::Sprite
   alias __sc_follower__init initialize unless method_defined?(:__sc_follower__init)
   def initialize(viewport, character = nil)
     __sc_follower__init(viewport, character)
-    if character.is_a?(Game_FollowingPkmn) && !@reflection
+    if character.is_a?(Game_FollowingPkmn) && !@reflection &&
+       CompanionFollower::SHOW_REFLECTION
       @reflection = Sprite_Reflection.new(self, viewport)
     end
     if character.is_a?(Game_FollowingPkmn)
@@ -163,6 +164,64 @@ class Sprite_Character < RPG::Sprite
     sc_apply_follower_status_tone
   end
 
+  #-----------------------------------------------------------------------------
+  # Distance offset — nudge the follower sprite a few pixels away from the
+  # player so big Pokemon don't visually overlap them. Applied in screen_x/y so
+  # the reflection and the emote bubble move along with the sprite.
+  #-----------------------------------------------------------------------------
+  alias __sc_follower__screen_x screen_x unless method_defined?(:__sc_follower__screen_x)
+  def screen_x
+    return __sc_follower__screen_x + sc_follower_offset[0]
+  end
+
+  alias __sc_follower__screen_y screen_y unless method_defined?(:__sc_follower__screen_y)
+  def screen_y
+    return __sc_follower__screen_y + sc_follower_offset[1]
+  end
+
+  # [x, y] pixel offset for the current frame. Cached per frame because both
+  # screen_x and screen_y ask for it.
+  def sc_follower_offset
+    return [0, 0] if !@character.is_a?(Game_FollowingPkmn)
+    return [0, 0] if !CompanionFollower::USE_DISTANCE_OFFSET
+    frame = Graphics.frame_count
+    return @sc_offset_value if @sc_offset_frame == frame && @sc_offset_value
+    @sc_offset_frame = frame
+    @sc_offset_value = sc_calc_follower_offset
+    return @sc_offset_value
+  end
+
+  def sc_calc_follower_offset
+    return [0, 0] if !$game_player || !CompanionFollower.active?
+    amount = sc_follower_offset_amount
+    return [0, 0] if amount == 0
+    dx = @character.real_x - $game_player.real_x
+    dy = @character.real_y - $game_player.real_y
+    return [0, 0] if dx == 0 && dy == 0
+    if dx.abs >= dy.abs
+      return [(amount * (dx <=> 0) * TilemapRenderer::ZOOM_X).round, 0]
+    end
+    return [0, (amount * (dy <=> 0) * TilemapRenderer::ZOOM_Y).round]
+  end
+
+  # Per-species offset, recalculated only when the follower graphic changes.
+  def sc_follower_offset_amount
+    key = @character.character_name
+    return @sc_offset_amount if @sc_offset_amount_key == key && @sc_offset_amount
+    @sc_offset_amount_key = key
+    pkmn = CompanionFollower.get_pokemon
+    amount = CompanionFollower::FOLLOWER_DISTANCE_OFFSET
+    if pkmn
+      CompanionFollower::FOLLOWER_DISTANCE_EXCEPTIONS.each do |species, value|
+        next if species != pkmn.species && species.to_s != "#{pkmn.species}_#{pkmn.form}"
+        amount = value
+        break
+      end
+    end
+    @sc_offset_amount = amount
+    return amount
+  end
+
   def sc_update_companion_emote
     return unless @sc_companion_emote
     serial, key = CompanionFollower.emote_request
@@ -183,9 +242,14 @@ class Sprite_Character < RPG::Sprite
     rgb = CompanionFollower::STATUS_TONE_RGB[pkmn.status]
     return sc_clear_follower_tone unless rgb
 
-    # Pulse strength oscillates between 0.55 and 0.85 over ~2 sec.
-    t = Graphics.frame_count / (Graphics.frame_rate.to_f * 0.32)
-    pulse = 0.7 + 0.15 * Math.sin(t)
+    # Pulse strength oscillates around the configured intensity over ~2 sec.
+    base = CompanionFollower::STATUS_TONE_INTENSITY / 0.55 * 0.7
+    if CompanionFollower::STATUS_TONE_PULSE
+      t = Graphics.frame_count / (Graphics.frame_rate.to_f * 0.32)
+      pulse = base + (0.15 * Math.sin(t))
+    else
+      pulse = base
+    end
 
     case pkmn.status
     when :SLEEP

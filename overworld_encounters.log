@@ -1,0 +1,102 @@
+[23:39:37.300] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[23:39:44.119] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=0 current=1
+[23:39:44.119] [SC/OWENC   ] INFO  RESET map=1 player=[0, 0]
+[23:39:46.633] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=1 current=3
+[23:39:46.633] [SC/OWENC   ] INFO  RESET map=3 player=[9, 7]
+[23:39:47.393] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 3 (Script System / $PokemonEncounters leer)
+[23:40:23.772] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=3 current=2
+[23:40:23.773] [SC/OWENC   ] INFO  RESET map=2 player=[3, 8]
+[23:40:24.534] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[23:40:34.544] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[23:40:44.738] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[23:40:54.746] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[14:10:52.265] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[14:11:00.057] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=2
+[14:11:00.057] [SC/OWENC   ] INFO  RESET map=2 player=[8, 8]
+[14:11:00.818] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[14:11:07.612] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=5
+[14:11:07.612] [SC/OWENC   ] INFO  RESET map=5 player=[18, 23]
+[14:11:08.374] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:11:08.390] [SC/OWENC   ] INFO  spawn Abra Lv.11 common @ 17,12
+[14:11:09.882] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:11:09.886] [SC/OWENC   ] INFO  spawn Abra Lv.13 common @ 24,19
+[14:11:11.389] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:11:11.402] [SC/OWENC   ] INFO  spawn Bellsprout Lv.15 common @ 17,8
+[14:11:19.130] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:11:19.135] [SC/OWENC   ] INFO  spawn Abra Lv.14 common @ 27,15
+[14:11:22.770] [SC/OWENC   ] INFO  battle vs Abra Lv.11
+[14:11:36.572] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:11:36.576] [SC/OWENC   ] INFO  spawn Bellsprout Lv.10 common @ 17,7
+[14:11:38.081] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:11:38.084] [SC/OWENC   ] INFO  spawn Bellsprout Lv.10 common @ 25,18
+[14:11:39.589] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:11:39.593] [SC/OWENC   ] INFO  spawn Bellsprout Lv.10 common @ 17,6
+[14:11:41.367] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:11:41.370] [SC/OWENC   ] INFO  spawn Bellsprout Lv.12 common @ 17,5
+[14:12:05.001] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:12:05.005] [SC/OWENC   ] INFO  spawn Abra Lv.12 common @ 26,7
+[14:12:16.290] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:12:16.293] [SC/OWENC   ] INFO  spawn Abra Lv.13 common @ 27,7
+[14:12:28.261] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:12:28.263] [SC/OWENC   ] INFO  spawn Bellsprout Lv.14 common @ 22,4
+[14:12:28.266] [SC/OWENC   ] INFO  spawn Bellsprout Lv.13 common @ 22,5
+[14:12:28.266] [SC/OWENC   ] INFO  Schwarm x2 BELLSPROUT
+[14:12:35.881] [SC/OWENC   ] INFO  despawn Bellsprout (lifetime)
+[14:12:37.443] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:12:37.447] [SC/OWENC   ] INFO  spawn Bellsprout Lv.12 common @ 25,19
+[14:12:43.703] [SC/OWENC   ] INFO  despawn Bellsprout (lifetime)
+[14:12:45.704] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:12:45.707] [SC/OWENC   ] INFO  spawn Bellsprout Lv.11 common @ 26,7
+[14:12:47.012] [SC/OWENC   ] INFO  despawn Bellsprout (fled)
+[14:12:48.106] [SC/OWENC   ] INFO  despawn Bellsprout (lifetime)
+[14:12:52.324] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:12:52.329] [SC/OWENC   ] INFO  spawn Abra Lv.15 common @ 26,15
+[14:13:02.080] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:13:02.085] [SC/OWENC   ] INFO  spawn Abra Lv.15 common @ 26,18
+[14:13:12.303] [SC/OWENC   ] INFO  SPAWN BLOCKIERT: Population voll (8)
+[14:13:12.809] [SC/OWENC   ] INFO  despawn Abra (lifetime)
+[14:13:13.688] [SC/OWENC   ] INFO  battle vs Bellsprout Lv.10
+[14:13:14.969] [SC/OWENC   ] INFO  battle vs Abra Lv.12
+[14:13:24.501] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:13:24.505] [SC/OWENC   ] INFO  spawn Abra Lv.10 common @ 16,6
+[14:13:24.508] [SC/OWENC   ] INFO  spawn Abra Lv.10 common @ 17,5
+[14:13:24.510] [SC/OWENC   ] INFO  spawn Abra Lv.14 common @ 16,4
+[14:13:24.513] [SC/OWENC   ] INFO  spawn Abra Lv.12 common @ 17,4
+[14:13:24.515] [SC/OWENC   ] INFO  spawn Abra Lv.11 common @ 16,7
+[14:13:24.515] [SC/OWENC   ] INFO  Schwarm x5 ABRA
+[14:13:27.877] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:13:27.895] [SC/OWENC   ] INFO  spawn ALPHA Bellsprout Lv.20 common @ 24,6
+[14:13:33.254] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=5 current=2
+[14:13:33.254] [SC/OWENC   ] INFO  RESET map=2 player=[8, 0]
+[14:13:34.015] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[14:13:34.775] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=5
+[14:13:34.775] [SC/OWENC   ] INFO  RESET map=5 player=[13, 23]
+[14:13:35.538] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:13:35.544] [SC/OWENC   ] INFO  spawn Abra Lv.13 common @ 16,11
+[14:13:43.384] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:13:43.391] [SC/OWENC   ] INFO  spawn Abra Lv.13 common @ 14,10
+[14:13:50.285] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:13:50.291] [SC/OWENC   ] INFO  spawn Bellsprout Lv.13 common @ 23,19
+[14:13:56.358] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:13:56.360] [SC/OWENC   ] INFO  spawn Abra Lv.12 common @ 22,19
+[14:14:03.684] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:14:03.687] [SC/OWENC   ] INFO  spawn Bellsprout Lv.13 common @ 18,9
+[14:14:07.458] [SC/OWENC   ] INFO  battle vs Abra Lv.13
+[14:14:13.199] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[14:14:13.205] [SC/OWENC   ] INFO  spawn Abra Lv.14 common @ 22,6
+[14:14:13.600] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=5 current=6
+[14:14:13.600] [SC/OWENC   ] INFO  RESET map=6 player=[11, 6]
+[14:14:14.360] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 6 (Script System / $PokemonEncounters leer)
+[15:03:45.113] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[15:05:10.344] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=6 current=6
+[15:05:10.344] [SC/OWENC   ] INFO  RESET map=6 player=[6, 6]
+[15:05:11.104] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 6 (Script System / $PokemonEncounters leer)
+[15:05:12.616] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=6 current=5
+[15:05:12.616] [SC/OWENC   ] INFO  RESET map=5 player=[6, 7]
+[15:05:13.376] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[15:05:13.384] [SC/OWENC   ] INFO  spawn Bellsprout Lv.13 common @ 18,10
+[15:05:14.882] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[15:05:14.883] [SC/OWENC   ] INFO  SPAWN BLOCKIERT: kein Tile fuer :land im Radius 5..12
+[15:05:18.923] [SC/OWENC   ] INFO  battle vs Bellsprout Lv.13
+[16:39:01.924] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[13:55:22.804] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert

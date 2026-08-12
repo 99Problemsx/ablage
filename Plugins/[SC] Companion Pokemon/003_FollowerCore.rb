@@ -15,6 +15,8 @@ class PokemonGlobalMetadata
   attr_accessor :current_surfing
   attr_accessor :current_diving
   attr_accessor :call_refresh
+  # Set by pbDisableFollower / pbEnableFollower — survives saving.
+  attr_accessor :follower_script_disabled
 
   def follower_toggled=(value)
     @follower_toggled = value
@@ -125,6 +127,33 @@ module CompanionFollower
   # Is the follower currently visible and active?
   def self.active?
     return @@can_refresh && !@@hidden
+  end
+
+  # Has an event/script locked the follower off? (pbDisableFollower or
+  # DISABLE_SWITCH). While locked, the follower never appears and the player
+  # cannot bring it back with the toggle key or the Options entry.
+  def self.script_disabled?
+    return true if $PokemonGlobal&.follower_script_disabled
+    sw = DISABLE_SWITCH
+    return true if sw && $game_switches && $game_switches[sw]
+    return false
+  end
+
+  # Is the follower temporarily hidden by HIDE_SWITCH?
+  def self.switch_hidden?
+    sw = HIDE_SWITCH
+    return !!(sw && $game_switches && $game_switches[sw])
+  end
+
+  # May the follower appear at all right now?
+  def self.allowed?
+    return !script_disabled? && !switch_hidden?
+  end
+
+  # Play one of the configured SE names, ignoring nil/missing files.
+  def self.play_se(name)
+    return if nil_or_empty?(name)
+    pbSEPlay(name) rescue nil
   end
 
   # Is the follower temporarily hidden (e.g. during map transfer)?
@@ -238,6 +267,9 @@ module CompanionFollower
 
   def self.toggle(forced = nil, anim = nil)
     return if !can_check? || !get_pokemon
+    # A script lock or DISABLE_SWITCH beats the player's toggle. Turning the
+    # follower OFF is still allowed so the stored preference can be changed.
+    return if script_disabled? && forced != false
     anim_1 = active?
     if !forced.nil?
       $PokemonGlobal.follower_toggled = !!forced
@@ -246,6 +278,7 @@ module CompanionFollower
     end
     anim_2 = active?
     anim = (anim_1 != anim_2) if anim.nil?
+    play_se($PokemonGlobal.follower_toggled ? SE_TOGGLE_ON : SE_TOGGLE_OFF)
     refresh(anim)
     $game_temp.followers.move_followers
     $game_temp.followers.turn_followers
@@ -280,7 +313,7 @@ module CompanionFollower
       end
       break if party[0]&.able?
     end
-    pbSEPlay("GUI party switch") rescue pbSEPlay("Choose")
+    play_se(SE_CYCLE_PARTY)
     @@last_pokemon_signature = nil
     refresh(true)
   end
@@ -329,7 +362,7 @@ module CompanionFollower
 
   # Internal: evaluate appearance rules
   def self.refresh_internal
-    if !can_check? || !self.get || !$PokemonGlobal.follower_toggled
+    if !can_check? || !self.get || !$PokemonGlobal.follower_toggled || !allowed?
       @@can_refresh = false
       return
     end
@@ -715,7 +748,7 @@ end
 # Appearance rules — when should the follower be visible?
 #===============================================================================
 EventHandlers.add(:following_pkmn_appear, :vehicles, proc { |_pkmn|
-  next false if $PokemonGlobal.bicycle
+  next false if $PokemonGlobal.bicycle && CompanionFollower::HIDE_ON_BICYCLE
   next false if $PokemonGlobal.respond_to?(:mount) && $PokemonGlobal.mount
 })
 
@@ -727,13 +760,15 @@ EventHandlers.add(:following_pkmn_appear, :map_flag_keep, proc { |_pkmn|
 $__sc_follower_height_cache = {}
 EventHandlers.add(:following_pkmn_appear, :height, proc { |pkmn|
   metadata = $game_map.metadata
-  if metadata && metadata.outdoor_map != true && $PokemonEncounters
+  if CompanionFollower::HIDE_LARGE_POKEMON_INDOORS &&
+     metadata && metadata.outdoor_map != true && $PokemonEncounters
     cache_key = [$game_map.map_id, pkmn.species, pkmn.form]
     if $__sc_follower_height_cache[:key] == cache_key
       next false if $__sc_follower_height_cache[:result] == :hide
     else
       height = GameData::Species.get_species_form(pkmn.species, pkmn.form).height
-      should_hide = (height / 10.0) > 3.0 && !$PokemonEncounters.encounter_possible_here?
+      should_hide = (height / 10.0) > CompanionFollower::LARGE_POKEMON_HEIGHT &&
+                    !$PokemonEncounters.encounter_possible_here?
       $__sc_follower_height_cache = { key: cache_key, result: should_hide ? :hide : :show }
       next false if should_hide
     end

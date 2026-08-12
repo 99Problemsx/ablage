@@ -189,6 +189,14 @@ class Lighting
     setup_effects
     setup_overlay
     update
+    if defined?(LightingTransitionMemory)
+      previous_tone = LightingTransitionMemory.consume
+      start_tone_transition(previous_tone, @tone) if previous_tone
+    end
+  end
+
+  def current_tone
+    return @tone ? @tone.dup : nil
   end
 
   def setup_map(map = nil)
@@ -275,8 +283,6 @@ class Lighting
       f[:keyframes]       = true if e.keyframes && !e.keyframes.empty?
       f[:sound]           = true if e.sound
       f[:power_grid]      = true if e.power_grid
-      f[:flicker_shadows] = true if e.flicker
-      f[:shadows]         = true if e.shadows
       f[:warm]            = true if e.pulse == :candle
     end
     @feature_flags = f
@@ -452,7 +458,8 @@ class Lighting
       when 'orange'  then hash[:color] = Color.new(255, 160, 40)
       when 'warm'    then hash[:color] = Color.new(255, 200, 120)
       when 'day'     then hash[:day] = true
-      when 'shadows' then hash[:shadows] = true
+      # Projected shadows were removed. The legacy tag is intentionally ignored.
+      when 'shadows' then nil
       when 'shimmer' then hash[:heat_shimmer] = true
       when 'flicker' then hash[:flicker] = true
       when 'reflect' then hash[:water_reflect] = true
@@ -567,6 +574,20 @@ class Lighting
     elsif outside?
       @tone = PBDayNight.getTone
     end
+    # Optional Forge hour keys are RGB multipliers. Convert them to RGSS tone
+    # offsets and blend them on top of Essentials' normal day/night tone.
+    if defined?(SCEditorLights)
+      tint = SCEditorLights.tint(@map.map_id, @_cached_hour)
+      if tint
+        @tone ||= Tone.new(0, 0, 0, 0)
+        @tone = Tone.new(
+          (@tone.red + tint[0] - 255).clamp(-255, 255),
+          (@tone.green + tint[1] - 255).clamp(-255, 255),
+          (@tone.blue + tint[2] - 255).clamp(-255, 255),
+          @tone.gray
+        )
+      end
+    end
     # Apply per-map region tint modifier
     if @tone
       rt = region_tint_modifier
@@ -618,10 +639,13 @@ class Lighting
     clock = defined?(LightingConfig) ? LightingConfig.animation_time :
             (Graphics.frame_count / [Graphics.frame_rate.to_f, 1.0].max)
     offset = effect.sync_group ? 0.0 : ((effect.id.hash.abs % 1000) / 1000.0 * 2.0)
-    t_base = clock + offset
+    t_base = clock * (effect.animation_speed || 1.0) + offset
     strength = defined?(LightingConfig) ? LightingConfig.pulse_strength.to_f : 1.0
 
     return saw_wave(t_base, 2.0) * @anim_mult * strength if !effect.pulse
+    if effect.pulse.is_a?(Numeric)
+      return Math.sin(t_base * Math::PI * 2.0) * effect.pulse.to_f * strength
+    end
     case effect.pulse
     when :candle
       t = t_base.to_f
@@ -4171,6 +4195,9 @@ class Lighting
     # unlit areas get without touching the light glows. 1.0 = unchanged,
     # 0.0 = no darkening at all (lit + unlit equally bright).
     dk = (defined?(LightingConfig) ? LightingConfig.darkness : 1.0).to_f.clamp(0.0, 1.0)
+    # Forge's per-map ambient slider scales only this map; it never mutates the
+    # player's global accessibility setting.
+    dk *= SCEditorLights.ambient(@map.map_id) if defined?(SCEditorLights)
     if @tone
       add_red   = [@tone.red, 0].max
       add_green = [@tone.green, 0].max
@@ -4522,7 +4549,6 @@ class Lighting
     refresh_attached
     update_event_light_pages
     update_light_sprites
-    update_tile_shadows
     update_water_reflections
     update_ember_particles
     update_fireflies if fx
@@ -4544,11 +4570,8 @@ class Lighting
     update_puddle_reflections if fx
     update_pollen_drift if fx
     update_firefly_lanterns if fx
-    update_sunset_silhouettes if fx
-    update_cloud_shadows if fx
     update_drip_ripples if fx
     update_ore_glow if fx
-    update_stalactite_shadows if fx
     update_echo_glow if fx
     update_jellyfish if fx
     update_dive_vignette if fx
@@ -4563,12 +4586,10 @@ class Lighting
     update_warm_zones
     update_perf_auto_scaler
     # Batch 11 features
-    update_flicker_shadows
     update_fog_scatter
     update_rain_streaks
     update_lava_pulse if fx
     update_frost_rings
-    update_light_shadows
     update_spotlight_follow
     update_chain_propagation
     update_light_counter
@@ -4781,16 +4802,20 @@ class Lighting
     return true if effect.id == :player_flashlight
     return false if effect.hide
     return false if effect.switch && !$game_switches[effect.switch]
+    if effect.active_weather && !effect.active_weather.empty?
+      current_weather = @_cached_weather.to_s
+      return false if !effect.active_weather.any? { |weather| weather.to_s == current_weather }
+    end
     return false if effect.fade_opacity <= 0 && effect.fade_target <= 0
     # Hour-range scheduling: on_hour/off_hour (24h)
     if effect.on_hour && effect.off_hour
       hour = @_cached_hour
       if effect.on_hour < effect.off_hour
         # Same-day range (e.g. 8–18)
-        return false if hour < effect.on_hour || hour >= effect.off_hour
+        return false if hour < effect.on_hour || hour > effect.off_hour
       else
         # Overnight range (e.g. 18–6)
-        return false if hour >= effect.off_hour && hour < effect.on_hour
+        return false if hour > effect.off_hour && hour < effect.on_hour
       end
     end
     # Outdoor day/night visibility via the smooth dawn/dusk ramp (also drives
@@ -4846,10 +4871,14 @@ class Lighting
   end
 
   def dispose
-    @bitmap.dispose
-    @sprite_add.dispose
-    @sprite_sub.dispose
-    @light_sprites.each_value { |sprite| sprite.dispose }
+    # Map recreation paths can converge here (Scene_Map and Spriteset_Global).
+    # Disposing RGSS bitmaps twice raises, so make teardown safely idempotent.
+    return if @disposed
+    @disposed = true
+    @bitmap.dispose if @bitmap && !@bitmap.disposed?
+    @sprite_add.dispose if @sprite_add && !@sprite_add.disposed?
+    @sprite_sub.dispose if @sprite_sub && !@sprite_sub.disposed?
+    @light_sprites.each_value { |sprite| sprite.dispose if !sprite.disposed? }
     @light_sprites.clear
     @gradient_cache.each_value { |bmp| bmp.dispose if bmp && !bmp.disposed? }
     @gradient_cache.clear
@@ -4944,13 +4973,12 @@ class Lighting
     @light_counter_sprite.dispose if @light_counter_sprite && !@light_counter_sprite.disposed?
     dispose_debug_preview
 
-    @overlay.bitmap.dispose if @overlay.bitmap
-    @overlay.dispose
-    @effects_bitmaps.each_value {|bitmap| bitmap.dispose if bitmap}
+    @overlay.bitmap.dispose if @overlay && @overlay.bitmap && !@overlay.bitmap.disposed?
+    @overlay.dispose if @overlay && !@overlay.disposed?
+    @effects_bitmaps.each_value { |bitmap| bitmap.dispose if bitmap && !bitmap.disposed? }
     @map_settings = nil
     @effects = nil
     @effects_bitmaps = nil
-    @disposed = true
   end
 
   # ============================================================================

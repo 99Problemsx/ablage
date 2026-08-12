@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+      The CSP is applied as a response header from the main process rather than a
+      meta tag, because it has to differ between dev and production: Vite's dev
+      server needs inline scripts and a websocket for HMR, which the production
+      policy must not allow. See `applyContentSecurityPolicy` in electron/main.ts.
+    -->
+    <title>Shattered Crowns — Forge</title>
+    <script type="module" crossorigin src="./assets/index-BQ4GtbhO.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-tGPOtoQz.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

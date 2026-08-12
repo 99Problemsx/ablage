@@ -1,0 +1,397 @@
+/*
+ * Forge design system.
+ *
+ * The look: near-black substrate, cyan/violet signal colours, thin luminous
+ * borders, and glass panels that let the map canvas glow through. Everything is
+ * driven by the tokens below — panels never hardcode a colour, so retheming is a
+ * single-block edit.
+ *
+ * Constraint that shaped this: a map editor is a tool you stare at for hours, so
+ * saturated colour is reserved for *state* (selection, dirty, error, active
+ * layer). Chrome stays desaturated and recedes.
+ */
+
+:root {
+  /* Substrate — darkest to lightest. */
+  --sc-void: #05070d;
+  --sc-abyss: #080b14;
+  --sc-panel: #0c111d;
+  --sc-panel-2: #111828;
+  --sc-raised: #16203a;
+  --sc-hover: #1c2842;
+
+  /* Hairlines. Low alpha so they read as light, not as paint. */
+  --sc-edge: rgba(120, 160, 220, 0.13);
+  --sc-edge-strong: rgba(130, 190, 255, 0.28);
+
+  /* Signal colours. */
+  --sc-cyan: #38e8ff;
+  --sc-cyan-dim: #1d9fb8;
+  --sc-violet: #9d6bff;
+  --sc-magenta: #ff4fd8;
+  --sc-lime: #7dff9b;
+  --sc-amber: #ffb838;
+  --sc-red: #ff4d64;
+
+  /* Text. */
+  --sc-text: #e6edf9;
+  --sc-text-dim: #97a5bf;
+  --sc-text-faint: #5d6b86;
+
+  /* Glow presets, used sparingly. */
+  --sc-glow-cyan: 0 0 0 1px rgba(56, 232, 255, 0.5), 0 0 18px -2px rgba(56, 232, 255, 0.45);
+  --sc-glow-violet: 0 0 0 1px rgba(157, 107, 255, 0.5), 0 0 18px -2px rgba(157, 107, 255, 0.4);
+
+  --sc-radius: 10px;
+  --sc-radius-sm: 6px;
+
+  --sc-font: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --sc-mono: 'JetBrains Mono', 'Cascadia Code', 'SF Mono', ui-monospace, monospace;
+
+  /* Layout metrics shared between the shell and the resizers. */
+  --sc-titlebar-h: 38px;
+  --sc-statusbar-h: 26px;
+  --sc-rail-w: 52px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background: var(--sc-void);
+  color: var(--sc-text);
+  font-family: var(--sc-font);
+  font-size: 13px;
+  line-height: 1.45;
+  /* The editor is a desktop app; text selection outside inputs is just noise. */
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+textarea,
+[contenteditable] {
+  user-select: text;
+}
+
+/* ------------------------------------------------------------------ scrollbars */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--sc-raised);
+  border: 2px solid transparent;
+  background-clip: content-box;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sc-hover);
+  background-clip: content-box;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* ---------------------------------------------------------------- ambient glow */
+
+/*
+ * A very slow drifting aurora behind the whole shell. It is the one purely
+ * decorative element in the app; kept behind everything at low opacity so it
+ * reads as depth rather than as motion competing with the map.
+ */
+.sc-ambient {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(58% 44% at 12% 0%, rgba(56, 232, 255, 0.09), transparent 70%),
+    radial-gradient(48% 40% at 92% 8%, rgba(157, 107, 255, 0.09), transparent 70%),
+    radial-gradient(60% 50% at 50% 108%, rgba(255, 79, 216, 0.055), transparent 72%);
+  animation: sc-drift 38s ease-in-out infinite alternate;
+}
+
+@keyframes sc-drift {
+  from {
+    transform: translate3d(-1.5%, -1%, 0) scale(1.04);
+  }
+  to {
+    transform: translate3d(1.5%, 1%, 0) scale(1.09);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sc-ambient {
+    animation: none;
+  }
+}
+
+/* --------------------------------------------------------------------- panels */
+
+.sc-panel {
+  background: linear-gradient(180deg, rgba(18, 26, 44, 0.82), rgba(9, 13, 22, 0.9));
+  border: 1px solid var(--sc-edge);
+  border-radius: var(--sc-radius);
+  backdrop-filter: blur(14px) saturate(1.25);
+  position: relative;
+  overflow: hidden;
+}
+
+/* A single bright hairline along the top edge reads as a light source. */
+.sc-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(56, 232, 255, 0.4) 22%,
+    rgba(157, 107, 255, 0.32) 68%,
+    transparent
+  );
+  pointer-events: none;
+}
+
+.sc-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  padding: 0 10px;
+  border-bottom: 1px solid var(--sc-edge);
+  font-size: 10.5px;
+  font-weight: 650;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--sc-text-dim);
+  flex: 0 0 auto;
+}
+
+.sc-panel-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+}
+
+/* -------------------------------------------------------------------- controls */
+
+.sc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 26px;
+  padding: 0 10px;
+  border: 1px solid var(--sc-edge);
+  border-radius: var(--sc-radius-sm);
+  background: var(--sc-panel-2);
+  color: var(--sc-text-dim);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  transition:
+    background 120ms ease,
+    color 120ms ease,
+    border-color 120ms ease,
+    box-shadow 120ms ease;
+  white-space: nowrap;
+}
+
+.sc-btn:hover:not(:disabled) {
+  background: var(--sc-hover);
+  color: var(--sc-text);
+  border-color: var(--sc-edge-strong);
+}
+
+.sc-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.sc-btn[data-active='true'] {
+  color: var(--sc-void);
+  background: linear-gradient(180deg, var(--sc-cyan), var(--sc-cyan-dim));
+  border-color: transparent;
+  box-shadow: var(--sc-glow-cyan);
+  font-weight: 600;
+}
+
+.sc-btn[data-tone='danger']:hover:not(:disabled) {
+  color: var(--sc-red);
+  border-color: rgba(255, 77, 100, 0.45);
+}
+
+.sc-icon-btn {
+  width: 26px;
+  padding: 0;
+}
+
+.sc-input,
+.sc-select {
+  height: 26px;
+  width: 100%;
+  padding: 0 8px;
+  border: 1px solid var(--sc-edge);
+  border-radius: var(--sc-radius-sm);
+  background: var(--sc-abyss);
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 12px;
+}
+
+.sc-input:focus,
+.sc-select:focus {
+  outline: none;
+  border-color: var(--sc-cyan-dim);
+  box-shadow: 0 0 0 3px rgba(56, 232, 255, 0.12);
+}
+
+.sc-input[type='number'] {
+  font-family: var(--sc-mono);
+}
+
+/* Range inputs get a thin luminous track. */
+.sc-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 18px;
+  background: transparent;
+  cursor: pointer;
+}
+.sc-range::-webkit-slider-runnable-track {
+  height: 3px;
+  border-radius: 2px;
+  background: var(--sc-raised);
+}
+.sc-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 11px;
+  height: 11px;
+  margin-top: -4px;
+  border-radius: 50%;
+  background: var(--sc-cyan);
+  box-shadow: 0 0 10px rgba(56, 232, 255, 0.7);
+}
+
+.sc-checkbox {
+  accent-color: var(--sc-cyan);
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------- lists */
+
+.sc-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 9px;
+  border-radius: var(--sc-radius-sm);
+  cursor: pointer;
+  color: var(--sc-text-dim);
+  transition:
+    background 100ms ease,
+    color 100ms ease;
+}
+
+.sc-row:hover {
+  background: rgba(120, 170, 255, 0.07);
+  color: var(--sc-text);
+}
+
+.sc-row[data-selected='true'] {
+  background: linear-gradient(90deg, rgba(56, 232, 255, 0.17), rgba(56, 232, 255, 0.03));
+  color: var(--sc-text);
+  /* Left bar rather than a full border, so rows stay visually flush. */
+  box-shadow: inset 2px 0 0 var(--sc-cyan);
+}
+
+/* A neighbour of the selected map, echoing the canvas overlay colour. */
+.sc-row[data-linked='true'] {
+  color: var(--sc-violet);
+}
+
+.sc-badge {
+  padding: 1px 6px;
+  border-radius: 20px;
+  font-family: var(--sc-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.04em;
+  background: var(--sc-raised);
+  color: var(--sc-text-faint);
+}
+
+.sc-badge[data-tone='cyan'] {
+  background: rgba(56, 232, 255, 0.14);
+  color: var(--sc-cyan);
+}
+.sc-badge[data-tone='violet'] {
+  background: rgba(157, 107, 255, 0.16);
+  color: var(--sc-violet);
+}
+.sc-badge[data-tone='amber'] {
+  background: rgba(255, 184, 56, 0.15);
+  color: var(--sc-amber);
+}
+.sc-badge[data-tone='red'] {
+  background: rgba(255, 77, 100, 0.15);
+  color: var(--sc-red);
+}
+
+/* ------------------------------------------------------------------ utilities */
+
+.sc-mono {
+  font-family: var(--sc-mono);
+}
+
+.sc-dim {
+  color: var(--sc-text-dim);
+}
+
+.sc-faint {
+  color: var(--sc-text-faint);
+}
+
+.sc-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sc-spread {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.sc-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.sc-empty {
+  padding: 22px 14px;
+  text-align: center;
+  color: var(--sc-text-faint);
+  font-size: 12px;
+  line-height: 1.7;
+}

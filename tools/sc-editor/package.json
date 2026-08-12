@@ -1,0 +1,66 @@
+{
+  "name": "sc-editor",
+  "private": true,
+  "version": "0.1.0",
+  "productName": "Shattered Crowns Editor",
+  "desktopName": "ShatteredCrownsEditor",
+  "description": "Shattered Crowns — game editor. An RPG Maker XP replacement for Pokémon Essentials.",
+  "type": "module",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "build:appimage": "npm run build && electron-builder --linux AppImage",
+    "start": "electron .",
+    "verify:marshal": "tsx scripts/verify-marshal.ts",
+    "verify:commands": "tsx scripts/verify-command-blocks.ts",
+    "verify:event-editing": "tsx scripts/verify-event-editing.ts",
+    "verify:lighting": "tsx scripts/verify-lighting.ts",
+    "verify:autotiles": "tsx scripts/verify-autotiles.ts",
+    "import:maps": "tsx scripts/import-maps.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "electron": "^38.0.0",
+    "electron-builder": "^26.0.12",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0",
+    "vite-plugin-electron": "^0.29.0"
+  },
+  "dependencies": {
+    "monaco-editor": "^0.53.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zustand": "^5.0.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "electron@38.8.6": true,
+    "electron-builder": true
+  },
+  "build": {
+    "appId": "com.shatteredcrowns.editor",
+    "productName": "Shattered Crowns Editor",
+    "executableName": "shattered-crowns-editor",
+    "artifactName": "Shattered-Crowns-Editor-${version}-${arch}.${ext}",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**",
+      "dist-electron/**",
+      "package.json"
+    ],
+    "linux": {
+      "target": "AppImage",
+      "category": "Development",
+      "icon": "build/icon.png",
+      "syncDesktopName": true
+    }
+  }
+}

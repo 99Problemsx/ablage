@@ -1,0 +1,475 @@
+{
+  "formatVersion": 1,
+  "id": 47,
+  "name": "Route 7",
+  "parentId": 0,
+  "order": 43,
+  "width": 70,
+  "height": 43,
+  "tilesets": [
+    {
+      "tilesetId": 1
+    }
+  ],
+  "layers": [
+    {
+      "name": "Ground",
+      "role": "ground",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        "m8 m9 m8 m9 m8 m9 m8 m9 mg mj ap wp wr wp*25 wr wp*5 wr wp*16 wt wp*2 xc wk*2 wl wp*2",
+        "mg mh mg mh mg mh mg mh m8 mb ap wp wr wp*25 wz x0 x5 wp*3 wz x0*6 x5 wp*3 x4 x0*2 x5 wp*2 wt wp*5 wt wp*2",
+        "m8 m9 m8 m9 m8 m9 m8 m9 mg mj ap wp wr wp*5 x4 x0*13 x5 wp*7 wr wp*10 wz x5 wp*2 wt wp*2 wr wp*2 xc wk*3 wl wp wt wp*2",
+        "mg mh mg mh mg mh mg mj mq mr ap wp wr wp*2 x4 x0*2 x1 wp x4 ap*10 x5 wz x0*4 x5 wp*2 wr wp*11 wr wp*2 wt wp*2 wr wp*6 wt wp wt wp*2",
+        "m8 m9 m8 m9 m8 m9 m8 mb aq ap*2 wp wz x0*2 x1 wp*4 ap mi mj mi mj mi mj mi mj mi mj ap wp*5 wz x5 wp wr wp*2 wj wk*5 wl wp*2 wr wp*2 wt wj wk xd wp*6 wt wp wt wp*2",
+        "mg mh mg mh mg mh mg mj ap wp*6 x4 ap*5 mq mr mq mr mq mr mq mr mq mr ap*4 x5 wp*2 wr wp wr wp*2 wr wp*5 wt wp*2 wr wp*2 wt wr wp*6 x4 x0 x1 wp wt wp*2",
+        "m8 m9 m8 m9 m8 m9 m8 mb ap wp*2 x4 ap*5 aq as ar ap ar aq as ap*2 aq ap as ap*2 at aq ap ar ap*2 x5 wr wp wr wp*2 wr wp*5 wt wp*2 wr wp*2 xc xd wp*6 wt wp*3 wt wp*2",
+        "mg mh mg mh mg mh mg mj ap wp*2 ap mi mj at as aq at ap aq at as ar ap ar aq as ar aq ap as aq*2 as aq ap aq ap wr wp wr wp*2 wz x0*5 x1 wp*2 wr wp*5 x4 x0*3 x5 wt wp*3 wt wp*2",
+        "m8 m9 m8 m9 m8 m9 m8 mb ap wp*2 ap ma mb aq ap ar at as at ap ar ap aq ar at ap*2 aq ar aq*2 ap at ap ar ap*2 wr wp wz x5 wp*10 wr wp*4 x4 x1 wp*3 wz x1 wp x4 x0 x1 wp*2",
+        "mg mh mg mh mg mh mg mj ap wp*2 ap mi mj ar aq as aq as ap aq mi mj ap as aq as aq ar ap mi mj aq as ar aq as ap wr wp*2 wr wp*10 wz x5 x4 x0*2 x1 wp*7 wt wp*4",
+        "mq mr mq mr mq mr mq mr ap*4 mq mr ap as*2 ap ar as ar ma mb ar*2 ap*3 at as ma mb ap at aq as ap*2 wr wp*2 wr wp x4 x0*5 x5 wp*3 wz x1 wp*10 wt wp*3 x4",
+        "i2 i3 aq at as ap aq as ap aq at ap at*2 ar aq at ap as aq at mi mj aq as ap as ar aq ap mi mj ap ar ap as at ap wz x0 x5 wz x0 x1 x4 dm*3 x5 wz x5 wp*5 x4 x0*4 x5 wp*3 wt wp*3 wt",
+        "ia ib at ap aq at aq ar aq at as aq ap as ap at as aq at aq ap ma mb ap ar ap at aq as aq ma mb aq at as aq as ap wp*2 wr wp*3 dm*5 wp wr wp*3 x4 x0 x1 wp*4 wr wp*3 xc wk*2 wl wt",
+        "ii ij aq as ap*2 as ap as ap aq ap aq ar aq ar ap at aq ap as mi mj ap at aq at ap ar ap mi mj ar aq*2 ar ap*3 x5 wz x0*3 dm*5 x5 wr wp*3 wt wp*2 x4 dm*2 x5 wr wp*6 wt*2",
+        "aq at as ap aq as ap at ap*2 at aq ap as ap at aq ap as ar aq ma mb aq ap ar as aq as aq ma mb ap as ap aq ar aq ap*3 dl dm*6 x5 wr*2 wp*3 wt x4 dm*5 wr wp*6 wt*2",
+        "mi mj mi mj mi mj aq wr wp*2 wt as mi mj aq as ap at aq ap at mi mj ar as at as at aq ap mi mj ar aq ar at ap ar aq ap at dt du di dm*5 wr wz x5 wp*2 wt dm*5 xd wz x5 wp*2 x4 x0*2 x1 wt",
+        "m8 m9 m8 m9 m8 mb ap wr wp*2 wt ap ma mb ap ar as aq ar as aq mq mr ap aq at ap ar aq as ma mb as ap at aq as ap*2 ar as aq ap dt du*2 di dm*2 wr wp wz x5 wp wt dm*5 wp*2 wz x0*2 x1 wp x4 x0 x1",
+        "mg mh mg mh mg mj ap wr wp*2 wt ap mi mj at aq ap at ap ar ap as aq as at ap aq as ap ar mi mj ap aq ar ap aq at ap aq ap ar*2 aq as ap dt du*2 wr wp*2 wr wp wt dm*5 x5 wp*6 wt wp*2",
+        "m8 m9 m8 m9 m8 mb ap wz x0*2 x1 ap ma mb aq ap at aq as at aq ar ap at aq ar as ap at aq mq mr au*9 mi mj ap at aq ar aq ap wz x0 x5 wz x0 x1 dm*6 x0*2 x5 wp*3 wt wp*2",
+        "mg mh mg mh mg mj ap wp*2 x4 ap*2 mi mj ar as aq as ap aq at mi mj mi mj ap*6 au*10 ma mb ar ap as ap ar ap*2 x5 wz x5 wp*2 wt x4 dm*3 x5 wp*2 wz x0*3 x1 wp*2",
+        "m8 m9 m8 mb mq mr ap wp*2 ap mi mj mq mr ap aq at ap at as ap ma mb mq mr ap wp*5 ap au*9 mi mj at aq ar*2 aq ar at ap wp wz x0*2 x1 dm*5 wp*3 x4 x5 wp*4",
+        "mg mh mg mj ap*3 wp*2 ap ma mb au*2 aq at ap ar ap mi mj mi mj as ap*2 wp*5 ap au*7 mi mj ma mb ap*2 aq ar ap aq*2 ap*4 dl dm*7 dn ap*7",
+        "m8 m9 m8 mb ap wj wk wl wp ap mi mj au ap as aq at as aq mq mr ma mb ap wj wk*3 wl x4 ap*2 au*3 mi mj mi mj ma m9 mg mj mi mj ap at as ar ap ar ap ar at dt di dm*5 dg dv ap aq ar aq as ap at",
+        "mg mh mg mj ap wr wp xc wl ap mq mr au as ap as ap aq au*3 mi mj ap wr wp*3 wt ap au*5 ma m9 m8 m9 mg mh m8 m9 m8 mb as aq ap*2 at aq ar ap aq as dt du*5 dv aq as ar ap ar ap ar aq",
+        "m8 m9 m8 mb ap wr wp*2 wt ap au*3 ap at ap aq as au*3 ma mb ap wr wp*3 wt ap au*5 mi mh mg mh m8 m9 mg mh mg mj ap ar aq ar ap as aq ap ar aq ap ar aq ar ap at ap ar aq ap at ar aq as ar",
+        "mg mh mg mj ap wr wp*2 wt ap au*4 aq as at au*4 mi mj ap wr wp*3 xc wl ap au*4 ma m9 m8 m9 mg mh mo mr mq mr aq ap*8 at ar ap as ap ar aq ar ap at ap*2 ar ap aq ap",
+        "m8 m9 m8 mb ap wr wp x4 x1 ap au*11 mq mr ap wr wp*4 xc wl ap*3 au mi mh mg mh mo mr aq ap*4 wp*7 ap*5 at ap as aq ap*3 aq*2 ap*3",
+        "mg mh mg mj ap wz x0 x1 wp ap au*12 ap*2 wr wp*5 xc wk*2 wl ap mq mr mq mr ap*3 wp*2 wj wk*9 wl wp*3 ap*4 wp*8",
+        "m8 m9 m8 mb ap wp*5 ap au*10 ap wp*2 wr wp*8 wt ap*6 wj wk*3 xd wp*9 xc wk*6 wl wp*5 wj wk*2",
+        "mg mh mg mj ap wp*6 ap*11 wj wk xd wp wj wk*4 wl wp xc wl wp*5 wr wp*20 xc wk*5 xd wp*2",
+        "m8 m9 m8 mb ap*2 x5 wp*8 wj wk*4 wl wp wr wp*3 wr wp*4 wt wp*2 xc wk*5 xd wp*5 x4 x0*4 x5 wp*5 wj wk*5 wl wp*6",
+        "mg mh mg mj mi mj ap wp*8 wr wp*4 wt wp wz x5 wp*2 wz x0*2 x5 wp xc wl wp*12 x4 x1 wp*4 wz x5 wp*3 wj xd wp*5 xc wk*2 wl wp*3",
+        "m8 m9 m8 m9 m8 mb ap*6 x5 wp*2 wr wp*4 xc wk wl wr wp*5 wz x0*2 x1 wp*11 x4 x1 wp*6 wr wp*3 wr wp*9 wt wp*3",
+        "mg mh mg mh mg mj mi mj mi mj mi mj ap wp*2 wr wp*6 wt wr wp*11 wj wk*4 wl wp*3 wt wp*7 wr wp*2 wj xd wp wj wk*4 wl wp*2 wt wp*3",
+        "m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb ap*2 x5 wz x5 wp*5 wt wr wp*11 wr wp*4 wt wp*3 wt wp*7 wz x5 wp wr wp*2 wr wp*4 xc wl wp wt wp*3",
+        "mg mh mg mh mg mh mg mh mg mh mg mj mi mj ap wp wz x0*5 x1 wz x0*4 x5 wp*6 wr wp*4 xc wl wp*2 wt wp*8 wr wp wr wp wj xd wp*5 wt wp wt wp*3",
+        "m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb ap*12 x5 wp wz x5 wp*4 wj xd wp*5 wt wp*2 xc wl wp*7 wr wp wr wp wr wp*3 x4 x0*2 x1 wp xc wk wl wp",
+        "mg mh mg mh mg mh mg mh mg mh mg mh mg mj mi mj mi mj mi mj mi mj mi mj mi mj ap wp*2 wr wp*4 wr wp*6 wt wp*3 xc wk*7 xd wp wr wp wz x0*3 x1 wp*6 wt wp",
+        "m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb ap wp*2 wr wp*4 wz x0*2 x5 wp*3 xc wk*2 wl wp*10 wr wj wk*2 wl wp*8 wt wp",
+        "mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mj ap wp*2 wz x0*2 x5 wp*4 wr wp*6 wt wp*9 wj xd wr wp*2 xc wk*3 wl wp*4 xc wk",
+        "m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb ap*2 x5 wp*3 wr wp*4 wr wp*6 wt wp*6 wj wk*2 xd wp wr wp*6 wt wp*6",
+        "mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mj mi mj ap wp*3 wr wp*4 wz x5 wp*5 xc wl wp*5 wr wp*3 wj xd wp*6 wt wp*6",
+        "m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 mb ap wp*3 wr wp*5 wr wp*6 wt wp*2 wj wk*2 xd wp*3 wr wp*7 xc wk wl wp*4"
+      ]
+    },
+    {
+      "name": "Decor",
+      "role": "decor",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*10 wo .*59",
+        ".*10 wo .*59",
+        ".*10 wo .*59",
+        ".*10 wo .*10 wx*10 .*39",
+        ".*8 wg wh xd .*9 wq .*10 wo .*4 xb .*33",
+        ".*8 wo .*7 wx*4 wy .*10 ww wx*3 .*35",
+        ".*8 wo .*3 wx*3 wy .*19 ww wx .*33",
+        ".*8 wo .*2 wq .*25 wo .*32",
+        ".*8 wo .*2 wq .*25 wo .*32",
+        ".*8 wo .*2 wq .*25 wo .*2 xb .*29",
+        ".*8 ww wx*2 wy .*4 x6 xo*3 xa .*2 x6 xo*5 xa .*2 x6 xo xa .*2 wo .*32",
+        ".*37 wo .*7 wx wu wx .*22",
+        ".*37 wo .*6 wq xb .*2 wo .*11 xb .*9",
+        ".*37 ww wx .*5 wy .*3 ww .*9 wx*2 .*10",
+        ".*7 wg wh*2 wi .*28 ww wx*6 w9 wx .*8 wx wy . xb wo .*9",
+        ".*6 wg .*4 wi .*2 x6 xo xa .*2 x6 xa .*2 x6 xo*5 xa .*17 y7 wo .*6 wq .*3 wg .*10",
+        ".*6 wo .*4 wq .*36 wo .*6 x3 .*3 wo .*10",
+        ".*6 wo .*4 wq .*36 wo .*6 wq .*3 ww .*8 xb .",
+        ".*6 wo .*4 wq .*31 x6 xo xa .*2 wo .*6 wq xb .*3 ww .*9",
+        ".*6 wo . xb . wx wy .*13 wg wh*5 wi .*16 ww wx .*7 wx w9 wx .*10",
+        ".*6 wo .*2 wq .*15 wo .*5 wq .*18 wo .*5 wq .*3 wo .*9",
+        ".*4 wg wh xd .*2 wq .*13 wg wh xd .*5 wq .*18 ww wx*5 wy .*3 ww wx*3 wy ww wx*4",
+        ".*4 wo .*4 wq .*13 wo .*6 wx wy .*38",
+        ".*4 wo .*4 wq .*5 10v .*7 wo .*5 wq .*40",
+        ".*4 wo .*4 wq .*13 wo .*5 xc wi .*39",
+        ".*4 wo .*4 wq .*13 wo .*6 xc wi .*13 wg wh*7 wi .*16",
+        ".*4 wo .*4 wq .*13 wo .*7 xc wh*2 wi .*6 wg wh*3 xd .*7 xc wh*4 wi .*2 wg wh*3 wi wg wh*3",
+        ".*4 wo .*4 xc wi .*10 wg wh xd .*10 wq .*4 wg wh xd .*16 xc wh*2 xd .*3 xc xd .*3",
+        ".*4 wo .*5 xc wi .*9 wo .*12 xc wh*4 xd .*30",
+        ".*4 wo .*6 xc wh*9 xd .*17 xb .*30",
+        ".*4 ww wx .*15 xb .*48",
+        ".*6 wo .*14 xb .*25 xb .*22",
+        ".*6 ww wx*5 .*16 xb .*41",
+        ".*12 wo .*57",
+        ".*12 ww wx .*56",
+        ".*14 wo .*55",
+        ".*14 ww wx*11 .*26 xb .*17",
+        ".*26 wo .*43",
+        ".*26 wo .*43",
+        ".*26 wo .*43",
+        ".*26 ww wx .*42",
+        ".*28 wo .*41",
+        ".*28 wo .*41"
+      ]
+    },
+    {
+      "name": "Overlay",
+      "role": "overlay",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*21 mc md mc md mc md mc md mc md .*39",
+        ".*70",
+        ".*70",
+        ".*12 mc md .*56",
+        ".*70",
+        ".*21 mc md .*7 mc md .*38",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        "mc md mc md mc md .*6 mc md .*56",
+        ".*70",
+        ".*70",
+        ".*41 mc md .*27",
+        ".*21 mc md mc md .*45",
+        ".*10 mc md .*58",
+        ".*19 mc md .*18 mc md .*29",
+        ".*35 mc md mc md .*4 mc md .*25",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*4 mc md .*64",
+        ".*70",
+        ".*6 mc md mc md mc md .*58",
+        ".*70",
+        ".*12 mc md .*56",
+        ".*70",
+        ".*14 mc md mc md mc md mc md mc md mc md .*44",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*26 mc md .*42",
+        ".*70",
+        ".*70"
+      ]
+    },
+    {
+      "name": "Canopy",
+      "role": "canopy",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70"
+      ]
+    },
+    {
+      "name": "Sky",
+      "role": "sky",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70",
+        ".*70"
+      ]
+    }
+  ],
+  "bgm": {
+    "name": "Route 3",
+    "volume": 80,
+    "pitch": 100
+  },
+  "bgs": null,
+  "autoplayBgm": true,
+  "autoplayBgs": false,
+  "connections": [
+    {
+      "edge": "W",
+      "offset": 0,
+      "toMapId": 7,
+      "toEdge": "E",
+      "toOffset": 0
+    },
+    {
+      "edge": "E",
+      "offset": 8,
+      "toMapId": 52,
+      "toEdge": "W",
+      "toOffset": 0
+    },
+    {
+      "edge": "W",
+      "offset": 0,
+      "toMapId": 21,
+      "toEdge": "E",
+      "toOffset": 77
+    }
+  ],
+  "weather": {
+    "kind": "Rain",
+    "power": 5,
+    "chance": 100
+  },
+  "lighting": {
+    "enabled": false,
+    "ambient": 0,
+    "tintByHour": {},
+    "lights": []
+  },
+  "encounters": [
+    {
+      "type": "Land",
+      "step": 21,
+      "slots": [
+        {
+          "probability": 50,
+          "species": "SHELLOS",
+          "minLevel": 12,
+          "maxLevel": 15
+        },
+        {
+          "probability": 30,
+          "species": "BIDOOF",
+          "minLevel": 14,
+          "maxLevel": 17
+        },
+        {
+          "probability": 10,
+          "species": "MURKROW",
+          "minLevel": 12,
+          "maxLevel": 14
+        },
+        {
+          "probability": 10,
+          "species": "WURMPLE",
+          "minLevel": 9,
+          "maxLevel": 12
+        }
+      ]
+    },
+    {
+      "type": "RockSmash",
+      "step": 50,
+      "slots": [
+        {
+          "probability": 90,
+          "species": "NOSEPASS",
+          "minLevel": 13,
+          "maxLevel": 14
+        },
+        {
+          "probability": 10,
+          "species": "GEODUDE",
+          "minLevel": 12,
+          "maxLevel": 15
+        }
+      ]
+    }
+  ],
+  "encounterStep": 30,
+  "metadata": {
+    "extra": {
+      "Environment": "Rock"
+    },
+    "name": "Route 7",
+    "mapPosition": [0,15,10],
+    "mapSize": {
+      "width": 2,
+      "layout": "11"
+    },
+    "outdoor": true,
+    "showArea": true,
+    "locationSign": "Pt route",
+    "weatherPBS": [
+      "Rain",
+      0
+    ],
+    "battleBack": "rocky"
+  },
+  "events": [
+    {
+      "id": 1,
+      "name": "Cave entrance",
+      "x": 46,
+      "y": 11,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit","e":"UTF-8"}],["@pitch",100]]}]}],["@indent",0],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":255,"g":255,"b":255,"a":255},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbCaveEntrance","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,49,12,14,0,1]}],["@indent",0],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"","e":"UTF-8"}],["@pattern",3],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]},{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"get_self.onEvent?","e":"UTF-8"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Followers.hide_followers","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit","e":"UTF-8"}],["@pitch",100]]}]}],["@code",44]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",1]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",true],["@repeat",false]]}]}],["@indent",1],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":43}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":47}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Followers.put_followers_on_player","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"setTempSwitchOn(\"A\")","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",22],["@switch1_valid",true],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",3],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"","e":"UTF-8"}],["@pattern",3],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Cave entrance","e":"UTF-8"}],["@y",11],["@x",46],["@id",1]]}
+    },
+    {
+      "id": 2,
+      "name": "Cave entrance",
+      "x": 55,
+      "y": 16,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit","e":"UTF-8"}],["@pitch",100]]}]}],["@indent",0],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":255,"g":255,"b":255,"a":255},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbCaveEntrance","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,49,19,20,0,1]}],["@indent",0],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"","e":"UTF-8"}],["@pattern",3],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]},{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"get_self.onEvent?","e":"UTF-8"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Followers.hide_followers","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[-1,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit","e":"UTF-8"}],["@pitch",100]]}]}],["@code",44]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",3]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",true],["@repeat",false]]}]}],["@indent",1],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":43}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":47}]}],["@indent",1],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",210]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Followers.put_followers_on_player","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"setTempSwitchOn(\"A\")","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",22],["@switch1_valid",true],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",3],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"","e":"UTF-8"}],["@pattern",3],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Cave entrance","e":"UTF-8"}],["@y",16],["@x",55],["@id",2]]}
+    },
+    {
+      "id": 3,
+      "name": "SmashRock",
+      "x": 43,
+      "y": 15,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",16]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",0],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":8}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"pbRockSmash","e":"UTF-8"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbSmashThisEvent","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbRockSmashRandomEncounter","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"Object rock","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"SmashRock","e":"UTF-8"}],["@y",15],["@x",43],["@id",3]]}
+    },
+    {
+      "id": 4,
+      "name": "Duel NPC",
+      "x": 34,
+      "y": 14,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bHaiiiii-yaaaaaah!","e":"UTF-8"}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",247]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1]}],["@indent",0],["@code",242]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[20]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",100],["@name",{"$":"str","v":"Battle trainer"}],["@pitch",100]]}]}],["@indent",0],["@code",241]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Duel Minigame, based on the version written by Alael, ","e":"UTF-8"}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"modified for Pokémon Essentials.","e":"UTF-8"}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"The duel takes place in a row of 4 tiles, with the ","e":"UTF-8"}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"player and opponent using the centre two. Make ","e":"UTF-8"}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"sure you have enough space.","e":"UTF-8"}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"3 texts for defense, 3 for precise attacks, 3 for fierce ","e":"UTF-8"}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"attacks, 3 for special attacks.","e":"UTF-8"}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"$speeches = []","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"$speeches.push(","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  _I(\"I shall block all your ","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"attacks!\"),","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  _I(\"Nothing can pierce my armor!\"),","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  _I(\"Behold my dodging skills!\")","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":")","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"$speeches.push(","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":" _I(\"I'll show you my fighting ","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"skills!\"),","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  _I(\"Awe at the perfection of my ","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"skills!\"),","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  _I(\"I'll deliver a perfect blow!\")","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":")","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"$speeches.push(","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  _I(\"Feel my power!\"),","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  _I(\"AAAAHHHH!\"),","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  _I(\"I'll attack with all my ","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"strength!\")","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":")","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"$speeches.push(","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  _I(\"Face my secret technique!\"),","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  _I(\"This is my secret technique!\"),","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  _I(\"Evil Blade Strike!\")","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":")","e":"UTF-8"}]}],["@indent",0],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"The opponent in a duel needs a trainer type to be ","e":"UTF-8"}]}],["@indent",0],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"defined in trainertypes.txt. This is used to display a ","e":"UTF-8"}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"name and graphic for the opponent.","e":"UTF-8"}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"The opponent does NOT need to appear in ","e":"UTF-8"}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"trainers.txt, though.","e":"UTF-8"}]}],["@indent",0],["@code",408]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"pbDuel(:BLACKBELT, \"Dan\", get_self, $speeches)","e":"UTF-8"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1]}],["@indent",1],["@code",242]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[20]}],["@indent",1],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",248]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bYou won, good job.","e":"UTF-8"}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",411]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1]}],["@indent",1],["@code",242]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[20]}],["@indent",1],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",248]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"You lost, too bad.","e":"UTF-8"}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"trainer_BLACKBELT"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Duel NPC","e":"UTF-8"}],["@y",14],["@x",34],["@id",4]]}
+    },
+    {
+      "id": 5,
+      "name": "Shadow trainer - basic",
+      "x": 14,
+      "y": 18,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbTrainerIntro(:TEAMROCKET_M)","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bI'm a basic trainer with a Shadow Pokémon.","e":"UTF-8"}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"TrainerBattle.start(:TEAMROCKET_M, \"Grunt\", 1)","e":"UTF-8"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"A","e":"UTF-8"},0]}],["@indent",1],["@code",123]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbTrainerEnd","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"trainer_TEAMROCKET_M","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",6],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]},{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bDid you manage to snag my Shadow Pokémon?  ","e":"UTF-8"}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Because you can't battle me again for another ","e":"UTF-8"}]}],["@indent",0],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"chance.","e":"UTF-8"}]}],["@indent",0],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",true],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"trainer_TEAMROCKET_M","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",6],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Shadow trainer - basic","e":"UTF-8"}],["@y",18],["@x",14],["@id",5]]}
+    },
+    {
+      "id": 6,
+      "name": "Shadow trainer - repeat",
+      "x": 14,
+      "y": 19,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbTrainerIntro(:TEAMROCKET_F)","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\rYou can battle me repeatedly, and have unlimited ","e":"UTF-8"}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"attempts to snag my Shadow Pokémon.","e":"UTF-8"}]}],["@indent",0],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"TrainerBattle.start(:TEAMROCKET_F, \"Grunt\", 1)","e":"UTF-8"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"$player.pokedex.owned_shadow_pokemon?(:ELECTABUZZ)","e":"UTF-8"}]}],["@indent",1],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"A","e":"UTF-8"},0]}],["@indent",2],["@code",123]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",2],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbTrainerEnd","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"trainer_TEAMROCKET_F","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",6],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]},{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\rYou've managed to snag my Shadow Electabuzz.  ","e":"UTF-8"}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"I'm not going to do anything now.","e":"UTF-8"}]}],["@indent",0],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",true],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"trainer_TEAMROCKET_F","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",6],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Shadow trainer - repeat","e":"UTF-8"}],["@y",19],["@x",14],["@id",6]]}
+    },
+    {
+      "id": 7,
+      "name": "Purify expert",
+      "x": 18,
+      "y": 22,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bI can tell you some things about Shadow Pokémon","e":"UTF-8"}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"in Essentials. However, the wiki has far more ","e":"UTF-8"}]}],["@indent",0],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"information about them.","e":"UTF-8"}]}],["@indent",0],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Choices","e":"UTF-8"}]}],["@indent",0],["@code",118]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bWhat do you want to know?","e":"UTF-8"}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"arr","v":[{"$":"str","v":"Information","e":"UTF-8"},{"$":"str","v":"Shadow Pokémon battles","e":"UTF-8"},{"$":"str","v":"Purifying Pokémon","e":"UTF-8"},{"$":"str","v":"Exit","e":"UTF-8"}]},4]}],["@indent",0],["@code",102]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"ref","i":22}]}],["@indent",0],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bShadow Pokémon are a special kind of Pokémon ","e":"UTF-8"}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"which appeared in Pokémon Colosseum and ","e":"UTF-8"}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Pokémon XD.","e":"UTF-8"}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bThey can be included in Essentials as well. See ","e":"UTF-8"}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"the wiki for information on how to do this.","e":"UTF-8"}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Choices","e":"UTF-8"}]}],["@indent",1],["@code",119]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1,{"$":"ref","i":23}]}],["@indent",0],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bTrainers with Shadow Pokémon are set up in ","e":"UTF-8"}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"exactly the same way as any other trainer.","e":"UTF-8"}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bAny Poké Ball can be defined as a Snag Ball in "}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"items.txt. If $player.has_snag_machine is TRUE, "}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"all types of Poké Ball will be Snag Balls automatically."}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"$player.has_snag_machine = true","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\b$player.pokedex.owned_shadow is an array "}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"that keeps track of which Shadow Pokémon species "}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"have been caught."}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Choices","e":"UTF-8"}]}],["@indent",1],["@code",119]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[2,{"$":"ref","i":24}]}],["@indent",0],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bYou can purify Shadow Pokémon in two ways.","e":"UTF-8"}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bThe first is by bringing them to the Relic Stone here, ","e":"UTF-8"}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"as in Pokémon Colosseum.","e":"UTF-8"}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bThe second is by placing them in the Purify ","e":"UTF-8"}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Chamber, as in Pokémon XD. You can access it from ","e":"UTF-8"}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"the PC in Poké Centers.","e":"UTF-8"}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"!$player.seen_purify_chamber","e":"UTF-8"}]}],["@indent",1],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bI've now given you access to the Purify Chamber.","e":"UTF-8"}]}],["@indent",2],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"$player.seen_purify_chamber = true","e":"UTF-8"}]}],["@indent",2],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",2],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bThe effects of Heart Gauge-lowering items are "}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"already in Essentials. You just need to add the items "}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"themselves via a PBS file."}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Choices","e":"UTF-8"}]}],["@indent",1],["@code",119]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[3,{"$":"ref","i":25}]}],["@indent",0],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",404]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"trainer_SCIENTIST"}],["@pattern",0],["@tile_id",0],["@direction",4],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Purify expert"}],["@y",22],["@x",18],["@id",7]]}
+    },
+    {
+      "id": 8,
+      "name": "Relic Stone",
+      "x": 15,
+      "y": 23,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbRelicStone","e":"UTF-8"}]}],["@indent",0],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Relic Stone"}],["@y",23],["@x",15],["@id",8]]}
+    },
+    {
+      "id": 10,
+      "name": "Time-dependent NPC",
+      "x": 18,
+      "y": 6,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bHello. This is what I say if you talk to me during the ","e":"UTF-8"}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"day.","e":"UTF-8"}]}],["@indent",0],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"NPC 01","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]},{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bHalt! Who goes there?","e":"UTF-8"}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bThis is what I say if you talk to me at night.","e":"UTF-8"}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bI could battle you... but I won't.","e":"UTF-8"}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",15],["@switch1_valid",true],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"NPC 01","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Time-dependent NPC","e":"UTF-8"}],["@y",6],["@x",18],["@id",10]]}
+    },
+    {
+      "id": 11,
+      "name": "SmashRock",
+      "x": 44,
+      "y": 15,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",16]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",0],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":8}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"pbRockSmash","e":"UTF-8"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbSmashThisEvent","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbRockSmashRandomEncounter","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"Object rock","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"SmashRock","e":"UTF-8"}],["@y",15],["@x",44],["@id",11]]}
+    },
+    {
+      "id": 12,
+      "name": "SmashRock",
+      "x": 58,
+      "y": 14,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",16]]},{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",false]]}]}],["@indent",0],["@code",209]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"ref","i":8}]}],["@indent",0],["@code",509]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[12,{"$":"str","v":"pbRockSmash","e":"UTF-8"}]}],["@indent",0],["@code",111]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbSmashThisEvent","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"pbRockSmashRandomEncounter","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",412]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A","e":"UTF-8"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"Object rock","e":"UTF-8"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"SmashRock","e":"UTF-8"}],["@y",14],["@x",58],["@id",12]]}
+    },
+    {
+      "id": 13,
+      "name": "Weather controller",
+      "x": 49,
+      "y": 20,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bI can control the weather. Which weather would "}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"you like to see?"}]}],["@indent",0],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"arr","v":[{"$":"str","v":"None"},{"$":"str","v":"Rain"},{"$":"str","v":"Heavy rain"},{"$":"str","v":"Storm"}]},0]}],["@indent",0],["@code",102]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"ref","i":13}]}],["@indent",0],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,5,20]}],["@indent",1],["@code",236]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1,{"$":"ref","i":14}]}],["@indent",0],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1,9,20]}],["@indent",1],["@code",236]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[2,{"$":"ref","i":15}]}],["@indent",0],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"Heavy rain is like storm but with no lightning flashes."}]}],["@indent",1],["@code",108]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"$game_screen.weather(","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  :HeavyRain, 9, 20","e":"UTF-8"}]}],["@indent",1],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":")","e":"UTF-8"}]}],["@indent",1],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[3,{"$":"ref","i":16}]}],["@indent",0],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[2,9,20]}],["@indent",1],["@code",236]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",404]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"arr","v":[{"$":"str","v":"Snow"},{"$":"str","v":"Blizzard"},{"$":"str","v":"Sandstorm"}]},0]}],["@indent",0],["@code",102]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"ref","i":56}]}],["@indent",0],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[3,9,20]}],["@indent",1],["@code",236]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1,{"$":"ref","i":57}]}],["@indent",0],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"$game_screen.weather(","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  :Blizzard, 9, 20","e":"UTF-8"}]}],["@indent",1],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":")","e":"UTF-8"}]}],["@indent",1],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[2,{"$":"ref","i":58}]}],["@indent",0],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"$game_screen.weather(","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"  :Sandstorm, 9, 20","e":"UTF-8"}]}],["@indent",1],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":")","e":"UTF-8"}]}],["@indent",1],["@code",655]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",404]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"arr","v":[{"$":"str","v":"Sun"},{"$":"str","v":"Fog"}]},5]}],["@indent",0],["@code",102]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"ref","i":96}]}],["@indent",0],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"$game_screen.weather(:Sun, 9, 20)","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bThis weather can occur even at night, but doesn't ","e":"UTF-8"}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"negate the day/night shading. It's better if you don't ","e":"UTF-8"}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"use it.","e":"UTF-8"}]}],["@indent",1],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1,{"$":"ref","i":97}]}],["@indent",0],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"$game_screen.weather(:Fog, 9, 20)","e":"UTF-8"}]}],["@indent",1],["@code",355]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",403]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",404]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bNote that the weather metadata for this map is set, ","e":"UTF-8"}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"even though its probability is 0. This prevents the ","e":"UTF-8"}]}],["@indent",0],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"weather from lingering when you leave this map.","e":"UTF-8"}]}],["@indent",0],["@code",401]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"NPC 21"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Weather controller"}],["@y",20],["@x",49],["@id",13]]}
+    }
+  ],
+  "notes": ""
+}

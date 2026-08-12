@@ -1,0 +1,275 @@
+{
+  "formatVersion": 1,
+  "id": 75,
+  "name": "Tiall Region",
+  "parentId": 0,
+  "order": 69,
+  "width": 32,
+  "height": 24,
+  "tilesets": [
+    {
+      "tilesetId": 1
+    }
+  ],
+  "layers": [
+    {
+      "name": "Ground",
+      "role": "ground",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        "mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh",
+        "m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9",
+        "mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh",
+        "m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9",
+        "mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh",
+        "m8 m9 m8 m9 m8 m9 m8 m9 m8 mb mq mr mq mr mq mr mq mr mq mr mq mr ma m9 m8 m9 m8 m9 m8 m9 m8 m9",
+        "mg mh mg mh mg mh mg mh mg mj hc h6*10 he mi mh mg mh mg mh mg mh mg mh",
+        "m8 m9 m8 m9 m8 m9 m8 mb mq mr go au*10 go mq mr ma m9 m8 m9 m8 m9 m8 m9",
+        "mg mh mg mh mg mh mg mj hc h6 hu au*10 hs h6 he mi mh mg mh mg mh mg mh",
+        "m8 m9 m8 m9 m8 m9 m8 mb go au*14 go ma m9 m8 m9 m8 m9 m8 m9",
+        "mg mh mg mh mg mh mg mj go au*4 js jt*4 ju au*4 go mi mh mg mh mg mh mg mh",
+        "m8 m9 m8 m9 m8 m9 m8 mb go au*3 js jv k1*4 jw ju au*3 go ma m9 m8 m9 m8 m9 m8 m9",
+        "mg mh mg mh mg mh mg mj go au*3 k8 k3 k1*4 k4 ka au*3 go mi mh mg mh mg mh mg mh",
+        "m8 m9 m8 m9 m8 m9 m8 mb go au*4 k8 k9*4 ka au*4 go ma m9 m8 m9 m8 m9 m8 m9",
+        "mg mh mg mh mg mh mg mj go au*14 go mi mh mg mh mg mh mg mh",
+        "m8 m9 m8 m9 m8 m9 m8 mb hs h6 he au*10 hc h6 hu ma m9 m8 m9 m8 m9 m8 m9",
+        "mg mh mg mh mg mh mg mj mi mj go au*10 go mi mj mi mh mg mh mg mh mg mh",
+        "m8 m9 m8 m9 m8 m9 m8 m9 m8 mb hs h6*10 hu ma m9 m8 m9 m8 m9 m8 m9 m8 m9",
+        "mg mh mg mh mg mh mg mh mg mj mi mj mi mj mi mj mi mj mi mj mi mj mi mh mg mh mg mh mg mh mg mh",
+        "m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9",
+        "mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh",
+        "m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9",
+        "mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh mg mh",
+        "m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9 m8 m9"
+      ]
+    },
+    {
+      "name": "Decor",
+      "role": "decor",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*10 17c 17u*10 17d .*10",
+        ".*10 17s .*10 17s .*10",
+        ".*8 17c 17u 17l .*10 17k 17u 17d .*8",
+        ".*8 17s .*14 17s .*8",
+        ".*8 17s .*14 17s .*8",
+        ".*8 17s .*14 17s .*8",
+        ".*8 17s .*14 17s .*8",
+        ".*8 17s .*14 17s .*8",
+        ".*8 17s .*14 17s .*8",
+        ".*8 17k 17u 17d .*10 17c 17u 17l .*8",
+        ".*10 17s .*10 17s .*10",
+        ".*10 17k 17u*10 17l .*10",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32"
+      ]
+    },
+    {
+      "name": "Overlay",
+      "role": "overlay",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*8 mc md .*12 mc md .*8",
+        ".*32",
+        ".*10 mc md mc md mc md mc md mc md mc md .*10",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32"
+      ]
+    },
+    {
+      "name": "Canopy",
+      "role": "canopy",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32"
+      ]
+    },
+    {
+      "name": "Sky",
+      "role": "sky",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32",
+        ".*32"
+      ]
+    }
+  ],
+  "bgm": {
+    "name": "Tiall",
+    "volume": 80,
+    "pitch": 115
+  },
+  "bgs": null,
+  "autoplayBgm": true,
+  "autoplayBgs": false,
+  "connections": [],
+  "weather": {
+    "kind": "None",
+    "power": 0,
+    "chance": 100
+  },
+  "lighting": {
+    "enabled": false,
+    "ambient": 0,
+    "tintByHour": {},
+    "lights": []
+  },
+  "encounters": [
+    {
+      "type": "Land",
+      "step": 21,
+      "slots": [
+        {
+          "probability": 20,
+          "species": "GEODUDE_1",
+          "minLevel": 11,
+          "maxLevel": 14
+        },
+        {
+          "probability": 20,
+          "species": "RATTATA_1",
+          "minLevel": 11,
+          "maxLevel": 14
+        },
+        {
+          "probability": 10,
+          "species": "CUBONE",
+          "minLevel": 11,
+          "maxLevel": 14
+        },
+        {
+          "probability": 10,
+          "species": "DIGLETT_1",
+          "minLevel": 11,
+          "maxLevel": 14
+        },
+        {
+          "probability": 10,
+          "species": "MEOWTH_1",
+          "minLevel": 11,
+          "maxLevel": 14
+        },
+        {
+          "probability": 10,
+          "species": "PIKACHU",
+          "minLevel": 11,
+          "maxLevel": 14
+        },
+        {
+          "probability": 10,
+          "species": "SANDSHREW_1",
+          "minLevel": 11,
+          "maxLevel": 14
+        },
+        {
+          "probability": 10,
+          "species": "VULPIX_1",
+          "minLevel": 11,
+          "maxLevel": 14
+        }
+      ]
+    }
+  ],
+  "encounterStep": 30,
+  "metadata": {
+    "extra": {},
+    "name": "Tiall Region",
+    "mapPosition": [1,13,16],
+    "outdoor": true,
+    "battleBack": "city"
+  },
+  "events": [
+    {
+      "id": 1,
+      "name": "Warp NPC",
+      "x": 14,
+      "y": 11,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@move_type",0],["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bThis is the Tiall Region."}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bDo you want to go back to the Essen Region?"}]}],["@indent",0],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"arr","v":[{"$":"str","v":"Yes"},{"$":"str","v":"No"}]},2]}],["@indent",0],["@code",102]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,{"$":"ref","i":13}]}],["@indent",0],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit"}],["@pitch",100]]}]}],["@indent",1],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",1],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",1],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,71,8,5,8,1]}],["@indent",1],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",1],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[1,{"$":"ref","i":14}]}],["@indent",0],["@code",402]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"str","v":"\\bLet me know if you do."}]}],["@indent",1],["@code",101]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",1],["@code",0]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",404]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@direction_fix",false],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",0],["@step_anime",false],["@move_frequency",3],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":"NPC 01"}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@always_on_top",false],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Warp NPC"}],["@y",11],["@x",14],["@id",1]]}
+    }
+  ],
+  "notes": ""
+}

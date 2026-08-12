@@ -20,6 +20,7 @@ class PokemonGlobalMetadata
   attr_accessor :flashlight_cone      # Boolean: flashlight projects a directional cone
   attr_accessor :follower_light_active # Boolean: a soft light follows the lead follower
   attr_accessor :saved_lights       # Array of hashes for runtime-added lights
+  attr_accessor :saved_lights_version
 end
 
 # ===============================================================================
@@ -42,29 +43,10 @@ module LightingConfig
   @animation_speed = 1.0   # Real-time multiplier; independent of the game's FPS
   @pulse_strength = 1.0    # Global breathing/pulse amplitude
 
-  # --- Auto tile shadows -----------------------------------------------------
-  # Every priority OBJECT (trees, buildings, lamps …) casts a PROJECTED shadow:
-  # its own silhouette, mirrored at the object's base, slanted sideways and
-  # squashed — like Dynamic Overworld Shadows, but for tiles, driven entirely
-  # by the tileset's priority data (no tile-ID lists). Live-tweakable.
-  @tile_shadows             = false   # master switch (aus: projizierte Tile-Schatten kosten zu viel FPS / Lags bei Map-Wechsel)
-  @tile_shadow_opacity      = 90      # base strength 0-255
-  @tile_shadow_skew         = 0.0     # 0 = mirror straight below the object; >0 slants sideways (px per px height)
-  @tile_shadow_squash       = 0.4     # vertical size of the mirrored shadow (1.0 = full mirror, smaller = shorter)
-  @tile_shadow_dir          = 1       # 1 = slant east/right, -1 = west/left (only when skew > 0)
-  @tile_shadow_min_priority = 1       # only tiles with priority >= this cast
-  @tile_shadow_night_mult   = 0.4     # strength at night (moonlight)
-  @tile_shadow_weather_mult = 0.35    # strength under overcast weather (rain/storm/fog/snow)
-  @tile_shadow_sun_arc      = false   # optional: direction/length follow the time of day (needs skew > 0)
-  @tile_shadow_indoor       = false   # also cast on non-outdoor maps
-
   class << self
     attr_accessor :enabled, :darkness,
                   :ambient_fx, :glow_layers, :resolution, :particle_scale, :priority_occlusion,
-                  :animations, :animation_speed, :pulse_strength,
-                  :tile_shadows, :tile_shadow_opacity, :tile_shadow_skew, :tile_shadow_squash,
-                  :tile_shadow_dir, :tile_shadow_min_priority, :tile_shadow_night_mult,
-                  :tile_shadow_weather_mult, :tile_shadow_sun_arc, :tile_shadow_indoor
+                  :animations, :animation_speed, :pulse_strength
 
     # One shared real-time clock keeps the darkness mask, colored glow sprites
     # and color cycling perfectly in phase, even at 40/60/144 FPS.
@@ -132,6 +114,8 @@ module GameData
     attr_reader :on_hour
     attr_reader :off_hour
     attr_reader :pulse
+    attr_reader :animation_speed
+    attr_reader :active_weather
     attr_reader :proximity
     attr_accessor :intensity
     attr_accessor :fade_speed
@@ -146,7 +130,6 @@ module GameData
     attr_accessor :path_index      # Current waypoint index
     attr_accessor :path_t          # Interpolation progress [0.0, 1.0)
     attr_reader :heat_shimmer      # Boolean: enable heat shimmer wobble
-    attr_reader :shadows           # Boolean: enable soft shadow casting
     attr_reader :sync_group        # Symbol: lights with same sync_group animate in unison
     attr_reader :water_reflect     # Boolean: render flipped reflection on water tiles below
     attr_reader :embers            # Boolean: spawn ember particles above this light
@@ -243,6 +226,9 @@ module GameData
       @on_hour      = hash[:on_hour]    || nil
       @off_hour     = hash[:off_hour]   || nil
       @pulse        = hash[:pulse]      || nil
+      @animation_speed = [hash[:animation_speed].to_f, 0.05].max if hash[:animation_speed]
+      @animation_speed ||= 1.0
+      @active_weather = hash[:active_weather] || nil
       @proximity    = hash[:proximity]  || nil
       @intensity    = hash[:intensity]  || 1.0
       @fade_speed   = hash[:fade_speed] || 0.05
@@ -257,7 +243,6 @@ module GameData
       @path_index   = 0
       @path_t       = 0.0
       @heat_shimmer = hash[:heat_shimmer] || false
-      @shadows      = hash[:shadows]      || false
       @sync_group   = hash[:sync_group]   || nil
       @water_reflect= hash[:water_reflect]|| false
       @embers       = hash[:embers]       || false
@@ -359,7 +344,9 @@ module GameData
         :id => @id, :type => @type, :map_x => @map_x, :map_y => @map_y,
         :map_id => @map_id, :radius => @radius, :width => @width, :height => @height,
         :day => @day, :intensity => @intensity, :stop_anim => @stop_anim,
-        :flicker => @flicker, :pulse => @pulse, :group => @group,
+        :flicker => @flicker, :pulse => @pulse, :animation_speed => @animation_speed,
+        :group => @group,
+        :active_weather => @active_weather,
         :on_hour => @on_hour, :off_hour => @off_hour, :switch => @switch,
         :sync_group => @sync_group, :water_reflect => @water_reflect,
         :embers => @embers, :hide => @hide, :beam => @beam,
@@ -371,12 +358,12 @@ module GameData
         :cull_distance => @cull_distance, :chain_to => @chain_to,
         :seasonal => @seasonal,
         :occlude => @occlude,
+        :keyframes => @keyframes,
         # Previously missing — these silently disappeared on save/load:
         :bitmap        => @bitmap_path,
         :sound         => @sound,
         :sound_range   => @sound_range,
         :heat_shimmer  => @heat_shimmer,
-        :shadows       => @shadows,
         :blend         => @blend
       }
       h[:color] = [@color.red, @color.green, @color.blue] if @color
@@ -644,7 +631,7 @@ end
 def pbSetLightRadius(id, radius)
   e = GameData::LightEffect.try_get(id)
   return false if !e
-  e.radius = radius
+  e.radius = [[radius.to_i, 1].max, 3200].min
   lighting = $scene.is_a?(Scene_Map) && $scene.spritesetGlobal&.lighting
   lighting.rebuild_light_sprite(id) if lighting && !lighting.disposed?
   return true
@@ -700,7 +687,7 @@ end
 def pbGroupSetIntensity(group, value)
   GameData::LightEffect.each do |effect|
     next if effect.group != group
-    effect.intensity = [[value, 0.0].max, 1.0].min
+    effect.intensity = [[value.to_f, 0.0].max, 2.0].min
   end
 end
 
@@ -732,10 +719,15 @@ end
 # ===============================================================================
 
 # Save all current runtime lights into $PokemonGlobal
+SC_LIGHT_SAVE_VERSION = 2
+
 def pbSaveLights
   return if !$PokemonGlobal
   lights = []
   GameData::LightEffect.each do |effect|
+    # Static plugin/Prism/Forge definitions are rebuilt from project data at
+    # boot. Persisting them bloats saves and made them look runtime-owned.
+    next if !effect.runtime_added
     next if effect.id == :player_flashlight
     next if effect.id == :follower_light
     next if effect.id.to_s.start_with?("_evt_light_")   # Event-spawned, auto-rebuilt
@@ -743,6 +735,25 @@ def pbSaveLights
     lights << effect.to_save_hash
   end
   $PokemonGlobal.saved_lights = lights
+  $PokemonGlobal.saved_lights_version = SC_LIGHT_SAVE_VERSION
+end
+
+def pbMigrateSavedLights
+  return if !$PokemonGlobal || !$PokemonGlobal.saved_lights
+  version = ($PokemonGlobal.saved_lights_version || 0).to_i
+  $PokemonGlobal.saved_lights.map! do |raw|
+    next raw if !raw.is_a?(Hash)
+    h = {}
+    raw.each { |key, value| h[key.respond_to?(:to_sym) ? key.to_sym : key] = value }
+    h[:type] = h[:type].to_sym if h[:type].is_a?(String)
+    h[:id] = h[:id].to_sym if h[:id].is_a?(String)
+    h[:intensity] = 1.0 if h[:intensity].nil?
+    h[:animation_speed] = 1.0 if h[:animation_speed].nil?
+    h[:fade_speed] = 0.05 if h[:fade_speed].nil?
+    h
+  end
+  $PokemonGlobal.saved_lights.compact!
+  $PokemonGlobal.saved_lights_version = SC_LIGHT_SAVE_VERSION if version < SC_LIGHT_SAVE_VERSION
 end
 
 # Remove all runtime-added lights from the session-global DATA. Static lights
@@ -758,6 +769,7 @@ end
 # Restore saved lights (called after loading a save)
 def pbRestoreLights
   return if !$PokemonGlobal || !$PokemonGlobal.saved_lights
+  pbMigrateSavedLights
   $PokemonGlobal.saved_lights.each do |h|
     next if GameData::LightEffect::DATA[h[:id]]
     GameData::LightEffect.from_save_hash(h)

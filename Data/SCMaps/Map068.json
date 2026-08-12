@@ -1,0 +1,476 @@
+{
+  "formatVersion": 1,
+  "id": 68,
+  "name": "Safari Zone",
+  "parentId": 66,
+  "order": 63,
+  "width": 51,
+  "height": 34,
+  "tilesets": [
+    {
+      "tilesetId": 1
+    }
+  ],
+  "layers": [
+    {
+      "name": "Ground",
+      "role": "ground",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        "qo qp qq qo qp qq qo qp qq qo qp qq r4 r5 r6 r4 r5 r6 qo qp qq qo qp qq qo qp qq qo qp qq r4 r5 r6 qo qp qq qo qp qq qo qp qq qo qp qq qo qp qq qo qp qq",
+        "qg qh qi qg qh qi qg qh qi qg qh qi rc rd re rc rd re qg qh qi qg qh qi qg qh qi qg qh qi rc rd re qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi",
+        "qo qp qq qo qp qq qo qp qq qo qp qq q8 q9 qa q8 q9 qa qo qp qq qo qp qq qo qp qq qo qp qq q8 q9 qa qo qp qq qo qp qq qo qp qq qo qp qq qo qp qq r4 r5 r6",
+        "qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi rc rd re",
+        "qo qp qq r4 r5 r6 qo qp qq r4 r5 r6 r4 r5 r6 r4 r5 r6 r4 r5 r6 r4 r5 r6 r4 r5 r6 r4 r5 r6 r4 r5 r6 r4 r5 r6 r4 r5 r6 r4 r5 r6 qo qp qq qo qp qq q8 q9 qa",
+        "qg qh qi rc rd re qg qh ap rn ro rp rn ro rp rn ro rp rn ro rp rn ro rp rn ro rp rn ro rp rn ro rp rn ro rp rn ro rp rn ro rp aq qh qi qg qh qi qg qh qi",
+        "r4 r5 r6 q8 q9 qa qo qp aq ap aq at ar*2 aq ar*3 aq ap aq*4 at ap aq ap ar as ar aq ap aq ar*2 as at aq ar aq at aq qp qq qo qp qq qo qp qq",
+        "rc rd re qg qh qi qg qh aq ar*3 ap aq au*4 at ar*4 ap aq ar*2 ap at aq au*5 ap aq ar aq ex ey ez ap qh qi qg qh qi qg qh qi",
+        "q8 q9 qa qo qp qq qo qp aq ap at aq au*8 ap aq*3 ar ap aq au*10 ar ex fi f6 f7 as qp qq qo qp qq qo qp qq",
+        "qg qh qi qg qh qi qg qh aq at aq au*9 as aq ar at aq ar au*12 f5 f6*2 f7 aq qh qi qg qh qi qg qh qi",
+        "qo qp qq qo qp qq qo qp aq ar as au*9 aq as ar ap aq au*13 f5 f6*2 f7 aq qp qq r4 r5 r6 qo qp qq",
+        "qg qh qi qg qh qi qg qh ap aq ap au*8 aq ar aq*2 ap ar au*12 ex fi f6*2 f7 ap qh qi rc rd re qg qh qi",
+        "qo qp qq qo qp qq qo qp aq*2 ar aq au*5 aq ar*2 aq ap aq*2 ap aq au*4 ar ap aq au*3 aq f5 f6*3 f7 ar qp qq q8 q9 qa qo qp qq",
+        "qg qh qi qg qh qi qg qh aq as ap ar au*3 as aq au at 1w*13 at aq ar*2 aq fd fe*3 ff aq qh qi qg qh qi qg qh qi",
+        "qo qp qq qo qp qq qo qp aq ar as*2 aq au aq ar au*2 1s 1c*2 1g 24*7 1k 1c*2 20 au*2 aq ar aq as aq*4 qp qq qo qp qq qo qp qq",
+        "qg qh qi qg qh qi qg qh aq ap ex ez as aq ar aq au*2 1s 1c*2 3c y8 y9*5 ya 34 1c*2 20 au*4 aq ar at ar as aq qh qi qg qh qi qg qh qi",
+        "qo qp qq r4 r5 r6 qo qp aq ar fd fb ey ez aq au*3 1s 1c*2 20 aq*7 1s 1c*2 20 aq au*5 aq at ap at qp qq qo qp qq r4 r5 r6",
+        "qg qh qi rc rd re qg qh aq ar*2 f5 f6 fg ez au*3 1s 1c*2 1e 1w*7 1d 1c*2 20 aq au*7 ar*2 qh qi qg qh qi rc rd re",
+        "qo qp qq q8 q9 qa qo qp aq ap aq fd fe*2 ff aq au*2 2g 24*13 2e aq au*7 aq*2 qp qq qo qp qq q8 q9 qa",
+        "qg qh qi qg qh qi qg qh aq*10 y9*15 as aq au*4 ap aq at ar qh qi qg qh qi qg qh qi",
+        "qo qp qq qo qp qq qo qp ap at as aq ap aq au*8 ex ey ez aq ar ap at aq*2 at aq*2 au*7 aq ar qp qq r4 r5 r6 qo qp qq",
+        "qg qh qi qg qh qi qg qh aq ar aq ar aq au*9 fd f2 fg ez ar as ar aq*2 ap ar aq au*6 ap aq*2 qh qi rc rd re qg qh qi",
+        "qo qp qq qo qp qq qo qp aq at aq ap as au*10 fd fe ff at ar aq*2 ap at ar au*5 ar aq ar as at qp qq q8 q9 qa qo qp qq",
+        "qg qh qi qg qh qi qg qh aq*2 ar aq*3 au*8 aq ar ap at aq as aq ar*2 aq*2 au*4 at ap at ar as aq qh qi qg qh qi qg qh qi",
+        "r4 r5 r6 qo qp qq qo qp aq ap as aq at ar au*11 ar as aq*2 ar at ap au*4 aq ar*2 aq ap ar aq qp qq qo qp qq qo qp qq",
+        "rc rd re qg qh qi qg qh aq*2 ar*2 aq ap aq as au*7 aq ap ar aq*2 at aq ap au*4 as aq as ar ap at ap aq qh qi qg qh qi qg qh qi",
+        "q8 q9 qa qo qp qq qo qp aq*2 ar ap aq at aq ar aq*2 at ar aq ar*2 ap ex ey ez aq ar as aq*2 ar aq*2 ap*2 at aq ar*2 ap aq qp qq r4 r5 r6 qo qp qq",
+        "qg qh qi qg qh qi qg qh aq*8 ar aq*3 as aq*3 f5 f6 f7 aq*4 ap ar aq*4 ap aq*3 ap aq qh qi rc rd re qg qh qi",
+        "qo qp qq qo qp qq r4 r5 aq*7 ap aq*3 ap aq*23 qp qq q8 q9 qa qo qp qq",
+        "qg qh qi qg qh qi rc rd re qg qh qi qg qh qi rc rd re qg qh aq*11 qh qi qg qh qi rc rd re qg qh qi qg qh qi qg qh qi qg qh qi",
+        "qo qp qq qo qp qq q8 q9 qa qo qp qq r4 r5 r6 q8 q9 qa qo qp aq*11 qp qq qo qp qq q8 q9 qa qo qp qq qo qp qq qo qp qq qo qp qq",
+        "qg qh qi qg qh qi qg qh qi qg qh qi rc rd re qg qh qi qg qh aq*11 qh qi qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi",
+        "qo qp qq qo qp qq qo qp qq qo qp qq q8 q9 qa qo qp qq qo qp aq*11 qp qq qo qp qq qo qp qq r4 r5 r6 qo qp qq qo qp qq qo qp qq",
+        "qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi qg qh qi qg qh aq*11 qh qi qg qh qi qg qh qi rc rd re qg qh qi qg qh qi qg qh qi"
+      ]
+    },
+    {
+      "name": "Decor",
+      "role": "decor",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*8 r1 .*33 qz .*8",
+        ".*8 qt .*13 ri .*19 qr .*8",
+        ".*8 r1 .*13 ri .*19 qz .*8",
+        ".*8 qt .*13 ri .*19 qr .*8",
+        ".*8 r1 .*33 qz .*8",
+        ".*8 qt .*33 qr .*8",
+        ".*8 r1 .*13 ri .*19 qz .*8",
+        ".*8 qt .*13 ri .*19 qr .*8",
+        ".*8 r1 .*9 2a .*13 2c .*9 qz .*8",
+        ".*8 qt .*28 ri*5 qr .*8",
+        ".*8 r1 .*12 vf uz*7 vg .*12 qz .*8",
+        ".*8 qt .*33 qr .*8",
+        ".*8 r1 .*33 qz .*8",
+        ".*8 qt .*33 qr .*8",
+        ".*8 r1 ri*6 .*13 ri*2 .*12 qz .*8",
+        ".*8 qt .*19 ri*2 .*12 qr .*8",
+        ".*8 r1 .*20 ri .*12 qz .*8",
+        ".*8 qt .*20 ri .*12 qr .*8",
+        ".*8 r1 .*33 qz .*8",
+        ".*8 qt .*33 qr .*8",
+        ".*8 r1 .*33 qz .*8",
+        ".*8 qt qb qc qd qb qc qd qb qc qd qb qc qd .*9 qb qc qd qb qc qd qb qc qd qb qc qd qr .*8",
+        ".*8 r1 qj qk ql qj qk ql qj qk ql qj qk r1 1bp*3 .*3 1bp*3 qj qk r1 qj qk r1 qj qk r1 qj qk r1 qz .*8",
+        ".*8 r9 qr qs qt qr qs qt r7 r8 r9 qr qs qt 1bp .*7 1bp qr qs qt qr qs qt r7 r8 r9 qr qs qt qr .*8",
+        ".*20 r1 1bp .*7 1bp qj .*20",
+        ".*20 qt 1bp .*7 1bp qr .*20",
+        ".*20 r1 1bp .*7 1bp qj .*20",
+        ".*20 qt 1bp .*7 1bp qr .*20",
+        ".*20 r1 1bp .*7 1bp qj .*20"
+      ]
+    },
+    {
+      "name": "Overlay",
+      "role": "overlay",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*21 vf uz*7 vg .*21",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*18 uz*10 .*2 uz*3 .*18",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*22 220 224 221 222 223 224 225 .*22",
+        ".*22 21c 21d 21e 21f 21e 21f 21g .*22",
+        ".*22 21c 21d 21e 21f 21e 21f 21g .*22",
+        ".*22 21c 21d 21e 21f 21e 21f 21g .*22",
+        ".*22 21c 21d 21e 21f 21e 21f 21g .*22",
+        ".*22 21c 21d 21e 21f 21e 21f 21g .*22",
+        ".*22 21c 21d 21e 21f 21e 21f 21g .*22"
+      ]
+    },
+    {
+      "name": "Canopy",
+      "role": "canopy",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51"
+      ]
+    },
+    {
+      "name": "Sky",
+      "role": "sky",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51",
+        ".*51"
+      ]
+    }
+  ],
+  "bgm": {
+    "name": "Safari Zone",
+    "volume": 80,
+    "pitch": 100
+  },
+  "bgs": null,
+  "autoplayBgm": true,
+  "autoplayBgs": false,
+  "connections": [],
+  "weather": {
+    "kind": "None",
+    "power": 0,
+    "chance": 100
+  },
+  "lighting": {
+    "enabled": false,
+    "ambient": 0,
+    "tintByHour": {},
+    "lights": []
+  },
+  "encounters": [
+    {
+      "type": "Land",
+      "step": 21,
+      "slots": [
+        {
+          "probability": 20,
+          "species": "EXEGGCUTE",
+          "minLevel": 15,
+          "maxLevel": 18
+        },
+        {
+          "probability": 20,
+          "species": "RHYHORN",
+          "minLevel": 16,
+          "maxLevel": 18
+        },
+        {
+          "probability": 10,
+          "species": "AIPOM",
+          "minLevel": 14,
+          "maxLevel": 17
+        },
+        {
+          "probability": 10,
+          "species": "GIRAFARIG",
+          "minLevel": 16,
+          "maxLevel": 17
+        },
+        {
+          "probability": 10,
+          "species": "VENONAT",
+          "minLevel": 15,
+          "maxLevel": 17
+        },
+        {
+          "probability": 10,
+          "species": "VENONAT",
+          "minLevel": 15,
+          "maxLevel": 18
+        },
+        {
+          "probability": 5,
+          "species": "HERACROSS",
+          "minLevel": 15,
+          "maxLevel": 17
+        },
+        {
+          "probability": 5,
+          "species": "TAUROS",
+          "minLevel": 15,
+          "maxLevel": 16
+        },
+        {
+          "probability": 4,
+          "species": "PINSIR",
+          "minLevel": 16,
+          "maxLevel": 16
+        },
+        {
+          "probability": 4,
+          "species": "SCYTHER",
+          "minLevel": 16,
+          "maxLevel": 16
+        },
+        {
+          "probability": 1,
+          "species": "CHANSEY",
+          "minLevel": 17,
+          "maxLevel": 17
+        },
+        {
+          "probability": 1,
+          "species": "KANGASKHAN",
+          "minLevel": 19,
+          "maxLevel": 19
+        }
+      ]
+    },
+    {
+      "type": "Water",
+      "step": 2,
+      "slots": [
+        {
+          "probability": 60,
+          "species": "PSYDUCK",
+          "minLevel": 16,
+          "maxLevel": 18
+        },
+        {
+          "probability": 30,
+          "species": "MARILL",
+          "minLevel": 15,
+          "maxLevel": 18
+        },
+        {
+          "probability": 5,
+          "species": "BUIZEL",
+          "minLevel": 15,
+          "maxLevel": 17
+        },
+        {
+          "probability": 5,
+          "species": "SLOWPOKE",
+          "minLevel": 14,
+          "maxLevel": 16
+        }
+      ]
+    },
+    {
+      "type": "OldRod",
+      "step": 0,
+      "slots": [
+        {
+          "probability": 70,
+          "species": "MAGIKARP",
+          "minLevel": 17,
+          "maxLevel": 21
+        },
+        {
+          "probability": 30,
+          "species": "MAGIKARP",
+          "minLevel": 17,
+          "maxLevel": 20
+        }
+      ]
+    },
+    {
+      "type": "GoodRod",
+      "step": 0,
+      "slots": [
+        {
+          "probability": 60,
+          "species": "MAGIKARP",
+          "minLevel": 16,
+          "maxLevel": 20
+        },
+        {
+          "probability": 20,
+          "species": "FEEBAS",
+          "minLevel": 16,
+          "maxLevel": 20
+        },
+        {
+          "probability": 20,
+          "species": "POLIWAG",
+          "minLevel": 17,
+          "maxLevel": 18
+        }
+      ]
+    },
+    {
+      "type": "SuperRod",
+      "step": 0,
+      "slots": [
+        {
+          "probability": 40,
+          "species": "GOLDEEN",
+          "minLevel": 16,
+          "maxLevel": 18
+        },
+        {
+          "probability": 40,
+          "species": "REMORAID",
+          "minLevel": 17,
+          "maxLevel": 19
+        },
+        {
+          "probability": 15,
+          "species": "CARVANHA",
+          "minLevel": 16,
+          "maxLevel": 17
+        },
+        {
+          "probability": 4,
+          "species": "FINNEON",
+          "minLevel": 15,
+          "maxLevel": 18
+        },
+        {
+          "probability": 1,
+          "species": "DRATINI",
+          "minLevel": 17,
+          "maxLevel": 17
+        }
+      ]
+    }
+  ],
+  "encounterStep": 30,
+  "metadata": {
+    "extra": {
+      "Environment": "Forest"
+    },
+    "name": "Safari Zone",
+    "mapPosition": [0,12,12],
+    "outdoor": true,
+    "showArea": true,
+    "locationSign": "Pt forest",
+    "safariMap": true,
+    "battleBack": "forest"
+  },
+  "events": [
+    {
+      "id": 1,
+      "name": "Exit left",
+      "x": 24,
+      "y": 28,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit"}],["@pitch",100]]}]}],["@indent",0],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,67,4,1,0,1]}],["@indent",0],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Exit left"}],["@y",28],["@x",24],["@id",1]]}
+    },
+    {
+      "id": 2,
+      "name": "Exit middle",
+      "x": 25,
+      "y": 28,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit"}],["@pitch",100]]}]}],["@indent",0],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,67,4,1,0,1]}],["@indent",0],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Exit middle"}],["@y",28],["@x",25],["@id",2]]}
+    },
+    {
+      "id": 3,
+      "name": "Exit right",
+      "x": 26,
+      "y": 28,
+      "raw": {"$":"obj","c":"RPG::Event","iv":[["@pages",{"$":"arr","v":[{"$":"obj","c":"RPG::Event::Page","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"obj","c":"RPG::AudioFile","iv":[["@volume",80],["@name",{"$":"str","v":"Door exit"}],["@pitch",100]]}]}],["@indent",0],["@code",250]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":-255,"g":-255,"b":-255,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[8]}],["@indent",0],["@code",106]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[0,67,4,1,0,1]}],["@indent",0],["@code",201]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[{"$":"col","c":"Tone","r":0,"g":0,"b":0,"a":0},6]}],["@indent",0],["@code",223]]},{"$":"obj","c":"RPG::EventCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@indent",0],["@code",0]]}]}],["@move_type",0],["@direction_fix",false],["@condition",{"$":"obj","c":"RPG::Event::Page::Condition","iv":[["@switch2_valid",false],["@self_switch_ch",{"$":"str","v":"A"}],["@switch1_id",1],["@switch1_valid",false],["@variable_value",0],["@self_switch_valid",false],["@variable_id",1],["@variable_valid",false],["@switch2_id",1]]}],["@move_route",{"$":"obj","c":"RPG::MoveRoute","iv":[["@list",{"$":"arr","v":[{"$":"obj","c":"RPG::MoveCommand","iv":[["@parameters",{"$":"arr","v":[]}],["@code",0]]}]}],["@skippable",false],["@repeat",true]]}],["@trigger",1],["@step_anime",false],["@move_frequency",3],["@always_on_top",false],["@graphic",{"$":"obj","c":"RPG::Event::Page::Graphic","iv":[["@opacity",255],["@character_name",{"$":"str","v":""}],["@pattern",0],["@tile_id",0],["@direction",2],["@blend_type",0],["@character_hue",0]]}],["@walk_anime",true],["@move_speed",3],["@through",false]]}]}],["@name",{"$":"str","v":"Exit right"}],["@y",28],["@x",26],["@id",3]]}
+    }
+  ],
+  "notes": ""
+}
