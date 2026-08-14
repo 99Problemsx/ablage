@@ -22,8 +22,16 @@ import {
   type SCLight,
   type SCLighting,
 } from '../core/scmap/format';
+import type { SCConnection } from '../core/scmap/format';
 import { newEventRaw, setIvar, strNode } from '../core/events/model';
-import type { MapTreeNode, ProjectSummary } from '../../electron/ipc';
+import type {
+  MapMutationResult,
+  MapTreeChange,
+  MapTreeNode,
+  NewMapRequest,
+  NewTilesetRequest,
+  ProjectSummary,
+} from '../../electron/ipc';
 
 /** Tile-attribute overlay modes. */
 export type CheckerMode = 'none' | 'priority' | 'passage' | 'terrain';
@@ -82,7 +90,31 @@ interface LightingUndoEntry {
   after: SCLighting;
 }
 
-type UndoEntry = TileUndoEntry | EventUndoEntry | LightingUndoEntry;
+/**
+ * A resize, stored as a snapshot rather than a patch.
+ *
+ * Every other edit touches a bounded set of cells, so a patch is both smaller
+ * and simpler. A resize changes the map's dimensions and therefore the meaning
+ * of every index in it — there is no patch that describes that, and one snapshot
+ * of a map the author just resized is a cost paid once.
+ */
+interface ResizeSnapshot {
+  width: number;
+  height: number;
+  layers: Int32Array[];
+  events: SCEvent[];
+  lighting: SCLighting;
+}
+
+interface ResizeUndoEntry {
+  kind: 'resize';
+  mapId: number;
+  label: string;
+  before: ResizeSnapshot;
+  after: ResizeSnapshot;
+}
+
+type UndoEntry = TileUndoEntry | EventUndoEntry | LightingUndoEntry | ResizeUndoEntry;
 
 export interface ConsoleLine {
   id: number;
@@ -103,12 +135,51 @@ interface EditorState {
   docs: Map<number, MapDoc>;
   activeMapId: number | null;
   selectMap: (id: number) => Promise<void>;
+  /** Writes one map to JSON and .rxdata. */
+  saveMap: (id: number) => Promise<void>;
   saveActive: () => Promise<void>;
+  /** Writes every map with unsaved changes, one after another. */
+  saveAll: () => Promise<void>;
   updateMapProperties: (value: Pick<SCMap, 'name' | 'width' | 'height' | 'autoplayBgm' | 'autoplayBgs' | 'bgm' | 'bgs' | 'encounterStep' | 'weather'>) => void;
   updateMapMetadata: (metadata: SCMap['metadata'], notes: string) => void;
+  /**
+   * Resizes the map, moving its content by `shiftX`/`shiftY`.
+   *
+   * `wrap` decides the fate of anything pushed outside the new bounds: wrapped
+   * around to the opposite edge, or dropped. One undo step either way.
+   */
+  resizeMap: (value: {
+    width: number;
+    height: number;
+    shiftX: number;
+    shiftY: number;
+    wrap: boolean;
+  }) => void;
+  /** Creates a blank map on disk and opens it. Resolves with its id. */
+  createMap: (request: NewMapRequest) => Promise<number | null>;
+  duplicateMap: (id: number) => Promise<number | null>;
+  deleteMap: (id: number) => Promise<void>;
+  /** Rename, reparent and reorder, batched into one write. */
+  applyTreeChanges: (changes: MapTreeChange[]) => Promise<void>;
+  /** Rewrites this map's seams in PBS/map_connections.txt and both maps' JSON. */
+  saveConnections: (mapId: number, connections: SCConnection[]) => Promise<void>;
+  /**
+   * Parent id the New Map dialog should preselect, or null when it is closed.
+   * Lives in the store because both the tree and the ribbon open the same dialog.
+   */
+  newMapParentId: number | null;
+  openNewMap: (parentId: number) => void;
+  closeNewMap: () => void;
 
   // ----------------------------------------------------------------- tilesets
   catalog: Map<number, SCTileset>;
+  /**
+   * Registers a new tileset from a graphic, in the catalogue and in
+   * Tilesets.rxdata. Resolves with its id, which is also added to the open map.
+   */
+  createTileset: (request: NewTilesetRequest) => Promise<number | null>;
+  /** Renames a tileset or repoints it at a different graphic. */
+  updateTileset: (tileset: SCTileset) => Promise<void>;
 
   // -------------------------------------------------------------------- tools
   tool: Tool;
@@ -122,11 +193,31 @@ interface EditorState {
    */
   brush: Brush;
   setBrush: (brush: Brush) => void;
+  /**
+   * Square brush width for single-tile painting and erasing, in tiles.
+   *
+   * Only applies when the brush is one tile: a stamp copied from the palette or
+   * the map already has a size, and scaling it would mean inventing tiles that
+   * were never picked.
+   */
+  brushSize: number;
+  setBrushSize: (size: number) => void;
   /** Copies a region of the active layer into the brush. */
   copyRegion: (x: number, y: number, w: number, h: number) => void;
-  /** Slot whose palette is showing. */
-  paletteSlot: number;
-  setPaletteSlot: (slot: number) => void;
+  /**
+   * Picks a tile from any tileset in the project.
+   *
+   * Slots are an encoding detail — `packTile` stores one in every painted tile —
+   * and making the author attach a tileset to the map before they can use it
+   * turns "paint with that rock" into a two-step errand. So attaching happens
+   * here, on first use, and the palette never mentions slots at all.
+   */
+  pickTile: (tilesetId: number, tileId: number) => void;
+  /**
+   * Picks a rectangle of tiles from one tileset, as dragging across the palette
+   * produces. `tiles` is row-major, `w * h` long, with 0 for empty cells.
+   */
+  pickTiles: (tilesetId: number, tiles: number[], w: number, h: number) => void;
   /** Appends a tileset slot to the active map. */
   addTileset: (tilesetId: number) => void;
   /** Removes a tileset slot, clearing any tiles that referenced it. */
@@ -206,6 +297,12 @@ interface EditorState {
   /** Which bottom panel is showing. Lives here so selecting an event can reveal it. */
   bottomTab: 'console' | 'event';
   setBottomTab: (tab: 'console' | 'event') => void;
+  /**
+   * Whether the bottom dock is open. Closed by default: it costs a fifth of the
+   * canvas and matters mainly while playtesting, which opens it on its own.
+   */
+  consoleOpen: boolean;
+  toggleConsole: () => void;
   selectedPage: number;
   setSelectedPage: (index: number) => void;
   /** Flags the active map dirty after an in-place edit to an event's raw tree. */
@@ -324,7 +421,7 @@ export const useEditor = create<EditorState>((set, get) => ({
     const existing = get().docs.get(id);
     if (existing) {
       if (!eventBaselines.has(id)) rememberEventBaseline(id, existing.map.events);
-      set({ activeMapId: id, paletteSlot: 0, selectedLightId: null, selectedLightIds: [], lightPlacementPreview: [] });
+      set({ activeMapId: id, selectedLightId: null, selectedLightIds: [], lightPlacementPreview: [] });
       localStorage.setItem('sc.lastMapId', String(id));
       return;
     }
@@ -343,7 +440,7 @@ export const useEditor = create<EditorState>((set, get) => ({
       }
       const docs = new Map(get().docs);
       docs.set(id, doc);
-      set({ docs, activeMapId: id, paletteSlot: 0, selectedLightId: null, selectedLightIds: [], lightPlacementPreview: [] });
+      set({ docs, activeMapId: id, selectedLightId: null, selectedLightIds: [], lightPlacementPreview: [] });
       rememberEventBaseline(id, map.events);
       localStorage.setItem('sc.lastMapId', String(id));
     } catch (err) {
@@ -351,10 +448,8 @@ export const useEditor = create<EditorState>((set, get) => ({
     }
   },
 
-  saveActive: async () => {
-    const { activeMapId, docs } = get();
-    if (activeMapId === null) return;
-    const doc = docs.get(activeMapId);
+  saveMap: async (id) => {
+    const doc = get().docs.get(id);
     if (!doc) return;
 
     // Re-encode tile data from the live buffers before writing.
@@ -366,14 +461,49 @@ export const useEditor = create<EditorState>((set, get) => ({
       })),
     };
     try {
-      await window.sc.map.save(map);
+      const warnings = await window.sc.map.save(map);
       const next = new Map(get().docs);
-      next.set(activeMapId, { ...doc, map, dirty: false });
-      set({ docs: next });
-      get().log('info', `Saved ${map.name} (map ${map.id}).`);
+      // Re-read the doc: a save is async and the author may have painted more
+      // while it was in flight. Only the encoded map is replaced, and the doc
+      // stays dirty if anything changed since.
+      const current = next.get(id) ?? doc;
+      next.set(id, { ...current, map, dirty: current.revision !== doc.revision });
+      // The tree caches the name, and saving is where a rename in Map Properties
+      // finally reaches disk.
+      const project = get().project;
+      set({
+        docs: next,
+        project: project
+          ? {
+              ...project,
+              maps: project.maps.map((node) =>
+                node.id === map.id ? { ...node, name: map.name } : node,
+              ),
+            }
+          : project,
+      });
+      get().log('info', `Saved ${map.name} (map ${map.id}) to JSON and .rxdata.`);
+      for (const warning of warnings) get().log('warn', warning);
     } catch (err) {
       get().log('error', `Save failed: ${(err as Error).message}`);
     }
+  },
+
+  saveActive: async () => {
+    const { activeMapId } = get();
+    if (activeMapId === null) return;
+    await get().saveMap(activeMapId);
+  },
+
+  saveAll: async () => {
+    const dirty = [...get().docs.entries()]
+      .filter(([, doc]) => doc.dirty)
+      .map(([id]) => id);
+    if (dirty.length === 0) return;
+    // Sequential rather than parallel: each save rewrites MapInfos.rxdata, and
+    // two of those racing would have one of them read a half-written file.
+    for (const id of dirty) await get().saveMap(id);
+    if (dirty.length > 1) get().log('info', `Saved ${dirty.length} maps.`);
   },
 
   updateMapProperties: (value) => {
@@ -414,6 +544,96 @@ export const useEditor = create<EditorState>((set, get) => ({
     set({ docs: next, project: summary });
   },
 
+  resizeMap: ({ width, height, shiftX, shiftY, wrap }) => {
+    const { activeMapId, docs, project } = get();
+    if (activeMapId === null) return;
+    const doc = docs.get(activeMapId);
+    if (!doc) return;
+
+    const w = Math.max(1, Math.min(500, Math.round(width)));
+    const h = Math.max(1, Math.min(500, Math.round(height)));
+    const oldW = doc.map.width;
+    const oldH = doc.map.height;
+    if (w === oldW && h === oldH && shiftX === 0 && shiftY === 0) return;
+
+    // Where a source cell lands, or null when it falls outside and is dropped.
+    const place = (x: number, y: number): { x: number; y: number } | null => {
+      let nx = x + shiftX;
+      let ny = y + shiftY;
+      if (wrap) {
+        nx = ((nx % w) + w) % w;
+        ny = ((ny % h) + h) % h;
+      } else if (nx < 0 || ny < 0 || nx >= w || ny >= h) {
+        return null;
+      }
+      return { x: nx, y: ny };
+    };
+
+    const before: ResizeSnapshot = {
+      width: oldW,
+      height: oldH,
+      layers: doc.layerData.map((layer) => Int32Array.from(layer)),
+      events: cloneEvents(doc.map.events),
+      lighting: JSON.parse(JSON.stringify(doc.map.lighting)) as SCLighting,
+    };
+
+    const layerData = doc.layerData.map((source) => {
+      const target = new Int32Array(w * h);
+      for (let y = 0; y < oldH; y++) {
+        for (let x = 0; x < oldW; x++) {
+          const value = source[y * oldW + x];
+          if (value === 0) continue;
+          const to = place(x, y);
+          if (to) target[to.y * w + to.x] = value;
+        }
+      }
+      return target;
+    });
+
+    // Events and lights move with the tiles; anything dropped is clamped back
+    // inside rather than deleted, because losing an event to a resize is a far
+    // worse surprise than finding it at the edge.
+    const events = cloneEvents(doc.map.events).map((event) => {
+      const to = place(event.x, event.y) ?? {
+        x: Math.max(0, Math.min(w - 1, event.x + shiftX)),
+        y: Math.max(0, Math.min(h - 1, event.y + shiftY)),
+      };
+      if (to.x !== event.x) { event.x = to.x; setIvar(event.raw as never, 'x', to.x); }
+      if (to.y !== event.y) { event.y = to.y; setIvar(event.raw as never, 'y', to.y); }
+      return event;
+    });
+
+    const lighting: SCLighting = {
+      ...doc.map.lighting,
+      lights: doc.map.lighting.lights.map((light) => {
+        const to = place(light.x, light.y) ?? {
+          x: Math.max(0, Math.min(w - 1, light.x + shiftX)),
+          y: Math.max(0, Math.min(h - 1, light.y + shiftY)),
+        };
+        return { ...light, x: to.x, y: to.y };
+      }),
+    };
+
+    const after: ResizeSnapshot = {
+      width: w,
+      height: h,
+      layers: layerData.map((layer) => Int32Array.from(layer)),
+      events: cloneEvents(events),
+      lighting: JSON.parse(JSON.stringify(lighting)) as SCLighting,
+    };
+    pushHistory({ kind: 'resize', mapId: activeMapId, label: 'Resize map', before, after });
+    rememberEventBaseline(activeMapId, events);
+
+    const map = { ...doc.map, width: w, height: h, events, lighting };
+    const next = new Map(docs);
+    next.set(activeMapId, { ...doc, map, layerData, revision: doc.revision + 1, dirty: true });
+    const summary = project
+      ? { ...project, maps: project.maps.map((node) => (node.id === activeMapId ? { ...node, width: w, height: h } : node)) }
+      : project;
+    set({ docs: next, project: summary });
+    get().log('info', `Resized ${map.name} to ${w}×${h}.`);
+  },
+
   updateMapMetadata: (metadata, notes) => {
     const { activeMapId, docs } = get();
     if (activeMapId === null) return;
@@ -424,7 +644,133 @@ export const useEditor = create<EditorState>((set, get) => ({
     set({ docs: next });
   },
 
+  createMap: async (request) => {
+    try {
+      const result = await window.sc.map.create(request);
+      applyMutation(set, get, result);
+      if (result.newMapId === undefined) return null;
+      get().log('info', `Created map ${result.newMapId} — ${request.name}.`);
+      await get().selectMap(result.newMapId);
+      return result.newMapId;
+    } catch (err) {
+      get().log('error', `Could not create map: ${(err as Error).message}`);
+      return null;
+    }
+  },
+
+  duplicateMap: async (id) => {
+    try {
+      const result = await window.sc.map.duplicate(id);
+      applyMutation(set, get, result);
+      if (result.newMapId === undefined) return null;
+      get().log('info', `Duplicated map ${id} as map ${result.newMapId}.`);
+      await get().selectMap(result.newMapId);
+      return result.newMapId;
+    } catch (err) {
+      get().log('error', `Could not duplicate map ${id}: ${(err as Error).message}`);
+      return null;
+    }
+  },
+
+  deleteMap: async (id) => {
+    try {
+      const result = await window.sc.map.remove(id);
+      const docs = new Map(get().docs);
+      docs.delete(id);
+      set({ docs });
+      applyMutation(set, get, result);
+      get().log('info', `Deleted map ${id}.`);
+
+      if (get().activeMapId === id) {
+        // Landing on a blank canvas after a delete looks like a crash. Fall back
+        // to whatever the tree shows first.
+        set({ activeMapId: null, selectedEventId: null });
+        const next = [...result.summary.maps].sort((a, b) => a.order - b.order || a.id - b.id)[0];
+        if (next) await get().selectMap(next.id);
+      }
+    } catch (err) {
+      get().log('error', `Could not delete map ${id}: ${(err as Error).message}`);
+    }
+  },
+
+  applyTreeChanges: async (changes) => {
+    if (changes.length === 0) return;
+    try {
+      const result = await window.sc.map.tree(changes);
+      applyMutation(set, get, result);
+      // Keep any still-open doc in step with what was just written, so the title
+      // bar and canvas do not show the pre-rename state.
+      const docs = new Map(get().docs);
+      for (const change of changes) {
+        const doc = docs.get(change.id);
+        if (!doc) continue;
+        docs.set(change.id, {
+          ...doc,
+          map: {
+            ...doc.map,
+            name: change.name?.trim() || doc.map.name,
+            parentId: change.parentId ?? doc.map.parentId,
+            order: change.order ?? doc.map.order,
+          },
+        });
+      }
+      set({ docs });
+    } catch (err) {
+      get().log('error', `Could not update the map tree: ${(err as Error).message}`);
+    }
+  },
+
+  saveConnections: async (mapId, connections) => {
+    try {
+      const result = await window.sc.map.connections(mapId, connections);
+      applyMutation(set, get, result);
+      // The edited map's own doc is updated in place rather than reloaded: it may
+      // hold unsaved tile edits, and connections are not part of that work.
+      const docs = new Map(get().docs);
+      const doc = docs.get(mapId);
+      if (doc) {
+        docs.set(mapId, { ...doc, map: { ...doc.map, connections } });
+        set({ docs });
+      }
+      get().log('info', `Wrote ${connections.length} connection(s) for map ${mapId}.`);
+    } catch (err) {
+      get().log('error', `Could not save connections: ${(err as Error).message}`);
+    }
+  },
+
+  newMapParentId: null,
+  openNewMap: (parentId) => set({ newMapParentId: parentId }),
+  closeNewMap: () => set({ newMapParentId: null }),
+
   catalog: new Map(),
+
+  createTileset: async (request) => {
+    try {
+      const result = await window.sc.tilesets.create(request);
+      set({ catalog: new Map(result.catalog.tilesets.map((t) => [t.id, t])) });
+      for (const warning of result.warnings) get().log('warn', warning);
+      if (result.newTilesetId === undefined) return null;
+      get().log('info', `Registered tileset #${result.newTilesetId} — ${request.name}.`);
+      // Registering a tileset is almost always a step towards painting with it,
+      // so put it on the open map rather than making that a second errand.
+      if (get().activeMapId !== null) get().addTileset(result.newTilesetId);
+      return result.newTilesetId;
+    } catch (err) {
+      get().log('error', `Could not create the tileset: ${(err as Error).message}`);
+      return null;
+    }
+  },
+
+  updateTileset: async (tileset) => {
+    try {
+      const result = await window.sc.tilesets.update(tileset);
+      set({ catalog: new Map(result.catalog.tilesets.map((t) => [t.id, t])) });
+      for (const warning of result.warnings) get().log('warn', warning);
+      get().log('info', `Updated tileset #${tileset.id} — ${tileset.name}.`);
+    } catch (err) {
+      get().log('error', `Could not update the tileset: ${(err as Error).message}`);
+    }
+  },
 
   tool: 'pencil',
   setTool: (tool) => set({ tool }),
@@ -440,6 +786,8 @@ export const useEditor = create<EditorState>((set, get) => ({
     })),
   brush: singleBrush(packTile(0, 384)),
   setBrush: (brush) => set({ brush }),
+  brushSize: 1,
+  setBrushSize: (size) => set({ brushSize: Math.max(1, Math.min(9, Math.round(size) || 1)) }),
 
   copyRegion: (x, y, w, h) => {
     const { activeMapId, docs, activeLayer } = get();
@@ -460,10 +808,32 @@ export const useEditor = create<EditorState>((set, get) => ({
       for (let tx = x0; tx < x1; tx++) tiles.push(buffer[ty * doc.map.width + tx]);
     }
     set({ brush: { w: x1 - x0, h: y1 - y0, tiles } });
-    get().log('info', `Copied ${x1 - x0}x${y1 - y0} tiles from ${doc.map.layers[activeLayer]?.name}.`);
+    // A single-tile pick is the right-click eyedropper, which happens constantly
+    // while painting; logging every one would bury everything else.
+    if (x1 - x0 > 1 || y1 - y0 > 1) {
+      get().log('info', `Copied ${x1 - x0}x${y1 - y0} tiles from ${doc.map.layers[activeLayer]?.name}.`);
+    }
   },
-  paletteSlot: 0,
-  setPaletteSlot: (paletteSlot) => set({ paletteSlot }),
+
+  pickTile: (tilesetId, tileId) => get().pickTiles(tilesetId, [tileId], 1, 1),
+
+  pickTiles: (tilesetId, tiles, w, h) => {
+    const { activeMapId, docs } = get();
+    if (activeMapId === null || w < 1 || h < 1) return;
+    const doc = docs.get(activeMapId);
+    if (!doc) return;
+
+    let slot = doc.map.tilesets.findIndex((entry) => entry.tilesetId === tilesetId);
+    if (slot === -1) {
+      get().addTileset(tilesetId);
+      // Re-read: addTileset appended to a fresh doc, so the index is only known
+      // after it has run.
+      slot = get().docs.get(activeMapId)?.map.tilesets
+        .findIndex((entry) => entry.tilesetId === tilesetId) ?? -1;
+      if (slot === -1) return;
+    }
+    set({ brush: { w, h, tiles: tiles.map((id) => (id > 0 ? packTile(slot, id) : 0)) } });
+  },
 
   addTileset: (tilesetId) => {
     const { activeMapId, docs } = get();
@@ -482,7 +852,7 @@ export const useEditor = create<EditorState>((set, get) => ({
       map: { ...doc.map, tilesets: [...doc.map.tilesets, { tilesetId }] },
       dirty: true,
     });
-    set({ docs: next, paletteSlot: doc.map.tilesets.length });
+    set({ docs: next });
     get().log('info', `Added tileset #${tilesetId} as slot ${doc.map.tilesets.length}.`);
   },
 
@@ -517,14 +887,17 @@ export const useEditor = create<EditorState>((set, get) => ({
       revision: doc.revision + 1,
       dirty: true,
     });
-    set({ docs: next, paletteSlot: 0 });
+    set({ docs: next });
     get().log(
       cleared > 0 ? 'warn' : 'info',
       `Removed tileset slot ${slot}${cleared > 0 ? `, clearing ${cleared} tiles that used it` : ''}.`,
     );
   },
 
-  dimInactiveLayers: false,
+  // On by default: with five layers, "which layer am I on" is the question you
+  // ask most often while painting, and dimming answers it without a glance away
+  // from the map.
+  dimInactiveLayers: true,
   toggleDimInactiveLayers: () => set((s) => ({ dimInactiveLayers: !s.dimInactiveLayers })),
   showGrid: true,
   toggleGrid: () => set((s) => ({ showGrid: !s.showGrid })),
@@ -637,7 +1010,9 @@ export const useEditor = create<EditorState>((set, get) => ({
     set({
       selectedEventId,
       selectedPage: 0,
-      ...(selectedEventId !== null ? { bottomTab: 'event' as const } : {}),
+      // The inspector lives in the bottom dock, which is closed by default, so
+      // revealing it is part of selecting an event rather than a separate step.
+      ...(selectedEventId !== null ? { bottomTab: 'event' as const, consoleOpen: true } : {}),
     }),
   switchNames: [],
   variableNames: [],
@@ -652,6 +1027,8 @@ export const useEditor = create<EditorState>((set, get) => ({
   },
   bottomTab: 'console',
   setBottomTab: (bottomTab) => set({ bottomTab }),
+  consoleOpen: false,
+  toggleConsole: () => set((s) => ({ consoleOpen: !s.consoleOpen })),
   selectedPage: 0,
   setSelectedPage: (selectedPage) => set({ selectedPage }),
   markEventDirty: () => {
@@ -761,6 +1138,37 @@ export const useEditor = create<EditorState>((set, get) => ({
 type SetState = (partial: Partial<EditorState> | ((s: EditorState) => Partial<EditorState>)) => void;
 type GetState = () => EditorState;
 
+/**
+ * Folds the result of a map-tree mutation back into the store.
+ *
+ * Maps the main process rewrote are dropped from the cache so they reload from
+ * disk — except when they have unsaved edits, where silently discarding the
+ * author's work would be far worse than showing a slightly stale connection list.
+ */
+function applyMutation(set: SetState, get: GetState, result: MapMutationResult): void {
+  const docs = new Map(get().docs);
+  let reopenActive = false;
+  for (const id of result.invalidated) {
+    const doc = docs.get(id);
+    if (!doc) continue;
+    if (doc.dirty) {
+      get().log(
+        'warn',
+        `Map ${id} changed on disk while it had unsaved edits; the in-editor version was kept.`,
+      );
+      continue;
+    }
+    docs.delete(id);
+    if (id === get().activeMapId) reopenActive = true;
+  }
+  set({ project: result.summary, docs });
+  // Dropping the doc the canvas is currently drawing would blank the editor, so
+  // the map being looked at is reloaded rather than merely evicted.
+  const activeMapId = get().activeMapId;
+  if (reopenActive && activeMapId !== null) void get().selectMap(activeMapId);
+  for (const warning of result.warnings) get().log('warn', warning);
+}
+
 function bumpRevision(set: SetState, get: GetState, mapId: number): void {
   const docs = new Map(get().docs);
   const doc = docs.get(mapId);
@@ -834,6 +1242,34 @@ function applyHistory(
     for (const patch of entry.patches) doc.layerData[patch.layer][patch.index] = patch[field];
     to.push(entry);
     bumpRevision(set, get, entry.mapId);
+    return;
+  }
+
+  if (entry.kind === 'resize') {
+    const snapshot = entry[field];
+    const docs = new Map(get().docs);
+    docs.set(entry.mapId, {
+      ...doc,
+      map: {
+        ...doc.map,
+        width: snapshot.width,
+        height: snapshot.height,
+        events: cloneEvents(snapshot.events),
+        lighting: JSON.parse(JSON.stringify(snapshot.lighting)) as SCLighting,
+      },
+      layerData: snapshot.layers.map((layer) => Int32Array.from(layer)),
+      revision: doc.revision + 1,
+      dirty: true,
+    });
+    rememberEventBaseline(entry.mapId, snapshot.events);
+    to.push(entry);
+    const project = get().project;
+    set({
+      docs,
+      project: project
+        ? { ...project, maps: project.maps.map((node) => (node.id === entry.mapId ? { ...node, width: snapshot.width, height: snapshot.height } : node)) }
+        : project,
+    });
     return;
   }
 

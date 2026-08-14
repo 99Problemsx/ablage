@@ -1,0 +1,189 @@
+{
+  "formatVersion": 1,
+  "id": 33,
+  "name": "Asgheim",
+  "parentId": 0,
+  "order": 72,
+  "width": 20,
+  "height": 20,
+  "tilesets": [
+    {
+      "tilesetId": 1
+    },
+    {
+      "tilesetId": 26
+    }
+  ],
+  "layers": [
+    {
+      "name": "Ground",
+      "role": "ground",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20",
+        "1ev4*20"
+      ]
+    },
+    {
+      "name": "Decor",
+      "role": "decor",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*15 1ftc 1ftd 1fte 1ftf 1ftg",
+        ".*15 1ftk 1ftl 1ftm 1ftn 1fto",
+        ".*15 1fts 1ftt 1ftu 1ftv 1ftw",
+        ".*15 1fu0 1fu1 1fu2 1fu3 1fu4",
+        ".*15 1fu8 1fu9 1fua 1fub 1fuc",
+        ".*15 1fug 1fuh 1fui 1fuj 1fuk",
+        ".*15 1fuo 1fup 1fuq 1fur 1fus",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    },
+    {
+      "name": "Overlay",
+      "role": "overlay",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    },
+    {
+      "name": "Canopy",
+      "role": "canopy",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    },
+    {
+      "name": "Sky",
+      "role": "sky",
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "rows": [
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20",
+        ".*20"
+      ]
+    }
+  ],
+  "bgm": null,
+  "bgs": null,
+  "autoplayBgm": false,
+  "autoplayBgs": false,
+  "connections": [],
+  "weather": {
+    "kind": "None",
+    "power": 0,
+    "chance": 100
+  },
+  "lighting": {
+    "enabled": false,
+    "ambient": 0,
+    "tintByHour": {},
+    "lights": []
+  },
+  "encounters": [],
+  "encounterStep": 30,
+  "metadata": {
+    "outdoor": true,
+    "showArea": true,
+    "extra": {}
+  },
+  "events": [],
+  "notes": ""
+}

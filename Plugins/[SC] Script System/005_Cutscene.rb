@@ -369,6 +369,17 @@ module GameData
     def execute
       # Save current BGM to restore after cutscene
       @saved_bgm = $game_system.playing_bgm
+
+      # Resolve translations before adding the message-chain control character.
+      # Looking up the text after appending "\\1" would change the translation
+      # key and make entries from Text_deutsch_game/Story.txt impossible to find.
+      @steps.each do |step|
+        if [:message, :dialogue].include?(step[:type])
+          step[:text] = _INTL(step[:text].to_s)
+        elsif step[:type] == :choice
+          step[:options] = step[:options].map { |option| _INTL(option.to_s) }
+        end
+      end
       
       # Pre-process steps to chain consecutive messages
       @steps.each_with_index do |step, i|
@@ -807,4 +818,3 @@ def pbQuest(action, name)
   when :active then GameData::Quest.active?(name)
   end
 end
-

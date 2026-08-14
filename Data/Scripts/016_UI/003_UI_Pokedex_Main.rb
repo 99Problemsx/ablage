@@ -415,7 +415,7 @@ class UI::PokedexVisuals < UI::BaseVisuals
     @sprites[:dex_list].shadowColor = get_text_color_theme(:gray)[1]
     @sprites[:dex_list].active      = false
     # Pokémon sprite
-    @sprites[:pokemon] = PokemonSprite.new(@viewport)
+    @sprites[:pokemon] = PokedexPokemonSprite.new(@viewport)
     @sprites[:pokemon].setOffset(PictureOrigin::CENTER)
     @sprites[:pokemon].x = 104
     @sprites[:pokemon].y = 196

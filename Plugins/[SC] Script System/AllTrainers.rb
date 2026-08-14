@@ -1296,6 +1296,62 @@ GameData::Trainer.define(:ELITEFOUR_Orm, "Orm") do |t|
   end
 end
 
+#---------------------------------------
+# Champion — Viktor, balanced Asgheim League team
+#---------------------------------------
+GameData::Trainer.define(:CHAMPION, "Viktor") do |t|
+  t.skill_level 90
+  t.lose_text "The League has its answer. You are ready—but the world still needs you."
+  t.pokemon(:CORVIKNIGHT, 63) do |p|
+    p.moves :BRAVEBIRD, :IRONHEAD, :UTURN, :ROOST
+    p.ability :MIRRORARMOR
+    p.item :LEFTOVERS
+    p.nature :CAREFUL
+    p.iv({ HP: 31, ATTACK: 31, DEFENSE: 31, SPECIAL_ATTACK: 0, SPECIAL_DEFENSE: 31, SPEED: 31 })
+    p.ev({ HP: 252, ATTACK: 4, SPECIAL_DEFENSE: 252 })
+  end
+  t.pokemon(:MILOTIC, 63) do |p|
+    p.moves :SCALD, :ICEBEAM, :RECOVER, :HAZE
+    p.ability :MARVELSCALE
+    p.item :FLAMEORB
+    p.nature :BOLD
+    p.iv({ HP: 31, ATTACK: 0, DEFENSE: 31, SPECIAL_ATTACK: 31, SPECIAL_DEFENSE: 31, SPEED: 31 })
+    p.ev({ HP: 252, DEFENSE: 252, SPECIAL_DEFENSE: 4 })
+  end
+  t.pokemon(:VOLCARONA, 64) do |p|
+    p.moves :FIERYDANCE, :BUGBUZZ, :GIGADRAIN, :QUIVERDANCE
+    p.ability :FLAMEBODY
+    p.item :HEAVYDUTYBOOTS
+    p.nature :TIMID
+    p.iv({ HP: 31, ATTACK: 0, DEFENSE: 31, SPECIAL_ATTACK: 31, SPECIAL_DEFENSE: 31, SPEED: 31 })
+    p.ev({ HP: 4, SPECIAL_ATTACK: 252, SPEED: 252 })
+  end
+  t.pokemon(:TYRANITAR, 64) do |p|
+    p.moves :STONEEDGE, :CRUNCH, :EARTHQUAKE, :DRAGONDANCE
+    p.ability :SANDSTREAM
+    p.item :LUMBERRY
+    p.nature :JOLLY
+    p.iv({ HP: 31, ATTACK: 31, DEFENSE: 31, SPECIAL_ATTACK: 0, SPECIAL_DEFENSE: 31, SPEED: 31 })
+    p.ev({ HP: 4, ATTACK: 252, SPEED: 252 })
+  end
+  t.pokemon(:METAGROSS, 65) do |p|
+    p.moves :METEORMASH, :ZENHEADBUTT, :EARTHQUAKE, :BULLETPUNCH
+    p.ability :CLEARBODY
+    p.item :ASSAULTVEST
+    p.nature :ADAMANT
+    p.iv({ HP: 31, ATTACK: 31, DEFENSE: 31, SPECIAL_ATTACK: 0, SPECIAL_DEFENSE: 31, SPEED: 31 })
+    p.ev({ HP: 252, ATTACK: 252, SPECIAL_DEFENSE: 4 })
+  end
+  t.pokemon(:LUCARIO, 66) do |p|
+    p.moves :AURASPHERE, :FLASHCANNON, :DARKPULSE, :VACUUMWAVE
+    p.ability :INNERFOCUS
+    p.item :LIFEORB
+    p.nature :TIMID
+    p.iv({ HP: 31, ATTACK: 0, DEFENSE: 31, SPECIAL_ATTACK: 31, SPECIAL_DEFENSE: 31, SPEED: 31 })
+    p.ev({ HP: 4, SPECIAL_ATTACK: 252, SPEED: 252 })
+  end
+end
+
 #---------------------------------------------------------------
 # TEST 10: Tailwind + Shell Smash (Speed Control + Setup)
 # Expected: AI uses Tailwind turn 1, then Shell Smash on Cloyster

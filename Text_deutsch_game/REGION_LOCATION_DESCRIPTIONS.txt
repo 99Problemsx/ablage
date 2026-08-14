@@ -1,0 +1,38 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[REGION_LOCATION_DESCRIPTIONS]
+\PN's house\nProfessor Oak's lab
+\PN's house\nProfessor Oak's lab
+Kurt's house
+Kurt's house
+Cedolan Dept. Store\nCedolan Gym\nMove Maniac House
+Cedolan Dept. Store\nCedolan Gym\nMove Maniac House
+Game Corner\nPokémon Institute
+Game Corner\nPokémon Institute
+Bridges
+Bridges
+Day Care Center\nPokémon Fan Club\nLerucean Market
+Day Care Center\nPokémon Fan Club\nLerucean Market
+A Bug Catching Contest is held here every Tuesday, Thursday and Saturday.
+A Bug Catching Contest is held here every Tuesday, Thursday and Saturday.
+Ice Cave
+Ice Cave
+Examples of trainer battles.
+Examples of trainer battles.
+Pokémon League
+Pokémon League
+Cycle Road
+Cycle Road
+Rock Cave
+Rock Cave
+Battle Palace\nBattle Tower\nBattle Arena\nBattle Factory
+Battle Palace\nBattle Tower\nBattle Arena\nBattle Factory
+Challenge yourself by catching Pokémon without using your own.
+Challenge yourself by catching Pokémon without using your own.
+Harbor\nDiving area
+Harbor\nDiving area
+Four mysterious meteorites can be found here.
+Four mysterious meteorites can be found here.
+A blue Mew can be found here every so often.
+A blue Mew can be found here every so often.

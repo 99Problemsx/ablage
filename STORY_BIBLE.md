@@ -58,11 +58,19 @@ Wesens beruhen darf.
 - **Hoopa** ist durch seine Ringe der Schlüssel beziehungsweise das Tor.
 - Hoopa hat seiner Funktion im alten Bann niemals zugestimmt.
 - Nidhoggr zieht Hoopa in Kapitel 32 in sein Gefäß; Hoopa wird nicht vernichtet.
-- Arceus befreit und restauriert Hoopa in Kapitel 47.
+- Arceus restauriert Hoopas beschädigten Körper in Kapitel 47.
+- Kapitel 32 befreit Hoopa nur aus dem alten Siegel, bevor Nidhoggr es absorbiert.
+  Kapitel 46 birgt Hoopa aus Nidhoggr; Kapitel 47 restauriert seinen beschädigten
+  Körper. Erst Hoopas eigene anschließende Reiseentscheidung vollendet den Bogen.
 
 Die drei Funktionen dürfen in Dialogen nicht vertauscht werden. Nidhoggr kann
 nicht wie ein normales Pokémon getötet werden. Kapitel 34 errichtet nur einen
 vorläufigen Bann; Kapitel 46 macht ihn durch die vervollständigte Krone dauerhaft.
+Die Form in Kapitel 34 ist ausdrücklich nur ein von den drei Wächterbindungen
+getragenes **Echo der Krone**, nicht die restaurierte Originalkrone. Eternatus
+wird dabei endgültig als Gefäß abgetrennt und kehrt in Kapitel 47 als freie,
+eigenständige Person zurück. Nidhoggr besitzt im zweiten Finale eine körperlose
+Void-Form und verwendet Eternatus nicht erneut.
 
 ### Die Auserwählten
 
@@ -266,8 +274,9 @@ unterscheiden:
 
 Beim Eventbau gilt die dramatische Position der neuen Szenen: Tempelrätsel liegen
 vor der jeweiligen Prüfung beziehungsweise Fragmentübergabe; Enthüllungen folgen
-auf die gelöste Prüfung; `ch47_question_for_arceus` liegt unmittelbar vor
-`ch47_arceus_farewell`.
+auf die gelöste Prüfung. Nach `ch47_question_for_arceus` folgen Hoopas freie
+Entscheidung und Eternatus' Rückkehr; erst dann beendet `ch47_arceus_farewell`
+die göttliche Begegnung.
 
 ### Verstärkte Übergangs- und Konsequenzkapitel
 
@@ -286,6 +295,14 @@ auf die gelöste Prüfung; `ch47_question_for_arceus` liegt unmittelbar vor
   kontrollierte und anfechtbare Zugangsordnung, Lyra führt eine Frakturklinik,
   Kael begleitet trauernde Kinder, Hoopa errichtet freiwillig ein Transportnetz
   und der Spieler hilft auch dort, wo keine Prophezeiung wartet.
+- Kapitel 43 enthält Astorias öffentliche Anhörung und eine bindende Gegenkontrolle
+  über Krone und Portal. Kapitel 47 endet mit Hoopas erster eigener Entscheidung
+  und Eternatus' freier Rückkehr.
+- Kapitel 49 lässt Betroffene der Gruppe offen widersprechen und überträgt ihnen
+  Macht über den Wiederaufbau. Kapitel 52 enthält eine Sturmrettung; Kapitel 53
+  lässt den Spieler die erste selbstgewählte Aufgabe nach der Prophezeiung bestimmen.
+- Marcus und Aurora bleiben auch im True Ending am Leben. Ihr hohes Alter wird
+  sichtbar, aber weder Tod noch ein Jenseitsbild werden angedeutet.
 
 ## Dramaturgische Mindeststandards
 

@@ -45,7 +45,7 @@ module GameData
       if const_defined?(:DATA)
         self::DATA.each_value { |encounter| yield(encounter) }
       end
-      ScriptRegistry.encounters.each { |key, data| yield(key, data) }
+      ScriptRegistry.encounters.each_value { |data| yield(EncounterData.new(data)) }
     end
     
     def self.count
@@ -63,6 +63,7 @@ module GameData
   class EncounterData
     def initialize(data); @data = data || {}; end
     def map_id;  @data[:map_id]; end
+    def map;     @data[:map_id]; end
     def version; @data[:version] || 0; end
     def pbs_file_suffix; ""; end
     def [](k); @data[k]; end

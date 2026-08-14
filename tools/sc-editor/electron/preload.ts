@@ -8,10 +8,21 @@ import {
   IPC,
   type GameLogLine,
   type LoadedImage,
+  type MapMutationResult,
+  type MapTreeChange,
+  type NewMapRequest,
+  type NewTilesetRequest,
   type ProjectSummary,
   type SystemNames,
+  type TilesetMutationResult,
 } from './ipc.ts';
-import type { SCMap, SCTilesetCatalog } from '../src/core/scmap/format.ts';
+import type { SCCommonEvent } from '../src/core/events/commonEvents.ts';
+import type {
+  SCConnection,
+  SCMap,
+  SCTileset,
+  SCTilesetCatalog,
+} from '../src/core/scmap/format.ts';
 
 const api = {
   project: {
@@ -21,13 +32,37 @@ const api = {
   },
   map: {
     load: (id: number): Promise<SCMap> => ipcRenderer.invoke(IPC.mapLoad, id),
-    save: (map: SCMap): Promise<void> => ipcRenderer.invoke(IPC.mapSave, map),
+    /** Resolves with the warnings from the .rxdata export, if any. */
+    save: (map: SCMap): Promise<string[]> => ipcRenderer.invoke(IPC.mapSave, map),
+    create: (request: NewMapRequest): Promise<MapMutationResult> =>
+      ipcRenderer.invoke(IPC.mapCreate, request),
+    duplicate: (id: number): Promise<MapMutationResult> =>
+      ipcRenderer.invoke(IPC.mapDuplicate, id),
+    remove: (id: number): Promise<MapMutationResult> => ipcRenderer.invoke(IPC.mapDelete, id),
+    /** Renames, reparents and reorders in one call. */
+    tree: (changes: MapTreeChange[]): Promise<MapMutationResult> =>
+      ipcRenderer.invoke(IPC.mapTree, changes),
+    connections: (mapId: number, connections: SCConnection[]): Promise<MapMutationResult> =>
+      ipcRenderer.invoke(IPC.mapConnections, mapId, connections),
+  },
+  commonEvents: {
+    load: (): Promise<SCCommonEvent[]> => ipcRenderer.invoke(IPC.commonEventsLoad),
+    save: (entries: SCCommonEvent[]): Promise<void> =>
+      ipcRenderer.invoke(IPC.commonEventsSave, entries),
   },
   tilesets: {
     load: (): Promise<SCTilesetCatalog> => ipcRenderer.invoke(IPC.tilesetCatalogLoad),
     save: (catalog: SCTilesetCatalog): Promise<void> =>
       ipcRenderer.invoke(IPC.tilesetCatalogSave, catalog),
+    /** Registers a new tileset in both the catalogue and Tilesets.rxdata. */
+    create: (request: NewTilesetRequest): Promise<TilesetMutationResult> =>
+      ipcRenderer.invoke(IPC.tilesetCreate, request),
+    update: (tileset: SCTileset): Promise<TilesetMutationResult> =>
+      ipcRenderer.invoke(IPC.tilesetUpdate, tileset),
   },
+  /** Copies a picked image into Graphics/Tilesets or Graphics/Autotiles. */
+  graphicsImport: (folder: 'Tilesets' | 'Autotiles'): Promise<string | null> =>
+    ipcRenderer.invoke(IPC.graphicsImport, folder),
   /** Names (no extension) of the graphics in a Graphics subfolder. */
   graphicsList: (folder: string): Promise<string[]> =>
     ipcRenderer.invoke(IPC.graphicsList, folder),

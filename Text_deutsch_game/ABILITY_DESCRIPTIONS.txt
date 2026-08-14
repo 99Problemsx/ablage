@@ -1,0 +1,8 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[ABILITY_DESCRIPTIONS]
+The Pokémon is immune to Ground-type moves. Dealing a KO raises its best stat.
+Das Pokémon gilt als nicht auf dem Boden befindlich und Boden-Attacken sowie die Zustände Stachler, Giftspitzen und Klebenetz haben keine Wirkung auf es. Der höchste Statuswert des Pokémon wird um 1 Stufe erhöht, wenn es ein anderes Pokémon mit einem Angriff besiegt.
+Powers up the Pokémon's Fire-type moves.
+Die Stärke von Feuer-Attacken des Pokémon wird um 50 % erhöht.

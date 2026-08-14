@@ -17,7 +17,13 @@
     "verify:event-editing": "tsx scripts/verify-event-editing.ts",
     "verify:lighting": "tsx scripts/verify-lighting.ts",
     "verify:autotiles": "tsx scripts/verify-autotiles.ts",
+    "verify:map-export": "tsx scripts/verify-map-export.ts",
+    "verify:extra-layers": "tsx scripts/verify-extra-layers.ts",
+    "verify:tileset-export": "tsx scripts/verify-tileset-export.ts",
     "import:maps": "tsx scripts/import-maps.ts",
+    "extract:story": "tsx scripts/extract-story-translations.ts",
+    "audit:story": "tsx scripts/audit-story-translations.ts",
+    "verify:story": "tsx scripts/verify-story-translations.ts",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

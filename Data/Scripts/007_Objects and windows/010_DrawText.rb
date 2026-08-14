@@ -810,7 +810,9 @@ def getLineBrokenText(bitmap, value, width, dims)
   return ret if !bitmap || bitmap.disposed? || width <= 0
   # UI data can legitimately omit optional descriptions. Treat missing values
   # as empty text instead of crashing in String#slice!.
-  textmsg = value.to_s.clone
+  # String#clone preserves the frozen state. Translation lookups can return
+  # frozen strings, but this routine consumes the copy with slice! below.
+  textmsg = value.to_s.dup
   ret.push(["", 0, 0, 0, bitmap.text_size("X").height, 0, 0, 0, 0])
   while (c = textmsg.slice!(/\n|[\u4E00-\u9FFF\u3040-\u309F\u30A0-\u30FF\uAC00-\uD7AF]|(\S*([ \r\t\f]?))/)) != nil
     break if c == ""
@@ -865,7 +867,8 @@ def getLineBrokenChunks(bitmap, value, width, dims, plain = false)
   re = /<c=([^>]+)>/
   reNoMatch = /<c=[^>]+>/
   return ret if !bitmap || bitmap.disposed? || width <= 0
-  textmsg = value.to_s.clone
+  # String#clone preserves the frozen state, but this copy is consumed below.
+  textmsg = value.to_s.dup
   color = Font.default_color
   while (c = textmsg.slice!(/\n|(([^\u4E00-\u9FFF\u3040-\u309F\u30A0-\u30FF\uAC00-\uD7AF]*[\u4E00-\u9FFF\u3040-\u309F\u30A0-\u30FF\uAC00-\uD7AF]))|[^ \r\t\f\n\-]*\-+|(\S*([ \r\t\f]?))/)) != nil
     break if c == ""

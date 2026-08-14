@@ -1,4 +1,47 @@
 #===============================================================================
+# Pokédex-only Pokémon sprite. Animated battle sprites otherwise play at their
+# native decoder speed, which is much too fast for the Pokédex preview.
+#===============================================================================
+class PokedexPokemonSprite < PokemonSprite
+  ANIMATION_FPS = 10.0
+
+  def setSpeciesBitmap(*args)
+    super
+    # EBDX uses speed 2 for setPokemonBitmap (Summary) but speed 1 for
+    # setSpeciesBitmap (Pokédex). Match the Summary's animation cadence.
+    @_iconbitmap.setSpeed(2) if @_iconbitmap&.respond_to?(:setSpeed)
+    @pokedex_animation_started = System.uptime
+    @pokedex_animation = @_iconbitmap&.instance_variable_get(:@bitmap)
+    @pokedex_gif = nil
+    bitmap = @pokedex_animation&.respond_to?(:bitmap) ? @pokedex_animation.bitmap : nil
+    if bitmap&.respond_to?(:animated?) && bitmap.animated?
+      @pokedex_gif = bitmap
+      @pokedex_gif.goto_and_stop(0)
+    end
+  end
+
+  def update
+    super
+    return if !@pokedex_animation
+    frame_count = if @pokedex_gif
+                    @pokedex_gif.frame_count.to_i
+                  elsif @pokedex_animation.respond_to?(:length)
+                    @pokedex_animation.length.to_i
+                  else
+                    1
+                  end
+    frame_count = [frame_count, 1].max
+    frame = ((System.uptime - @pokedex_animation_started) * ANIMATION_FPS).floor % frame_count
+    if @pokedex_gif
+      @pokedex_gif.goto_and_stop(frame)
+    elsif frame_count > 1
+      @pokedex_animation.instance_variable_set(:@currentFrame, frame)
+      self.bitmap = @_iconbitmap.bitmap
+    end
+  end
+end
+
+#===============================================================================
 #
 #===============================================================================
 class UI::PokedexEntryVisuals < UI::BaseVisuals
@@ -108,7 +151,7 @@ class UI::PokedexEntryVisuals < UI::BaseVisuals
 
   def initialize_sprites_info
     # Pokémon sprite
-    @sprites[:pokemon] = PokemonSprite.new(@viewport)
+    @sprites[:pokemon] = PokedexPokemonSprite.new(@viewport)
     @sprites[:pokemon].setOffset(PictureOrigin::CENTER)
     @sprites[:pokemon].x = 104
     @sprites[:pokemon].y = 136
@@ -167,13 +210,13 @@ class UI::PokedexEntryVisuals < UI::BaseVisuals
 
   def initialize_sprites_forms
     # Front sprite
-    @sprites[:front_form] = PokemonSprite.new(@viewport)
+    @sprites[:front_form] = PokedexPokemonSprite.new(@viewport)
     @sprites[:front_form].setOffset(PictureOrigin::CENTER)
     @sprites[:front_form].x = 130
     @sprites[:front_form].y = 158
     @sprites[:front_form].z = 500
     # Back sprite
-    @sprites[:back_form] = PokemonSprite.new(@viewport)
+    @sprites[:back_form] = PokedexPokemonSprite.new(@viewport)
     @sprites[:back_form].setOffset(PictureOrigin::BOTTOM)
     @sprites[:back_form].x = 382   # y is set below as it depends on metrics
     @sprites[:back_form].z = 500

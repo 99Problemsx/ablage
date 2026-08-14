@@ -105,7 +105,7 @@ export function MapCanvas(): React.JSX.Element {
 
   const {
     docs, activeMapId, catalog, zoom, setZoom, showGrid, showNeighbours,
-    showEvents, activeLayer, brush, tool, paint, log, setBrush, project,
+    showEvents, activeLayer, brush, brushSize, tool, paint, log, setBrush, project,
     animate, checker, selectEvent, selectedEventId, selectedPage, copyRegion, undo, redo,
     showEventGraphics, showEventIds, showEventTriggers, eventPreviewPages, moveEvent,
     showLighting, lightingHour, selectedLightId, selectedLightIds, selectLight, addLight, updateLight, updateLighting, lightPlacementPreview,
@@ -330,7 +330,9 @@ export function MapCanvas(): React.JSX.Element {
         // those are already faded, and fading them twice makes them vanish.
         opacity:
           (doc.map.layers[i]?.opacity ?? 1) *
-          (dimInactiveLayers && i !== activeLayer ? 0.25 : 1),
+          // Enough to separate the active layer, not so much that the layers
+          // below stop being usable as a reference for what you are drawing.
+          (dimInactiveLayers && i !== activeLayer ? 0.5 : 1),
         visible: doc.map.layers[i]?.visible ?? true,
       })),
       originX: 0,
@@ -809,6 +811,76 @@ export function MapCanvas(): React.JSX.Element {
   const lastCell = useRef<{ x: number; y: number } | null>(null);
   /** Right-drag anchor used to copy a region into the brush. */
   const copyAnchor = useRef<{ x: number; y: number } | null>(null);
+  /**
+   * Last tile committed by a finished stroke. Survives between strokes so
+   * Shift+click can draw a line from wherever painting last stopped.
+   */
+  const lastStrokeEnd = useRef<{ x: number; y: number } | null>(null);
+  /** Axis a Ctrl-drag has locked onto, decided by the first tile of movement. */
+  const axisLock = useRef<{ from: { x: number; y: number }; axis: 'x' | 'y' | null } | null>(null);
+
+  /**
+   * Writes one brush impression at a tile, without stroke bookkeeping.
+   *
+   * `brushSize` widens a single-tile pick and the eraser into a square, centred
+   * on the cursor. It deliberately does not scale a multi-tile stamp: that stamp
+   * is a specific set of tiles the author picked, and repeating or stretching it
+   * would put tiles down they never chose.
+   */
+  const stampAt = useCallback(
+    (tile: { x: number; y: number }) => {
+      const single = brush.w === 1 && brush.h === 1;
+      const size = tool === 'erase' || single ? brushSize : 1;
+      const offset = Math.floor((size - 1) / 2);
+
+      for (let sy = 0; sy < size; sy++) {
+        for (let sx = 0; sx < size; sx++) {
+          const ox = tile.x - offset + sx;
+          const oy = tile.y - offset + sy;
+          if (tool === 'erase') {
+            stroke.current.push({ x: ox, y: oy, value: 0 });
+            continue;
+          }
+          for (let dy = 0; dy < brush.h; dy++) {
+            for (let dx = 0; dx < brush.w; dx++) {
+              stroke.current.push({
+                x: ox + dx,
+                y: oy + dy,
+                value: brush.tiles[dy * brush.w + dx] ?? 0,
+              });
+            }
+          }
+        }
+      }
+    },
+    [brush, brushSize, tool],
+  );
+
+  /**
+   * Stamps along a straight line between two tiles.
+   *
+   * Bresenham rather than sampling the pointer: a fast drag skips cells, and a
+   * line drawn by hand across twenty tiles should not come out dotted.
+   */
+  const stampLine = useCallback(
+    (from: { x: number; y: number }, to: { x: number; y: number }) => {
+      let { x, y } = from;
+      const dx = Math.abs(to.x - x);
+      const dy = -Math.abs(to.y - y);
+      const stepX = x < to.x ? 1 : -1;
+      const stepY = y < to.y ? 1 : -1;
+      let error = dx + dy;
+      for (;;) {
+        stampAt({ x, y });
+        if (x === to.x && y === to.y) break;
+        const doubled = 2 * error;
+        if (doubled >= dy) { error += dy; x += stepX; }
+        if (doubled <= dx) { error += dx; y += stepY; }
+      }
+      lastCell.current = { ...to };
+    },
+    [stampAt],
+  );
 
   const applyAt = useCallback(
     (tile: { x: number; y: number }) => {
@@ -823,31 +895,46 @@ export function MapCanvas(): React.JSX.Element {
       const last = lastCell.current;
       if (last && last.x === tile.x && last.y === tile.y) return;
       lastCell.current = { ...tile };
-
-      if (tool === 'erase') {
-        stroke.current.push({ ...tile, value: 0 });
-        return;
-      }
-      // Stamp the whole brush, anchored at the cursor.
-      for (let dy = 0; dy < brush.h; dy++) {
-        for (let dx = 0; dx < brush.w; dx++) {
-          stroke.current.push({
-            x: tile.x + dx,
-            y: tile.y + dy,
-            value: brush.tiles[dy * brush.w + dx] ?? 0,
-          });
-        }
-      }
+      stampAt(tile);
     },
-    [doc, tool, brush, activeLayer, setBrush],
+    [doc, tool, activeLayer, setBrush, stampAt],
   );
 
   const flushStroke = useCallback(() => {
+    lastStrokeEnd.current = lastCell.current ?? lastStrokeEnd.current;
     lastCell.current = null;
+    axisLock.current = null;
     if (stroke.current.length === 0) return;
     paint(tool === 'erase' ? 'Erase' : 'Paint', stroke.current);
     stroke.current = [];
   }, [paint, tool]);
+
+  /**
+   * Snaps a drag to one axis while Ctrl is held.
+   *
+   * The axis is chosen by whichever direction moved further first, and releasing
+   * Ctrl mid-stroke resumes free painting — so a wall can be started straight and
+   * finished by hand without letting go of the button.
+   */
+  const constrainToAxis = useCallback(
+    (tile: { x: number; y: number }, held: boolean): { x: number; y: number } => {
+      const lock = axisLock.current;
+      if (!held || !lock) {
+        axisLock.current = held ? (lock ?? { from: { ...tile }, axis: null }) : null;
+        return tile;
+      }
+      if (!lock.axis) {
+        const dx = Math.abs(tile.x - lock.from.x);
+        const dy = Math.abs(tile.y - lock.from.y);
+        if (dx === 0 && dy === 0) return tile;
+        lock.axis = dx >= dy ? 'x' : 'y';
+      }
+      return lock.axis === 'x'
+        ? { x: tile.x, y: lock.from.y }
+        : { x: lock.from.x, y: tile.y };
+    },
+    [],
+  );
 
   const onPointerDown = (e: React.PointerEvent<HTMLCanvasElement>): void => {
     e.currentTarget.setPointerCapture(e.pointerId);
@@ -897,7 +984,14 @@ export function MapCanvas(): React.JSX.Element {
       return;
     }
     painting.current = true;
-    applyAt(tile);
+    // Shift continues from where the last stroke ended, which is how a straight
+    // run of cliff or fence gets drawn without dragging pixel by pixel.
+    if (e.shiftKey && lastStrokeEnd.current && tool !== 'eyedropper' && tool !== 'fill') {
+      stampLine(lastStrokeEnd.current, tile);
+    } else {
+      applyAt(tile);
+    }
+    axisLock.current = e.ctrlKey ? { from: { ...tile }, axis: null } : null;
     if (tool === 'eyedropper') painting.current = false;
   };
 
@@ -936,7 +1030,9 @@ export function MapCanvas(): React.JSX.Element {
       });
       return;
     }
-    if (painting.current && tile) applyAt(tile);
+    if (painting.current && tile) {
+      applyAt(constrainToAxis(tile, e.ctrlKey));
+    }
   };
 
   const onPointerUp = (e: React.PointerEvent<HTMLCanvasElement>): void => {
@@ -974,10 +1070,11 @@ export function MapCanvas(): React.JSX.Element {
       const anchor = copyAnchor.current;
       copyAnchor.current = null;
       setCopyRect(null);
-      // A right-click that never became a drag is a menu request, not a copy.
       if (rect && (rect.w > 1 || rect.h > 1)) {
         copyRegion(rect.x, rect.y, rect.w, rect.h);
-      } else {
+      } else if (tool === 'event') {
+        // In event mode the right button is the only route to the event actions,
+        // and there is no tile to sample anyway.
         const canvas = overlayRef.current;
         const bounds = canvas?.getBoundingClientRect();
         setMenu({
@@ -985,6 +1082,11 @@ export function MapCanvas(): React.JSX.Element {
           y: e.clientY - (bounds?.top ?? 0),
           tile: anchor,
         });
+      } else {
+        // A right-click that never became a drag samples the tile under it.
+        // Same gesture as the drag, just one tile wide — which is what makes it
+        // feel like an eyedropper rather than a second, separate tool.
+        copyRegion(anchor.x, anchor.y, 1, 1);
       }
       return;
     }
@@ -1096,11 +1198,12 @@ export function MapCanvas(): React.JSX.Element {
       )}
       {doc && (
       <div className="sc-canvas-hud">
+        {/* Identity first, as one chip: which map, and how big. The header no
+            longer carries a document title, so this is where it lives. */}
         <span className="sc-badge" data-tone="cyan">
-          {doc.map.name}
-        </span>
-        <span className="sc-badge">
-          {doc.map.width}×{doc.map.height}
+          <span className="sc-mono sc-faint">{String(doc.map.id).padStart(3, '0')}</span>
+          {' · '}{doc.map.name}{' · '}
+          <span className="sc-mono">{doc.map.width}×{doc.map.height}</span>
         </span>
         <span className="sc-badge" data-tone="violet">
           L{activeLayer + 1} {doc.map.layers[activeLayer]?.name}

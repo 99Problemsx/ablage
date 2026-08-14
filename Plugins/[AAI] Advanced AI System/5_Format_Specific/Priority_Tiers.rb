@@ -72,6 +72,9 @@ module AdvancedAI
     def self.score_priority_advantage(user, move, target, battle, skill_level = 100)
       return 0 unless skill_level >= 60
       return 0 unless move
+      # Protect resolves before attacks but does not provide speed-control
+      # value. Its dedicated scorer handles its actual situational utility.
+      return 0 if AdvancedAI.protect_move?(move.id)
       
       move_priority = get_priority_tier(move)
       return 0 if move_priority == 0  # Not a priority move
@@ -363,6 +366,9 @@ class Battle::AI
     if target
       priority_score = AdvancedAI::PriorityTiers.score_priority_advantage(user, move, target, @battle, skill_level)
       score += priority_score
+      if @_score_factors && priority_score != 0
+        @_score_factors["Priority Advantage"] = priority_score
+      end
     end
     
     return score

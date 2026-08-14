@@ -1,0 +1,2330 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[SCRIPT_TEXTS]
+Kanto Pokédex
+Kanto Pokédex
+Johto Pokédex
+Johto Pokédex
+My Game by:
+My Game by:
+Also involved were:
+Also involved were:
+Special thanks to:
+Special thanks to:
+Bidoof
+Bidoof
+???
+???
+Species ID: {1}
+Species ID: {1}
+{1}
+{1}
+{1}'s vitality prevents it from falling asleep!
+{1}'s vitality prevents it from falling asleep!
+{1}'s vitality prevents it from getting poisoned!
+{1}'s vitality prevents it from getting poisoned!
+{1}'s vitality prevents it from getting burned!
+{1}'s vitality prevents it from getting burned!
+{1}'s vitality prevents it from getting paralyzed!
+{1}'s vitality prevents it from getting paralyzed!
+{1}'s vitality prevents it from getting frozen!
+{1}'s vitality prevents it from getting frozen!
+{1}'s focus prevents it from getting confused!
+{1}'s focus prevents it from getting confused!
+{1}'s determination prevents it from getting attracted!
+{1}'s determination prevents it from getting attracted!
+Cannot revive fainted battlers
+Cannot revive fainted battlers
+Auto-delete fainted battlers
+Auto-delete fainted battlers
+One encounter per map
+One encounter per map
+Disregard duplicate species (line)
+Disregard duplicate species (line)
+Exclude static from encounter limit
+Exclude static from encounter limit
+Exclude shiny from encounter limit
+Exclude shiny from encounter limit
+Select the Nuzlocke Rules you wish to apply.
+Select the Nuzlocke Rules you wish to apply.
+Done
+Done
+Your selected Nuzlocke rules have been applied.
+Your selected Nuzlocke rules have been applied.
+No Nuzlocke rules have been applied.
+No Nuzlocke rules have been applied.
+Your selection has been cancelled.
+Your selection has been cancelled.
+Nuzlocke rules prevent you from catching a wild Pokémon on a map you already had an encounter on!
+Nuzlocke rules prevent you from catching a wild Pokémon on a map you already had an encounter on!
+\w[]\wm\c[8]\l[3]All your Pokémon have fainted. You have lost the Nuzlocke challenge! The challenge will now be turned off.
+\w[]\wm\c[8]\l[3]All your Pokémon have fainted. You have lost the Nuzlocke challenge! The challenge will now be turned off.
+Your selected Randomizer rules have been applied.
+Your selected Randomizer rules have been applied.
+No Randomizer rules have been applied.
+No Randomizer rules have been applied.
+Randomize Trainer parties
+Randomize Trainer parties
+Randomize Wild encounters
+Randomize Wild encounters
+Randomize Static encounters
+Randomize Static encounters
+Randomize Gifted Pokémon
+Randomize Gifted Pokémon
+Randomize Items
+Randomize Items
+Select the Randomizer Modes you wish to apply.
+Select the Randomizer Modes you wish to apply.
+{1} threw one {2}!
+{1} threw one {2}!
+{1} doesn't appear to be catchable!
+{1} doesn't appear to be catchable!
+increased
+increased
+rose sharply
+rose sharply
+increased drastically
+increased drastically
+{1}'s Aura flared to life!<<n>>Its {2} {3}!
+{1}'s Aura flared to life!<<n>>Its {2} {3}!
+\se[]What?<<n>>{1} is evolving!\^
+\se[]What?<<r>><<n>>{1} is evolving!\^
+Huh?<<n>>{1} stopped evolving!
+Huh?<<r>><<n>>{1} stopped evolving!
+\se[]Congratulations! Your {1} evolved into {2}!\wt[80]
+\se[]Congratulations! Your {1} evolved into {2}!\wt[80]
+\se[]{1} hatched from the Egg!\wt[80]
+\se[]{1} hatched from the Egg!\wt[80]
+You have no usable items in this pocket.
+You have no usable items in this pocket.
+No targets somehow...
+No targets somehow...
+BALL
+BALL
+BAIT
+BAIT
+ROCK
+ROCK
+RUN
+RUN
+FIGHT
+FIGHT
+BAG
+BAG
+PARTY
+PARTY
+DEBUG
+DEBUG
+CALL
+CALL
+Safari Balls: {1}
+Safari Balls: {1}
+{1:d}'{2:02d}''
+{1:d}'{2:02d}''
+Normal damage
+Normal damage
+Not very effective
+Not very effective
+Super effective
+Super effective
+No effect
+No effect
+UltraSpace
+UltraSpace
+{1} - {2}
+{1} - {2}
+Regular battle anim
+Regular battle anim
+Before regular push fade
+Before regular push fade
+Field '{1}' is not an integer.
+Field '{1}' is not an integer.
+Field '{1}' is not a positive integer or 0.
+Field '{1}' is not a positive integer or 0.
+Field '{1}' is not a positive integer.
+Field '{1}' is not a positive integer.
+Field '{1}' must be greater than 0.
+Field '{1}' must be greater than 0.
+Field '{1}' is not a hexadecimal number.
+Field '{1}' is not a hexadecimal number.
+Field '{1}' is not a number.
+Field '{1}' is not a number.
+Field '{1}' is not a Boolean value (true, false, 1, 0).
+Field '{1}' is not a Boolean value (true, false, 1, 0).
+Field '{1}' must contain only letters, digits, and<<n>>underscores and can't begin with a number.
+Field '{1}' must contain only letters, digits, and<<n>>underscores and can't begin with a number.
+'{1}' is not a defined type (type {2}, Weaknesses).
+'{1}' is not a defined type (type {2}, Weaknesses).
+'{1}' is not a defined type (type {2}, Resistances).
+'{1}' is not a defined type (type {2}, Resistances).
+'{1}' is not a defined type (type {2}, Immunities).
+'{1}' is not a defined type (type {2}, Immunities).
+Check Moves
+Check Moves
+Remember Moves
+Remember Moves
+Forget Moves
+Forget Moves
+Use TM's
+Use TM's
+Nickname
+Nickname
+{1} forgot how to use {2}.
+{1} forgot how to use {2}.
+Set the Pokémon's #{status} count.
+Set the Pokémon's #{status} count.
+Set {1}'s #{status} count (0-99).
+Set {1}'s #{status} count (0-99).
+{1} was freed from the jagged splinters!
+{1} was freed from the jagged splinters!
+{1} was freed from the sticky candy syrup!
+{1} was freed from the sticky candy syrup!
+{1} is hurt by the jagged splinters!
+{1} is hurt by the jagged splinters!
+{1} is hurt by Salt Cure!
+{1} is hurt by Salt Cure!
+{1} was revived and is ready to fight again!
+{1} was revived and is ready to fight again!
+{1}'s Ability is protected by the effects of its Ability Shield!
+{1}'s Ability is protected by the effects of its Ability Shield!
+{1} comes out of {2}'s mouth!
+{1} comes out of {2}'s mouth!
+{1} was shocked wide awake!
+{1} was shocked wide awake!
+{1} warmed up!
+{1} warmed up!
+{1} can't be used twice in a row!
+{1} can't be used twice in a row!
+Drowsy
+Drowsy
+Frostbite
+Frostbite
+Snow is falling.
+Snow is falling.
+A harsh hailstorm bellows!
+A harsh hailstorm bellows!
+It started to snow!
+It started to snow!
+The hailstorm ended.
+The hailstorm ended.
+The snow stopped.
+The snow stopped.
+{1} is already drowsy!
+{1} is already drowsy!
+{1} is already frostbitten!
+{1} is already frostbitten!
+But the uproar kept {1} alert!
+But the uproar kept {1} alert!
+{1} stays alert!
+{1} stays alert!
+{1} cannot be frostbitten!
+{1} cannot be frostbitten!
+{1} stays alert because of {2}'s {3}!
+{1} stays alert because of {2}'s {3}!
+{1} cannot be frostbitten because of {2}'s {3}!
+{1} cannot be frostbitten because of {2}'s {3}!
+{1}'s {2} prevents drowsiness!
+{1}'s {2} prevents drowsiness!
+{1}'s {2} prevents frostbites!
+{1}'s {2} prevents frostbites!
+{1} grew drowsy!<<n>>It may be too sleepy to move!
+{1} grew drowsy!<<n>>It may be too sleepy to move!
+{1} was frostbitten!
+{1} was frostbitten!
+{1} became alert again.
+{1} became alert again.
+{1}'s frostbite was healed.
+{1}'s frostbite was healed.
+{1} is too drowsy to move!
+{1} is too drowsy to move!
+{1} was hurt by its frostbite!
+{1} was hurt by its frostbite!
+Being hit by Tailwind charged {1} with power!
+Being hit by Tailwind charged {1} with power!
+{1} cut its own HP and minimized its Attack!
+{1} cut its own HP and minimized its Attack!
+{1} cut its own HP and maximized its Attack!
+{1} cut its own HP and maximized its Attack!
+Jagged splinters dug into {1}!
+Jagged splinters dug into {1}!
+{1} used up all its electricity!
+{1} used up all its electricity!
+{1} is being salt cured!
+{1} is being salt cured!
+The pointed stones disappeared from around {1}!
+The pointed stones disappeared from around {1}!
+The pointed steel disappeared from around {1}!
+The pointed steel disappeared from around {1}!
+The spikes disappeared from the ground around {1}!
+The spikes disappeared from the ground around {1}!
+The poison spikes disappeared from the ground around {1}!
+The poison spikes disappeared from the ground around {1}!
+The sticky web has disappeared from the ground around {1}!
+The sticky web has disappeared from the ground around {1}!
+Tidying up complete!
+Tidying up complete!
+{1} blew away the pointed steel!
+{1} blew away the pointed steel!
+{1} is preparing to tell a chillingly bad joke!
+{1} is preparing to tell a chillingly bad joke!
+{1} shed its tail to create a decoy!
+{1} shed its tail to create a decoy!
+{1} got covered in sticky candy syrup!
+{1} got covered in sticky candy syrup!
+{1} absorbed electricity!
+{1} absorbed electricity!
+{1} is going all out for this attack!
+{1} is going all out for this attack!
+{1} is already pumped!
+{1} is already pumped!
+{1}'s {2} made it alert again!
+{1}'s {2} made it alert again!
+{1}'s {2} healed its frostbite!
+{1}'s {2} healed its frostbite!
+{1}'s {2} made its partner alert again!
+{1}'s {2} made its partner alert again!
+{1}'s {2} healed its partner's frostbite!
+{1}'s {2} healed its partner's frostbite!
+{1}'s {2} made {3} drowsy! It may be too sleepy to move!
+{1}'s {2} made {3} drowsy! It may be too sleepy to move!
+{1}'s {2} caused {3} to become frostbitten!
+{1}'s {2} caused {3} to become frostbitten!
+A lingering aroma clings to {1}!
+A lingering aroma clings to {1}!
+{1}'s Ability is protected by the effects of its {2}!
+{1}'s Ability is protected by the effects of its {2}!
+{1} gained strength from the fallen!
+{1} gained strength from the fallen!
+Being hit by {1} charged {2} with power!
+Being hit by {1} charged {2} with power!
+Poison spikes were scattered on the ground all around {1}!
+Poison spikes were scattered on the ground all around {1}!
+{1} underwent a heroic transformation!
+{1} underwent a heroic transformation!
+{1} goes inside the mouth of {2}!
+{1} goes inside the mouth of {2}!
+{1}'s {2} weakened the {3} of all surrounding Pokémon!
+{1}'s {2} weakened the {3} of all surrounding Pokémon!
+{1} basked in the sunlight, sending its ancient pulse into a frenzy!
+{1} basked in the sunlight, sending its ancient pulse into a frenzy!
+{1} turned the sunlight harsh, sending its ancient pulse into a frenzy!
+{1} turned the sunlight harsh, sending its ancient pulse into a frenzy!
+{1} used the Electric Terrain to energize its futuristic engine!
+{1} used the Electric Terrain to energize its futuristic engine!
+{1} turned the ground into Electric Terrain, energizing its futuristic engine!
+{1} turned the ground into Electric Terrain, energizing its futuristic engine!
+The effects of {1}'s {2} wore off!
+The effects of {1}'s {2} wore off!
+The #{cause} activated {1}'s {2}!
+The #{cause} activated {1}'s {2}!
+{1} used its {2} to activate its {3}!
+{1} used its {2} to activate its {3}!
+{1}'s {2} was heightened!
+{1}'s {2} was heightened!
+A supersweet aroma is wafting from the syrup covering {1}!
+A supersweet aroma is wafting from the syrup covering {1}!
+{1} drank down all the matcha that {2} made!
+{1} drank down all the matcha that {2} made!
+The {1} worn by {2} shone brilliantly!
+The {1} worn by {2} shone brilliantly!
+{1} made its shell gleam! It's distorting type matchups!
+{1} made its shell gleam! It's distorting type matchups!
+The harsh sunlight faded!
+The harsh sunlight faded!
+The heavy rain has lifted!
+The heavy rain has lifted!
+The mysterious air current has dissipated!
+The mysterious air current has dissipated!
+The weather returned to normal.
+The weather returned to normal.
+The battlefield returned to normal.
+The battlefield returned to normal.
+{1} used its {2} to mirror its opponent's stat changes!
+{1} used its {2} to mirror its opponent's stat changes!
+{1}'s base points were all reset to zero!
+{1}'s base points were all reset to zero!
+Normal Forme
+Normal Forme
+Attack Forme
+Attack Forme
+Defense Forme
+Defense Forme
+Speed Forme
+Speed Forme
+Which form should {1} change into?
+Which form should {1} change into?
+Kanto Leaders
+Kanto Leaders
+Certain exotic species, as well as eggs, are ineligible.\<<1>>
+Certain exotic species, as well as eggs, are ineligible.\<<1>>
+We're terribly sorry, but your Pokémon are not eligible for the Tournament.\<<1>>
+We're terribly sorry, but your Pokémon are not eligible for the Tournament.\<<1>>
+Please come back once your Pokémon Party has been adjusted.\<<1>>
+Please come back once your Pokémon Party has been adjusted.\<<1>>
+Congratulations on today's win.\<<1>>
+Congratulations on today's win.\<<1>>
+Accounting for your current win streak, you have earned {1} BP.\<<1>>
+Accounting for your current win streak, you have earned {1} BP.\<<1>>
+\pn was awarded {1} Battle Points!\me[BP Fanfare]\wtnp[80]
+\pn was awarded {1} Battle Points!\me[BP Fanfare]\wtnp[80]
+For your victory you have earned {1} BP.\<<1>>
+For your victory you have earned {1} BP.\<<1>>
+We hope to see you again.
+We hope to see you again.
+I'm sorry that you lost this tournament.\<<1>>
+I'm sorry that you lost this tournament.\<<1>>
+Maybe you'll have better luck next time.
+Maybe you'll have better luck next time.
+Which Tournament would you like to participate in?
+Which Tournament would you like to participate in?
+Single
+Single
+Double
+Double
+Sudden Death
+Sudden Death
+Which type of Battle would you like to participate in?
+Which type of Battle would you like to participate in?
+Please choose the Pokémon you would like to participate.
+Please choose the Pokémon you would like to participate.
+Hello, and welcome to the Pokémon World Tournament!\<<1>>
+Hello, and welcome to the Pokémon World Tournament!\<<1>>
+The place where the strongest gather to compete.\<<1>>
+The place where the strongest gather to compete.\<<1>>
+Before we go any further, you will need to save your progress.\<<1>>
+Before we go any further, you will need to save your progress.\<<1>>
+I'm terribly sorry, but it seems there are currently no competitions around for you to compete in.\<<1>>
+I'm terribly sorry, but it seems there are currently no competitions around for you to compete in.\<<1>>
+Please come back at a later time!
+Please come back at a later time!
+Announcer: Welcome to the {1} Tournament!\<<1>>
+Announcer: Welcome to the {1} Tournament!\<<1>>
+Announcer: Today we have 8 very eager contestants, waiting to compete for the title of "Champion".\<<1>>
+Announcer: Today we have 8 very eager contestants, waiting to compete for the title of "Champion".\<<1>>
+Announcer: Let us turn our attention to the scoreboard, to see who will be competing today.\<<1>>
+Announcer: Let us turn our attention to the scoreboard, to see who will be competing today.\<<1>>
+Announcer: Without further ado, let the first match begin.\<<1>>
+Announcer: Without further ado, let the first match begin.\<<1>>
+Announcer: This will be a battle between {1} and {2}.
+Announcer: This will be a battle between {1} and {2}.
+Announcer: Wow! What an exciting first round!\<<1>>
+Announcer: Wow! What an exciting first round!\<<1>>
+Announcer: The stadium is getting heated up, and the contestants are on fire!\<<1>>
+Announcer: The stadium is getting heated up, and the contestants are on fire!\<<1>>
+Announcer: Let us turn our attention back to the scoreboard for the results.\<<1>>
+Announcer: Let us turn our attention back to the scoreboard for the results.\<<1>>
+Announcer: It looks like the next match will be between {1} and {2}.\<<1>>
+Announcer: It looks like the next match will be between {1} and {2}.\<<1>>
+Announcer: Let the battle begin!
+Announcer: Let the battle begin!
+Announcer: What spectacular matches!\<<1>>
+Announcer: What spectacular matches!\<<1>>
+Announcer: These trainers are really giving it all.\<<1>>
+Announcer: These trainers are really giving it all.\<<1>>
+Announcer: Let's direct our attention at the scoreboard one final time.\<<1>>
+Announcer: Let's direct our attention at the scoreboard one final time.\<<1>>
+Announcer: Alright! It's all set!\<<1>>
+Announcer: Alright! It's all set!\<<1>>
+Announcer: The final match of this tournament will be between {1} and {2}.\<<1>>
+Announcer: The final match of this tournament will be between {1} and {2}.\<<1>>
+Announcer: May the best trainer win!
+Announcer: May the best trainer win!
+Announcer: What an amazing battle!\<<1>>
+Announcer: What an amazing battle!\<<1>>
+Announcer: Both the trainers put up a great fight, but our very own {1} was the one to come out on top!\<<1>>
+Announcer: Both the trainers put up a great fight, but our very own {1} was the one to come out on top!\<<1>>
+Announcer: Congratulations {1}! You have certainly earned today's title of "Champion"!\<<1>>
+Announcer: Congratulations {1}! You have certainly earned today's title of "Champion"!\<<1>>
+Announcer: That's all we have time for. I hope you enjoyed today's contest. And we hope to see you again soon.
+Announcer: That's all we have time for. I hope you enjoyed today's contest. And we hope to see you again soon.
+Win
+Win
+Loss
+Loss
+Draw
+Draw
+Flee
+Flee
+Catch
+Catch
+{1}'s {2} transform into {3}!
+{1}'s {2} transform into {3}!
+Default Poké Ball that all Pokémon of trainers of this Trainer Type are in.
+Default Poké Ball that all Pokémon of trainers of this Trainer Type are in.
+Value '{1}' isn't a defined Poké Ball.
+Value '{1}' isn't a defined Poké Ball.
+Filename in 'Graphics/UI/Location/' to be used as the location sign.
+Filename in 'Graphics/UI/Location/' to be used as the location sign.
+Party
+Party
+Boxes
+Boxes
+View party
+View party
+{1:s}<<n>>ID: {2:05d} OT: {3:s}\wtnp[0]
+{1:s}<<r>><<n>>ID: {2:05d}   OT: {3:s}\wtnp[0]
+For {1}'s {2},<<n>>{3} sends {4}.<<1>>
+For {1}'s {2},<<r>><<n>>{3} sends {4}.<<1>>
+{1:s}<<n>>ID: {2:05d} OT: {3:s}<<1>>
+{1:s}<<r>><<n>>ID: {2:05d}   OT: {3:s}<<1>>
+It's extremely effective on {1}!
+It's extremely effective on {1}!
+It's extremely effective!
+It's extremely effective!
+It's mostly ineffective on {1}...
+It's mostly ineffective on {1}...
+It's mostly ineffective...
+It's mostly ineffective...
+You have to choose a Pokémon!
+You have to choose a Pokémon!
+Editor
+Editor
+<<[>>[None]]
+<<[>>[None]]
+Choose a location
+Choose a location
+Do you want to save changes?
+Do you want to save changes?
+Regions
+Regions
+Game Switches
+Game Switches
+Region properties
+Region properties
+ID
+ID
+Filename
+Filename
+Margins
+Margins
+pixels
+pixels
+Point size
+Point size
+Map size
+Map size
+points
+points
+Point properties
+Point properties
+Image filename
+Image filename
+Game Switch
+Game Switch
+Using Fly
+Using Fly
+Fly destination
+Fly destination
+Hide Fly icon?
+Hide Fly icon?
+Fly icon offset
+Fly icon offset
+Delete point
+Delete point
+Town Map Editor
+Town Map Editor
+Are you sure you want to delete this region?
+Are you sure you want to delete this region?
+You can't delete your only region!
+You can't delete your only region!
+Edit town_map.txt
+Edit town_map.txt
+Edit the contents of the Town Maps.
+Edit the contents of the Town Maps.
+Set Enemy Altitude
+Set Enemy Altitude
+Set rules for next battle
+Set rules for next battle
+Set the battle rules that will be applied to the next battle.
+Set the battle rules that will be applied to the next battle.
+<<[>>Clear all]
+<<[>>Clear all]
+Side sizes: {1}
+Side sizes: {1}
+<<[>>Not set]
+<<[>>Not set]
+Enter a value for battle rule "{1}".
+Enter a value for battle rule "{1}".
+Choose the Game Variable to store the battle's outcome in.
+Choose the Game Variable to store the battle's outcome in.
+Set partner trainer
+Set partner trainer
+Choose a trainer to fight alongside in battles.
+Choose a trainer to fight alongside in battles.
+Your partner trainer is {1}. Remove them?
+Your partner trainer is {1}. Remove them?
+Your partner trainer was removed.
+Your partner trainer was removed.
+You don't have a partner trainer. Do you want one?
+You don't have a partner trainer. Do you want one?
+Choose a partner trainer
+Choose a partner trainer
+You gained a partner trainer.
+You gained a partner trainer.
+Particle "{1}" uses polar coordinates but has an X/Y command.
+Particle "{1}" uses polar coordinates but has an X/Y command.
+Particle "{1}" doesn't use polar coordinates but has an R/Theta command.
+Particle "{1}" doesn't use polar coordinates but has an R/Theta command.
+Emitter "{1}" uses polar coordinates but has an EmitX/EmitY command.
+Emitter "{1}" uses polar coordinates but has an EmitX/EmitY command.
+Emitter "{1}" doesn't use polar coordinates but has an EmitR/EmitTheta command.
+Emitter "{1}" doesn't use polar coordinates but has an EmitR/EmitTheta command.
+R
+R
+θ
+θ
+Invert color
+Invert color
+R ±
+R ±
+θ ±
+θ ±
+Direction
+Direction
+Direction ±
+Direction ±
+Zoom ×%
+Zoom ×%
+Opacity ×%
+Opacity ×%
+Bitmap mask
+Bitmap mask
+Playing
+Playing
+Hides data boxes?
+Hides data boxes?
+Mask graphic
+Mask graphic
+Use polar coordinates
+Use polar coordinates
+\bAurora\b: Whose name will this mask carry?
+\bAurora\b: Whose name will this mask carry?
+Carve a name?
+Carve a name?
+\i[You carved *{1}* inside the mask. The wood took it cleanly. The runes glowed faintly when you traced them with your thumb.]
+\i[You carved *{1}* inside the mask. The wood took it cleanly. The runes glowed faintly when you traced them with your thumb.]
+What will you call your starter?
+What will you call your starter?
+{1}'s name?
+{1}'s name?
+\b{1}\b: *low, urgent cry*
+\b{1}\b: *low, urgent cry*
+\b{1}\b: *softer cry, like a warning*
+\b{1}\b: *softer cry, like a warning*
+\b{1}\b: *weak cry, happy to see you*
+\b{1}\b: *weak cry, happy to see you*
+\b{1}\b: *low, certain cry — disagreeing*
+\b{1}\b: *low, certain cry — disagreeing*
+\b{1}\b: *low cry — not victory. Not grief either. Standing.*
+\b{1}\b: *low cry — not victory. Not grief either. Standing.*
+\b{1}\b: *cry — close, level, refusing to look away*
+\b{1}\b: *cry — close, level, refusing to look away*
+\b{1}\b: *bright, certain cry*
+\b{1}\b: *bright, certain cry*
+\b{1}\b: *new voice, deeper, but still theirs*
+\b{1}\b: *new voice, deeper, but still theirs*
+\b{1}\b: *agreement-chirp*
+\b{1}\b: *agreement-chirp*
+\b{1}\b: *agreement-chirp, contented*
+\b{1}\b: *agreement-chirp, contented*
+\b{1}\b: *agreement-chirp, road-ready*
+\b{1}\b: *agreement-chirp, road-ready*
+\b{1}\b: *agreement-chirp, knowing*
+\b{1}\b: *agreement-chirp, knowing*
+\b{1}\b: *softest possible agreement-chirp, but ear-flicks visible*
+\b{1}\b: *softest possible agreement-chirp, but ear-flicks visible*
+\b{1}\b: *very low, very ready*
+\b{1}\b: *very low, very ready*
+The seal is quiet now. The Shield rests — remembered.
+The seal is quiet now. The Shield rests — remembered.
+\i[The water is still. Whatever sleeps here is not ready to be found.]
+\i[The water is still. Whatever sleeps here is not ready to be found.]
+\bUxie\b: You seek a name the world unmade. Knowledge is the first gate. Answer.
+\bUxie\b: You seek a name the world unmade. Knowledge is the first gate. Answer.
+\bUxie\b: The murals keep two names and lose a third. Valdris took up the sword; Moira became the forest. But who became the LOCK of the seal?
+\bUxie\b: The murals keep two names and lose a third. Valdris took up the sword; Moira became the forest. But who became the LOCK of the seal?
+A fourth Chosen, on no mural at all
+A fourth Chosen, on no mural at all
+The third name Kael could not read
+The third name Kael could not read
+Valdris — the sword is also a lock
+Valdris — the sword is also a lock
+No one; a seal needs no lock
+No one; a seal needs no lock
+\bUxie\b: No. The third mural-name is a crown-bearer like the others. The lock was never carved at all.
+\bUxie\b: No. The third mural-name is a crown-bearer like the others. The lock was never carved at all.
+\bUxie\b: A blade cuts. It does not hold. Think again.
+\bUxie\b: A blade cuts. It does not hold. Think again.
+\bUxie\b: Then what bars the door now, while you stand here breathing?
+\bUxie\b: Then what bars the door now, while you stand here breathing?
+\bUxie\b: A name on a wall can be read. A name that is read can be spoken. A Shield that is spoken aloud becomes — what?
+\bUxie\b: A name on a wall can be read. A name that is read can be spoken. A Shield that is spoken aloud becomes — what?
+An open door
+An open door
+A stronger wall
+A stronger wall
+A louder song
+A louder song
+A greater hero
+A greater hero
+\bUxie\b: The opposite. To name the lock is to turn it.
+\bUxie\b: The opposite. To name the lock is to turn it.
+\bUxie\b: Songs are how names survive. That is exactly the danger.
+\bUxie\b: Songs are how names survive. That is exactly the danger.
+\bUxie\b: Heroes are remembered. He could not afford to be.
+\bUxie\b: Heroes are remembered. He could not afford to be.
+\bUxie\b: Then why erase him? Why not honor the one who held the dark shut?
+\bUxie\b: Then why erase him? Why not honor the one who held the dark shut?
+Because remembering him would unmake his sacrifice
+Because remembering him would unmake his sacrifice
+Because the orders were ashamed of him
+Because the orders were ashamed of him
+Because he asked for nothing
+Because he asked for nothing
+Because no one liked him
+Because no one liked him
+\bUxie\b: Shame? No. They wept as they chiselled. They simply understood the cost.
+\bUxie\b: Shame? No. They wept as they chiselled. They simply understood the cost.
+\bUxie\b: He asked for nothing — true. But that is not WHY.
+\bUxie\b: He asked for nothing — true. But that is not WHY.
+\bUxie\b: ...You are not taking this seriously. Again.
+\bUxie\b: ...You are not taking this seriously. Again.
+\bUxie\b: ...Yes. There were FOUR. That is the first truth, returned to you.
+\bUxie\b: ...Yes. There were FOUR. That is the first truth, returned to you.
+\i[A weight settles in your memory, like a word on the tip of the tongue.]
+\i[A weight settles in your memory, like a word on the tip of the tongue.]
+\bMesprit\b: Knowledge is cold. Feel it instead. I will show you three moments. Place them as they truly happened — first to last.
+\bMesprit\b: Knowledge is cold. Feel it instead. I will show you three moments. Place them as they truly happened — first to last.
+Valdris falls sealing the rift; his spirit is forged into a blade.
+Valdris falls sealing the rift; his spirit is forged into a blade.
+The lock still fails; the fourth steps into the seal and becomes it.
+The lock still fails; the fourth steps into the seal and becomes it.
+The grieving orders chisel the fourth name from every wall.
+The grieving orders chisel the fourth name from every wall.
+Which came FIRST?
+Which came FIRST?
+Which came NEXT?
+Which came NEXT?
+And which came LAST?
+And which came LAST?
+\bMesprit\b: No. Grief does not run in that order. Feel it again.
+\bMesprit\b: No. Grief does not run in that order. Feel it again.
+\bMesprit\b: He chose it. Not the dying — the FORGETTING. He let the world lose him so the door would stay shut.
+\bMesprit\b: He chose it. Not the dying — the FORGETTING. He let the world lose him so the door would stay shut.
+\bMesprit\b: That is the second truth. It should hurt. Good.
+\bMesprit\b: That is the second truth. It should hurt. Good.
+\bAzelf\b: Knowledge you have. Feeling you have. But will is not WANTING the truth — it is refusing the easy road to it.
+\bAzelf\b: Knowledge you have. Feeling you have. But will is not WANTING the truth — it is refusing the easy road to it.
+\bAzelf\b: I can give you power instead. Forget the name; take strength and go.
+\bAzelf\b: I can give you power instead. Forget the name; take strength and go.
+Refuse — I didn't come for power.
+Refuse — I didn't come for power.
+Accept the power.
+Accept the power.
+\bAzelf\b: Then someone you lost. I can show you their face, whole and smiling. Stay a while.
+\bAzelf\b: Then someone you lost. I can show you their face, whole and smiling. Stay a while.
+Refuse — the dead are at rest.
+Refuse — the dead are at rest.
+Stay with the vision.
+Stay with the vision.
+\bAzelf\b: Last offer. I will simply TELL you the name. No more trials. Take the door that is open.
+\bAzelf\b: Last offer. I will simply TELL you the name. No more trials. Take the door that is open.
+Refuse — a name unearned is a key left in the lock.
+Refuse — a name unearned is a key left in the lock.
+Just tell me the name.
+Just tell me the name.
+\bAzelf\b: ...Then you have learned nothing. Will is the door you DON'T walk through. Again.
+\bAzelf\b: ...Then you have learned nothing. Will is the door you DON'T walk through. Again.
+\bAzelf\b: Good. Now the last truth, and it is the key itself:
+\bAzelf\b: Good. Now the last truth, and it is the key itself:
+\bAzelf\b: His name carries the old word for a shield — not the broad face of it, but the RIM. The edge that meets the blow and does not break.
+\bAzelf\b: His name carries the old word for a shield — not the broad face of it, but the RIM. The edge that meets the blow and does not break.
+\i[The seal is a ring of worn stone, smooth where four names should be and are not. The water waits.]
+\i[The seal is a ring of worn stone, smooth where four names should be and are not. The water waits.]
+\bZacian\b: ...You found the trials. Then you know there is something I am forbidden to say. Say it FOR me. Please.
+\bZacian\b: ...You found the trials. Then you know there is something I am forbidden to say. Say it FOR me. Please.
+Speak the name of the Shield that stayed.
+Speak the name of the Shield that stayed.
+Valdris
+Valdris
+Skjoldr
+Skjoldr
+Randver
+Randver
+...I'm not ready.
+...I'm not ready.
+\bZacian\b: That is MY name. I took up the sword. He took up the wall. We are not the same.
+\bZacian\b: That is MY name. I took up the sword. He took up the wall. We are not the same.
+\bZacian\b: A shield, yes — the broad face of it. But the trial said the RIM. The edge that meets the blow. Listen again.
+\bZacian\b: A shield, yes — the broad face of it. But the trial said the RIM. The edge that meets the blow. Listen again.
+\i[You hold the name a moment longer. It will keep.]
+\i[You hold the name a moment longer. It will keep.]
+\bUxie\b: No. Reason it through.
+\bUxie\b: No. Reason it through.
+\bZacian\b: For a thousand years I have carried his courage and could not carry his name. You gave it back to both of us.
+\bZacian\b: For a thousand years I have carried his courage and could not carry his name. You gave it back to both of us.
+\b\PN\b: ...Randver.
+\b\PN\b: ...Randver.
+\i[The smooth stone remembers. Four grooves bloom where a name was scraped away, and the last one fills: RANDVER.]
+\i[The smooth stone remembers. Four grooves bloom where a name was scraped away, and the last one fills: RANDVER.]
+\bZacian\b: ...Randver. *Rand* — the rim of the shield. The part that meets the blow and does not break. We used to tease him for it.
+\bZacian\b: ...Randver. *Rand* — the rim of the shield. The part that meets the blow and does not break. We used to tease him for it.
+\i[The ground here is old beyond reckoning, and fast asleep. It is not time.]
+\i[The ground here is old beyond reckoning, and fast asleep. It is not time.]
+\i[The Old Gods sleep again — but lighter now, knowing a mortal kept the balance they could not.]
+\i[The Old Gods sleep again — but lighter now, knowing a mortal kept the balance they could not.]
+\bRegirock\b: ...(The stone giant does not speak. It BOOMS — a pattern in three beats, and waits for you to answer in kind.)
+\bRegirock\b: ...(The stone giant does not speak. It BOOMS — a pattern in three beats, and waits for you to answer in kind.)
+a LOW, deep boom
+a LOW, deep boom
+a HIGH, sharp crack
+a HIGH, sharp crack
+The Stone sounds: {1}, then {2}, then {3}. Then it falls silent, waiting.
+The Stone sounds: {1}, then {2}, then {3}. Then it falls silent, waiting.
+Echo beat {1} of 3:
+Echo beat {1} of 3:
+Strike low
+Strike low
+Strike high
+Strike high
+\i[The chamber shudders — wrong. The Stone booms its pattern once more, patient as bedrock.]
+\i[The chamber shudders — wrong. The Stone booms its pattern once more, patient as bedrock.]
+Again: {1}, {2}, {3}.
+Again: {1}, {2}, {3}.
+\i[The Stone's eye flares. It accepts you — and rises to test your strength.]
+\i[The Stone's eye flares. It accepts you — and rises to test your strength.]
+\bRegice\b: ...(Three glyphs hang frozen in the air. Each must be named with the truth it holds.)
+\bRegice\b: ...(Three glyphs hang frozen in the air. Each must be named with the truth it holds.)
+The first glyph: a circle that never closes.
+The first glyph: a circle that never closes.
+Patience
+Patience
+Hunger
+Hunger
+The second glyph: a single line, unbroken.
+The second glyph: a single line, unbroken.
+Stillness
+Stillness
+War
+War
+Doubt
+Doubt
+The third glyph: a crystal with no warmth inside.
+The third glyph: a crystal with no warmth inside.
+Restraint
+Restraint
+Cruelty
+Cruelty
+Fear
+Fear
+\i[The glyph frosts over and reappears. Ice does not forgive a careless name.]
+\i[The glyph frosts over and reappears. Ice does not forgive a careless name.]
+\i[The three glyphs settle into a calm, even light. Regice descends to meet you.]
+\i[The three glyphs settle into a calm, even light. Regice descends to meet you.]
+\bRegisteel\b: ...(Three iron pillars. A single law is graven above them: EXACTLY ONE of the three lines below is true.)
+\bRegisteel\b: ...(Three iron pillars. A single law is graven above them: EXACTLY ONE of the three lines below is true.)
+LEFT pillar: "Exactly one of these three lines is true."
+LEFT pillar:   "Exactly one of these three lines is true."
+CENTER pillar: "The door is the Center pillar."
+CENTER pillar: "The door is the Center pillar."
+RIGHT pillar: "The door is the Left pillar."
+RIGHT pillar:  "The door is the Left pillar."
+\i[Reason it through. Which single pillar can be pressed without breaking the law above?]
+\i[Reason it through. Which single pillar can be pressed without breaking the law above?]
+Press which pillar?
+Press which pillar?
+Center
+Center
+\i[If the door were the Left, the RIGHT line would be true — but then the LEFT line ('exactly one true') would also be true. Two truths. The law breaks. Wrong.]
+\i[If the door were the Left, the RIGHT line would be true — but then the LEFT line ('exactly one true') would also be true. Two truths. The law breaks. Wrong.]
+\i[If the door were the Center, the CENTER line would be true — yet the LEFT line claims 'exactly one true,' which would then be false while one IS true. A contradiction. Wrong.]
+\i[If the door were the Center, the CENTER line would be true — yet the LEFT line claims 'exactly one true,' which would then be false while one IS true. A contradiction. Wrong.]
+\i[The iron does not move.]
+\i[The iron does not move.]
+\i[Only the right pillar holds: let LEFT be the one truth, and the door is neither Center nor Left. The right pillar sinks; Registeel's core hums awake.]
+\i[Only the right pillar holds: let LEFT be the one truth, and the door is neither Center nor Left. The right pillar sinks; Registeel's core hums awake.]
+\bRayquaza\b: ...(High above, the serpent watches. The sea and the land are at war again — and YOU stand where I once did.)
+\bRayquaza\b: ...(High above, the serpent watches. The sea and the land are at war again — and YOU stand where I once did.)
+\i[Keep the balance. Calm whichever force is winning — but do not over-calm, or its rival will surge to fill the void.]
+\i[Keep the balance. Calm whichever force is winning — but do not over-calm, or its rival will surge to fill the void.]
+The SEA is SURGING — Kyogre's tide drowns the coast!
+The SEA is SURGING — Kyogre's tide drowns the coast!
+The sea is rising — Kyogre is gaining.
+The sea is rising — Kyogre is gaining.
+The LAND is HEAVING — Groudon's magma splits the plains!
+The LAND is HEAVING — Groudon's magma splits the plains!
+The land is swelling — Groudon is gaining.
+The land is swelling — Groudon is gaining.
+Sea and land hang in perfect balance.
+Sea and land hang in perfect balance.
+What do you do?
+What do you do?
+Calm the sea (push toward land)
+Calm the sea (push toward land)
+Calm the land (push toward sea)
+Calm the land (push toward sea)
+Hold steady — do nothing
+Hold steady — do nothing
+\i[For a moment, stillness. ({1}/{2} held)]
+\i[For a moment, stillness. ({1}/{2} held)]
+\i[Over-corrected — the balance lurches the other way.]
+\i[Over-corrected — the balance lurches the other way.]
+\bRayquaza\b: ...(The serpent descends, coiling between the two. Now you understand why Arceus made new crowns. Power without balance is only a longer war.)
+\bRayquaza\b: ...(The serpent descends, coiling between the two. Now you understand why Arceus made new crowns. Power without balance is only a longer war.)
+\bArceus\b: You have wakened the powers I set to sleep, and mastered each without claiming it. One question remains.
+\bArceus\b: You have wakened the powers I set to sleep, and mastered each without claiming it. One question remains.
+\bArceus\b: The Old Gods failed because power and wisdom were the same hand. The New Gods I split into three crowns. Now you hold all of it at once. WHAT will you do with what you have gathered?
+\bArceus\b: The Old Gods failed because power and wisdom were the same hand. The New Gods I split into three crowns. Now you hold all of it at once. WHAT will you do with what you have gathered?
+Answer the Allfather.
+Answer the Allfather.
+Hold it in trust, and give it back when asked.
+Hold it in trust, and give it back when asked.
+Rule with it — a mortal could do better than gods.
+Rule with it — a mortal could do better than gods.
+Refuse it all. Power is not mine to touch.
+Refuse it all. Power is not mine to touch.
+Destroy it, so no one is ever tempted again.
+Destroy it, so no one is ever tempted again.
+\bArceus\b: ...Stewardship. Not the hand that grips, nor the hand that hides. The hand that HOLDS, and opens when the time comes. That is the balance the Old Gods never found.
+\bArceus\b: ...Stewardship. Not the hand that grips, nor the hand that hides. The hand that HOLDS, and opens when the time comes. That is the balance the Old Gods never found.
+\bArceus\b: That is precisely what every Old God believed. 'Better than the last.' The graves of the world are paved with it. Think again.
+\bArceus\b: That is precisely what every Old God believed. 'Better than the last.' The graves of the world are paved with it. Think again.
+\bArceus\b: To refuse the burden is to drop it on someone less ready. Cowardice wears humility's face. Think again.
+\bArceus\b: To refuse the burden is to drop it on someone less ready. Cowardice wears humility's face. Think again.
+\bArceus\b: And when the dark returns and there is nothing left to meet it? Destruction is just abdication with extra steps. Think again.
+\bArceus\b: And when the dark returns and there is nothing left to meet it? Destruction is just abdication with extra steps. Think again.
+\bArceus\b: The old powers rest easier for having been met by a steady hand. Go, steward. The world is in better keeping than it was.
+\bArceus\b: The old powers rest easier for having been met by a steady hand. Go, steward. The world is in better keeping than it was.
+Festival Tokens: +{1} (now {2})
+Festival Tokens: +{1} (now {2})
+The festival mayor handed you three starting tokens.
+The festival mayor handed you three starting tokens.
+\b{1}\b: *steps up to the lever*
+\b{1}\b: *steps up to the lever*
+Which Pokemon will compete?
+Which Pokemon will compete?
+\bContest Host\b: Round 1: BEAUTY.
+\bContest Host\b: Round 1: BEAUTY.
+\b{1}\b strikes a pose! Beauty score: {2}.
+\b{1}\b strikes a pose! Beauty score: {2}.
+\bContest Host\b: Round 2: COOLNESS.
+\bContest Host\b: Round 2: COOLNESS.
+\b{1}\b plays it cool. Coolness score: {2}.
+\b{1}\b plays it cool. Coolness score: {2}.
+\bContest Host\b: Round 3: CLEVERNESS.
+\bContest Host\b: Round 3: CLEVERNESS.
+\b{1}\b thinks fast. Cleverness score: {2}.
+\b{1}\b thinks fast. Cleverness score: {2}.
+\bContest Host\b: TOTAL: {1}!
+\bContest Host\b: TOTAL: {1}!
+\bPhrase {1}:\b "{2}"
+\bPhrase {1}:\b "{2}"
+\bStoryteller\b: {1} of 4 — well listened. Two tokens.
+\bStoryteller\b: {1} of 4 — well listened. Two tokens.
+\bFortune Teller\b: \\<<n>>{1}
+\bFortune Teller\b: \\<<n>>{1}
+Sitrus Berry (2 tokens)
+Sitrus Berry (2 tokens)
+Lum Berry (3 tokens)
+Lum Berry (3 tokens)
+PP Up (5 tokens)
+PP Up (5 tokens)
+Festival Hat (1 token, cosmetic)
+Festival Hat (1 token, cosmetic)
+Rare Candy (10 tokens)
+Rare Candy (10 tokens)
+Master Ball (25 tokens, festival-once)
+Master Ball (25 tokens, festival-once)
+Leave
+Leave
+Bought {1}!
+Bought {1}!
+Not enough tokens. You have {1}.
+Not enough tokens. You have {1}.
+Memory saved.
+Memory saved.
+Your album is empty for now.
+Your album is empty for now.
+\bMemory Album\b — {1} of {2} unlocked
+\bMemory Album\b — {1} of {2} unlocked
+Chapter {1} ({2})
+Chapter {1} ({2})
+Close Album
+Close Album
+\b{1}\b
+\b{1}\b
+\i["{1}"]
+\i["{1}"]
+— {1}, Chapter {2}
+— {1}, Chapter {2}
+Ragnar is gone. What do you swear at his grave?
+Ragnar is gone. What do you swear at his grave?
+I will protect what he protected.
+I will protect what he protected.
+I will make them pay for this. All of them.
+I will make them pay for this. All of them.
+Elena is gone. What remains inside you?
+Elena is gone. What remains inside you?
+Her courage. I will carry it on.
+Her courage. I will carry it on.
+Only hatred for the ones who did this.
+Only hatred for the ones who did this.
+Morwen's offer lingers in the air. What do you tell Kael?
+Morwen's offer lingers in the air. What do you tell Kael?
+The dead are at rest. We honor Mira by living.
+The dead are at rest. We honor Mira by living.
+...Maybe she has a point. Keep it in mind.
+...Maybe she has a point. Keep it in mind.
+Subject Zero cowers before you. What happens to it?
+Subject Zero cowers before you. What happens to it?
+Set it free. Nothing belongs in a cage.
+Set it free. Nothing belongs in a cage.
+Contain it. Power like this doesn't walk away.
+Contain it. Power like this doesn't walk away.
+Telmer awaits your judgment. How do you treat the defector?
+Telmer awaits your judgment. How do you treat the defector?
+He gets his second chance. Honestly earned.
+He gets his second chance. Honestly earned.
+We take the ledger. We owe him nothing — and he owes us.
+We take the ledger. We owe him nothing — and he owes us.
+The Entropy Shard pulses in your hand.
+The Entropy Shard pulses in your hand.
+Destroy it. This power has cost enough already.
+Destroy it. This power has cost enough already.
+Keep it. You never know when you'll need a weapon.
+Keep it. You never know when you'll need a weapon.
+\b{1} — Asgheim Lore\b
+\b{1} — Asgheim Lore\b
+\i[Discovered by {1}.]
+\i[Discovered by {1}.]
+\b{1}\b: *very gentle agreement-chirp*
+\b{1}\b: *very gentle agreement-chirp*
+\b{1} — The Story So Far\b
+\b{1} — The Story So Far\b
+Marks: none yet
+Marks: none yet
+Marks worn: {1}
+Marks worn: {1}
+Endings: ...still going
+Endings: ...still going
+Endings seen ({1}/6): {2}
+Endings seen ({1}/6): {2}
+Bond with Lyra: {1} of 5
+Bond with Lyra: {1} of 5
+Bond with Kael: {1} of 5
+Bond with Kael: {1} of 5
+Heart: {1}
+Heart: {1}
+Father: {1}
+Father: {1}
+Codex: {1}%
+Codex: {1}%
+Liberation: {1} of 6 ops
+Liberation: {1} of 6 ops
+Memory Album: {1} of {2}
+Memory Album: {1} of {2}
+Sanctuary residents: {1}
+Sanctuary residents: {1}
+New Game+ runs: {1}
+New Game+ runs: {1}
+\c[8]The throne remembers you.\c[0]
+\c[8]The throne remembers you.\c[0]
+\c[3]Twenty-Two Years.\c[0]
+\c[3]Twenty-Two Years.\c[0]
+Name this Mewtwo:
+Name this Mewtwo:
+\bMewtwo\b: \\<<n>>{1}. \\<<n>>Yes. \\<<n>>That suits.
+\bMewtwo\b: \\<<n>>{1}. \\<<n>>Yes. \\<<n>>That suits.
+Weather Forecast:
+Weather Forecast:<<n>>
+Something stirs in the {1}...
+Something stirs in the {1}...
+Wanted Board ({1} completed)
+Wanted Board ({1} completed)
+{1}<<n>>{2}<<n>>Difficulty: {3}<<n>>Reward: ${4}
+{1}<<n>>{2}<<n>>Difficulty: {3}<<n>>Reward: ${4}
+Bonus: {1}
+<<n>>Bonus: {1}
+(Max active bounties reached)
+<<n>>(Max active bounties reached)
+Accept this bounty?
+<<n>>Accept this bounty?
+Bounty accepted!
+Bounty accepted!
+{1}<<n>>Progress: {2}/{3}
+{1}<<n>>Progress: {2}/{3}
+Claim reward?
+<<n>>Claim reward?
+Received ${1}!
+Received ${1}!
+Received {1} x{2}!
+Received {1} x{2}!
+\<<n>>Rematch bonus: {1} x{2}!
+\<<n>>Rematch bonus: {1} x{2}!
+╔══════════════════════════╗
+╔══════════════════════════╗<<n>>
+║ TRAINER CARD — {1}
+║   TRAINER CARD — {1}<<n>>
+╠══════════════════════════╣
+╠══════════════════════════╣<<n>>
+║ Playtime: {1}h {2}m
+║ Playtime: {1}h {2}m<<n>>
+║ Gym Badges: {1}
+║ Gym Badges: {1}<<n>>
+║ Money: ${1}
+║ Money: ${1}<<n>>
+║ Pokédex: {1} owned / {2} seen
+║ Pokédex: {1} owned / {2} seen<<n>>
+║ Battles Won: {1}
+║ Battles Won: {1}<<n>>
+║ Battles Lost: {1}
+║ Battles Lost: {1}<<n>>
+║ Pokemon Caught: {1}
+║ Pokemon Caught: {1}<<n>>
+║ Eggs Hatched: {1}
+║ Eggs Hatched: {1}<<n>>
+║ Steps: {1}
+║ Steps: {1}<<n>>
+║ Arena Best Streak: {1}
+║ Arena Best Streak: {1}<<n>>
+║ Quests Completed: {1}
+║ Quests Completed: {1}<<n>>
+║ Alignment: {1}
+║ Alignment: {1}<<n>>
+║ Achievements: {1}/{2}
+║ Achievements: {1}/{2}<<n>>
+║ ★ {1}
+║  ★ {1}<<n>>
+║ Team:
+║ Team:<<n>>
+║ {1}
+║  {1}<<n>>
+╚══════════════════════════╝
+╚══════════════════════════╝
+The Yggdrasil root pulses... Time shifts around you.
+The Yggdrasil root pulses... Time shifts around you.
+You arrive in the {1}.
+You arrive in the {1}.
+The Yggdrasil root pulses... You return to your own time.
+The Yggdrasil root pulses... You return to your own time.
+The Yggdrasil root at {1} has awakened!
+The Yggdrasil root at {1} has awakened!
+You can now travel between eras here.
+You can now travel between eras here.
+Touch the Yggdrasil root and travel to the {1}?
+Touch the Yggdrasil root and travel to the {1}?
+The Yggdrasil root is dormant. It cannot be activated yet.
+The Yggdrasil root is dormant. It cannot be activated yet.
+You cannot travel through time from here.
+You cannot travel through time from here.
+Current Era: {1}
+Current Era: {1}
+Times Traveled: {1}
+Times Traveled: {1}
+No Yggdrasil roots awakened yet.
+No Yggdrasil roots awakened yet.
+- {1}
+  - {1}
+The portal resonates but won't open... You need more badges.
+The portal resonates but won't open... You need more badges.
+You discovered {1}!
+You discovered {1}!
+You step through the portal into the Spirit Realm...
+You step through the portal into the Spirit Realm...
+The void corruption is too strong! You're expelled!
+The void corruption is too strong! You're expelled!
+You return from the Spirit Realm.
+You return from the Spirit Realm.
+The void presses in around you...
+The void presses in around you...
+The corruption saps your team's strength!
+The corruption saps your team's strength!
+A shadow creature attacks!
+A shadow creature attacks!
+The realm's corruption fades... for now.
+The realm's corruption fades... for now.
+{1} has been purified!
+{1} has been purified!
+You established your Secret Base at {1}!
+You established your Secret Base at {1}!
+You placed the {1} in your Secret Base!
+You placed the {1} in your Secret Base!
+Your Pokémon were fully healed!
+Your Pokémon were fully healed!
+The Training Dummy is cooling down. Walk around more!
+The Training Dummy is cooling down. Walk around more!
+You challenge the Training Dummy!
+You challenge the Training Dummy!
+{1}:<<n>><r>{2}
+{1}:<<n>><r>{2}
+You don't have enough {1}.
+You don't have enough {1}.
+You would like the {1}?<<n>>That will be {2}.
+You would like the {1}?<<n>>That will be {2}.
+So you want {1} {2}?<<n>>That will be {3} {4}. All right?
+So you want {1} {2}?<<n>>That will be {3} {4}. All right?
+You have no room to receive this Pokemon!
+You have no room to receive this Pokemon!
+You received {1}!
+You received {1}!
+Could not deliver the Pokemon. Try making room.
+Could not deliver the Pokemon. Try making room.
+You already possess the {1}.
+You already possess the {1}.
+You obtained the {1}!
+You obtained the {1}!
+{1} has the {2} equipped.
+{1} has the {2} equipped.
+Removed the {1}.
+Removed the {1}.
+You have no available runes.
+You have no available runes.
+Choose a rune for {1}:
+Choose a rune for {1}:
+{1} socketed the {2}!
+{1} socketed the {2}!
+{1}'s rune glows, restoring health!
+{1}'s rune glows, restoring health!
+{1}'s rune purges the ailment!
+{1}'s rune purges the ailment!
+You don't own both runes needed.
+You don't own both runes needed.
+These two runes cannot be combined.
+These two runes cannot be combined.
+Unequip both runes before forging.
+Unequip both runes before forging.
+Forge {1} + {2} into the {3}?<<n>>Both original runes will be consumed.
+Forge {1} + {2} into the {3}?<<n>>Both original runes will be consumed.
+The runes merge in Yggdrasil's light...
+The runes merge in Yggdrasil's light...
+You forged the {1}!
+You forged the {1}!
+Rune forging is not available.
+Rune forging is not available.
+You need at least two base runes to forge.
+You need at least two base runes to forge.
+Choose the first rune:
+Choose the first rune:
+No compatible runes can be combined with the {1}.
+No compatible runes can be combined with the {1}.
+Choose the second rune:
+Choose the second rune:
+{1}'s forged rune pulses with life!
+{1}'s forged rune pulses with life!
+{1}'s rune purged the {2}!
+{1}'s rune purged the {2}!
+\se[{1}]▲ {2} reputation increased! (+{3})
+\se[{1}]▲ {2} reputation increased! (+{3})
+\se[{1}]▼ {2} reputation decreased. ({3})
+\se[{1}]▼ {2} reputation decreased. ({3})
+\se[GUI sel decision]♥ {1} appreciates that! (+{2})
+\se[GUI sel decision]♥ {1} appreciates that! (+{2})
+\se[GUI sel buzzer]{1} didn't like that... ({2})
+\se[GUI sel buzzer]{1} didn't like that... ({2})
+{1} / {2}
+{1} / {2}
+Guardian: {1}
+Guardian: {1}
+<<[>>Relationship] Unknown character: {1}
+<<[>>Relationship] Unknown character: {1}
+{1} doesn't want another gift right now. ({2} steps to wait.)
+{1} doesn't want another gift right now. ({2} steps to wait.)
+You don't have that item.
+You don't have that item.
+\se[Mining found all]{1}: "{2}?! I love this!" (+{3})
+\se[Mining found all]{1}: "{2}?! I love this!" (+{3})
+\se[GUI sel decision]{1}: "Thanks for the {2}." (+{3})
+\se[GUI sel decision]{1}: "Thanks for the {2}." (+{3})
+{1} accepts the {2} politely. (+{3})
+{1} accepts the {2} politely. (+{3})
+\se[GUI sel buzzer]{1}: "...{2}? Oh." ({3})
+\se[GUI sel buzzer]{1}: "...{2}? Oh." ({3})
+\se[GUI sel buzzer]{1}: "You think I want this?!" ({2})
+\se[GUI sel buzzer]{1}: "You think I want this?!" ({2})
+\c[1]Quest started:\c[0] {1}
+\c[1]Quest started:\c[0] {1}
+\c[1]Quest complete:\c[0] {1}
+\c[1]Quest complete:\c[0] {1}
+\c[2]Quest failed:\c[0] {1}
+\c[2]Quest failed:\c[0] {1}
+Active: {1} | Completed: {2}
+Active: {1}  |  Completed: {2}
+({1})
+({1})
+<<[>>Q/W: {1}]
+<<[>>Q/W: {1}]
+Reward: {1}
+Reward: {1}
+Quality of Life Settings
+Quality of Life Settings
+{1}: {2}<<n>>{3}
+{1}: {2}<<n>>{3}
+{1} earned the title: \c[1]{2}\c[0]!
+{1} earned the title: \c[1]{2}\c[0]!
+PHOTO MODE
+PHOTO MODE
+Filter: {1}
+Filter: {1}
+x{1}
+x{1}
+↑↓←→ Move Z: Snap Q/W: Filter A/S: Frame X: Exit H: Hide UI
+↑↓←→ Move  Z: Snap  Q/W: Filter  A/S: Frame  X: Exit  H: Hide UI
+\se[]Photo saved to {1}!
+\se[]Photo saved to {1}!
+\<<n>>{1}: {2}
+\<<n>>{1}: {2}
+{1} looks at you.
+{1} looks at you.
+{1} seems to be holding something...
+{1} seems to be holding something...
+\me[{1}]{3} found some \c[1]{2}\c[0]!\wtnp[30]
+\me[{1}]{3} found some \c[1]{2}\c[0]!\wtnp[30]
+\me[{1}]{3} found \c[1]{2}\c[0]!\wtnp[30]
+\me[{1}]{3} found \c[1]{2}\c[0]!\wtnp[30]
+\me[{1}]{4} found \c[1]{2} {3}\c[0]!\wtnp[30]
+\me[{1}]{4} found \c[1]{2} {3}\c[0]!\wtnp[30]
+\me[{1}]{4} found {2} \c[1]{3}\c[0]!\wtnp[30]
+\me[{1}]{4} found {2} \c[1]{3}\c[0]!\wtnp[30]
+\me[{1}]{3} found an \c[1]{2}\c[0]!\wtnp[30]
+\me[{1}]{3} found an \c[1]{2}\c[0]!\wtnp[30]
+\me[{1}]{3} found a \c[1]{2}\c[0]!\wtnp[30]
+\me[{1}]{3} found a \c[1]{2}\c[0]!\wtnp[30]
+You put the {1} away\<<n>>in the <icon=bagPocket{2}>\c[1]{3} Pocket\c[0].
+You put the {1} away\<<n>>in the <icon=bagPocket{2}>\c[1]{3} Pocket\c[0].
+{1} found some \c[1]{2}\c[0]!\wtnp[30]
+{1} found some \c[1]{2}\c[0]!\wtnp[30]
+{1} found \c[1]{2}\c[0]!\wtnp[30]
+{1} found \c[1]{2}\c[0]!\wtnp[30]
+{1} found \c[1]{2} {3}\c[0]!\wtnp[30]
+{1} found \c[1]{2} {3}\c[0]!\wtnp[30]
+{1} found {2} \c[1]{3}\c[0]!\wtnp[30]
+{1} found {2} \c[1]{3}\c[0]!\wtnp[30]
+{1} found an \c[1]{2}\c[0]!\wtnp[30]
+{1} found an \c[1]{2}\c[0]!\wtnp[30]
+{1} found a \c[1]{2}\c[0]!\wtnp[30]
+{1} found a \c[1]{2}\c[0]!\wtnp[30]
+Following Pokemon
+Following Pokemon
+Let the first Pokemon in your party follow you in the overworld.
+Let the first Pokemon in your party follow you in the overworld.
+{1} looks at you happily!
+{1} looks at you happily!
+\me[Item get]You received a {1}!
+\me[Item get]You received a {1}!
+But your bag is full...
+But your bag is full...
+\bWelcome back, Champion.
+\bWelcome back, Champion.
+\bThe world remembers what you did last time. The crowns remember too...
+\bThe world remembers what you did last time. The crowns remember too...
+New Game+
+New Game+
+Start a New Game+ run?<<n>>Carries over: starting money boost, item pack, prior ending memories.
+Start a New Game+ run?<<n>>Carries over: starting money boost, item pack, prior ending memories.
+A new rival has marked you...
+A new rival has marked you...
+{1} the {2} will remember this defeat.
+{1} the {2} will remember this defeat.
+{1} the {2} appears!
+{1} the {2} appears!
+{1}: "{2}"
+{1}: "{2}"
+Obtained {1} x{2}!
+Obtained {1} x{2}!
+{1} has been vanquished!
+{1} has been vanquished!
+{1} has grown stronger! Now: {2} (Rank {3})
+{1} has grown stronger! Now: {2} (Rank {3})
+No active nemeses.
+No active nemeses.
+=== Active Nemeses ===
+=== Active Nemeses ===<<n>>
+{1} the {2} (Rank {3})
+{1} the {2} (Rank {3})<<n>>
+Wins: {1} | Losses: {2} | Lv.{3}
+  Wins: {1} | Losses: {2} | Lv.{3}<<n>>
+Defeated: {1}
+<<n>>Defeated: {1}
+Enter a code
+Enter a code
+Claim pending gifts
+Claim pending gifts
+\b{1}\b: Nothing to deliver right now. Come back any time!
+\b{1}\b: Nothing to deliver right now. Come back any time!
+\b{1}\b: What can I do for you?
+\b{1}\b: What can I do for you?
+Enter your gift code:
+Enter your gift code:
+\b{1}\b: I don't recognise that code...
+\b{1}\b: I don't recognise that code...
+\b{1}\b: That code has already been redeemed.
+\b{1}\b: That code has already been redeemed.
+\b{1}\b: A gift has arrived: {2}!
+\b{1}\b: A gift has arrived: {2}!
+\b{1}\b: {2}
+\b{1}\b: {2}
+You received ${1}!
+You received ${1}!
+You discovered {1} at {2}!
+You discovered {1} at {2}!
+Tutors found: {1}/{2}
+Tutors found: {1}/{2}
+{1}: Which move shall I teach?
+{1}: Which move shall I teach?
+Move Tutor Network ({1}/{2} discovered)
+Move Tutor Network ({1}/{2} discovered)<<n>>
+✓ {1} - {2}
+✓ {1} - {2}<<n>>
+? ??? - ???
+? ??? - ???<<n>>
+\b{1}\b: Show me a Pokémon, and I'll bring a move back into its memory.
+\b{1}\b: Show me a Pokémon, and I'll bring a move back into its memory.
+\b{1}\b: This Pokémon has nothing left to remember.
+\b{1}\b: This Pokémon has nothing left to remember.
+\b{1}\b: Come back when you can pay.
+\b{1}\b: Come back when you can pay.
+\b{1}\b: The memory has returned. Use it well.
+\b{1}\b: The memory has returned. Use it well.
+\b{1}\b: This costs ${2}. You don't have enough.
+\b{1}\b: This costs ${2}. You don't have enough.
+Pay ${1}?
+Pay ${1}?
+\b{1}\b: I need one {2}. You don't have any.
+\b{1}\b: I need one {2}. You don't have any.
+Give one {1}?
+Give one {1}?
+Your alignment shifted to: {1}
+Your alignment shifted to: {1}
+=== MEMORY LANE ===
+=== MEMORY LANE ===<<n>>
+Total Battles: {1}
+Total Battles: {1}<<n>>
+Total Steps: {1}
+Total Steps: {1}<<n>>
+Milestones: {1}
+Milestones: {1}<<n>><<n>>
+--- Your Team ---
+--- Your Team ---<<n>>
+Battles Won: {1} | KOs: {2} | Fainted: {3}
+  Battles Won: {1} | KOs: {2} | Fainted: {3}<<n>>
+Steps as Lead: {1}
+  Steps as Lead: {1}<<n>>
+Caught: {1} at Lv.{2}
+  Caught: {1} at Lv.{2}<<n>>
+View journey milestones?
+View journey milestones?
+--- Milestones ---
+--- Milestones ---<<n>>
+<<[>>{1}] {2}
+<<[>>{1}] {2}<<n>>
+Team: {1}
+  Team: {1}<<n>>
+The {1} was consumed by the Mega Evolution energy!
+The {1} was consumed by the Mega Evolution energy!
+Map updated: {1} discovered!
+Map updated: {1} discovered!
+Exploration: {1}% ({2}/{3})
+Exploration: {1}% ({2}/{3})
+=== Exploration ===
+=== Exploration ===<<n>>
+Discovered: {1}/{2} ({3}%)
+Discovered: {1}/{2} ({3}%)<<n>><<n>>
+✓ {1}
+✓ {1}<<n>>
+? ???
+? ???<<n>>
+\se[]Lore discovered: \c[1]{1}\c[0]!
+\se[]Lore discovered: \c[1]{1}\c[0]!
+{1}% Complete
+{1}% Complete
+{1}/{2}
+{1}/{2}
+Z: Open X: Back S: Search
+Z: Open   X: Back   S: Search
+No entries yet.
+No entries yet.
+Search the Codex:
+Search the Codex:
+Search: {1}
+Search: {1}
+{1} match(es)
+{1} match(es)
+No discovered entries match.
+No discovered entries match.
+Level {1} for {2} is not a valid level as it goes {3}. The level has been reset to {4}
+Level {1} for {2} is not a valid level as it goes {3}. The level has been reset to {4}
+{1} got a reduced {2} Exp. Points!
+{1} got a reduced {2} Exp. Points!
+{1} refuses to eat the {2}.
+{1} refuses to eat the {2}.
+{1} gained {2} level(s) from {3} Rare Candies!
+{1} gained {2} level(s) from {3} Rare Candies!
+Current Lvl Cap: {1}
+Current Lvl Cap: {1}
+{1} grew to Lv. {2} from stored Exp!
+{1} grew to Lv. {2} from stored Exp!
+\se[Pkmn level up]Level Cap increased to Lv. {1}!
+\se[Pkmn level up]Level Cap increased to Lv. {1}!
+Level Cap decreased to Lv. {1}.
+Level Cap decreased to Lv. {1}.
+Graphics/UI/Party/overlay_lv
+Graphics/UI/Party/overlay_lv
+Over Level Cap!
+Over Level Cap!
+At Level Cap
+At Level Cap
+Stored Exp: {1}
+Stored Exp: {1}
+Level Cap options...
+Level Cap options...
+Set level cap, cap mode, view stored EXP, and other Level Caps Ex options.
+Set level cap, cap mode, view stored EXP, and other Level Caps Ex options.
+Set Level Cap
+Set Level Cap
+Change the current level cap value.
+Change the current level cap value.
+Set the level cap (current: {1}).
+Set the level cap (current: {1}).
+Level cap set to {1}.
+Level cap set to {1}.
+Set Level Cap Mode
+Set Level Cap Mode
+Change the level cap mode (Hard/Soft/Obedience/Off).
+Change the level cap mode (Hard/Soft/Obedience/Off).
+Current mode: {1}. Choose new mode:
+Current mode: {1}. Choose new mode:
+Level cap mode set to {1}.
+Level cap mode set to {1}.
+View Stored EXP
+View Stored EXP
+View the EXP piggy bank for each party Pokémon.
+View the EXP piggy bank for each party Pokémon.
+EXP Storage is disabled in config.
+EXP Storage is disabled in config.
+{1} (Lv.{2}): {3} stored EXP
+{1} (Lv.{2}): {3} stored EXP
+No Pokémon in party.
+No Pokémon in party.
+Award Stored EXP Now
+Award Stored EXP Now
+Immediately award all stored EXP to party Pokémon.
+Immediately award all stored EXP to party Pokémon.
+No stored EXP to award.
+No stored EXP to award.
+Stored EXP has been awarded.
+Stored EXP has been awarded.
+Clear All Stored EXP
+Clear All Stored EXP
+Delete all stored EXP data (cannot be undone).
+Delete all stored EXP data (cannot be undone).
+No stored EXP to clear.
+No stored EXP to clear.
+Clear ALL stored EXP? This cannot be undone.
+Clear ALL stored EXP? This cannot be undone.
+All stored EXP cleared.
+All stored EXP cleared.
+Toggle Level Cap Bypass
+Toggle Level Cap Bypass
+Toggle the bypass switch that disables level caps for enemies.
+Toggle the bypass switch that disables level caps for enemies.
+Level Cap Bypass Switch is now {1}.
+Level Cap Bypass Switch is now {1}.
+The Healing Vial is empty. Recharge it at a Pokemon Center.
+The Healing Vial is empty. Recharge it at a Pokemon Center.
+There are no Pokemon in your party.
+There are no Pokemon in your party.
+Your party is already in perfect health!
+Your party is already in perfect health!
+The vial glows warmly... All your Pokemon were fully healed!
+The vial glows warmly... All your Pokemon were fully healed!
+The Healing Vial's energy has been depleted.
+The Healing Vial's energy has been depleted.
+Charges remaining: {1}/{2}.
+Charges remaining: {1}/{2}.
+You received a Healing Vial!
+You received a Healing Vial!
+It can fully heal your party {1} times before needing a recharge.
+It can fully heal your party {1} times before needing a recharge.
+Your Healing Vial was recharged! ({1}/{2})
+Your Healing Vial was recharged! ({1}/{2})
+— {1}'s Memory —
+— {1}'s Memory —
+Dynamic Music
+Dynamic Music
+Context-aware music: low-HP tension, boss phases, day/night and weather themes.
+Context-aware music: low-HP tension, boss phases, day/night and weather themes.
+Lighting System
+Lighting System
+Add/remove lights at current position.
+Add/remove lights at current position.
+Add Circle Light Here
+Add Circle Light Here
+Add Rect Light Here
+Add Rect Light Here
+List All Lights
+List All Lights
+Remove Nearest Light
+Remove Nearest Light
+Toggle All Lights
+Toggle All Lights
+Add Small Circle Light
+Add Small Circle Light
+Add Red Circle Light
+Add Red Circle Light
+Add Blue Circle Light
+Add Blue Circle Light
+Add Yellow Circle Light
+Add Yellow Circle Light
+Add Preset Light
+Add Preset Light
+Toggle Light Preview
+Toggle Light Preview
+Toggle Flashlight
+Toggle Flashlight
+Toggle Flashlight Cone
+Toggle Flashlight Cone
+Toggle Follower Light
+Toggle Follower Light
+Export Map Lights to Script
+Export Map Lights to Script
+Lighting Debug
+Lighting Debug
+Change AI Skill Level (Current: {1})
+Change AI Skill Level (Current: {1})
+Toggle Wild Pokemon AI ({1})
+Toggle Wild Pokemon AI ({1})
+Toggle Move Explanations ({1})
+Toggle Move Explanations ({1})
+Toggle Logging ({1})
+Toggle Logging ({1})
+Reset Learning System
+Reset Learning System
+Show AI Stats
+Show AI Stats
+Force AI Personality
+Force AI Personality
+Close Menu
+Close Menu
+Set AI skill level (0-100):
+Set AI skill level (0-100):
+AI skill set to {1}!
+AI skill set to {1}!
+Wild Pokemon AI: {1}
+Wild Pokemon AI: {1}
+Move Explanations: {1}
+Move Explanations: {1}
+Debug Logging: {1}
+Debug Logging: {1}
+Learning system reset! All patterns cleared.
+Learning system reset! All patterns cleared.
+Learning system not loaded.
+Learning system not loaded.
+Choose AI personality:
+Choose AI personality:
+{1} personality activated!
+{1} personality activated!
+... \wt[10]... \wt[10]... \wt[10]The runes are silent.
+... \wt[10]... \wt[10]... \wt[10]The runes are silent.
+The rune glows beneath your feet. Something is buried *right here*.
+The rune glows beneath your feet. Something is buried *right here*.
+The rune sings — almost on top of it.
+The rune sings — almost on top of it.
+The rune hums — something close.
+The rune hums — something close.
+The rune whispers — something far ahead.
+The rune whispers — something far ahead.
+({1} more buried object{2} in range.)
+({1} more buried object{2} in range.)
+SC Limited (~430 species, curated)
+SC Limited (~430 species, curated)
+Full Dex (all available species)
+Full Dex (all available species)
+What's the difference?
+What's the difference?
+Already on SC Limited mode.
+Already on SC Limited mode.
+Switch to SC Limited?\<<n>>Wild encounters will be restricted to the curated list.
+Switch to SC Limited?\<<n>>Wild encounters will be restricted to the curated list.
+Yes, switch
+Yes, switch
+Dex Mode: \c[3]SC Limited\c[0].
+Dex Mode: \c[3]SC Limited\c[0].
+{1} species available in the wild.
+{1} species available in the wild.
+Already on Full Dex mode.
+Already on Full Dex mode.
+Switch to Full Dex?\<<n>>All species become available — Pokémon you've caught remain in your party.
+Switch to Full Dex?\<<n>>All species become available — Pokémon you've caught remain in your party.
+Dex Mode: \c[1]Full Dex\c[0].
+Dex Mode: \c[1]Full Dex\c[0].
+All registered species available in the wild.
+All registered species available in the wild.
+\b\c[3]SC Limited\c[0]\b
+\b\c[3]SC Limited\c[0]\b
+• A curated ~430-species dex spanning Gen 1-9.
+• A curated ~430-species dex spanning Gen 1-9.
+• Tailored to the Shattered Crowns story: nordic mythology, dragons, ghosts, ancient/fossil, steel knights.
+• Tailored to the Shattered Crowns story: nordic mythology, dragons, ghosts, ancient/fossil, steel knights.
+• Every story-relevant species is included; wild encounters feel hand-picked.
+• Every story-relevant species is included; wild encounters feel hand-picked.
+• Trainers keep their canonical teams.
+• Trainers keep their canonical teams.
+• Recommended for first playthroughs.
+• Recommended for first playthroughs.
+\b\c[1]Full Dex\c[0]\b
+\b\c[1]Full Dex\c[0]\b
+• Every available species (~1000+), no curation.
+• Every available species (~1000+), no curation.
+• Bring your favourite Pokémon from any region.
+• Bring your favourite Pokémon from any region.
+• Best for completionist runs, second playthroughs, or randomizer-style chaos.
+• Best for completionist runs, second playthroughs, or randomizer-style chaos.
+• Wild encounter tables are NOT scaled — out-of-region species still appear in their original biome.
+• Wild encounter tables are NOT scaled — out-of-region species still appear in their original biome.
+You can switch modes anytime from the pause menu. Pokémon you've already caught stay with you.
+You can switch modes anytime from the pause menu. Pokémon you've already caught stay with you.
+\i[Before your journey begins...]
+\i[Before your journey begins...]
+How would you like to play Shattered Crowns?
+How would you like to play Shattered Crowns?
+This sets which Pokémon appear in the wild and which species you encounter through the story. You can change it later.
+This sets which Pokémon appear in the wild and which species you encounter through the story. You can change it later.
+Locked in: \c[3]{1}\c[0]. Have a great journey!
+Locked in: \c[3]{1}\c[0]. Have a great journey!
+Switch Dex Mode
+Switch Dex Mode
+Toggle between SC Limited and Full Dex.
+Toggle between SC Limited and Full Dex.
+Dex Mode: \c[3]SC Limited\c[0]
+Dex Mode: \c[3]SC Limited\c[0]
+Seen: {1} / {2} ({3}%)
+Seen: {1} / {2} ({3}%)
+Owned: {1} / {2} ({3}%)
+Owned: {1} / {2} ({3}%)
+Dex Mode: \c[1]Full Dex\c[0]
+Dex Mode: \c[1]Full Dex\c[0]
+All {1} species available.
+All {1} species available.
+Destiny Board — Fate Points: {1}
+Destiny Board — Fate Points: {1}
+{1} — Level {2}
+{1} — Level {2}
+{1} (Unlocked)<<n>>{2}
+{1} (Unlocked)<<n>>{2}
+{1}<<n>>{2}<<n>>Cost: {3} FP<<n>>Unlock this perk?
+{1}<<n>>{2}<<n>>Cost: {3} FP<<n>>Unlock this perk?
+Unlocked {1}!
+Unlocked {1}!
+{1}<<n>>{2}<<n>>Cost: {3} FP (Locked — need higher branch level or more FP)
+{1}<<n>>{2}<<n>>Cost: {3} FP (Locked — need higher branch level or more FP)
+=== Destiny Board ===
+=== Destiny Board ===<<n>>
+Fate Points: {1} (Total earned: {2})
+Fate Points: {1} (Total earned: {2})<<n>><<n>>
+{1}: Level {2}
+{1}: Level {2}<<n>>
+Perks unlocked: {1}/{2}
+<<n>>Perks unlocked: {1}/{2}
+Earned {1} Fate Point(s)! ({2})
+Earned {1} Fate Point(s)! ({2})
+Earned {1} Fate Point(s)!
+Earned {1} Fate Point(s)!
+Withdraw {1}
+Withdraw {1}
+Deposit a Pokémon
+Deposit a Pokémon
+Take the Egg
+Take the Egg
+Compatibility
+Compatibility
+See you
+See you
+\b{1}\b: What can I help you with?
+\b{1}\b: What can I help you with?
+\b{1}\b: Come back any time.
+\b{1}\b: Come back any time.
+\b{1}\b: Take good care of it!
+\b{1}\b: Take good care of it!
+\b{1}\b: They don't seem to like each other.
+\b{1}\b: They don't seem to like each other.
+\b{1}\b: They get along.
+\b{1}\b: They get along.
+\b{1}\b: They get along very well!
+\b{1}\b: They get along very well!
+\b{1}\b: They get along the best!
+\b{1}\b: They get along the best!
+You haven't discovered this recipe yet.
+You haven't discovered this recipe yet.
+You don't have the required materials.
+You don't have the required materials.
+You crafted {1} x{2}!
+You crafted {1} x{2}!
+New recipe discovered: {1}!
+New recipe discovered: {1}!
+Crafting ({1} recipes known)
+Crafting ({1} recipes known)
+{1}<<n>>Result: {2} x{3}<<n>>Materials:
+{1}<<n>>Result: {2} x{3}<<n>>Materials:<<n>>
+{1}: {2}/{3}
+  {1}: {2}/{3}<<n>>
+Times crafted: {1}
+Times crafted: {1}
+Craft this item?
+<<n>>Craft this item?
+You need a crafting station or portable kit.
+You need a crafting station or portable kit.
+(\c[6]Companion Battle skipped: trainer {1} is not defined yet.\c[0])
+(\c[6]Companion Battle skipped: trainer {1} is not defined yet.\c[0])
+\<<n>>\c[1]Battle Rank: {1}\c[0] (Score: {2}/100)
+\<<n>>\c[1]Battle Rank: {1}\c[0]  (Score: {2}/100)
+\<<n>>Bonus reward: {1} x{2}!
+\<<n>>Bonus reward: {1} x{2}!
+=== {1} (Floor {2}) ===
+=== {1} (Floor {2}) ===
+Trainers: {1} | Level: {2}
+Trainers: {1} | Level: {2}
+You were defeated on {1}...
+You were defeated on {1}...
+Continue to the next floor?
+Continue to the next floor?
+You left the Arena after Floor {1}.
+You left the Arena after Floor {1}.
+Arena run complete! Streak: {1} (Best: {2})
+Arena run complete! Streak: {1} (Best: {2})
+Arena Trainer {1}
+Arena Trainer {1}
+Floor {1} cleared! Streak: {2}
+Floor {1} cleared! Streak: {2}
+Milestone reward!
+Milestone reward!
+Streak milestone: {1} wins!
+Streak milestone: {1} wins!
+=== Battle Arena ===
+=== Battle Arena ===<<n>>
+Highest Floor: {1}/{2}
+Highest Floor: {1}/{2}<<n>>
+Current Streak: {1}
+Current Streak: {1}<<n>>
+Best Streak: {1}
+Best Streak: {1}<<n>>
+Total Runs: {1}
+Total Runs: {1}
+You received the {1}!
+You received the {1}!
+"{1}"
+"{1}"
+\se[]{1} has evolved into {2}!
+\se[]{1} has evolved into {2}!
+{1} is healed by ancestral energy!
+{1} is healed by ancestral energy!
+=== {1} ===
+=== {1} ===
+Stage: {1}/3 | KOs: {2}
+Stage: {1}/3 | KOs: {2}
+Next evolution: {1} more KOs needed.
+Next evolution: {1} more KOs needed.
+FULLY EVOLVED — Maximum power reached!
+FULLY EVOLVED — Maximum power reached!
+No ancestral weapons unlocked yet.
+No ancestral weapons unlocked yet.
+Dynamic Difficulty
+Dynamic Difficulty
+Automatically adjusts battle AI difficulty based on your performance.
+Automatically adjusts battle AI difficulty based on your performance.
+The Travelling Trader has been unlocked.
+The Travelling Trader has been unlocked.
+The Travelling Trader has been locked.
+The Travelling Trader has been locked.
+The Travelling Trader has not been unlocked yet.
+The Travelling Trader has not been unlocked yet.
+The Travelling Trader has been enabled.
+The Travelling Trader has been enabled.
+The Travelling Trader has been disabled.
+The Travelling Trader has been disabled.
+The Travelling Trader is not available right now.
+The Travelling Trader is not available right now.
+That location isn't available.
+That location isn't available.
+The travelling trader is already here.
+The travelling trader is already here.
+Alright! I'll head to {1} next.
+Alright! I'll head to {1} next.
+There aren't any other locations the travelling trader can move to yet.
+There aren't any other locations the travelling trader can move to yet.
+Where should the travelling trader go next?
+Where should the travelling trader go next?
+The Travelling Trader is currently disabled.
+The Travelling Trader is currently disabled.
+The Travelling Trader does not have valid Town Map marker coordinates.
+The Travelling Trader does not have valid Town Map marker coordinates.
+Town Map marker: {1}, region {2}, x {3}, y {4}.
+Town Map marker: {1}, region {2}, x {3}, y {4}.
+Debug: The Travelling Trader has not been unlocked yet.
+Debug: The Travelling Trader has not been unlocked yet.
+Debug: The Travelling Trader is currently disabled.
+Debug: The Travelling Trader is currently disabled.
+Debug: Timer expired. The Travelling Trader moved to {1}.
+Debug: Timer expired. The Travelling Trader moved to {1}.
+Debug: Timer expired. Movement has been queued.
+Debug: Timer expired. Movement has been queued.
+Queued destination: {1}. Reason: {2}.
+Queued destination: {1}. Reason: {2}.
+Debug: The Travelling Trader does not currently have a valid location.
+Debug: The Travelling Trader does not currently have a valid location.
+Debug: Location: {1}, map ID {2}.
+Debug: Location: {1}, map ID {2}.
+Debug: Status: {1}. Movement: {2}. Queued destination: {3}.
+Debug: Status: {1}. Movement: {2}. Queued destination: {3}.
+Debug reset complete. Current location: {1}.
+Debug reset complete. Current location: {1}.
+Debug reset complete, but no valid location could be found.
+Debug reset complete, but no valid location could be found.
+Debug: Movement is currently queued.
+Debug: Movement is currently queued.
+Queued destination: {1}.
+Queued destination: {1}.
+Debug: Movement is not currently queued.
+Debug: Movement is not currently queued.
+I don't have anything to sell right now.
+I don't have anything to sell right now.
+What would you like to buy?
+What would you like to buy?
+You received {1} {2}.
+You received {1} {2}.
+The Travelling Trader isn't here right now.
+The Travelling Trader isn't here right now.
+Browse Items
+Browse Items
+Use Trader Tokens ({1})
+Use Trader Tokens ({1})
+Request next location
+Request next location
+Ask when they move
+Ask when they move
+Hello traveller! What can I do for you today?
+Hello traveller! What can I do for you today?
+Come find me again soon!
+Come find me again soon!
+You don't have any {1}.
+You don't have any {1}.
+The exchange shop could not be opened.
+The exchange shop could not be opened.
+I'll move on as soon as you're done browsing!
+I'll move on as soon as you're done browsing!
+I was just about to head there, actually! I'll arrive once you've moved on.
+I was just about to head there, actually! I'll arrive once you've moved on.
+I'll be heading to {1} soon!
+I'll be heading to {1} soon!
+I'll move again in about {1} minute(s) and {2} second(s).
+I'll move again in about {1} minute(s) and {2} second(s).
+×{1}<r>{2} {3}
+×{1}<r>{2} {3}
+So you want {1} {2}?<<n>>They'll cost {3} {4}. All right?
+So you want {1} {2}?<<n>>They'll cost {3} {4}. All right?
+So you want {1}?<<n>>It'll cost {2} {3}. All right?
+So you want {1}?<<n>>It'll cost {2} {3}. All right?
+No known Town Map scene class was found. Check the debug console.
+No known Town Map scene class was found. Check the debug console.
+Found possible Town Map class(es): {1}. Check the debug console.
+Found possible Town Map class(es): {1}. Check the debug console.
+Trader Tokens: {1}
+Trader Tokens: {1}
+You deactivated the Repel Charm.
+You deactivated the Repel Charm.
+Wild Pokémon will appear normally.
+Wild Pokémon will appear normally.
+You activated the Repel Charm.
+You activated the Repel Charm.
+Wild Pokémon will not appear until you deactivate it.
+Wild Pokémon will not appear until you deactivate it.
+You don't have enough {1}...
+You don't have enough {1}...
+You used {1}x {2}!
+You used {1}x {2}!
+Not enough {1} remaining...
+Not enough {1} remaining...
+{1:4.1f} lbs.
+{1:4.1f} lbs.
+{1:.1f} m
+{1:.1f} m
+{1:.1f} kg
+{1:.1f} kg
+Ready to hatch!
+Ready to hatch!
+1 step remaining
+1 step remaining
+{1} steps remaining
+{1} steps remaining
+This Egg is ready to hatch!
+This Egg is ready to hatch!
+This Egg needs just 1 more step to hatch!
+This Egg needs just 1 more step to hatch!
+This Egg is very close to hatching! Only {1} steps remain.
+This Egg is very close to hatching! Only {1} steps remain.
+This Egg is getting close to hatching. {1} steps remain.
+This Egg is getting close to hatching. {1} steps remain.
+This Egg still needs {1} steps to hatch.
+This Egg still needs {1} steps to hatch.
+Egg steps overlay hidden.
+Egg steps overlay hidden.
+Egg steps overlay shown.
+Egg steps overlay shown.
+Slot {1}: {2} steps ({3}%)
+Slot {1}: {2} steps ({3}%)
+No eggs in party.
+No eggs in party.
+Permafaint
+Permafaint
+Once a Pokémon faints, it cannot be revived until the challenge ends.
+Once a Pokémon faints, it cannot be revived until the challenge ends.
+One Capture per Map
+One Capture per Map
+Only the first Pokémon encountered on a map can be caught and added to your party.
+Only the first Pokémon encountered on a map can be caught and added to your party.
+Shiny Clause
+Shiny Clause
+Shiny Pokemon are exempt from the "One Capture per Map" rule.
+Shiny Pokemon are exempt from the "One Capture per Map" rule.
+Dupes Clause
+Dupes Clause
+Evolution lines of owned species don't count as "first encounters" for the "One Capture per Map" rule.
+Evolution lines of owned species don't count as "first encounters" for the "One Capture per Map" rule.
+Gift Clause
+Gift Clause
+Gifted Pokémon or eggs don't count as "first encounters" for the "One Capture per Map" rule.
+Gifted Pokémon or eggs don't count as "first encounters" for the "One Capture per Map" rule.
+Monotype Challenge
+Monotype Challenge
+You can only use Pokémon of a single type. Mixed-type Pokémon must have your chosen type as primary or secondary type.
+You can only use Pokémon of a single type. Mixed-type Pokémon must have your chosen type as primary or secondary type.
+Randomizer Mode
+Randomizer Mode
+Wild Pokémon, trainer Pokémon, and gifts are randomized while maintaining game balance.
+Wild Pokémon, trainer Pokémon, and gifts are randomized while maintaining game balance.
+Forced Nicknames
+Forced Nicknames
+Any Pokémon that is caught/obtained must be nicknamed.
+Any Pokémon that is caught/obtained must be nicknamed.
+Forced Set Battle Style
+Forced Set Battle Style
+The option to switch your Pokémon after fainting an opponent's Pokémon will not be shown.
+The option to switch your Pokémon after fainting an opponent's Pokémon will not be shown.
+No Items in Trainer Battles
+No Items in Trainer Battles
+Item usage will be disabled in Trainer Battles.
+Item usage will be disabled in Trainer Battles.
+No White-out
+No White-out
+If all your party Pokémon faint in battle, you lose the challenge immediately.
+If all your party Pokémon faint in battle, you lose the challenge immediately.
+Level Cap
+Level Cap
+Your Pokémon cannot exceed the level of the next Gym Leader's strongest Pokémon.
+Your Pokémon cannot exceed the level of the next Gym Leader's strongest Pokémon.
+Trainer Scaling
+Trainer Scaling
+All trainers receive boosted levels (+2), better items, improved IVs, and a chance for extra Pokémon.
+All trainers receive boosted levels (+2), better items, improved IVs, and a chance for extra Pokémon.
+No Pokémon Centers
+No Pokémon Centers
+Pokémon Centers cannot be used for healing. Only items can restore your team.
+Pokémon Centers cannot be used for healing. Only items can restore your team.
+No Legendaries
+No Legendaries
+Legendary and Mythical Pokémon cannot be caught or used in battle.
+Legendary and Mythical Pokémon cannot be caught or used in battle.
+Limited Pokémon Center Usage
+Limited Pokémon Center Usage
+You can only heal at Pokémon Centers a limited number of times per area.
+You can only heal at Pokémon Centers a limited number of times per area.
+Species Clause
+Species Clause
+Cannot have duplicate Pokémon species in your party. Forces team diversity.
+Cannot have duplicate Pokémon species in your party. Forces team diversity.
+Item Restrictions
+Item Restrictions
+X-Items are banned in battle. Limited Revives and Full Restores per battle.
+X-Items are banned in battle. Limited Revives and Full Restores per battle.
+Your Challenge has begun! Good Luck!
+Your Challenge has begun! Good Luck!
+Choose your Monotype:
+Choose your Monotype:
+You have chosen {1}-type Pokémon for your Monotype challenge!
+You have chosen {1}-type Pokémon for your Monotype challenge!
+Hard Cap
+Hard Cap
+EXP Cap
+EXP Cap
+Obedience Cap
+Obedience Cap
+Select Level Cap Mode
+Select Level Cap Mode
+Your Pokémon cannot level up or gain experience past the level cap. Most restrictive mode.
+Your Pokémon cannot level up or gain experience past the level cap. Most restrictive mode.
+Your Pokémon gain reduced EXP (1/10th) when above the level cap. They can still level slowly.
+Your Pokémon gain reduced EXP (1/10th) when above the level cap. They can still level slowly.
+Your Pokémon will disobey you in battle when above the level cap, similar to traded Pokémon.
+Your Pokémon will disobey you in battle when above the level cap, similar to traded Pokémon.
+The level cap has been raised to {1}!
+The level cap has been raised to {1}!
+Would you like to play the game without any challenge modifiers?
+Would you like to play the game without any challenge modifiers?
+Would you like to play the game with your selected modifiers?
+Would you like to play the game with your selected modifiers?
+Challenge Options
+Challenge Options
+Confirm
+Confirm
+Confirm the following selection of modifiers.
+Confirm the following selection of modifiers.
+\w[{1}]Clear current selection of modifiers?
+\w[{1}]Clear current selection of modifiers?
+If all your party Pokémon faint in battle, you will be allowed to continue the challenge with unfainted Pokémon from your PC.
+If all your party Pokémon faint in battle, you will be allowed to continue the challenge with unfainted Pokémon from your PC.
+If all the Pokémon in your Party and PC faint, you will lose the challenge.
+If all the Pokémon in your Party and PC faint, you will lose the challenge.
+The challenge begins after you have obtained your first Pokéball.
+The challenge begins after you have obtained your first Pokéball.
+OFF
+OFF
+ON
+ON
+All your Pokémon have fainted. But you still have Pokémon in your PC which you can continue the challenge with.
+All your Pokémon have fainted. But you still have Pokémon in your PC which you can continue the challenge with.
+All your Pokémon have fainted. You have lost the challenge! All challenge modifiers will now be turned off.
+All your Pokémon have fainted. You have lost the challenge! All challenge modifiers will now be turned off.
+It's no good! It's impossible to aim when there are two Pokémon!
+It's no good! It's impossible to aim when there are two Pokémon!
+It's no good! It's impossible to aim when there is more than one Pokémon!
+It's no good! It's impossible to aim when there is more than one Pokémon!
+The "{1}" rule prevents you from catching a Pokémon on a map you already had an encounter on!
+The "{1}" rule prevents you from catching a Pokémon on a map you already had an encounter on!
+The Monotype challenge prevents you from catching {1}! You can only use {2}-type Pokémon.
+The Monotype challenge prevents you from catching {1}! You can only use {2}-type Pokémon.
+The "{1}" rule prevents you from obtaining a Pokémon on a map you already had an encounter on!
+The "{1}" rule prevents you from obtaining a Pokémon on a map you already had an encounter on!
+The "{1}" rule makes it mandatory to nickname your Pokémon!
+The "{1}" rule makes it mandatory to nickname your Pokémon!
+The "{1}" rule prevents item usage in Trainer Battles!
+The "{1}" rule prevents item usage in Trainer Battles!
+The Monotype challenge prevents you from using {1}! You can only use {2}-type Pokémon.
+The Monotype challenge prevents you from using {1}! You can only use {2}-type Pokémon.
+Hardcore Mode
+Hardcore Mode
+All Pokémon have perfect IVs (31) and EVs are disabled entirely. Creates a balanced competitive experience.
+All Pokémon have perfect IVs (31) and EVs are disabled entirely. Creates a balanced competitive experience.
+Hardcore Mode prevents the use of EV-raising items!
+Hardcore Mode prevents the use of EV-raising items!
+Hardcore Mode keeps all EVs at 0. This berry has no effect!
+Hardcore Mode keeps all EVs at 0. This berry has no effect!
+Hardcore Mode prevents the use of EV-training items!
+Hardcore Mode prevents the use of EV-training items!
+{1} is already holding an item.
+{1} is already holding an item.
+{1} is now holding {2}.
+{1} is now holding {2}.
+Hardcore Mode activated!
+Hardcore Mode activated!
+All Pokémon will have perfect IVs (31) and EVs are completely disabled.
+All Pokémon will have perfect IVs (31) and EVs are completely disabled.
+This creates a fair and balanced competitive environment!
+This creates a fair and balanced competitive environment!
+Pokémon Center healing is blocked by Challenge Mode rules!
+Pokémon Center healing is blocked by Challenge Mode rules!
+You'll need to find other ways to heal your Pokémon.
+You'll need to find other ways to heal your Pokémon.
+The Poké Ball won't work!
+The Poké Ball won't work!
+Legendary and Mythical Pokémon cannot be caught in Challenge Mode!
+Legendary and Mythical Pokémon cannot be caught in Challenge Mode!
+The Legendary Pokémon broke free and fled!
+The Legendary Pokémon broke free and fled!
+(Legendary Pokémon cannot be caught in Challenge Mode)
+(Legendary Pokémon cannot be caught in Challenge Mode)
+{1} cannot be used in Challenge Mode!
+{1} cannot be used in Challenge Mode!
+Legendary and Mythical Pokémon are banned!
+Legendary and Mythical Pokémon are banned!
+Legendary and Mythical Pokémon cannot be obtained in Challenge Mode!
+Legendary and Mythical Pokémon cannot be obtained in Challenge Mode!
+The Pokémon Center is closed for you!
+The Pokémon Center is closed for you!
+You've already used your {1} healing visits in {2}.
+You've already used your {1} healing visits in {2}.
+This was your last healing visit in {1}!
+This was your last healing visit in {1}!
+You have 1 healing visit left in {1}.
+You have 1 healing visit left in {1}.
+You have {1} healing visits left in {2}.
+You have {1} healing visits left in {2}.
+Limited Healing is not active.
+Limited Healing is not active.
+Healing visits in {1}:\<<n>>{2} used, {3} remaining
+Healing visits in {1}:\<<n>>{2} used, {3} remaining
+You've used all {1} healing visits in {2}!
+You've used all {1} healing visits in {2}!
+You already have a {1} in your party!
+You already have a {1} in your party!
+Species Clause: Only one of each species allowed!
+Species Clause: Only one of each species allowed!
+{1} was sent to the PC.
+{1} was sent to the PC.
+Wait! You already have a {1}!
+Wait! You already have a {1}!
+The Poké Ball cannot be used.
+The Poké Ball cannot be used.
+The duplicate was sent to the PC instead.
+The duplicate was sent to the PC instead.
+Species Clause is not active.
+Species Clause is not active.
+Your party is empty.
+Your party is empty.
+{1} is banned in Challenge Mode!
+{1} is banned in Challenge Mode!
+You've already used {1} this battle!
+You've already used {1} this battle!
+Limit: {1} per battle
+Limit: {1} per battle
+(That was your last {1} for this battle)
+(That was your last {1} for this battle)
+({1} {2} remaining this battle)
+({1} {2} remaining this battle)
+You've already used {1} {2} this battle!
+You've already used {1} {2} this battle!
+Item Restrictions is not active.
+Item Restrictions is not active.
+Level (Low to High)
+Level (Low to High)
+Level (High to Low)
+Level (High to Low)
+Alphabetical (A-Z)
+Alphabetical (A-Z)
+Alphabetical (Z-A)
+Alphabetical (Z-A)
+Primary Type
+Primary Type
+Type Combination
+Type Combination
+Catch Date
+Catch Date
+Shiny First
+Shiny First
+Forms
+Forms
+Friendship
+Friendship
+Sort from Level 1 to 100
+Sort from Level 1 to 100
+Sort from Level 100 to 1
+Sort from Level 100 to 1
+Sort alphabetically from A to Z
+Sort alphabetically from A to Z
+Sort alphabetically from Z to A
+Sort alphabetically from Z to A
+Sort by primary type
+Sort by primary type
+Sort by type combination
+Sort by type combination
+Sort by catch date (newest first)
+Sort by catch date (newest first)
+Shiny Pokémon come first
+Shiny Pokémon come first
+Sort by National Dex number
+Sort by National Dex number
+Sort by species and form
+Sort by species and form
+Sort by friendship level
+Sort by friendship level
+Sort by nature alphabetically
+Sort by nature alphabetically
+Unknown sorting method
+Unknown sorting method
+How would you like to sort this box?
+How would you like to sort this box?
+Box Auto-Sort
+Box Auto-Sort
+Box Auto-Sort System opened.
+Box Auto-Sort System opened.
+Which box to sort?
+Which box to sort?
+Jump
+Jump
+Wallpaper
+Wallpaper
+Sort
+Sort
+Swap
+Swap
+Swap with which Box?
+Swap with which Box?
+Swap function not available in this storage system.
+Swap function not available in this storage system.
+Battle speed changed to {1}
+Battle speed changed to {1}
+Battle Speed
+Battle Speed
+x#{s}
+x#{s}
+Choose the speed for battles.
+Choose the speed for battles.
+Autosave
+Autosave
+Choose whether your game saved automatically or not.
+Choose whether your game saved automatically or not.
+Pokémon Storage
+Pokémon Storage
+{1} · Stored Exp: {2}
+{1} · Stored Exp: {2}
+Dex Mode
+Dex Mode
+SC Limited
+SC Limited
+Full Dex
+Full Dex
+Choose the curated Shattered Crowns Pokédex or all available species.
+Choose the curated Shattered Crowns Pokédex or all available species.
+Dynamic Lighting
+Dynamic Lighting
+Enable map darkness, light sources and lighting effects.
+Enable map darkness, light sources and lighting effects.
+Light Animation
+Light Animation
+Normal
+Normal
+Vivid
+Vivid
+Adjust pulsing, flickering and animated light colors.
+Adjust pulsing, flickering and animated light colors.
+Ambient Light FX
+Ambient Light FX
+Show weather scatter, stars, fireflies, aurora and similar effects.
+Show weather scatter, stars, fireflies, aurora and similar effects.
+Lighting Quality
+Lighting Quality
+High
+High
+Balanced
+Balanced
+Performance
+Performance
+Choose glow smoothness and the amount of ambient particles.
+Choose glow smoothness and the amount of ambient particles.
+Night Darkness
+Night Darkness
+Adjust how dark unlit parts of maps become.
+Adjust how dark unlit parts of maps become.
+You're already standing here.
+You're already standing here.
+That's off the map.
+That's off the map.
+The ground is too hard to surface here.
+The ground is too hard to surface here.
+There's no way through to there.
+There's no way through to there.
+{1} steps away.
+{1} steps away.
+Where should you surface?
+Where should you surface?
+↑↓←→ Move Z: Surface here X: Cancel
+↑↓←→ Move   Z: Surface here   X: Cancel

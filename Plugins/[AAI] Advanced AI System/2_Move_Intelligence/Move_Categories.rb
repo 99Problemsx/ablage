@@ -349,6 +349,8 @@ module AdvancedAI
       :OBSTRUCT       => { role: :protection, effect: :defense_drop },
       :SILKTRAP       => { role: :protection, effect: :speed_drop },
       :BURNINGBULWARK => { role: :protection, effect: :burn },
+      :MINIMIZE       => { role: :protection },
+      :DOUBLETEAM     => { role: :protection },
       
       # Recovery
       :RECOVER        => { role: :recovery, heal: 0.5 },

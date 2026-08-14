@@ -40,3 +40,70 @@ Backtrace:
 005_PluginManager.rb:652:in `each'
 005_PluginManager.rb:652:in `runPlugins'
 999_Main.rb:38:in `mainFunctionDebug'
+
+=================
+
+[2026-08-13 19:45:31 +0200]
+[Pokémon Essentials version 21.99]
+[EBDX v1.5 Linux]
+
+Exception: NoMethodError
+Message: undefined method `version' for "44_0":String
+
+Backtrace:
+013_Encounter.rb:58:in `block in each_of_version'
+[Shattered Crowns Script System] 056_Encounters.rb:48:in `block in each'
+[Shattered Crowns Script System] 056_Encounters.rb:48:in `each'
+[Shattered Crowns Script System] 056_Encounters.rb:48:in `each'
+013_Encounter.rb:57:in `each_of_version'
+013_Encounter.rb:66:in `each_with_species'
+004_UI_Pokedex_Entry.rb:426:in `get_encounter_maps'
+004_UI_Pokedex_Entry.rb:256:in `set_species'
+004_UI_Pokedex_Entry.rb:78:in `initialize'
+004_UI_Pokedex_Entry.rb:1053:in `new'
+
+=================
+
+[2026-08-13 19:49:53 +0200]
+[Pokémon Essentials version 21.99]
+[EBDX v1.5 Linux]
+
+Exception: FrozenError
+Message: can't modify frozen String: ""
+
+Backtrace:
+010_DrawText.rb:870:in `slice!'
+010_DrawText.rb:870:in `getLineBrokenChunks'
+010_DrawText.rb:1043:in `drawTextEx'
+003_UI_base.rb:116:in `draw_paragraph_text'
+004_UI_Pokedex_Entry.rb:703:in `draw_entry_text'
+004_UI_Pokedex_Entry.rb:540:in `block in draw_page_contents'
+004_UI_Pokedex_Entry.rb:540:in `each'
+004_UI_Pokedex_Entry.rb:540:in `draw_page_contents'
+004_UI_Pokedex_Entry.rb:509:in `refresh'
+003_UI_base.rb:346:in `initialize'
+
+=================
+
+[2026-08-14 13:01:00 +0200]
+[Pokémon Essentials version 21.99]
+[EBDX v1.5 Linux]
+
+Script error in event 36 (coords 15,4), map 32 (PWTBattle)
+Exception: NoMethodError
+Message: undefined method `continue' for nil:NilClass
+
+***Full script:
+$PWT.continue
+
+Backtrace:
+(eval):1:in `execute_script'
+003_Interpreter.rb:140:in `eval'
+003_Interpreter.rb:140:in `execute_script'
+004_Interpreter_Commands.rb:1191:in `command_355'
+004_Interpreter_Commands.rb:116:in `execute_command'
+003_Interpreter.rb:132:in `block in update'
+003_Interpreter.rb:86:in `loop'
+003_Interpreter.rb:86:in `update'
+002_Scene_Map.rb:185:in `block in update'
+002_Scene_Map.rb:184:in `loop'

@@ -135,7 +135,8 @@ function decodeGraphic(node: JValue | undefined): EventGraphic {
   };
 }
 
-function decodeCommands(node: JValue | undefined): EventCommand[] {
+/** Exported so common events, which hold a bare `@list`, can reuse it. */
+export function decodeCommands(node: JValue | undefined): EventCommand[] {
   return asArray(node).map((entry) => ({
     code: asInt(ivar(entry, 'code')),
     indent: asInt(ivar(entry, 'indent')),

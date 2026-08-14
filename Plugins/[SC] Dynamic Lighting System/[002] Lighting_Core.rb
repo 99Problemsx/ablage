@@ -1151,6 +1151,17 @@ class Lighting
     return ei.clamp(0.0, 1.0)
   end
 
+  # Additive white at alpha 255 clips the centre of a light to pure white and
+  # makes proximity changes look like the lamp itself is flashing. Keep the
+  # darkness-mask strength unchanged, but render the decorative coloured glow
+  # at a softer ceiling. The curve also makes distance transitions less abrupt
+  # without allowing a zero-intensity light to remain visible.
+  def additive_glow_opacity(effect, intensity_mult = 1.0)
+    intensity = (effective_intensity(effect) * intensity_mult).clamp(0.0, 1.0)
+    return 0 if intensity <= 0.0 || effect.fade_opacity <= 0.0
+    return (112.0 * effect.fade_opacity * (intensity ** 0.55)).round.clamp(0, 112)
+  end
+
   # Map a layer's base darkness + a [0..1] brightness factor to the alpha of the
   # black mask. The mask starts fully opaque (255 = dark); a hole is a *lower*
   # alpha. So a brighter light must lower the alpha toward base_opacity, and a
@@ -4280,9 +4291,8 @@ class Lighting
          # Apply fade opacity, brightness and power-grid flicker. Brightness now
          # mirrors the darkness mask (intensity dimmed by weather/proximity/dawn-
          # dusk) so the colored glow dims in step with the carved hole.
-         intensity = effective_intensity(effect)
-         intensity *= 0.1 if effect.power_grid && @_power_grid_flicker
-         sprite.opacity = (255 * effect.fade_opacity * intensity).to_i
+         intensity_mult = (effect.power_grid && @_power_grid_flicker) ? 0.1 : 1.0
+         sprite.opacity = additive_glow_opacity(effect, intensity_mult)
          # Keep directional cones aimed correctly (cone_angle can change for
          # event-attached cones); matches the beam orientation offset.
          sprite.angle = effect.cone_angle - 90 if effect.type == :cone
@@ -4355,9 +4365,8 @@ class Lighting
     color = underwater_color_shift(color)
     sprite.tone = Tone.new(color.red - 255, color.green - 255, color.blue - 255)
     # Brightness: intensity dimmed by weather/proximity/dawn-dusk, plus grid flicker
-    intensity = effective_intensity(effect)
-    intensity *= 0.1 if effect.power_grid && @_power_grid_flicker
-    sprite.opacity = (255 * effect.fade_opacity * intensity).to_i
+    intensity_mult = (effect.power_grid && @_power_grid_flicker) ? 0.1 : 1.0
+    sprite.opacity = additive_glow_opacity(effect, intensity_mult)
     # Per-light blend mode override
     apply_blend_mode(sprite, effect)
     # Per-light layer Z-priority

@@ -165,6 +165,9 @@ BattleBack = field
 [032]   # PWTBattle
 Name = PWTBattle
 #-------------------------------
+[033]   # Asgheim
+Name = Asgheim
+#-------------------------------
 [034]   # Ice Cave
 Name = Ice Cave
 MapPosition = 0,15,6

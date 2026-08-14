@@ -7,14 +7,26 @@
  * through a named channel here rather than arbitrary fs access.
  */
 
+import type { SCTilesetCatalog } from '../src/core/scmap/format.ts';
+
 export const IPC = {
   projectOpen: 'project:open',
   projectPick: 'project:pick',
   projectReimport: 'project:reimport',
   mapLoad: 'map:load',
   mapSave: 'map:save',
+  mapCreate: 'map:create',
+  mapDelete: 'map:delete',
+  mapDuplicate: 'map:duplicate',
+  mapTree: 'map:tree',
+  mapConnections: 'map:connections',
   tilesetCatalogLoad: 'tileset:catalog:load',
   tilesetCatalogSave: 'tileset:catalog:save',
+  commonEventsLoad: 'common-events:load',
+  commonEventsSave: 'common-events:save',
+  tilesetCreate: 'tileset:create',
+  tilesetUpdate: 'tileset:update',
+  graphicsImport: 'graphics:import',
   imageLoad: 'image:load',
   pbsRead: 'pbs:read',
   pbsWrite: 'pbs:write',
@@ -50,6 +62,56 @@ export interface ProjectSummary {
   imported: boolean;
   maps: MapTreeNode[];
   warnings: string[];
+}
+
+export interface NewTilesetRequest {
+  name: string;
+  /** Filename under Graphics/Tilesets, without extension. */
+  graphic: string;
+  /** Up to seven filenames under Graphics/Autotiles, '' where unused. */
+  autotiles: string[];
+}
+
+/**
+ * The result of registering or editing a tileset. Carries the whole catalogue
+ * back because the renderer keys its palette off it and a partial update would
+ * leave the two out of step.
+ */
+export interface TilesetMutationResult {
+  catalog: SCTilesetCatalog;
+  warnings: string[];
+  newTilesetId?: number;
+}
+
+export interface NewMapRequest {
+  name: string;
+  width: number;
+  height: number;
+  tilesetId: number;
+  parentId: number;
+}
+
+/** A rename, reparent or reorder. Omitted fields are left alone. */
+export interface MapTreeChange {
+  id: number;
+  name?: string;
+  parentId?: number;
+  order?: number;
+}
+
+/**
+ * The result of any operation that changes which maps exist or how they relate.
+ *
+ * `invalidated` lists maps whose file on disk no longer matches whatever the
+ * renderer has cached — editing a connection rewrites both ends, so the answer is
+ * rarely just "the map you touched".
+ */
+export interface MapMutationResult {
+  summary: ProjectSummary;
+  warnings: string[];
+  invalidated: number[];
+  /** Set by create and duplicate, so the caller can select what it just made. */
+  newMapId?: number;
 }
 
 export interface MapTreeNode {

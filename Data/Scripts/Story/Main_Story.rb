@@ -1636,7 +1636,7 @@ GameData::Cutscene.define :ch4_first_town_arrival do |scene|
   scene.play_bgm 'Pokemon XY - Lumiose City'
   
   # TODO: Event Sequence - Town Arrival
-  # scene.message "You arrived at Verdantia Town as evening fell."
+  # scene.message "You arrived at the first Asgheim gym town as evening fell."
   # scene.message "A cozy forest town with the region's first Gym."
   
   scene.message "\\bLyra\\b: Finally! A bed! Real food!"
@@ -1699,7 +1699,7 @@ GameData::Cutscene.define :ch4_gym_leader_intro do |scene|
   scene.play_bgm 'Pokemon XY - Gym'
   
   # TODO: Event Sequence - Gym Intro
-  # scene.message "The Verdantia Gym specialized in Grass-types."
+  # scene.message "The local Gym specialized in Grass-types."
   # scene.message "Its leader, Fern, was known for her nurturing battle style."
   
   scene.message "\\bFern\\b: Welcome, young trainers!"
@@ -1811,7 +1811,7 @@ GameData::Cutscene.define :ch4_evening_reflection do |scene|
   
   # TODO: Event Sequence - Stargazing
   # scene.message "That evening, you sat outside the Pokémon Center."
-  # scene.message "Stars filled the sky above Verdantia Town."
+  # scene.message "Stars filled the sky above the town."
   
   scene.message "\\bLyra\\b: We actually won our first Badge!"
   scene.message "\\bLyra\\b: I can't believe it!"
@@ -15367,92 +15367,94 @@ GameData::Cutscene.define :ch29_first_elite do |scene|
   scene.play_bgm 'Pokemon XY - Elite Four Battle'
   
   scene.message "The first chamber opened."
-  scene.message "A trainer stood amidst swirling shadows."
+  scene.message "Heat rolled from a forge built into the arena floor."
   
-  scene.message "\\bElite Gareth\\b: I am Gareth of the Elite Four."
-  scene.message "\\bElite Gareth\\b: Master of Ghost types."
-  scene.message "\\bElite Gareth\\b: I've heard of you, Chosen Ones."
+  scene.message "\\bElite Fenris\\b: Fenris. Fire specialist—and an old training partner of your father."
+  scene.message "\\bElite Fenris\\b: Marcus taught you to endure. I will test whether you can advance."
   
-  scene.message "\\b\\PN\\b: News travels fast."
+  scene.message "\\b\\PN\\b: He mentioned someone who always trained too hard."
   
-  scene.message "\\bElite Gareth\\b: The spirits whisper your names."
-  scene.message "\\bElite Gareth\\b: Let's see if you live up to the legend."
+  scene.message "\\bElite Fenris\\b: Then he remembers accurately. Show me what his child learned."
   
   # TODO: Event Sequence - Battle Transition
   # scene.message "The battle was fierce."
   # scene.message "But you prevailed."
   
-  scene.message "\\bElite Gareth\\b: Impressive..."
-  scene.message "\\bElite Gareth\\b: The next chamber awaits."
+  scene.trainer_battle :ELITEFOUR_Fenris, "Fenris", 0
+
+  scene.message "\\bElite Fenris\\b: You did not merely endure. You took command of the battle."
+  scene.message "\\bElite Fenris\\b: Valdra waits in the next chamber."
 end
 
 GameData::Cutscene.define :ch29_second_elite do |scene|
   scene.play_bgm 'Pokemon XY - Elite Four Battle'
   
-  scene.message "The second chamber blazed with heat."
-  scene.message "Fire danced along the walls."
+  scene.message "The second chamber was ringed by ancient tablets and dragon fossils."
+  scene.message "A woman in an old research coat waited beneath a carved constellation."
   
-  scene.message "\\bElite Seraphina\\b: Seraphina. Fire specialist."
-  scene.message "\\bElite Seraphina\\b: You've done well to reach me."
+  scene.message "\\bElite Valdra\\b: Valdra. Dragon specialist. Your mother and I studied under Aldric in the same years."
+  scene.message "\\bElite Valdra\\b: Aurora questioned every inherited truth. Will you question your own strength?"
   
-  scene.message "\\bLyra\\b: She's intense..."
+  scene.message "\\bLyra\\b: No pressure, then."
   
-  scene.message "\\bElite Seraphina\\b: Passion fuels my flames!"
-  scene.message "\\bElite Seraphina\\b: Show me yours!"
+  scene.message "\\bElite Valdra\\b: Dragons punish hesitation. Choose, commit, and accept the consequence."
   
   # TODO: Event Sequence - Battle Intensity
   # scene.message "The battle pushed your team to their limits."
   # scene.message "But fire could not burn your resolve."
   
-  scene.message "\\bElite Seraphina\\b: *laughing* Wonderful!"
-  scene.message "\\bElite Seraphina\\b: Your passion burns brighter than mine!"
-  scene.message "\\bElite Seraphina\\b: Onward!"
+  scene.trainer_battle :ELITEFOUR_Valdra, "Valdra", 0
+
+  scene.message "\\bElite Valdra\\b: Aurora chose well in trusting you with the truth."
+  scene.message "\\bElite Valdra\\b: Morwen is next. She already knows more about you than I do."
 end
 
 GameData::Cutscene.define :ch29_third_elite do |scene|
   scene.play_bgm 'Pokemon XY - Elite Four Battle'
   
-  scene.message "The third chamber was cold."
-  scene.message "Ice crystals hung from the ceiling."
+  scene.message "The third chamber held no throne—only grave markers and quiet lanterns."
+  scene.message "Lady Morwen stood among them, no longer hiding behind a title."
   
-  scene.message "\\bElite Frost\\b: I am Frost."
-  scene.message "\\bElite Frost\\b: I will freeze your advance."
+  scene.message "\\bElite Morwen\\b: We met in the Mortality Ruins. There I judged whether Kael could face death."
+  scene.message "\\bElite Morwen\\b: Here I judge whether you can battle without treating defeat as death."
   
-  scene.message "\\bKael\\b: Another edgy one."
+  scene.message "\\bKael\\b: You joined the Elite Four after the ruins?"
   
-  scene.message "\\bElite Frost\\b: Mock all you want."
-  scene.message "\\bElite Frost\\b: The cold cares not for your words."
+  scene.message "\\bElite Morwen\\b: I returned to a duty I had abandoned. Redemption is work, not a verdict."
   
   # TODO: Event Sequence - Battle Struggle
   # scene.message "The battle was grueling."
   # scene.message "Frost's ice nearly overwhelmed you."
   # scene.message "But warmth won out."
   
-  scene.message "\\bElite Frost\\b: ...Thawed by the fire of your bonds."
-  scene.message "\\bElite Frost\\b: Impressive."
+  scene.trainer_battle :ELITEFOUR_Morwen, "Morwen", 0
+
+  scene.message "\\bElite Morwen\\b: You fought the living opponent before you, not the losses behind her."
+  scene.message "\\bElite Morwen\\b: Go. Orm dislikes being kept waiting."
 end
 
 GameData::Cutscene.define :ch29_fourth_elite do |scene|
   scene.play_bgm 'Pokemon XY - Elite Four Battle'
   
-  scene.message "The fourth chamber opened to the sky."
-  scene.message "Wind howled through the open ceiling."
+  scene.message "The fourth chamber opened around a tidal arena."
+  scene.message "Rain struck the glass roof while channels filled around the battlefield."
   
-  scene.message "\\bElite Tempest\\b: Tempest. Master of Flying types."
-  scene.message "\\bElite Tempest\\b: You've come far, children."
+  scene.message "\\bElite Orm\\b: Orm. Water specialist, Astorian by family and Asgheim League by choice."
+  scene.message "\\bElite Orm\\b: My uncle Lior says every voyage reveals the crew before the destination."
   
-  scene.message "\\b\\PN\\b: We're not children."
+  scene.message "\\b\\PN\\b: And what did this voyage reveal?"
   
-  scene.message "\\bElite Tempest\\b: To me, all are children."
-  scene.message "\\bElite Tempest\\b: But let's see how high you can fly."
+  scene.message "\\bElite Orm\\b: That your crew reaches dangerous shores together. Now show me you can weather the last crossing."
   
   # TODO: Event Sequence - Battle Soar
   # scene.message "The battle soared."
   # scene.message "Tempest's Pokémon ruled the air."
   # scene.message "But you brought them down."
   
-  scene.message "\\bElite Tempest\\b: The sky bows to you."
-  scene.message "\\bElite Tempest\\b: The Champion awaits."
+  scene.trainer_battle :ELITEFOUR_Orm, "Orm", 0
+
+  scene.message "\\bElite Orm\\b: The current broke around you. It did not break you."
+  scene.message "\\bElite Orm\\b: Champion Viktor awaits."
 end
 
 GameData::Cutscene.define :ch29_pre_champion_moment do |scene|
@@ -16688,9 +16690,9 @@ GameData::Cutscene.define :ch32_hoopa_consumed do |scene|
   scene.play_bgm 'Pokemon SwSh - Eternatus Theme'
   scene.camera_shake 20, 80
   
-  scene.message "\\bNidhoggr\\b: LITTLE CHAOS SPIRIT..."
-  scene.message "\\bNidhoggr\\b: YOU ARE NOTHING..."
-  scene.message "\\bNidhoggr\\b: COMPARED TO TRUE OBLIVION."
+  scene.message "\\bNidhoggr\\b: HOOPA SAID NO."
+  scene.message "\\bNidhoggr\\b: THE RINGS OPENED ANYWAY."
+  scene.message "\\bNidhoggr\\b: NO IS SUCH A SMALL WORD."
   
   scene.message "\\bHoopa Unbound\\b: NO! Hoopa will not be your door again!"
   scene.message "\\bHoopa Unbound\\b: CLOSE THE RINGS! CLOSE—"
@@ -16710,8 +16712,8 @@ GameData::Cutscene.define :ch32_hoopa_consumed do |scene|
   scene.message "\\bKael\\b: That's what it does."
   scene.message "\\bKael\\b: It consumes. Everything."
   
-  scene.message "\\bNidhoggr\\b: NOW THEN..."
-  scene.message "\\bNidhoggr\\b: WHO SHALL BE NEXT?"
+  scene.message "\\bNidhoggr\\b: LYRA CALLS FOR ELENA."
+  scene.message "\\bNidhoggr\\b: ELENA CANNOT ANSWER."
 end
 
 #===============================================================================
@@ -17386,14 +17388,14 @@ GameData::Cutscene.define :ch33_facing_nidhoggr do |scene|
   # scene.message "A nightmare made flesh."
   # scene.message "Entropy given form."
   
-  scene.message "\\bNidhoggr\\b: SO... THE MORTALS THINK TO FIGHT."
-  scene.message "\\bNidhoggr\\b: HOW AMUSING."
+  scene.message "\\bNidhoggr\\b: ALDRIC WROTE: STAND TOGETHER."
+  scene.message "\\bNidhoggr\\b: ALDRIC IS ASH."
   
   scene.message "\\b\\PN\\b: We don't think. We know."
   
-  scene.message "\\bNidhoggr\\b: YOU KNOW NOTHING, CHILD."
-  scene.message "\\bNidhoggr\\b: I AM THE END OF ALL THINGS."
-  scene.message "\\bNidhoggr\\b: I HAVE DEVOURED WORLDS."
+  scene.message "\\bNidhoggr\\b: MIRA KNEW THE SMELL OF SMOKE."
+  scene.message "\\bNidhoggr\\b: KAEL KNOWS IT TOO."
+  scene.message "\\bNidhoggr\\b: OPEN THE DOOR. LET THE MEMORY BREATHE."
   
   scene.message "\\bLyra\\b: Not this one."
   
@@ -17537,9 +17539,9 @@ GameData::Cutscene.define :ch33_guardians_together do |scene|
   # scene.message "Zacian. Xerneas. Yveltal."
   # scene.message "Sword. Life. Death."
   
-  scene.message "\\bNidhoggr\\b: PATHETIC GUARDIANS!"
-  scene.message "\\bNidhoggr\\b: YOU COULDN'T STOP ME BEFORE!"
-  scene.message "\\bNidhoggr\\b: YOU WON'T STOP ME NOW!"
+  scene.message "\\bNidhoggr\\b: ZACIAN REMEMBERS THE FIRST FAILURE."
+  scene.message "\\bNidhoggr\\b: XERNEAS REMEMBERS EVERY ROOT THAT DIED."
+  scene.message "\\bNidhoggr\\b: YVELTAL REMEMBERS THE LAST BREATH."
   
   scene.message "\\bZacian\\b: We have something we lacked before."
   
@@ -17547,8 +17549,8 @@ GameData::Cutscene.define :ch33_guardians_together do |scene|
   
   scene.message "\\bYveltal\\b: Not gods alone... but bonds of friendship."
   
-  scene.message "\\bNidhoggr\\b: FRIENDSHIP?!"
-  scene.message "\\bNidhoggr\\b: THAT WILL NOT SAVE YOU!"
+  scene.message "\\bNidhoggr\\b: FAMILY, LYRA SAID."
+  scene.message "\\bNidhoggr\\b: FAMILY MAKES MORE VOICES TO LOSE."
 end
 
 GameData::Cutscene.define :ch33_guardians_manifest do |scene|
@@ -17615,9 +17617,9 @@ GameData::Cutscene.define :ch33_united_speech do |scene|
   # scene.message "Your Pokémon roared in unison."
   # scene.message "Starters glowing with guardian power."
   
-  scene.message "\\bNidhoggr\\b: HOW TOUCHING..."
-  scene.message "\\bNidhoggr\\b: YOUR BONDS WILL MAKE YOUR DESPAIR..."
-  scene.message "\\bNidhoggr\\b: ALL THE MORE DELICIOUS!"
+  scene.message "\\bNidhoggr\\b: HOLD TIGHTER."
+  scene.message "\\bNidhoggr\\b: THE FALL HURTS MORE..."
+  scene.message "\\bNidhoggr\\b: WHEN HANDS ARE STILL JOINED."
   
   scene.message "\\b\\PN\\b: We're not afraid of you!"
   scene.message "\\bLyra\\b: We've come too far to lose now!"
@@ -17670,7 +17672,7 @@ GameData::Cutscene.define :ch33_lyra_cannot_heal_this do |scene|
 end
 
 #===============================================================================
-# Chapter 34: Final Battle - Nidhoggr (Eternatus)
+# Chapter 34: Final Battle - Nidhoggr's Stolen Vessel
 #===============================================================================
 
 GameData::Cutscene.define :ch34_nidhoggr_emerges do |scene|
@@ -17684,14 +17686,14 @@ GameData::Cutscene.define :ch34_nidhoggr_emerges do |scene|
   # scene.message "Nidhoggr loomed before you in its true form."
   # scene.message "Eternatus—corrupted, twisted, ancient beyond comprehension."
   
-  scene.message "\\bNidhoggr\\b: AT LAST... WORTHY OPPONENTS."
-  scene.message "\\bNidhoggr\\b: THE GUARDIANS' CHAMPIONS."
+  scene.message "\\bNidhoggr\\b: CHAMPION. CHOSEN. CHILD."
+  scene.message "\\bNidhoggr\\b: THREE NAMES FOR THE SAME FEAR."
   
   scene.message "\\b\\PN\\b: This ends now!"
   
-  scene.message "\\bNidhoggr\\b: OH YES..."
-  scene.message "\\bNidhoggr\\b: IT ENDS."
-  scene.message "\\bNidhoggr\\b: BUT NOT AS YOU IMAGINE."
+  scene.message "\\bNidhoggr\\b: RAGNAR SAID: WE WILL SEE."
+  scene.message "\\bNidhoggr\\b: HE DID NOT SEE."
+  scene.message "\\bNidhoggr\\b: YOU WILL."
 end
 
 GameData::Cutscene.define :ch34_first_clash do |scene|
@@ -17705,7 +17707,7 @@ GameData::Cutscene.define :ch34_first_clash do |scene|
   # scene.message "Your first attacks struck the World-Eater."
   # scene.message "But they seemed like pinpricks against infinity."
   
-  scene.message "\\bNidhoggr\\b: AMUSING."
+  scene.message "\\bNidhoggr\\b: MARCUS LAUGHS WHEN HE IS AFRAID."
   
   # TODO: Event Sequence - Dark Energy
   # scene.message "Dark energy swept toward you."
@@ -17729,9 +17731,9 @@ GameData::Cutscene.define :ch34_nidhoggr_power do |scene|
   # scene.message "Nidhoggr unleashed a wave of pure entropy."
   # scene.message "Reality itself seemed to crack around it."
   
-  scene.message "\\bNidhoggr\\b: I HAVE DEVOURED STARS!"
-  scene.message "\\bNidhoggr\\b: I HAVE CONSUMED DIMENSIONS!"
-  scene.message "\\bNidhoggr\\b: WHAT ARE THREE MORTALS TO ME?!"
+  scene.message "\\bNidhoggr\\b: A STAR FORGETS ITS NAME."
+  scene.message "\\bNidhoggr\\b: A ROAD FORGETS WHERE IT LED."
+  scene.message "\\bNidhoggr\\b: THREE HEARTS FORGET WHY THEY BEAT."
   
   # TODO: Event Sequence - Ground Dissolves
   # scene.message "The ground beneath you began to dissolve."
@@ -17743,13 +17745,13 @@ end
 GameData::Cutscene.define :ch34_nidhoggr_battle do |scene|
   scene.play_bgm 'Pokemon SWSH - Eternatus Phase 2'
   
-  scene.message "\\bNidhoggr\\b: COME THEN, MORTALS!"
-  scene.message "\\bNidhoggr\\b: LET ME TASTE YOUR DESPAIR!"
+  scene.message "\\bNidhoggr\\b: COME CLOSER."
+  scene.message "\\bNidhoggr\\b: THE LOST ARE LOUDER HERE."
   
   scene.play_bgm 'Pokemon SWSH - Eternatus Phase 2'
   
-  scene.message "\\bNidhoggr\\b: COME THEN, MORTALS!"
-  scene.message "\\bNidhoggr\\b: LET ME TASTE YOUR DESPAIR!"
+  scene.message "\\bNidhoggr\\b: COME CLOSER."
+  scene.message "\\bNidhoggr\\b: THE LOST ARE LOUDER HERE."
   
   # TODO: Event Sequence - Full Glory
   # scene.message "Eternatus emerged in its full corrupted glory."
@@ -17771,8 +17773,8 @@ GameData::Cutscene.define :ch34_first_form_defeated do |scene|
   # TODO: Event Sequence - Stagger Back
   # scene.message "Nidhoggr staggered back!"
   
-  scene.message "\\bNidhoggr\\b: IMPOSSIBLE...!"
-  scene.message "\\bNidhoggr\\b: HOW CAN MORTAL POKÉMON...!"
+  scene.message "\\bNidhoggr\\b: THE SMALL ONES STAND."
+  scene.message "\\bNidhoggr\\b: THEY SHOULD REMEMBER RUNNING."
   
   scene.message "\\bLyra\\b: We did it!"
   scene.message "\\bKael\\b: No... look..."
@@ -17781,8 +17783,8 @@ GameData::Cutscene.define :ch34_first_form_defeated do |scene|
   # scene.message "Nidhoggr began to transform."
   # scene.message "Growing. Expanding. Becoming something worse."
   
-  scene.message "\\bNidhoggr\\b: YOU THINK THAT WAS MY TRUE POWER?"
-  scene.message "\\bNidhoggr\\b: FOOLISH MORTALS..."
+  scene.message "\\bNidhoggr\\b: THE SKIN TEARS."
+  scene.message "\\bNidhoggr\\b: THE HUNGER DOES NOT."
 end
 
 GameData::Cutscene.define :ch34_eternamax do |scene|
@@ -17796,8 +17798,8 @@ GameData::Cutscene.define :ch34_eternamax do |scene|
   # scene.message "Nidhoggr's form exploded outward!"
   # scene.message "Eternamax—the ultimate form of annihilation!"
   
-  scene.message "\\bNidhoggr\\b: BEHOLD YOUR END!"
-  scene.message "\\bNidhoggr\\b: THE GNAWING ONE IN FULL POWER!"
+  scene.message "\\bNidhoggr\\b: ELENA SAW THIS SHAPE."
+  scene.message "\\bNidhoggr\\b: SHE CHOSE THE FIRE ANYWAY."
   
   # TODO: Event Sequence - Sky Cracks
   # scene.message "The sky itself seemed to crack."
@@ -17818,8 +17820,8 @@ GameData::Cutscene.define :ch34_desperate_moment do |scene|
   # scene.message "Your Pokémon fell. One by one."
   # scene.message "Even with Guardian power, Nidhoggr was overwhelming."
   
-  scene.message "\\bNidhoggr\\b: IS THIS ALL YOU HAVE?"
-  scene.message "\\bNidhoggr\\b: PATHETIC MORTALS!"
+  scene.message "\\bNidhoggr\\b: YOUR HANDS SHAKE."
+  scene.message "\\bNidhoggr\\b: ALDRIC'S SHOOK TOO."
   
   scene.message "\\bLyra\\b: *falling to knees* We can't... we can't beat it..."
   scene.message "\\bKael\\b: *gritting teeth* No... not like this..."
@@ -17868,13 +17870,13 @@ GameData::Cutscene.define :ch34_crown_forms do |scene|
   # scene.message "They spiraled together in brilliant light!"
   
   scene.message "\\bZacian\\b: THE TIME HAS COME!"
-  scene.message "\\bXerneas\\b: THE CROWN WILL BE RESTORED!"
-  scene.message "\\bYveltal\\b: AND CHAOS WILL BE SEALED!"
+  scene.message "\\bXerneas\\b: THE SHARDS REMEMBER THE CROWN!"
+  scene.message "\\bYveltal\\b: LET THEIR ECHO BIND THE HUNGER!"
   
   # TODO: Event Sequence - Crown Forms
-  # scene.message "The Crown of Unity formed before you."
-  # scene.message "Complete. Radiant. Powerful."
-  # scene.message "The artifact that sealed Nidhoggr millennia ago."
+  # scene.message "An echo of the Crown of Unity formed before you."
+  # scene.message "Radiant, powerful—and visibly incomplete."
+  # scene.message "A memory of the ancient artifact, sustained by three living bonds."
   
   scene.message "\\b\\PN\\b: Everyone... together!"
   
@@ -17905,10 +17907,10 @@ GameData::Cutscene.define :ch34_final_attack do |scene|
   # scene.message "Golden, green, and crimson light merged."
   # scene.message "A beam of pure balance struck Nidhoggr."
   
-  scene.message "\\bNidhoggr\\b: WHAT?! IMPOSSIBLE!"
-  scene.message "\\bNidhoggr\\b: THE CROWN... YOU RESTORED IT?!"
+  scene.message "\\bNidhoggr\\b: THREE HANDS. ONE EMPTY THRONE."
+  scene.message "\\bNidhoggr\\b: ALDRIC SAID YOU WOULD BE TOO LATE."
   
-  scene.message "\\bZacian\\b: What was broken is now whole!"
+  scene.message "\\bZacian\\b: What was broken remembers its shape!"
   scene.message "\\bXerneas\\b: What was corrupted is now cleansed!"
   scene.message "\\bYveltal\\b: What was unbound is now SEALED!"
 end
@@ -17920,16 +17922,16 @@ GameData::Cutscene.define :ch34_nidhoggr_sealed do |scene|
   scene.camera_flash 60
   scene.play_bgm 'Pokemon SWSH - Ending Theme'
   
-  scene.message "\\bNidhoggr\\b: NOOOOOOOO!"
-  scene.message "\\bNidhoggr\\b: I WILL NOT BE IMPRISONED AGAIN!"
-  scene.message "\\bNidhoggr\\b: I WILL RETURN! I WILL ALWAYS RETURN!"
+  scene.message "\\bNidhoggr\\b: RAGNAR PROMISED TO COME BACK."
+  scene.message "\\bNidhoggr\\b: ELENA SAID SEVEN. SIX. FIVE."
+  scene.message "\\bNidhoggr\\b: EVERY PROMISE ENDS IN HUNGER."
   
   # TODO: Event Sequence - Sealing
   # scene.message "The Crown's power bound the World-Eater."
   # scene.message "Chains of light wrapped around Nidhoggr."
   # scene.message "Dragging it into a new prison."
   
-  scene.message "\\bNidhoggr\\b: THIS... IS NOT... OVER...!"
+  scene.message "\\bNidhoggr\\b: AN ECHO CANNOT HOLD FOREVER..."
   
   # TODO: Event Sequence - Silence
   # scene.message "And then..."
@@ -18067,7 +18069,7 @@ GameData::Cutscene.define :ch35_aftermath do |scene|
   
   # TODO: Event Sequence - Portal Seals
   # scene.message "The portal sealed behind you."
-  # scene.message "Asgaheim—and Nidhoggr's prison—was gone forever."
+  # scene.message "Asgaheim vanished from mortal reach; the hidden prison endured beyond the closed path."
   # scene.message "The world was safe."
 end
 
@@ -18487,9 +18489,9 @@ GameData::Cutscene.define :ch36_vision do |scene|
   scene.message "Darkness. Void. Chains cracking."
   scene.message "Nidhoggr's prison... failing."
   
-  scene.message "\\bNidhoggr's Voice\\b: DID YOU THINK IT WOULD LAST?"
-  scene.message "\\bNidhoggr's Voice\\b: THE CROWN IS INCOMPLETE..."
-  scene.message "\\bNidhoggr's Voice\\b: AND I AM ETERNAL..."
+  scene.message "\\bNidhoggr's Voice\\b: ONE YEAR, AURORA SAID. ONE PEACEFUL YEAR."
+  scene.message "\\bNidhoggr's Voice\\b: THE ECHO HAS CRACKS."
+  scene.message "\\bNidhoggr's Voice\\b: HUNGER FITS THROUGH CRACKS."
   
   scene.camera_flash 20
   
@@ -19944,6 +19946,32 @@ GameData::Cutscene.define :ch43_terms_of_alliance do |scene|
   scene.message "The four marks answered. The alliance became part of the Crown before the battle began."
 end
 
+GameData::Cutscene.define :ch43_astorian_hearing do |scene|
+  scene.play_bgm 'Pokemon XY - Tension'
+
+  scene.message "The portal remained closed while Astoria's council gathered in the temple."
+  scene.message "Keepers filled the gallery: fishers, parents, ward-tenders, and families erased from Asgheim's maps."
+  scene.message "\\bKeeper Sella\\b: Every old solution called our losses necessary. Why should we trust another Crown?"
+  scene.message "\\bKael\\b: You should not trust it. You should inspect it, limit it, and stop us if we break the terms."
+  scene.message "\\bLyra\\b: Saving Asgheim cannot mean spending Astoria again."
+  scene.message "The council demanded a public record of the pact and an Astorian key capable of closing the portal."
+end
+
+GameData::Cutscene.define :ch43_player_decision do |scene|
+  scene.play_bgm 'Pokemon XY - Emotion'
+
+  scene.choice ["Accept Astoria's oversight", "Ask Giratina to name the safeguard"] do |choice|
+    if choice == 0
+      pbMessage("\\b\\PN\\b: No chosen person should hold an unchecked key. Astoria keeps the counter-key.")
+      pbMessage("\\bElder Vera\\b: Then our consent travels with you.")
+    else
+      pbMessage("\\bGiratina\\b: IF THE TERMS ARE BROKEN, ASTORIA'S KEY WILL RETURN THE CROWN AND EXPEL ITS BEARERS.")
+      pbMessage("\\b\\PN\\b: Put that condition into the Crown.")
+    end
+  end
+  scene.message "Only after the safeguard took hold did the council authorize the crossing."
+end
+
 #===============================================================================
 # Chapter 44: The Distortion World
 #===============================================================================
@@ -20096,8 +20124,8 @@ GameData::Cutscene.define :ch45_intro do |scene|
   
   scene.message "\\ts[]Chapter 45: The Seal Breaks"
   
-  scene.message "\\bNidhoggr\\b: AT LAST..."
-  scene.message "\\bNidhoggr\\b: THE CHOSEN ONES COME TO ME..."
+  scene.message "\\bNidhoggr\\b: THE COMPASS POINTS HOME."
+  scene.message "\\bNidhoggr\\b: YOU WALK THE OTHER WAY."
   
   scene.camera_shake 40, 100
 end
@@ -20109,9 +20137,9 @@ GameData::Cutscene.define :ch45_nidhoggr_speaks do |scene|
   scene.message "Chains of light exploding outward."
   scene.message "Nidhoggr rising, terrible and vast."
   
-  scene.message "\\bNidhoggr\\b: DID YOU THINK YOUR CROWN COULD STOP ME?!"
-  scene.message "\\bNidhoggr\\b: I AM ETERNAL! I AM THE END!"
-  scene.message "\\bNidhoggr\\b: AND YOU... ARE NOTHING!"
+  scene.message "\\bNidhoggr\\b: AURORA SAID: COME BACK TO US."
+  scene.message "\\bNidhoggr\\b: RAGNAR SAID: I NEED MY RIVAL ALIVE."
+  scene.message "\\bNidhoggr\\b: HOW MANY VOICES MUST HUNGER EAT BEFORE YOURS?"
   
   scene.camera_flash 40
 end
@@ -20137,9 +20165,9 @@ GameData::Cutscene.define :ch45_battle_begins do |scene|
   scene.play_bgm 'Pokemon SWSH - Battle! Eternatus'
   scene.camera_shake 30, 80
   
-  scene.message "\\bNidhoggr\\b: SO THE CHILDREN BROUGHT THEIR PARENTS."
-  scene.message "\\bNidhoggr\\b: IT MATTERS NOT!"
-  scene.message "\\bNidhoggr\\b: I DEVOURED GODS BEFORE!"
+  scene.message "\\bNidhoggr\\b: THREE CHILDREN. THREE GUARDIANS. FOUR EMPTY PLACES."
+  scene.message "\\bNidhoggr\\b: ELENA OPENS THE DOOR. ALDRIC DRAWS THE MAP."
+  scene.message "\\bNidhoggr\\b: COME CLOSER. HEAR THEM CLEARLY."
   
   scene.message "\\b\\PN\\b: Not these ones!"
   
@@ -20154,7 +20182,7 @@ GameData::Cutscene.define :ch45_first_battle do |scene|
   scene.message "Nidhoggr reeled from your assault!"
   scene.message "But it was far from defeated."
   
-  scene.message "\\bNidhoggr\\b: IMPRESSIVE... BUT FUTILE!"
+  scene.message "\\bNidhoggr\\b: AGAIN. AGAIN. THE SAME BRAVE MOTIONS."
 end
 
 GameData::Cutscene.define :ch45_nidhoggr_transforms do |scene|
@@ -20164,10 +20192,10 @@ GameData::Cutscene.define :ch45_nidhoggr_transforms do |scene|
   
   scene.message "Nidhoggr's form expanded!"
   scene.message "Growing. Consuming. Becoming."
-  scene.message "Its true form—Eternamax Nidhoggr!"
+  scene.message "Its own void-form unfolded—vast, rootlike, wearing no stolen body."
   
-  scene.message "\\bNidhoggr\\b: BEHOLD MY TRUE POWER!"
-  scene.message "\\bNidhoggr\\b: I AM THE VOID ITSELF!"
+  scene.message "\\bNidhoggr\\b: ETERNATUS IS GONE. HOOPA IS GONE."
+  scene.message "\\bNidhoggr\\b: NOW I WEAR THE SPACE BETWEEN YOUR MEMORIES."
   
   scene.message "The Distortion World trembled."
   scene.message "Reality itself was breaking."
@@ -20219,8 +20247,8 @@ GameData::Cutscene.define :ch45_crown_complete do |scene|
   
   scene.message "The Crown of Unity blazed brighter than ever!"
   
-  scene.message "\\bNidhoggr\\b: NO! THAT POWER—!"
-  scene.message "\\bNidhoggr\\b: YOU CANNOT WIELD IT!"
+  scene.message "\\bNidhoggr\\b: GIRATINA SAID NO."
+  scene.message "\\bNidhoggr\\b: THIS TIME THE CROWN LISTENS."
   
   scene.message "\\b\\PN\\b: WATCH US!"
 end
@@ -20231,8 +20259,8 @@ GameData::Cutscene.define :ch45_false_victory_weaponized do |scene|
   scene.message "Nidhoggr opened fractures shaped like windows. Through each, you saw the year of peace you had already lived."
   scene.message "Your parents at breakfast. The Sanctuary thriving. Ragnar's Raichu asleep in sunlight."
 
-  scene.message "\\bNidhoggr\\b: YOU HAD YOUR ENDING. YOU BELIEVED IT BECAUSE YOU NEEDED TO."
-  scene.message "\\bNidhoggr\\b: SEAL ME AGAIN, AND SPEND EVERY QUIET YEAR WAITING FOR THE NEXT CRACK."
+  scene.message "\\bNidhoggr\\b: YOU HAD YOUR ENDING. MARCUS MADE PANCAKES. LYRA WROTE HOME."
+  scene.message "\\bNidhoggr\\b: EVERY QUIET YEAR WILL ASK WHETHER THE CRACK HAS RETURNED."
 
   scene.message "\\bLyra\\b: That year wasn't fake. Every life lived during it was real."
   scene.message "\\bKael\\b: A temporary victory still saved people."
@@ -20301,9 +20329,9 @@ GameData::Cutscene.define :ch46_nidhoggr_weakening do |scene|
   scene.play_bgm 'Pokemon SWSH - Battle! Eternatus'
   scene.camera_shake 30, 80
   
-  scene.message "\\bNidhoggr\\b: IMPOSSIBLE...!"
-  scene.message "\\bNidhoggr\\b: I AM THE END OF ALL THINGS...!"
-  scene.message "\\bNidhoggr\\b: I CANNOT BE DESTROYED...!"
+  scene.message "\\bNidhoggr\\b: FOUR VOICES SAY YES."
+  scene.message "\\bNidhoggr\\b: NO STOLEN THROAT TO SILENCE."
+  scene.message "\\bNidhoggr\\b: NO LIVING LOCK TO EAT."
   
   scene.message "\\bZacian\\b: NOT DESTROYED—SEALED!"
   scene.message "\\bXerneas\\b: BOUND FOR ETERNITY!"
@@ -20320,9 +20348,9 @@ GameData::Cutscene.define :ch46_eternal_seal do |scene|
   scene.message "Four colors of light spiraling together!"
   scene.message "Wrapping around Nidhoggr like chains of creation!"
   
-  scene.message "\\bNidhoggr\\b: NOOOOOOO!"
-  scene.message "\\bNidhoggr\\b: THIS CANNOT BE...!"
-  scene.message "\\bNidhoggr\\b: I AM ETERNAL...!"
+  scene.message "\\bNidhoggr\\b: THE NAMES REMAIN."
+  scene.message "\\bNidhoggr\\b: THE ROADS REMAIN."
+  scene.message "\\bNidhoggr\\b: HUNGER HAS NOWHERE LEFT TO GO."
   
   scene.message "\\b\\PN\\b: SO IS THIS SEAL!"
 end
@@ -20401,6 +20429,16 @@ GameData::Cutscene.define :ch46_realm_breathes do |scene|
 
   # TODO: Calm post-boss walk through the restored route before Arceus appears.
   # Native creatures replace Void Walkers; rescued ones recognize the party.
+end
+
+GameData::Cutscene.define :ch46_hoopa_released do |scene|
+  scene.play_bgm 'Pokemon XY - Emotion'
+
+  scene.message "When the final empty anchor closed, a damaged golden ring fell from Nidhoggr's collapsing void-form."
+  scene.message "Hoopa emerged alive but translucent, its body scarred by centuries as a lock and a year inside the hunger."
+  scene.message "\\bHoopa\\b: Out... Hoopa is out."
+  scene.message "\\bLyra\\b: You're free of Nidhoggr. Hold on—we'll get you home."
+  scene.message "The Crown released Hoopa without attaching a chain, command, or duty to its soul."
 end
 
 #===============================================================================
@@ -20514,6 +20552,26 @@ GameData::Cutscene.define :ch47_question_for_arceus do |scene|
   scene.message "\\bArceus\\b: NO. NOTHING SHOULD."
 
   scene.message "Arceus did not ask for forgiveness or praise."
+end
+
+GameData::Cutscene.define :ch47_hoopa_chooses do |scene|
+  scene.play_bgm 'Pokemon XY - Emotion'
+
+  scene.message "Hoopa tested a ring no one had ordered it to open. A quiet Astorian beach appeared beyond it."
+  scene.message "\\bHoopa\\b: Hoopa can leave. Anywhere. Right now."
+  scene.message "\\b\\PN\\b: Yes. You do not owe us a journey, a battle, or a door."
+  scene.message "Hoopa closed the ring, considered the silence, and opened another toward home."
+  scene.message "\\bHoopa\\b: Then Hoopa chooses breakfast with friends first. Tomorrow, Hoopa chooses again."
+  scene.message "Its freedom began with an ordinary decision that no god made for it."
+end
+
+GameData::Cutscene.define :ch47_eternatus_returns do |scene|
+  scene.play_bgm 'Pokemon XY - Emotion'
+
+  scene.message "A violet star crossed the restored horizon. Eternatus descended, scarred but unmistakably itself."
+  scene.message "It kept its distance from the prison and lowered its head to Hoopa. Two former vessels acknowledged one another."
+  scene.message "\\bZacian\\b: Nidhoggr has no body left to steal. Its void-form is bound to empty anchors."
+  scene.message "Eternatus opened a path of light toward the mortal sky, then departed by its own will."
 end
 
 
@@ -20792,7 +20850,7 @@ GameData::Cutscene.define :ch49_civilians_speak do |scene|
   scene.play_bgm 'Pokemon XY - Friends Theme'
 
   scene.message "After the ceremony, the barriers came down."
-  scene.message "A Verdantia shopkeeper showed you the steel-blue ribbon from her broken window."
+  scene.message "An Asgheim shopkeeper showed you the steel-blue ribbon from her broken window."
   scene.message "A Stormwatch mother introduced the Furfrou that found her child beneath the rubble."
   scene.message "Former Hand recruits waited at the edge of the square, uncertain they were welcome."
 
@@ -20813,6 +20871,31 @@ GameData::Cutscene.define :ch49_public_accounting do |scene|
 
   scene.message "The truth did not undo the harm."
   scene.message "But for once, Asgheim chose not to bury it."
+end
+
+GameData::Cutscene.define :ch49_voice_of_anger do |scene|
+  scene.play_bgm 'Pokemon XY - Tension'
+
+  scene.message "A dockworker named Iven refused the offered applause. His brother had died during the fracture evacuation."
+  scene.message "\\bIven\\b: You saved the world. You also knew the first seal was failing before our harbor broke. Why did nobody warn us?"
+  scene.message "The square went silent. No villain had placed those words in his mouth."
+  scene.message "\\b\\PN\\b: We feared panic and chose secrecy. That choice cost you time. I am sorry."
+  scene.message "Iven did not forgive you. He handed the council a list of evacuation failures instead."
+end
+
+GameData::Cutscene.define :ch49_reparations_vote do |scene|
+  scene.play_bgm 'Pokemon XY - Emotion'
+
+  scene.choice ["Fund the damaged districts first", "Create a survivor-led recovery council"] do |choice|
+    if choice == 0
+      pbMessage("The celebration budget was redirected to homes, clinics, and the harbor.")
+      pbMessage("\\bLyra\\b: A smaller ceremony. A better victory.")
+    else
+      pbMessage("Iven and six other survivors received binding votes over reconstruction funds.")
+      pbMessage("\\bKael\\b: Being heard after the decision is not the same as sharing it.")
+    end
+  end
+  scene.message "The medals remained, but public gratitude no longer erased public anger."
 end
 
 #===============================================================================
@@ -21106,6 +21189,25 @@ GameData::Cutscene.define :ch51_willow_and_shadow do |scene|
   scene.message "Tomorrow did not need to be perfect. It only needed to be theirs."
 end
 
+GameData::Cutscene.define :ch51_player_future do |scene|
+  scene.play_bgm 'Pokemon XY - Emotion'
+
+  scene.message "Later, Marcus found you studying three invitations: the League, Aldric's archive, and a map of towns still rebuilding."
+  scene.message "\\bMarcus\\b: You spent years being what prophecy needed. What do you need?"
+  scene.message "\\b\\PN\\b: I don't know yet. For once, that feels honest instead of frightening."
+  scene.message "\\bAurora\\b: Then choose a direction, not a destiny. You can change direction."
+  scene.message "You folded the invitations and kept all three. Tomorrow belonged to Lyra and Kael; afterward, your life would belong to you."
+end
+
+GameData::Cutscene.define :ch51_old_friends_dinner do |scene|
+  scene.play_bgm 'Pokemon XY - Friends Theme'
+
+  scene.message "Before the rehearsal, Marcus burned the first meal and Aurora loudly blamed the pan."
+  scene.message "Lyra rescued the vegetables. Kael repaired a chair nobody had noticed was broken."
+  scene.message "For one full hour, nobody discussed crowns, gods, or endings."
+  scene.message "The ordinary evening was not a pause in the story. It was what the story had protected."
+end
+
 #===============================================================================
 # Chapter 52: The Wedding
 #===============================================================================
@@ -21120,6 +21222,25 @@ GameData::Cutscene.define :ch52_intro do |scene|
   scene.message "The sun was setting."
   scene.message "Golden light bathed the Sanctuary."
   scene.message "The perfect moment for new beginnings."
+end
+
+GameData::Cutscene.define :ch52_missing_guests do |scene|
+  scene.play_bgm 'Pokemon XY - Tension'
+
+  scene.message "Minutes before the ceremony, a mountain storm washed out the eastern road. Two wagons of guests were stranded."
+  scene.message "Hoopa looked toward the clouds, then deliberately waited instead of opening a ring unasked."
+  scene.message "\\bHoopa\\b: Does Hoopa help?"
+  scene.message "\\b\\PN\\b: If you want to. We will take the lower trail either way."
+  scene.message "\\bHoopa\\b: Hoopa wants everyone here. But Hoopa wants a rescue team holding the ring."
+end
+
+GameData::Cutscene.define :ch52_storm_rescue do |scene|
+  scene.play_bgm 'Pokemon XY - Friends Theme'
+
+  scene.message "You led Pokémon through the flooded trail while Hoopa maintained a short, visible passage between rescue markers."
+  scene.message "Zacian braced the wagon. Xerneas steadied the frightened Pokémon. Yveltal cut a falling tree away from the road."
+  scene.message "The last guest reached the Sanctuary muddy, laughing, and safe."
+  scene.message "The ceremony began late. Nobody considered it less perfect."
 end
 
 GameData::Cutscene.define :ch52_ceremony do |scene|
@@ -21195,6 +21316,16 @@ GameData::Cutscene.define :ch52_celebration do |scene|
   scene.message "\\b\\PN\\b: We wouldn't be anywhere without each other."
 end
 
+GameData::Cutscene.define :ch52_three_paths do |scene|
+  scene.play_bgm 'Pokemon XY - Emotion'
+
+  scene.message "Near midnight, the three of you stood beneath the four memorial lanterns."
+  scene.message "\\bLyra\\b: Marriage changes our home, not our family."
+  scene.message "\\bKael\\b: And your road does not make you the one left behind."
+  scene.message "\\b\\PN\\b: Three paths, then. Crossing whenever we choose."
+  scene.message "Hoopa quietly linked three simple rings above you, then asked before leaving them there."
+end
+
 #===============================================================================
 # Chapter 53: Final Farewells
 #===============================================================================
@@ -21223,6 +21354,21 @@ GameData::Cutscene.define :ch53_morning do |scene|
   scene.message "\\bKael\\b: Where to next?"
   scene.message "\\b\\PN\\b: Wherever I'm needed."
   scene.message "\\b\\PN\\b: That's what heroes do, right?"
+end
+
+GameData::Cutscene.define :ch53_choose_the_road do |scene|
+  scene.play_bgm 'Pokemon XY - Emotion'
+
+  scene.choice ["Help towns rebuild", "Teach independent trainers", "Map the remaining fractures"] do |choice|
+    if choice == 0
+      pbMessage("\\b\\PN\\b: I want to repair things before anyone calls me to another battle.")
+    elsif choice == 1
+      pbMessage("\\b\\PN\\b: I want people to know they do not need a prophecy to act.")
+    else
+      pbMessage("\\b\\PN\\b: I want every dangerous place mapped before secrecy costs another life.")
+    end
+  end
+  scene.message "It was the first mission you chose without a mark burning or a mentor pointing the way."
 end
 
 GameData::Cutscene.define :ch53_promises do |scene|
@@ -21403,6 +21549,25 @@ GameData::Cutscene.define :ch54_guardians_and_time do |scene|
   scene.message "\\bZacian\\b: *quietly* Steady."
 end
 
+GameData::Cutscene.define :ch54_parents_new_life do |scene|
+  scene.play_bgm 'Pokemon XY - Friends Theme'
+
+  scene.message "Marcus eventually stopped calling retirement a tactical withdrawal. He opened a school where rescue drills mattered as much as battles."
+  scene.message "Aurora left the royal archive and built a traveling library whose records no council could seal."
+  scene.message "They aged slowly beside people and Pokémon they had once protected from a distance."
+  scene.message "Every winter they joined you at the Sanctuary, argued over breakfast, and planned next year's work."
+  scene.message "\\bAurora\\b: We lost enough years to secrets. We intend to be inconvenient for many more."
+end
+
+GameData::Cutscene.define :ch54_family_changes do |scene|
+  scene.play_bgm 'Pokemon XY - Emotion'
+
+  scene.message "Lyra and Kael raised children who inherited no sacred marks and needed none."
+  scene.message "Years later, those children brought children of their own to the Sanctuary."
+  scene.message "Marcus taught them terrible victory poses. Aurora corrected their history books in the margins."
+  scene.message "Time changed every face in the family. It did not remove anyone from it."
+end
+
 #===============================================================================
 # Chapter 55: True Ending - The Final Chapter
 #===============================================================================
@@ -21448,6 +21613,16 @@ GameData::Cutscene.define :ch55_peace do |scene|
   scene.message "\\bLyra\\b: Scared kids with strange marks."
   scene.message "\\bKael\\b: No idea what was coming."
   scene.message "\\b\\PN\\b: Look at us now."
+end
+
+GameData::Cutscene.define :ch55_parents_arrive do |scene|
+  scene.play_bgm 'Pokemon XY - Friends Theme'
+
+  scene.message "Two familiar voices rose from the path below."
+  scene.message "Marcus climbed the hill with a cane he insisted was a staff. Aurora followed with three corrected archive volumes under one arm."
+  scene.message "\\bMarcus\\b: Starting the sunset without us? Terrible formation discipline."
+  scene.message "\\bAurora\\b: We are old, not dead. Save us a seat."
+  scene.message "You made room between the three friends. Your parents sat beside you, alive, older, and still impossible to silence."
 end
 
 GameData::Cutscene.define :ch55_guardians_speak do |scene|
@@ -21528,9 +21703,9 @@ GameData::Cutscene.define :ch55_credits_montage do |scene|
   
   scene.message "\\i[CREDITS MONTAGE]"
   
-  scene.message "Your parents, watching proudly from above."
-  scene.message "Marcus's training legacy living on."
-  scene.message "Aurora's research saving countless lives."
+  scene.message "Your parents, watching proudly from the hilltop."
+  scene.message "Marcus, still teaching rescue teams between long naps."
+  scene.message "Aurora, still correcting every archive that called the first seal bloodless."
   
   scene.message "Lyra and Kael's Sanctuary, a beacon of hope."
   scene.message "Generations of Pokémon and people finding refuge."

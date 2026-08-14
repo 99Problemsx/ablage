@@ -1714,7 +1714,10 @@ class Battle::AI
   # Priority
   def score_priority(move, user, target)
     return 0 if move.priority <= 0
-    
+    # Protect's priority guarantees that the shield is raised first; being
+    # slower does not make it more valuable. score_protect_utility handles it.
+    return 0 if AdvancedAI.protect_move?(move.id)
+
     score = move.priority * 15
     
     # 1. Desperation Logic: User Low HP & Slower (priority helps move first)
@@ -2483,6 +2486,9 @@ class Battle::AI
   def score_contact_punishment(move, user, target)
     return 0 unless move && move.contactMove?
     return 0 unless target
+    # Magic Guard blocks indirect contact damage. Non-damaging contact effects
+    # (Static, Flame Body, etc.) must still be evaluated below.
+    magic_guard = user.hasActiveAbility?(:MAGICGUARD)
     
     # Long Reach ignores contact entirely
     return 0 if user.hasActiveAbility?(:LONGREACH)
@@ -2500,7 +2506,7 @@ class Battle::AI
     # === Damage Abilities ===
     unless mold_breaker
       # Rough Skin / Iron Barbs (1/8 max HP)
-      if target.hasActiveAbility?(:ROUGHSKIN) || target.hasActiveAbility?(:IRONBARBS)
+      if !magic_guard && (target.hasActiveAbility?(:ROUGHSKIN) || target.hasActiveAbility?(:IRONBARBS))
         recoil_damage = user.totalhp / 8
         hp_percent_lost = (recoil_damage * 100.0 / [user.hp, 1].max)
         
@@ -2625,7 +2631,7 @@ class Battle::AI
     end
     
     # === Rocky Helmet (not an ability) ===
-    if target.hasActiveItem?(:ROCKYHELMET)
+    if !magic_guard && target.hasActiveItem?(:ROCKYHELMET)
       recoil_damage = user.totalhp / 6
       hp_percent_lost = (recoil_damage * 100.0 / [user.hp, 1].max)
       

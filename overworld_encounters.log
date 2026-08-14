@@ -100,3 +100,1572 @@
 [15:05:18.923] [SC/OWENC   ] INFO  battle vs Bellsprout Lv.13
 [16:39:01.924] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
 [13:55:22.804] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[00:59:54.097] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[01:00:22.352] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=0 current=1
+[01:00:22.352] [SC/OWENC   ] INFO  RESET map=1 player=[0, 0]
+[01:00:28.871] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=1 current=3
+[01:00:28.872] [SC/OWENC   ] INFO  RESET map=3 player=[9, 7]
+[01:00:29.624] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 3 (Script System / $PokemonEncounters leer)
+[01:02:09.518] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=3 current=29
+[01:02:09.518] [SC/OWENC   ] INFO  RESET map=29 player=[1, 3]
+[01:02:10.281] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 29 (Script System / $PokemonEncounters leer)
+[01:02:45.443] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=29 current=28
+[01:02:45.443] [SC/OWENC   ] INFO  RESET map=28 player=[11, 5]
+[01:02:46.206] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:02:46.221] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 14,25
+[01:02:47.711] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:02:47.730] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 14,19
+[01:02:49.222] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:02:49.236] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 18,25
+[01:02:58.830] [SC/OWENC   ] INFO  battle vs Pidgey Lv.13
+[01:03:05.022] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:03:05.036] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 15,21
+[01:03:08.902] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:03:08.915] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 14,25
+[01:03:17.338] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:03:17.353] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 25,35
+[01:03:23.882] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:03:23.895] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 38,26
+[01:03:33.387] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:03:33.399] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 36,25
+[01:03:50.739] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:03:58.230] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[01:04:11.419] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[01:04:15.406] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:04:24.905] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:04:24.905] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:04:24.922] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 37,18
+[01:04:25.550] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[01:04:26.414] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:04:26.425] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 35,18
+[01:04:26.435] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 34,19
+[01:04:26.447] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 35,19
+[01:04:26.456] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 34,17
+[01:04:26.465] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 36,19
+[01:04:26.465] [SC/OWENC   ] INFO  Schwarm x5 WEEDLE
+[01:04:36.855] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[01:05:16.944] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[01:05:16.965] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[01:05:30.164] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[01:05:49.200] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[01:05:49.200] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:05:49.214] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 38,20
+[01:05:49.417] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:05:50.711] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:05:50.728] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 38,27
+[01:05:56.935] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[01:05:56.936] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:05:56.953] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 36,19
+[01:07:08.237] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:07:08.237] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:07:08.249] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 34,18
+[01:08:10.764] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[01:08:10.764] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:08:10.787] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 35,18
+[01:09:11.286] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[01:09:11.286] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:09:11.299] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 34,21
+[01:10:25.902] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:10:25.905] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:10:25.929] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 35,21
+[01:10:25.966] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 36,19
+[01:10:25.988] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 36,21
+[01:10:25.989] [SC/OWENC   ] INFO  Schwarm x3 CATERPIE
+[01:11:23.485] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:11:31.437] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:11:42.416] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:11:42.416] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:11:42.431] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 36,19
+[01:12:30.132] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:12:30.132] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:12:30.145] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 36,25
+[01:13:44.642] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:13:44.643] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:13:44.655] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 35,19
+[01:13:44.667] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 36,20
+[01:13:44.677] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 36,21
+[01:13:44.688] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 32,19
+[01:13:44.688] [SC/OWENC   ] INFO  Schwarm x4 PIDGEY
+[01:14:48.327] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:14:55.256] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:14:57.169] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:15:15.205] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:15:15.205] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:15:15.207] [SC/OWENC   ] INFO  SPAWN BLOCKIERT: kein Tile fuer :land im Radius 5..12
+[01:15:16.721] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:15:16.733] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 37,26
+[01:16:39.230] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:16:39.230] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:16:39.241] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 38,27
+[01:17:38.752] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:17:38.752] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:17:38.763] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 37,25
+[01:18:39.286] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[01:18:39.286] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:18:39.298] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 35,16
+[01:19:47.021] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[01:19:47.022] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:19:47.032] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 36,25
+[01:21:00.530] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:21:00.530] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:21:00.543] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 37,17
+[01:21:00.571] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 37,18
+[01:21:00.581] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 34,17
+[01:21:00.582] [SC/OWENC   ] INFO  Schwarm x3 KAKUNA
+[01:21:47.080] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[01:24:01.392] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=28 current=30
+[01:24:01.393] [SC/OWENC   ] INFO  RESET map=30 player=[43, 20]
+[01:24:02.212] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 30 (Script System / $PokemonEncounters leer)
+[01:24:46.975] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=30 current=28
+[01:24:46.975] [SC/OWENC   ] INFO  RESET map=28 player=[5, 8]
+[01:24:47.742] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:24:47.761] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 21,14
+[01:24:49.246] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:24:49.260] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 25,11
+[01:24:50.760] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:24:50.776] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 24,14
+[01:24:50.804] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 25,14
+[01:24:50.815] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 25,12
+[01:24:50.825] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 26,13
+[01:24:50.826] [SC/OWENC   ] INFO  Schwarm x4 KAKUNA
+[01:25:29.853] [SC/OWENC   ] INFO  despawn Kakuna (fled)
+[01:25:38.288] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[01:25:45.320] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[01:25:52.266] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[01:25:52.267] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:25:52.279] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 33,13
+[01:26:01.540] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[01:26:01.540] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:26:01.551] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 34,18
+[01:26:12.776] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[01:26:12.776] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:26:12.790] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 31,16
+[01:26:49.053] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:26:49.054] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:26:49.072] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 35,16
+[01:27:08.791] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:27:08.792] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:27:08.807] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 28,12
+[01:27:44.286] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[01:27:44.287] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:27:44.299] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 30,15
+[01:27:44.310] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 31,13
+[01:27:44.320] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 27,15
+[01:27:44.334] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 31,16
+[01:27:44.344] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 31,14
+[01:27:44.344] [SC/OWENC   ] INFO  Schwarm x5 CATERPIE
+[01:27:49.560] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:28:14.310] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:28:33.011] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:28:38.806] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:28:57.854] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:28:57.854] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:28:57.867] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 31,13
+[01:29:01.837] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:29:01.838] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:29:01.849] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 33,16
+[01:29:12.958] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:29:12.958] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:29:12.973] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 38,19
+[01:29:50.510] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[01:29:50.510] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:29:50.522] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 28,13
+[01:30:18.470] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:30:18.470] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:30:18.483] [SC/OWENC   ] INFO  spawn Metapod Lv.10 rare @ 31,13
+[01:30:32.363] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[01:30:32.363] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:30:32.377] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 32,17
+[01:31:32.147] [SC/OWENC   ] INFO  despawn Metapod (lifetime)
+[01:31:32.148] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:31:32.162] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 35,18
+[01:31:44.899] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:31:44.899] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:31:44.911] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 37,18
+[01:31:44.920] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 35,17
+[01:31:44.930] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 37,21
+[01:31:44.941] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 36,18
+[01:31:44.951] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 38,19
+[01:31:44.951] [SC/OWENC   ] INFO  Schwarm x5 CATERPIE
+[01:32:43.431] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:33:02.662] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:33:03.431] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:33:06.441] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:33:08.414] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:33:08.414] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:33:08.428] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 32,15
+[01:33:09.456] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:33:09.922] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:33:09.938] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 35,18
+[01:33:58.500] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[01:33:58.500] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:33:58.513] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 33,13
+[01:35:02.017] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[01:35:02.018] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:35:02.035] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 35,19
+[01:35:12.451] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:35:12.477] [SC/OWENC   ] INFO  spawn Pidgey Lv.10 uncommon @ 31,14
+[01:35:12.487] [SC/OWENC   ] INFO  spawn Pidgey Lv.10 uncommon @ 30,13
+[01:35:12.498] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 32,15
+[01:35:12.498] [SC/OWENC   ] INFO  Schwarm x3 PIDGEY
+[01:36:02.007] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:36:02.007] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:36:02.022] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 34,17
+[01:36:16.998] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:36:16.998] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:36:17.012] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 28,13
+[01:37:16.540] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:37:16.540] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:37:16.550] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 32,14
+[01:37:41.742] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[01:37:41.742] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:37:41.757] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 38,19
+[01:38:20.060] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:38:20.060] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:38:20.074] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 29,14
+[01:39:05.251] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:39:05.251] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:39:05.265] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 32,14
+[01:39:05.276] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 30,13
+[01:39:05.286] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 31,13
+[01:39:05.286] [SC/OWENC   ] INFO  Schwarm x3 SUNKERN
+[01:39:13.586] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[01:40:04.832] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[01:40:13.783] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[01:40:13.783] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:40:13.795] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 37,19
+[01:40:20.794] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[01:40:20.795] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:40:20.806] [SC/OWENC   ] INFO  spawn Pidgey Lv.10 uncommon @ 29,12
+[01:41:38.487] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:41:38.487] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:41:38.508] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 34,17
+[01:41:52.318] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:41:52.318] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:41:52.333] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 35,20
+[01:42:43.828] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[01:42:43.828] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:42:43.839] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 33,13
+[01:43:08.012] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:43:08.012] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:43:08.025] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 28,13
+[01:43:50.462] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:43:50.463] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:43:50.472] [SC/OWENC   ] INFO  spawn Pidgey Lv.10 uncommon @ 33,13
+[01:44:14.518] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:44:14.518] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:44:14.533] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 27,11
+[01:45:28.084] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[01:45:28.084] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:45:28.096] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 32,13
+[01:46:27.654] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[01:46:27.654] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:46:27.667] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 36,17
+[01:47:41.214] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[01:47:41.214] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:47:41.225] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 33,15
+[01:48:27.728] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:48:27.728] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:48:27.742] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 34,17
+[01:49:29.247] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:49:29.247] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:49:29.259] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 35,18
+[01:50:37.760] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:50:37.761] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:50:37.776] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 31,13
+[01:51:36.289] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[01:51:36.289] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:51:36.302] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 36,17
+[01:52:36.997] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:52:36.997] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:52:37.011] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 37,17
+[01:53:50.515] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[01:53:50.516] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:53:50.526] [SC/OWENC   ] INFO  spawn Pidgey Lv.11 uncommon @ 28,11
+[01:53:50.534] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 26,12
+[01:53:50.543] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 29,12
+[01:53:50.544] [SC/OWENC   ] INFO  Schwarm x3 PIDGEY
+[01:54:46.057] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:55:09.046] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:55:10.215] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[01:55:10.216] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[01:55:10.241] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 28,13
+[02:25:56.519] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:25:56.537] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 28,12
+[02:25:58.019] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:25:58.034] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 32,15
+[02:25:59.522] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:25:59.534] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 33,15
+[02:26:56.039] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[02:26:56.039] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:26:56.054] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 31,16
+[02:27:07.043] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[02:27:07.043] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:27:07.063] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 38,19
+[02:27:19.535] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[02:27:19.536] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:27:19.549] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 32,17
+[02:28:04.725] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[02:28:04.726] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:28:04.739] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 28,13
+[02:28:12.557] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[02:28:12.557] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:28:12.570] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 28,13
+[02:29:12.242] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[02:29:12.242] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:29:12.256] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 35,15
+[02:29:14.088] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[02:29:14.089] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:29:14.103] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 33,14
+[02:30:05.594] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[02:30:05.595] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:30:05.607] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 29,13
+[02:30:24.763] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[02:30:24.763] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:30:24.780] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 37,17
+[02:31:22.159] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[02:31:22.159] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:31:22.173] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 34,16
+[02:31:46.454] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[02:31:46.455] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:31:46.467] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 31,16
+[02:32:14.733] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[02:32:14.734] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:32:14.745] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 32,14
+[02:32:14.758] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 33,13
+[02:32:14.768] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 31,16
+[02:32:14.768] [SC/OWENC   ] INFO  Schwarm x3 PIDGEY
+[02:32:30.695] [SC/OWENC   ] INFO  despawn Pidgey (fled)
+[02:33:14.975] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[02:33:32.468] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[02:33:32.468] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:33:32.484] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 36,21
+[02:34:54.981] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[02:34:54.981] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:34:54.994] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 32,14
+[02:34:55.003] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 31,13
+[02:34:55.013] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 31,14
+[02:34:55.013] [SC/OWENC   ] INFO  Schwarm x3 SUNKERN
+[02:35:43.495] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[02:36:23.510] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[02:36:26.518] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[02:36:26.519] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:36:26.565] [SC/OWENC   ] INFO  spawn ALPHA Sunkern Lv.17 common @ 34,15
+[02:37:32.038] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[02:37:32.038] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:37:32.052] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 27,12
+[02:39:01.555] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[02:39:01.556] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[02:39:01.566] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 29,11
+[03:27:03.482] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:27:03.502] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 35,15
+[03:27:04.998] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:27:05.014] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 38,19
+[03:27:06.509] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:27:06.524] [SC/OWENC   ] INFO  spawn Pidgey Lv.11 uncommon @ 35,19
+[03:27:55.991] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[03:27:55.992] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:27:56.010] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 32,14
+[03:27:58.520] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[03:27:58.520] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:27:58.535] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 33,13
+[03:28:04.173] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[03:28:04.173] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:28:04.186] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 34,18
+[03:28:04.195] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 33,18
+[03:28:04.207] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 34,15
+[03:28:04.217] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 32,19
+[03:28:04.226] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 33,19
+[03:28:04.226] [SC/OWENC   ] INFO  Schwarm x5 PIDGEY
+[03:28:47.508] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[03:28:57.743] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[03:29:03.724] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[03:29:12.869] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[03:29:20.724] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[03:29:20.725] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:29:20.741] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 31,15
+[03:29:34.696] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[03:29:34.697] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:29:34.711] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 37,18
+[03:30:21.305] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[03:30:21.305] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:30:21.316] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 35,17
+[03:31:44.814] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[03:31:44.814] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:31:44.827] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 27,12
+[03:32:50.379] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[03:32:50.379] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:32:50.392] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 28,12
+[03:33:39.887] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[03:33:39.887] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:33:39.899] [SC/OWENC   ] INFO  spawn Metapod Lv.10 rare @ 33,18
+[03:34:43.401] [SC/OWENC   ] INFO  despawn Metapod (lifetime)
+[03:34:43.402] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:34:43.414] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 33,17
+[03:35:45.924] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[03:35:45.925] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:35:45.936] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 32,14
+[03:36:50.503] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[03:36:50.503] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:36:50.516] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 29,12
+[03:38:05.023] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[03:38:05.024] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:38:05.037] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 38,19
+[03:39:14.561] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[03:39:14.561] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:39:14.583] [SC/OWENC   ] INFO  spawn Pidgey Lv.10 uncommon @ 36,19
+[03:40:02.087] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[03:40:02.088] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:40:02.105] [SC/OWENC   ] INFO  spawn Metapod Lv.10 rare @ 35,19
+[03:40:49.605] [SC/OWENC   ] INFO  despawn Metapod (lifetime)
+[03:40:49.605] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:40:49.619] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 34,15
+[03:42:18.126] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[03:42:18.127] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:42:18.140] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 34,19
+[03:43:05.806] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[03:43:05.806] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:43:05.821] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 33,15
+[03:44:16.310] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[03:44:16.310] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:44:16.327] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 37,19
+[03:45:45.831] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[03:45:45.831] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:45:45.846] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 33,14
+[03:46:34.367] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[03:46:34.367] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:46:34.379] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 37,19
+[03:47:33.886] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[03:47:33.887] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:47:33.899] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 32,13
+[03:48:34.418] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[03:48:34.419] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[03:48:34.432] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 33,16
+[04:17:30.574] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:17:30.590] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 37,17
+[04:17:32.086] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:17:32.102] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 36,17
+[04:17:33.586] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:17:33.601] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 35,16
+[04:18:27.083] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[04:18:27.083] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:18:27.097] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 36,19
+[04:18:29.609] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[04:18:29.609] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:18:29.623] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 34,17
+[04:18:34.282] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:18:34.283] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:18:34.296] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 32,16
+[04:19:19.138] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[04:19:19.139] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:19:19.150] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 36,20
+[04:19:28.608] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:19:28.609] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:19:28.626] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 28,12
+[04:19:30.810] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:19:30.810] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:19:30.826] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 29,12
+[04:19:30.840] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 30,13
+[04:19:30.850] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 29,15
+[04:19:30.851] [SC/OWENC   ] INFO  Schwarm x3 SUNKERN
+[04:20:29.364] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[04:20:32.330] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[04:20:38.346] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[04:20:38.346] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:20:38.357] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 31,15
+[04:20:45.649] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:20:45.649] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:20:45.665] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 35,18
+[04:20:46.121] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:20:47.158] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:20:47.182] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 34,19
+[04:20:47.194] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 34,21
+[04:20:47.205] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 34,18
+[04:20:47.205] [SC/OWENC   ] INFO  Schwarm x3 SUNKERN
+[04:21:34.171] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:21:35.693] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[04:21:35.891] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:21:35.892] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:21:35.907] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 33,15
+[04:21:41.680] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[04:21:41.680] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:21:41.694] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 33,13
+[04:22:13.719] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[04:22:13.719] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:22:13.730] [SC/OWENC   ] INFO  spawn Pidgey Lv.10 uncommon @ 33,18
+[04:22:34.410] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:22:34.411] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:22:34.422] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 32,17
+[04:23:16.241] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:23:16.241] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:23:16.255] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 28,12
+[04:24:04.188] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:24:04.188] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:24:04.201] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 38,19
+[04:24:25.746] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:24:25.746] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:24:25.763] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 31,15
+[04:25:22.705] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[04:25:22.705] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:25:22.721] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 35,16
+[04:25:37.257] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[04:25:37.257] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:25:37.273] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 38,19
+[04:26:40.292] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:26:40.293] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:26:40.306] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 29,11
+[04:26:45.774] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[04:26:45.774] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:26:45.788] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 36,21
+[04:27:26.820] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:27:26.820] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:27:26.832] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 33,18
+[04:28:08.285] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:28:08.285] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:28:08.300] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 36,21
+[04:28:20.523] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[04:28:20.523] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:28:20.535] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 33,14
+[04:28:20.546] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 33,13
+[04:28:20.556] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 31,13
+[04:28:20.556] [SC/OWENC   ] INFO  Schwarm x3 PIDGEY
+[04:29:16.056] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:29:24.060] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:29:24.881] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[04:29:24.881] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:29:24.896] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 28,11
+[04:29:36.049] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:29:36.050] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:29:36.061] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 33,14
+[04:30:27.392] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:30:27.392] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:30:27.406] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 30,13
+[04:30:47.563] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:30:47.563] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:30:47.575] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 28,11
+[04:31:58.087] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[04:31:58.087] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:31:58.104] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 29,12
+[04:33:08.604] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:33:08.604] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:33:08.615] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 28,13
+[04:33:08.627] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 26,13
+[04:33:08.637] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 29,14
+[04:33:08.648] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 29,13
+[04:33:08.648] [SC/OWENC   ] INFO  Schwarm x4 WEEDLE
+[04:34:04.116] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[04:34:06.119] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[04:34:26.302] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[04:34:35.132] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[04:34:35.132] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:34:35.144] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 29,14
+[04:35:24.650] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:35:24.650] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:35:24.662] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 29,11
+[04:35:24.671] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 29,13
+[04:35:24.680] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 29,14
+[04:35:24.680] [SC/OWENC   ] INFO  Schwarm x3 PIDGEY
+[04:36:31.189] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:36:36.181] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:36:44.168] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:36:44.169] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:36:44.180] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 37,20
+[04:37:37.735] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[04:37:37.735] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:37:37.755] [SC/OWENC   ] INFO  spawn Metapod Lv.10 rare @ 32,16
+[04:38:50.254] [SC/OWENC   ] INFO  despawn Metapod (lifetime)
+[04:38:50.255] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:38:50.267] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 35,16
+[04:39:37.760] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[04:39:37.761] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:39:37.774] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 36,21
+[04:40:53.277] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[04:40:53.278] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:40:53.290] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 33,17
+[04:40:53.299] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 31,16
+[04:40:53.309] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 32,17
+[04:40:53.318] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 34,18
+[04:40:53.327] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 35,16
+[04:40:53.327] [SC/OWENC   ] INFO  Schwarm x5 CATERPIE
+[04:41:57.010] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:42:06.821] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:42:07.834] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:42:22.817] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:42:23.812] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:42:23.812] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:42:23.828] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 33,13
+[04:43:08.637] [SC/OWENC   ] INFO  despawn Kakuna (fled)
+[04:43:08.637] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:43:08.649] [SC/OWENC   ] INFO  spawn Pidgey Lv.11 uncommon @ 33,15
+[04:44:26.155] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:44:26.156] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:44:26.169] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 29,12
+[04:45:39.674] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[04:45:39.674] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:45:39.688] [SC/OWENC   ] INFO  spawn Metapod Lv.10 rare @ 31,15
+[04:46:29.205] [SC/OWENC   ] INFO  despawn Metapod (lifetime)
+[04:46:29.205] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:46:29.220] [SC/OWENC   ] INFO  spawn Pidgey Lv.11 uncommon @ 30,15
+[04:47:56.734] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:47:56.735] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:47:56.746] [SC/OWENC   ] INFO  spawn Pidgey Lv.10 uncommon @ 36,20
+[04:49:13.256] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:49:13.256] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:49:13.279] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 33,14
+[04:49:13.289] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 32,16
+[04:49:13.299] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 33,13
+[04:49:13.312] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 32,15
+[04:49:13.312] [SC/OWENC   ] INFO  Schwarm x4 WEEDLE
+[04:50:20.785] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[04:50:35.802] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[04:50:38.778] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[04:50:40.811] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[04:50:40.812] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:50:40.828] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 29,14
+[04:51:48.327] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[04:51:48.328] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:51:48.343] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 29,12
+[04:52:34.840] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[04:52:34.840] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:52:34.854] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 29,13
+[04:53:22.423] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[04:53:22.424] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:53:22.437] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 28,11
+[04:53:22.446] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 26,11
+[04:53:22.455] [SC/OWENC   ] INFO  spawn Pidgey Lv.11 uncommon @ 28,12
+[04:53:22.465] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 29,13
+[04:53:22.465] [SC/OWENC   ] INFO  Schwarm x4 PIDGEY
+[04:54:27.973] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:54:34.929] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:54:38.136] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:54:47.954] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:54:47.955] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:54:47.969] [SC/OWENC   ] INFO  spawn Metapod Lv.10 rare @ 34,15
+[04:56:01.474] [SC/OWENC   ] INFO  despawn Metapod (lifetime)
+[04:56:01.474] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:56:01.498] [SC/OWENC   ] INFO  spawn Metapod Lv.10 rare @ 36,20
+[04:56:49.064] [SC/OWENC   ] INFO  despawn Metapod (lifetime)
+[04:56:49.065] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:56:49.081] [SC/OWENC   ] INFO  spawn ALPHA Caterpie Lv.17 common @ 34,18
+[04:57:37.570] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[04:57:37.571] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:57:37.587] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 29,12
+[04:58:38.080] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[04:58:38.080] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:58:38.103] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 32,14
+[04:59:52.611] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[04:59:52.611] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[04:59:52.627] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 37,17
+[05:01:22.130] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[05:01:22.131] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[05:01:22.141] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 34,18
+[05:01:22.154] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 33,18
+[05:01:22.163] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 37,18
+[05:01:22.172] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 36,17
+[05:01:22.172] [SC/OWENC   ] INFO  Schwarm x4 WEEDLE
+[05:02:13.678] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[05:02:14.644] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[05:02:31.670] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[05:18:12.944] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[05:18:12.963] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 37,20
+[05:18:14.456] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[05:18:14.475] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 36,20
+[05:18:15.967] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[05:18:15.984] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 28,12
+[05:19:04.979] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[05:19:04.979] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[05:19:04.992] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 32,16
+[05:19:28.554] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[05:19:28.554] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[05:19:28.565] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 32,15
+[05:20:30.490] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[05:20:30.491] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[05:20:30.506] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 27,11
+[05:20:51.079] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[05:20:51.080] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[05:20:51.093] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 34,15
+[05:22:21.843] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[05:22:21.843] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[05:22:21.856] [SC/OWENC   ] INFO  spawn Pidgey Lv.11 uncommon @ 32,16
+[06:09:30.588] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:09:30.602] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 28,12
+[06:09:30.613] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 27,11
+[06:09:30.626] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 28,15
+[06:09:30.626] [SC/OWENC   ] INFO  Schwarm x3 KAKUNA
+[06:10:20.188] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[06:10:20.188] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:10:20.201] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 34,19
+[06:10:20.222] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 35,18
+[06:10:20.232] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 37,19
+[06:10:20.241] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 36,18
+[06:10:20.242] [SC/OWENC   ] INFO  Schwarm x4 PIDGEY
+[06:10:31.119] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[06:11:01.131] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[06:11:14.711] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[06:11:20.729] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[06:11:20.729] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:11:20.741] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 32,16
+[06:11:27.751] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[06:11:27.751] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:11:27.765] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 37,17
+[06:11:40.707] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[06:11:40.707] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:11:40.718] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 34,17
+[06:12:15.307] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[06:12:15.308] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:12:15.320] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 37,18
+[06:12:41.259] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[06:12:41.260] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:12:41.275] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 32,17
+[06:12:54.226] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[06:12:54.226] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:12:54.239] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 33,13
+[06:13:18.674] [SC/OWENC   ] INFO  despawn Pidgey (fled)
+[06:13:18.674] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:13:18.685] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 32,15
+[06:13:28.829] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[06:13:28.829] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:13:28.841] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 33,17
+[06:13:28.853] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 36,17
+[06:13:28.864] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 34,19
+[06:13:28.873] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 35,18
+[06:13:28.874] [SC/OWENC   ] INFO  Schwarm x4 WEEDLE
+[06:13:41.778] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[06:14:22.359] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[06:14:23.357] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[06:14:31.382] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[06:14:31.382] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:14:31.397] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 35,20
+[06:14:39.408] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[06:14:39.409] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:14:39.425] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 34,16
+[06:14:47.191] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[06:14:47.191] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:14:47.204] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 35,16
+[06:14:47.219] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 32,16
+[06:14:47.230] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 36,18
+[06:14:47.241] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 35,19
+[06:14:47.241] [SC/OWENC   ] INFO  Schwarm x4 CATERPIE
+[06:15:19.029] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[06:15:36.759] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[06:15:59.934] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[06:16:02.733] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[06:16:02.733] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:16:02.745] [SC/OWENC   ] INFO  spawn Pidgey Lv.10 uncommon @ 32,15
+[06:16:18.753] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[06:16:18.754] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:16:18.771] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 34,19
+[06:16:54.252] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[06:16:54.253] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:16:54.265] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 31,16
+[06:17:15.273] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[06:17:15.274] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:17:15.285] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 30,13
+[06:17:41.781] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[06:17:41.781] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:17:41.792] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 35,15
+[06:18:24.788] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[06:18:24.788] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:18:24.800] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 30,13
+[06:19:19.312] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[06:19:19.313] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:19:19.327] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 37,17
+[06:20:38.819] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[06:20:38.820] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:20:38.834] [SC/OWENC   ] INFO  spawn Pidgey Lv.11 uncommon @ 33,15
+[06:20:38.844] [SC/OWENC   ] INFO  spawn Pidgey Lv.11 uncommon @ 31,16
+[06:20:38.852] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 32,14
+[06:20:38.852] [SC/OWENC   ] INFO  Schwarm x3 PIDGEY
+[06:21:29.398] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[06:21:46.356] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[06:22:02.341] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[06:22:02.341] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:22:02.354] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 35,20
+[06:23:04.071] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[06:23:04.071] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:23:04.082] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 33,15
+[06:23:04.092] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 32,15
+[06:23:04.102] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 30,15
+[06:23:04.114] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 31,15
+[06:23:04.128] [SC/OWENC   ] INFO  spawn ALPHA Caterpie Lv.15 common @ 31,16
+[06:23:04.128] [SC/OWENC   ] INFO  Schwarm x5 CATERPIE
+[06:23:50.764] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[06:23:54.600] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[06:24:12.610] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[06:24:15.618] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[06:24:32.606] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[06:24:32.606] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:24:32.618] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 33,18
+[06:25:41.121] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[06:25:41.121] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[06:25:41.133] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 35,16
+[07:10:47.519] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:10:47.534] [SC/OWENC   ] INFO  spawn ALPHA Weedle Lv.15 common @ 34,19
+[07:10:49.019] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:10:49.036] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 38,19
+[07:10:49.046] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 36,19
+[07:10:49.057] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 39,19
+[07:10:49.057] [SC/OWENC   ] INFO  Schwarm x3 SUNKERN
+[07:11:35.576] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[07:11:43.639] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[07:11:43.639] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:11:43.652] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 27,12
+[07:11:47.562] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[07:11:47.562] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:11:47.574] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 35,17
+[07:12:02.255] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[07:12:02.255] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:12:02.268] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 37,18
+[07:12:39.079] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[07:12:39.079] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:12:39.093] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 30,13
+[07:12:58.157] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[07:12:58.157] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:12:58.169] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 29,13
+[07:12:58.182] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 27,13
+[07:12:58.192] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 31,13
+[07:12:58.203] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 32,13
+[07:12:58.203] [SC/OWENC   ] INFO  Schwarm x4 SUNKERN
+[07:13:24.786] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[07:13:25.596] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[07:13:49.670] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[07:13:58.770] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[07:13:58.771] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:13:58.785] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 30,14
+[07:14:23.751] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[07:14:23.752] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:14:23.766] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 37,18
+[07:14:23.780] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 36,18
+[07:14:23.793] [SC/OWENC   ] INFO  spawn ALPHA Weedle Lv.20 common @ 34,18
+[07:14:23.811] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 35,17
+[07:14:23.811] [SC/OWENC   ] INFO  Schwarm x4 WEEDLE
+[07:14:23.919] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[07:15:01.288] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[07:15:10.279] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[07:15:26.308] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[07:15:26.309] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:15:26.322] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 28,11
+[07:15:45.500] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[07:15:45.500] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:15:45.511] [SC/OWENC   ] INFO  spawn Pidgey Lv.11 uncommon @ 27,12
+[07:15:46.311] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[07:15:47.014] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:15:47.030] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 29,14
+[07:15:47.046] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 28,13
+[07:15:47.074] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 28,15
+[07:15:47.086] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 29,12
+[07:15:47.086] [SC/OWENC   ] INFO  Schwarm x4 SUNKERN
+[07:16:41.821] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[07:16:57.020] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[07:17:08.594] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[07:17:11.543] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[07:17:11.543] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:17:11.557] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 30,14
+[07:18:25.056] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[07:18:25.057] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:18:25.071] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 29,13
+[07:19:15.592] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[07:19:15.592] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:19:15.610] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 34,17
+[07:20:24.114] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[07:20:24.114] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:20:24.128] [SC/OWENC   ] INFO  spawn ALPHA Caterpie Lv.15 common @ 37,19
+[07:21:46.618] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[07:21:46.618] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:21:46.631] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 31,13
+[07:23:04.244] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[07:23:04.244] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:23:04.257] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 27,11
+[07:23:04.267] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 24,11
+[07:23:04.276] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 27,12
+[07:23:04.276] [SC/OWENC   ] INFO  Schwarm x3 CATERPIE
+[07:23:53.793] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[07:24:11.874] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[07:24:23.789] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[07:24:23.789] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:24:23.802] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 31,14
+[07:25:19.309] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[07:25:19.309] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:25:19.322] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 36,19
+[07:26:08.832] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[07:26:08.832] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:26:08.846] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 36,18
+[07:27:35.463] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[07:27:35.463] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:27:35.477] [SC/OWENC   ] INFO  spawn Metapod Lv.10 rare @ 36,20
+[07:28:46.106] [SC/OWENC   ] INFO  despawn Metapod (lifetime)
+[07:28:46.107] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:28:46.123] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 28,13
+[07:29:54.631] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[07:29:54.632] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:29:54.642] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 30,13
+[07:30:56.150] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[07:30:56.151] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:30:56.162] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 26,11
+[07:32:14.673] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[07:32:14.673] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:32:14.689] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 30,15
+[07:32:14.698] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 31,16
+[07:32:14.708] [SC/OWENC   ] INFO  spawn ALPHA Pidgey Lv.16 uncommon @ 28,15
+[07:32:14.708] [SC/OWENC   ] INFO  Schwarm x3 PIDGEY
+[07:33:07.197] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[07:33:21.219] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[07:33:41.208] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[07:33:41.208] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:33:41.221] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 33,14
+[07:34:49.806] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[07:34:49.806] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:34:49.818] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 28,12
+[07:36:05.321] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[07:36:05.321] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:36:05.337] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 36,17
+[07:36:52.966] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[07:36:52.966] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:36:52.978] [SC/OWENC   ] INFO  spawn Metapod Lv.10 rare @ 31,15
+[07:38:08.492] [SC/OWENC   ] INFO  despawn Metapod (lifetime)
+[07:38:08.492] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:38:08.505] [SC/OWENC   ] INFO  spawn Pidgey Lv.10 uncommon @ 36,17
+[07:39:24.008] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[07:39:24.008] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[07:39:24.024] [SC/OWENC   ] INFO  spawn ALPHA Weedle Lv.15 common @ 33,16
+[08:01:19.094] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[08:01:19.108] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 30,13
+[08:01:19.121] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 30,14
+[08:01:19.131] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 28,14
+[08:01:19.140] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 30,16
+[08:01:19.153] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 31,15
+[08:01:19.153] [SC/OWENC   ] INFO  Schwarm x5 CATERPIE
+[08:02:15.642] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[08:02:29.891] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[08:02:34.639] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[08:02:34.639] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[08:02:34.655] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 31,15
+[08:02:49.662] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[08:02:49.663] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[08:02:49.674] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 35,17
+[08:03:39.190] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[08:03:39.191] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[08:03:39.206] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 35,16
+[08:03:49.178] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[08:03:49.178] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[08:03:49.191] [SC/OWENC   ] INFO  spawn Pidgey Lv.11 uncommon @ 37,20
+[08:04:42.958] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[08:04:42.958] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[08:04:42.983] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 27,11
+[08:04:54.825] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[08:04:54.825] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[08:04:54.838] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 31,13
+[08:04:54.856] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 31,14
+[08:04:54.866] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 30,14
+[08:04:54.877] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 31,15
+[08:04:54.888] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 32,14
+[08:04:54.888] [SC/OWENC   ] INFO  Schwarm x5 CATERPIE
+[08:05:41.387] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[08:05:47.392] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[08:05:48.344] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[08:06:20.360] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[09:03:14.601] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:03:14.617] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 31,15
+[09:03:16.110] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:03:16.124] [SC/OWENC   ] INFO  spawn Pidgey Lv.11 uncommon @ 31,15
+[09:03:17.620] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:03:17.633] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 34,15
+[09:04:30.626] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[09:04:30.626] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:04:30.639] [SC/OWENC   ] INFO  spawn ALPHA Pidgey Lv.22 uncommon @ 33,17
+[09:04:33.119] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[09:04:33.120] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:04:33.134] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 35,17
+[09:04:49.189] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[09:04:49.189] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:04:49.202] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 31,14
+[09:05:32.725] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[09:05:32.726] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:05:32.738] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 34,15
+[09:05:32.761] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 34,18
+[09:05:32.771] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 32,14
+[09:05:32.783] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 33,16
+[09:05:32.783] [SC/OWENC   ] INFO  Schwarm x4 WEEDLE
+[09:05:54.138] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[09:06:19.242] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[09:06:20.928] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[09:06:34.270] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[09:06:34.270] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:06:34.285] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 31,14
+[09:06:48.289] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[09:06:48.290] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:06:48.302] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 34,18
+[09:07:34.776] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[09:07:34.777] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:07:34.789] [SC/OWENC   ] INFO  spawn ALPHA Pidgey Lv.21 uncommon @ 30,15
+[09:07:56.815] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[09:07:56.815] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:07:56.826] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 33,13
+[09:08:47.329] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[09:08:47.330] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:08:47.340] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 38,19
+[09:09:04.303] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[09:09:04.303] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:09:04.317] [SC/OWENC   ] INFO  spawn ALPHA Weedle Lv.19 common @ 35,15
+[09:09:04.327] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 35,16
+[09:09:04.335] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 33,15
+[09:09:04.346] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 33,16
+[09:09:04.355] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 36,17
+[09:09:04.356] [SC/OWENC   ] INFO  Schwarm x5 WEEDLE
+[09:09:38.836] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[09:09:54.948] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[09:10:00.864] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[09:10:04.870] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[09:10:29.841] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[09:10:29.841] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:10:29.853] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 33,17
+[09:11:26.602] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[09:11:26.603] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:11:26.615] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 27,12
+[09:12:16.117] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[09:12:16.117] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:12:16.129] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 34,15
+[09:54:41.446] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:54:41.461] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 29,11
+[09:54:42.951] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:54:42.971] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 38,19
+[09:54:44.453] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:54:44.465] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 35,19
+[09:55:39.951] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[09:55:39.952] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:55:39.965] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 27,12
+[09:55:39.975] [SC/OWENC   ] INFO  spawn Pidgey Lv.11 uncommon @ 29,12
+[09:55:39.984] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 27,14
+[09:55:39.997] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 26,12
+[09:55:39.997] [SC/OWENC   ] INFO  Schwarm x4 PIDGEY
+[09:55:53.978] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[09:56:06.576] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[09:56:27.497] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[09:56:27.703] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[09:56:27.704] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:56:27.720] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 35,16
+[09:56:42.495] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[09:56:42.495] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:56:42.510] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 36,18
+[09:57:08.474] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[09:57:08.475] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:57:08.488] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 28,12
+[09:57:53.220] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[09:57:53.221] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:57:53.234] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 29,14
+[09:57:54.003] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[09:57:54.736] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:57:54.749] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 31,16
+[09:57:54.758] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 31,17
+[09:57:54.768] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 31,13
+[09:57:54.777] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 33,16
+[09:57:54.777] [SC/OWENC   ] INFO  Schwarm x4 CATERPIE
+[09:57:59.988] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[09:58:57.268] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[09:59:18.285] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[09:59:21.736] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[09:59:21.736] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[09:59:21.748] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 29,14
+[09:59:21.759] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 29,11
+[09:59:21.768] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 31,14
+[09:59:21.769] [SC/OWENC   ] INFO  Schwarm x3 PIDGEY
+[09:59:22.282] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[09:59:25.263] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[10:00:08.386] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[10:00:08.387] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:00:08.399] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 38,19
+[10:00:42.381] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[10:00:42.381] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:00:42.394] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 32,17
+[10:00:42.408] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 34,17
+[10:00:42.417] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 35,17
+[10:00:42.426] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 32,15
+[10:00:42.426] [SC/OWENC   ] INFO  Schwarm x4 WEEDLE
+[10:00:43.265] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[10:01:14.902] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[10:01:38.921] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[10:01:44.967] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[10:01:44.967] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:01:44.979] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 31,15
+[10:01:45.945] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[10:01:46.476] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:01:46.493] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 36,21
+[10:02:12.927] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[10:02:12.927] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:02:12.940] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 27,11
+[10:02:39.502] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[10:02:39.502] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:02:39.514] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 36,21
+[10:02:39.526] [SC/OWENC   ] INFO  spawn ALPHA Pidgey Lv.19 uncommon @ 35,20
+[10:02:39.535] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 37,19
+[10:02:39.548] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 37,20
+[10:02:39.548] [SC/OWENC   ] INFO  Schwarm x4 PIDGEY
+[10:03:10.002] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[10:03:20.445] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[10:03:30.033] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[10:03:37.023] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[10:03:37.024] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:03:37.038] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 32,15
+[10:03:39.056] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[10:03:39.057] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:03:39.072] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 27,12
+[10:03:45.022] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[10:03:45.022] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:03:45.035] [SC/OWENC   ] INFO  spawn ALPHA Caterpie Lv.15 common @ 29,11
+[10:04:34.603] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[10:04:34.604] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:04:34.619] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 33,13
+[10:04:37.576] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[10:04:37.576] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:04:37.591] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 35,16
+[10:05:50.085] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[10:05:50.086] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:05:50.100] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 29,12
+[10:05:50.109] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 30,13
+[10:05:50.119] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 27,12
+[10:05:50.119] [SC/OWENC   ] INFO  Schwarm x3 CATERPIE
+[10:06:04.119] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[10:06:59.603] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[10:07:17.632] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[10:07:17.632] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:07:17.648] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 37,19
+[10:08:21.237] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[10:08:21.237] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:08:21.249] [SC/OWENC   ] INFO  spawn Pidgey Lv.10 uncommon @ 36,18
+[10:09:16.758] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[10:09:16.759] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:09:16.769] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 30,13
+[10:10:22.458] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[10:10:22.458] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:10:22.470] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 32,14
+[10:11:19.976] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[10:11:19.977] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:11:19.991] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 31,15
+[10:12:50.505] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[10:12:50.506] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:12:50.518] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 37,18
+[10:14:14.121] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[10:14:14.121] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:14:14.133] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 27,11
+[10:14:14.142] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 26,11
+[10:14:14.150] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 29,11
+[10:14:14.159] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 25,12
+[10:14:14.159] [SC/OWENC   ] INFO  Schwarm x4 WEEDLE
+[10:15:01.638] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[10:15:20.665] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[10:15:40.748] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[10:55:45.221] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:55:45.236] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 37,18
+[10:55:46.729] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:55:46.742] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 30,13
+[10:55:48.239] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:55:48.255] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 32,13
+[10:56:36.748] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[10:56:36.748] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:56:36.759] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 31,16
+[10:56:49.241] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[10:56:49.242] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:56:49.254] [SC/OWENC   ] INFO  spawn Pidgey Lv.10 uncommon @ 33,16
+[10:56:50.945] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[10:56:50.946] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:56:50.960] [SC/OWENC   ] INFO  spawn Metapod Lv.10 rare @ 28,13
+[10:57:32.288] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[10:57:32.288] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:57:32.299] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 27,11
+[10:57:35.539] [SC/OWENC   ] INFO  despawn Metapod (fled)
+[10:57:35.539] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:57:35.550] [SC/OWENC   ] INFO  spawn Pidgey Lv.10 uncommon @ 34,17
+[10:58:11.756] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[10:58:11.756] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:58:11.768] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 27,12
+[10:58:36.805] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[10:58:36.805] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:58:36.820] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 35,20
+[10:58:52.129] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[10:58:52.129] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:58:52.142] [SC/OWENC   ] INFO  spawn Metapod Lv.10 rare @ 35,17
+[10:59:13.274] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[10:59:13.274] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:59:13.276] [SC/OWENC   ] INFO  SPAWN BLOCKIERT: kein Tile fuer :land im Radius 5..12
+[10:59:14.779] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:59:14.790] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 34,16
+[10:59:50.663] [SC/OWENC   ] INFO  despawn Metapod (lifetime)
+[10:59:50.663] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:59:50.677] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 27,12
+[10:59:59.314] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[10:59:59.314] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[10:59:59.326] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 37,18
+[10:59:59.335] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 36,19
+[10:59:59.345] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 37,17
+[10:59:59.359] [SC/OWENC   ] INFO  spawn ALPHA Caterpie Lv.15 common @ 39,19
+[10:59:59.359] [SC/OWENC   ] INFO  Schwarm x4 CATERPIE
+[11:00:10.298] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[11:00:46.848] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[11:01:03.860] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[11:01:12.840] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[11:01:12.841] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:01:12.857] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 31,13
+[11:01:12.868] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 33,13
+[11:01:12.879] [SC/OWENC   ] INFO  spawn ALPHA Weedle Lv.20 common @ 29,13
+[11:01:12.902] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 30,13
+[11:01:12.902] [SC/OWENC   ] INFO  Schwarm x4 WEEDLE
+[11:01:19.191] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[11:01:59.402] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[11:02:32.376] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[11:02:32.393] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[11:02:32.393] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:02:32.406] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 31,14
+[11:04:01.910] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[11:04:01.910] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:04:01.922] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 36,17
+[11:04:49.429] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[11:04:49.429] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:04:49.441] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 35,19
+[11:05:49.949] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[11:05:49.949] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:05:49.960] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 29,11
+[11:06:39.466] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[11:06:39.466] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:06:39.486] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 27,12
+[11:07:28.988] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[11:07:28.989] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:07:29.000] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 34,17
+[11:08:25.498] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[11:08:25.499] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:08:25.515] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 34,19
+[11:09:42.025] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[11:09:42.025] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:09:42.038] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 35,19
+[11:10:58.550] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[11:10:58.550] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:10:58.567] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 35,16
+[11:12:16.158] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[11:12:16.158] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:12:16.170] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 35,16
+[11:47:16.669] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:47:16.683] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 35,16
+[11:47:18.175] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:47:18.188] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 30,14
+[11:47:19.681] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:47:19.698] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 32,17
+[11:48:12.301] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[11:48:12.302] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:48:12.317] [SC/OWENC   ] INFO  spawn Pidgey Lv.10 uncommon @ 32,17
+[11:48:34.201] [SC/OWENC   ] INFO  despawn Kakuna (lifetime)
+[11:48:34.202] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:48:34.212] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 26,11
+[11:48:41.933] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[11:48:41.933] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:48:41.948] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 35,15
+[11:49:38.815] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[11:49:38.815] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:49:38.829] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 28,13
+[11:49:46.813] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[11:49:46.814] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:49:46.826] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 28,12
+[11:51:04.329] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[11:51:04.330] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:51:04.343] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 34,17
+[11:52:16.855] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[11:52:16.856] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:52:16.873] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 34,17
+[11:53:09.406] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[11:53:09.407] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:53:09.420] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 36,21
+[11:54:25.936] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[11:54:25.936] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:54:25.954] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 32,15
+[11:55:20.466] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[11:55:20.467] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:55:20.480] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 30,15
+[11:55:20.501] [SC/OWENC   ] INFO  spawn Pidgey Lv.11 uncommon @ 29,15
+[11:55:20.514] [SC/OWENC   ] INFO  spawn Pidgey Lv.10 uncommon @ 31,14
+[11:55:20.524] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 31,16
+[11:55:20.532] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 31,17
+[11:55:20.532] [SC/OWENC   ] INFO  Schwarm x5 PIDGEY
+[11:56:16.215] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[11:56:30.007] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[11:56:39.031] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[11:56:43.030] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[11:56:52.029] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[11:56:52.030] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:56:52.041] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 38,19
+[11:57:52.543] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[11:57:52.543] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:57:52.557] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 37,17
+[11:59:13.064] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[11:59:13.064] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[11:59:13.080] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 31,13
+[11:59:13.094] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 30,13
+[11:59:13.109] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 29,12
+[11:59:13.109] [SC/OWENC   ] INFO  Schwarm x3 SUNKERN
+[12:00:06.589] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[12:00:27.616] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[12:49:07.392] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[12:49:07.407] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 34,19
+[12:49:08.894] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[12:49:08.909] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 37,17
+[12:49:10.407] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[12:49:10.423] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 31,13
+[12:49:10.433] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 29,14
+[12:49:10.443] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 29,13
+[12:49:10.458] [SC/OWENC   ] INFO  spawn ALPHA Weedle Lv.17 common @ 32,14
+[12:49:10.468] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 31,16
+[12:49:10.469] [SC/OWENC   ] INFO  Schwarm x5 WEEDLE
+[12:49:55.417] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[12:50:04.931] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[12:50:17.962] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[12:50:22.960] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[12:50:23.981] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[12:50:23.981] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[12:50:23.993] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 37,20
+[12:50:25.959] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[12:50:25.960] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[12:50:25.972] [SC/OWENC   ] INFO  spawn Pidgey Lv.14 uncommon @ 34,15
+[12:50:31.942] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[12:50:31.942] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[12:50:31.959] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 30,14
+[12:51:14.501] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[12:51:14.502] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[12:51:14.512] [SC/OWENC   ] INFO  spawn Pidgey Lv.12 uncommon @ 35,16
+[12:51:44.491] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[12:51:44.491] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[12:51:44.503] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 34,18
+[12:51:46.455] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[12:51:46.455] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[12:51:46.469] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 35,18
+[12:52:06.017] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[12:52:06.018] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[12:52:06.033] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 33,15
+[12:52:32.964] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[12:52:32.964] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[12:52:32.975] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 37,17
+[12:53:16.008] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[12:53:16.008] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[12:53:16.022] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 36,19
+[12:53:53.478] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[12:53:53.479] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[12:53:53.491] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 31,13
+[12:54:43.525] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[12:54:43.525] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[12:54:43.541] [SC/OWENC   ] INFO  spawn Weedle Lv.10 common @ 32,17
+[12:56:15.049] [SC/OWENC   ] INFO  despawn Weedle (lifetime)
+[12:56:15.049] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[12:56:15.061] [SC/OWENC   ] INFO  spawn Pidgey Lv.11 uncommon @ 33,13
+[12:57:24.572] [SC/OWENC   ] INFO  despawn Pidgey (lifetime)
+[12:57:24.572] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[12:57:24.590] [SC/OWENC   ] INFO  spawn ALPHA Caterpie Lv.15 common @ 31,13
+[12:58:46.090] [SC/OWENC   ] INFO  despawn Caterpie (lifetime)
+[12:58:46.091] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[12:58:46.102] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 35,15
+[12:58:46.120] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 35,16
+[12:58:46.130] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 33,14
+[12:58:46.142] [SC/OWENC   ] INFO  spawn Sunkern Lv.12 common @ 35,17
+[12:58:46.142] [SC/OWENC   ] INFO  Schwarm x4 SUNKERN
+[12:59:41.649] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[12:59:57.615] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[13:00:07.622] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[13:00:11.689] [SC/OWENC   ] INFO  despawn Sunkern (lifetime)
+[13:00:11.689] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[13:00:11.706] [SC/OWENC   ] INFO  spawn Caterpie Lv.10 common @ 31,16
+[13:32:09.156] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[13:32:09.159] [SC/OWENC   ] INFO  SPAWN BLOCKIERT: kein Tile fuer :land im Radius 5..12
+[13:32:18.835] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[13:32:18.854] [SC/OWENC   ] INFO  SPAWN BLOCKIERT: kein Tile fuer :land im Radius 5..12
+[13:32:32.058] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[13:32:32.073] [SC/OWENC   ] INFO  spawn Pidgey Lv.13 uncommon @ 35,16
+[13:32:43.360] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[13:32:43.372] [SC/OWENC   ] INFO  spawn Pidgey Lv.11 uncommon @ 37,28
+[13:32:54.891] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[13:32:54.906] [SC/OWENC   ] INFO  spawn Kakuna Lv.10 rare @ 17,29
+[13:33:06.403] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[13:33:06.405] [SC/OWENC   ] INFO  SPAWN BLOCKIERT: kein Tile fuer :land im Radius 5..12
+[13:33:17.519] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=7 total=100
+[13:33:17.530] [SC/OWENC   ] INFO  spawn Pidgey Lv.11 uncommon @ 17,21
+[13:33:18.064] [SC/OWENC   ] INFO  battle vs Weedle Lv.10
+[13:33:25.072] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=28 current=29
+[13:33:25.072] [SC/OWENC   ] INFO  RESET map=29 player=[8, 24]
+[13:33:25.832] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 29 (Script System / $PokemonEncounters leer)
+[13:33:28.786] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=29 current=23
+[13:33:28.786] [SC/OWENC   ] INFO  RESET map=23 player=[1, 5]
+[13:33:29.571] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 23 (Script System / $PokemonEncounters leer)
+[13:52:33.836] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[14:06:05.624] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[15:48:07.769] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=23 current=23
+[15:48:07.770] [SC/OWENC   ] INFO  RESET map=23 player=[31, 21]
+[15:48:08.523] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 23 (Script System / $PokemonEncounters leer)
+[15:49:29.283] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=23 current=21
+[15:49:29.284] [SC/OWENC   ] INFO  RESET map=21 player=[38, 14]
+[15:49:30.043] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=4 total=100
+[15:49:30.045] [SC/OWENC   ] INFO  SPAWN BLOCKIERT: kein Tile fuer :land im Radius 5..12
+[15:49:31.562] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=4 total=100
+[15:49:31.564] [SC/OWENC   ] INFO  SPAWN BLOCKIERT: kein Tile fuer :land im Radius 5..12
+[15:49:33.072] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=4 total=100
+[15:49:33.091] [SC/OWENC   ] INFO  spawn Rattata Lv.14 common @ 24,10
+[15:49:34.584] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=4 total=100
+[15:49:34.596] [SC/OWENC   ] INFO  spawn Rattata Lv.15 common @ 21,11
+[15:49:36.099] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=4 total=100
+[15:49:36.114] [SC/OWENC   ] INFO  spawn Poochyena Lv.11 common @ 19,11
+[15:49:36.135] [SC/OWENC   ] INFO  spawn Poochyena Lv.11 common @ 22,11
+[15:49:36.146] [SC/OWENC   ] INFO  spawn Poochyena Lv.11 common @ 18,11
+[15:49:36.159] [SC/OWENC   ] INFO  spawn Poochyena Lv.11 common @ 19,10
+[15:49:36.159] [SC/OWENC   ] INFO  Schwarm x4 POOCHYENA
+[15:49:38.893] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=4 total=100
+[15:49:38.912] [SC/OWENC   ] INFO  spawn Shinx Lv.10 uncommon @ 24,11
+[15:49:49.514] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=4 total=100
+[15:49:49.517] [SC/OWENC   ] INFO  SPAWN BLOCKIERT: kein Tile fuer :land im Radius 5..12
+[15:50:06.926] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=4 total=100
+[15:50:06.930] [SC/OWENC   ] INFO  SPAWN BLOCKIERT: kein Tile fuer :land im Radius 5..12
+[15:50:08.442] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=4 total=100
+[15:50:08.456] [SC/OWENC   ] INFO  spawn Rattata Lv.13 common @ 13,37
+[15:50:08.469] [SC/OWENC   ] INFO  spawn ALPHA Rattata Lv.19 common @ 12,37
+[15:50:08.479] [SC/OWENC   ] INFO  spawn Rattata Lv.14 common @ 12,36
+[15:50:08.479] [SC/OWENC   ] INFO  Schwarm x3 RATTATA
+[15:50:11.586] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=4 total=100
+[15:50:11.604] [SC/OWENC   ] INFO  spawn Shinx Lv.11 uncommon @ 11,30
+[15:50:20.150] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=4 total=100
+[15:50:20.161] [SC/OWENC   ] INFO  spawn Rattata Lv.14 common @ 11,29
+[15:50:31.441] [SC/OWENC   ] INFO  battle vs Shinx Lv.11
+[15:50:45.222] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=4 total=100
+[15:50:45.243] [SC/OWENC   ] INFO  spawn Shinx Lv.11 uncommon @ 24,11
+[15:50:46.732] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=4 total=100
+[15:50:46.751] [SC/OWENC   ] INFO  spawn Poochyena Lv.11 common @ 27,11
+[15:50:47.631] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=21 current=23
+[15:50:47.631] [SC/OWENC   ] INFO  RESET map=23 player=[0, 13]
+[15:50:48.384] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 23 (Script System / $PokemonEncounters leer)
+[17:17:46.981] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=23 current=24
+[17:17:46.981] [SC/OWENC   ] INFO  RESET map=24 player=[11, 14]
+[17:17:47.745] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 24 (Script System / $PokemonEncounters leer)
+[17:17:48.952] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=24 current=23
+[17:17:48.952] [SC/OWENC   ] INFO  RESET map=23 player=[7, 8]
+[17:17:50.084] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 23 (Script System / $PokemonEncounters leer)
+[17:17:54.872] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=23 current=21
+[17:17:54.873] [SC/OWENC   ] INFO  RESET map=21 player=[38, 14]
+[17:17:55.660] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=4 total=100
+[17:17:55.666] [SC/OWENC   ] INFO  SPAWN BLOCKIERT: kein Tile fuer :land im Radius 5..12
+[17:17:57.180] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=4 total=100
+[17:17:57.185] [SC/OWENC   ] INFO  SPAWN BLOCKIERT: kein Tile fuer :land im Radius 5..12
+[17:17:57.629] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=21 current=23
+[17:17:57.629] [SC/OWENC   ] INFO  RESET map=23 player=[0, 15]
+[17:17:58.394] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 23 (Script System / $PokemonEncounters leer)
+[19:41:41.026] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[19:41:55.875] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=23 current=23
+[19:41:55.875] [SC/OWENC   ] INFO  RESET map=23 player=[11, 15]
+[19:41:56.703] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 23 (Script System / $PokemonEncounters leer)
+[19:42:50.102] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=23 current=21
+[19:42:50.103] [SC/OWENC   ] INFO  RESET map=21 player=[38, 13]
+[19:42:50.860] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=4 total=100
+[19:42:50.866] [SC/OWENC   ] INFO  SPAWN BLOCKIERT: kein Tile fuer :land im Radius 5..12
+[19:42:51.784] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=21 current=23
+[19:42:51.785] [SC/OWENC   ] INFO  RESET map=23 player=[0, 14]
+[19:42:52.543] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 23 (Script System / $PokemonEncounters leer)
+[19:49:34.120] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[19:49:43.183] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=23 current=23
+[19:49:43.184] [SC/OWENC   ] INFO  RESET map=23 player=[11, 15]
+[19:49:43.952] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 23 (Script System / $PokemonEncounters leer)
+[19:52:09.297] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[19:52:28.813] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=23 current=23
+[19:52:28.814] [SC/OWENC   ] INFO  RESET map=23 player=[11, 15]
+[19:52:29.906] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 23 (Script System / $PokemonEncounters leer)
+[19:56:04.377] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[19:56:20.106] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=23 current=23
+[19:56:20.107] [SC/OWENC   ] INFO  RESET map=23 player=[11, 15]
+[19:56:21.075] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 23 (Script System / $PokemonEncounters leer)
+[11:53:07.091] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[11:53:14.712] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=23 current=23
+[11:53:14.712] [SC/OWENC   ] INFO  RESET map=23 player=[11, 15]
+[11:53:15.469] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 23 (Script System / $PokemonEncounters leer)
+[11:53:32.132] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=23 current=2
+[11:53:32.132] [SC/OWENC   ] INFO  RESET map=2 player=[11, 15]
+[11:53:33.926] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[11:53:49.130] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:01:44.953] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[12:01:58.620] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=2
+[12:01:58.620] [SC/OWENC   ] INFO  RESET map=2 player=[14, 12]
+[12:01:59.377] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:08:11.997] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[12:08:19.412] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=2
+[12:08:19.412] [SC/OWENC   ] INFO  RESET map=2 player=[14, 12]
+[12:08:20.167] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:08:41.538] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[12:08:49.282] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=2
+[12:08:49.283] [SC/OWENC   ] INFO  RESET map=2 player=[14, 12]
+[12:08:50.039] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:08:59.219] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[12:09:13.568] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=2
+[12:09:13.568] [SC/OWENC   ] INFO  RESET map=2 player=[14, 12]
+[12:09:14.325] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:19:55.722] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[12:20:04.293] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=2
+[12:20:04.294] [SC/OWENC   ] INFO  RESET map=2 player=[14, 12]
+[12:20:05.047] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:23:12.553] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[12:23:21.004] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=2
+[12:23:21.004] [SC/OWENC   ] INFO  RESET map=2 player=[14, 12]
+[12:23:21.808] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:23:31.809] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:23:32.425] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=4
+[12:23:32.425] [SC/OWENC   ] INFO  RESET map=4 player=[18, 13]
+[12:23:33.191] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 4 (Script System / $PokemonEncounters leer)
+[12:26:53.425] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[12:27:07.149] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=0 current=1
+[12:27:07.151] [SC/OWENC   ] INFO  RESET map=1 player=[0, 0]
+[12:27:11.914] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=1 current=3
+[12:27:11.916] [SC/OWENC   ] INFO  RESET map=3 player=[9, 7]
+[12:27:12.857] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 3 (Script System / $PokemonEncounters leer)
+[12:27:31.694] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=3 current=2
+[12:27:31.697] [SC/OWENC   ] INFO  RESET map=2 player=[3, 8]
+[12:27:32.514] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:28:26.188] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[12:28:37.393] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=0 current=1
+[12:28:37.395] [SC/OWENC   ] INFO  RESET map=1 player=[0, 0]
+[12:28:41.769] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=1 current=3
+[12:28:41.771] [SC/OWENC   ] INFO  RESET map=3 player=[9, 7]
+[12:28:42.733] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 3 (Script System / $PokemonEncounters leer)
+[12:29:01.060] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=3 current=2
+[12:29:01.062] [SC/OWENC   ] INFO  RESET map=2 player=[3, 8]
+[12:29:01.885] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:30:51.761] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[12:31:07.009] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=2
+[12:31:07.009] [SC/OWENC   ] INFO  RESET map=2 player=[14, 12]
+[12:31:07.760] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:31:17.761] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:31:25.267] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=5
+[12:31:25.267] [SC/OWENC   ] INFO  RESET map=5 player=[18, 23]
+[12:31:26.022] [SC/OWENC   ] INFO  ENCOUNTER-TABELLE key=:Land category=:land slots=2 total=40
+[12:31:26.051] [SC/OWENC   ] INFO  spawn Abra Lv.14 common @ 18,11
+[12:31:27.095] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=5 current=2
+[12:31:27.095] [SC/OWENC   ] INFO  RESET map=2 player=[14, 0]
+[12:31:27.853] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:35:44.099] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[12:35:52.657] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=2
+[12:35:52.657] [SC/OWENC   ] INFO  RESET map=2 player=[14, 12]
+[12:35:53.419] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:36:03.431] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:36:03.999] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=3
+[12:36:03.999] [SC/OWENC   ] INFO  RESET map=3 player=[8, 7]
+[12:36:04.764] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 3 (Script System / $PokemonEncounters leer)
+[12:36:04.864] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=3 current=2
+[12:36:04.864] [SC/OWENC   ] INFO  RESET map=2 player=[3, 8]
+[12:36:05.627] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:36:15.641] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:41:53.088] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[12:42:11.858] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=2
+[12:42:11.858] [SC/OWENC   ] INFO  RESET map=2 player=[8, 8]
+[12:42:12.614] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:42:22.629] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:43:33.695] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[12:43:45.034] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=2
+[12:43:45.034] [SC/OWENC   ] INFO  RESET map=2 player=[8, 8]
+[12:43:45.786] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[12:43:55.795] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[13:00:29.036] [SC/OWENC   ] INFO  PLUGIN GELADEN; Frame-Hook registriert
+[13:00:36.866] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=2
+[13:00:36.866] [SC/OWENC   ] INFO  RESET map=2 player=[8, 8]
+[13:00:37.620] [SC/OWENC   ] INFO  Map 2: Encounters vorhanden, aber keine Typen aus [:Land, :Cave]
+[13:00:45.547] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=2 current=33
+[13:00:45.547] [SC/OWENC   ] INFO  RESET map=33 player=[8, 8]
+[13:00:47.407] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 33 (Script System / $PokemonEncounters leer)
+[13:00:56.456] [SC/OWENC   ] INFO  ON_ENTER_MAP prev=33 current=32
+[13:00:56.456] [SC/OWENC   ] INFO  RESET map=32 player=[11, 0]
+[13:00:58.164] [SC/OWENC   ] INFO  keine Encounter-Tabelle fuer Map 32 (Script System / $PokemonEncounters leer)

@@ -9,7 +9,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useEditor, type Tool } from '../state/store';
 import { MapCanvas } from './panels/MapCanvas';
-import { Ribbon, type RibbonTab } from './panels/Ribbon';
+import { HeaderBar, type RibbonTab } from './panels/HeaderBar';
 import { MapTree } from './panels/MapTree';
 import { TilesetPalette } from './panels/TilesetPalette';
 import { ConsolePanel } from './panels/ConsolePanel';
@@ -29,15 +29,15 @@ const TOOLS: Array<{ id: Tool; glyph: string; label: string; key: string }> = [
 
 export function App(): React.JSX.Element {
   const {
-    project, loading, saveActive, activeMapId, docs, setTool, toggleGrid,
+    project, loading, saveActive, saveAll, activeMapId, docs, setTool, toggleGrid,
     toggleNeighbours, undo, redo, log, setActiveLayer, catalog, setChecker,
-    lightingClockPlaying, lightingClockSpeed,
+    lightingClockPlaying, lightingClockSpeed, zoom, setZoom, tool, consoleOpen,
+    selectedLightId,
   } = useEditor();
 
   const [leftWidth, setLeftWidth] = useState(248);
   const [rightWidth, setRightWidth] = useState(316);
   const [consoleHeight, setConsoleHeight] = useState(240);
-  const consoleOpen = true;
   const [ribbonTab, setRibbonTab] = useState<RibbonTab>('draw');
 
   const doc = activeMapId !== null ? docs.get(activeMapId) : undefined;
@@ -98,7 +98,8 @@ export function App(): React.JSX.Element {
       const mod = e.ctrlKey || e.metaKey;
       if (mod && e.key.toLowerCase() === 's') {
         e.preventDefault();
-        void saveActive();
+        if (e.shiftKey) void saveAll();
+        else void saveActive();
         return;
       }
       if (mod && e.key.toLowerCase() === 'z') {
@@ -127,8 +128,8 @@ export function App(): React.JSX.Element {
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [
-    saveActive, undo, redo, toggleGrid, toggleNeighbours, setActiveLayer, setTool,
-    setChecker,
+    saveActive, saveAll, undo, redo, toggleGrid, toggleNeighbours, setActiveLayer,
+    setTool, setChecker,
   ]);
 
   // -------------------------------------------------------------- splitters
@@ -163,7 +164,7 @@ export function App(): React.JSX.Element {
     <div className="sc-shell">
       <div className="sc-ambient" />
 
-      <Ribbon tab={ribbonTab} setTab={setRibbonTab} />
+      <HeaderBar tab={ribbonTab} setTab={setRibbonTab} />
       <EventDialog />
 
       {/* ---------------------------------------------------------- body */}
@@ -211,40 +212,73 @@ export function App(): React.JSX.Element {
           layer selection, visibility and dimming, and duplicating it cost ~40%
           of the right dock for a list of five rows.
         */}
+        {/*
+          The lighting inspector is not a permanent fixture. It was taking the
+          top third of the right dock at all times, and the dock's real job is
+          the tile palette — which now lists every tileset in the project and
+          wants all the height it can get. Lighting appears when you are
+          actually doing lighting: the Lighting tab, or a selected light.
+        */}
         <aside className="sc-dock sc-dock-right">
-          <LightingPanel />
+          {(ribbonTab === 'lighting' || selectedLightId !== null) && <LightingPanel />}
           <TilesetPalette />
         </aside>
       </div>
 
       {/* ----------------------------------------------------- status bar */}
       <footer className="sc-statusbar">
-        <span className="sc-status-item">
-          {loading ? (
-            <span style={{ color: 'var(--sc-cyan)' }}>working…</span>
-          ) : project ? (
-            <>
-              <span className="sc-faint">root</span> {project.root}
-            </>
-          ) : (
-            'no project'
-          )}
-        </span>
+        {loading ? (
+          <span className="sc-status-item" style={{ color: 'var(--sc-accent)' }}>working…</span>
+        ) : doc ? (
+          <span className="sc-status-item">
+            {doc.map.name} <span className="sc-faint">—</span>{' '}
+            <span className="sc-mono">{doc.map.width}×{doc.map.height}</span>
+          </span>
+        ) : (
+          <span className="sc-status-item sc-faint">{project ? 'no map open' : 'no project'}</span>
+        )}
+
+        {/*
+          Capability chips. They answer "what is this map carrying" at a glance —
+          which of the five layers hold tiles, whether it has autotiles, PBS
+          metadata, or events — without opening four dialogs to find out.
+        */}
+        {doc && (
+          <span className="sc-status-chips">
+            <span className="sc-chip" data-on title="Five tile layers">5L</span>
+            <span
+              className="sc-chip"
+              data-on={doc.layerData.some((layer) => layer.some((v) => v !== 0 && (v & 0xffff) < 384))}
+              title="Uses autotiles"
+            >
+              AT
+            </span>
+            <span
+              className="sc-chip"
+              data-on={Object.keys(doc.map.metadata).length > 1}
+              title="Has PBS map metadata"
+            >
+              MD
+            </span>
+            <span className="sc-chip" data-on={doc.map.events.length > 0} title={`${doc.map.events.length} events`}>
+              ED
+            </span>
+          </span>
+        )}
+
+        <span className="sc-status-item sc-faint">Tool: {tool}</span>
         <span style={{ flex: 1 }} />
         {doc && (
-          <>
-            <span className="sc-status-item sc-mono">
-              map {doc.map.id} · {doc.map.width}×{doc.map.height}
-            </span>
-            <span className="sc-status-item sc-mono">{doc.map.events.length} events</span>
-            <span className="sc-status-item sc-mono">
-              {doc.map.connections.length} connections
-            </span>
-          </>
+          <span className="sc-status-item sc-mono sc-faint">
+            {doc.map.events.length} events · {doc.map.connections.length} seams
+          </span>
         )}
-        <span className="sc-status-item sc-mono">{catalog.size} tilesets</span>
-        <span className="sc-status-item sc-mono sc-faint">
-          {project?.maps.length ?? 0} maps
+        <span className="sc-status-item sc-mono sc-faint">{catalog.size} tilesets</span>
+        <span className="sc-status-item sc-mono sc-faint">{project?.maps.length ?? 0} maps</span>
+        <span className="sc-status-zoom">
+          <button className="sc-qa" onClick={() => setZoom(zoom / 2)} title="Zoom out">−</button>
+          <span className="sc-mono">{Math.round(zoom * 100)}%</span>
+          <button className="sc-qa" onClick={() => setZoom(zoom * 2)} title="Zoom in">+</button>
         </span>
       </footer>
     </div>

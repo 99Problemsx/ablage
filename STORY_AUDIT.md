@@ -8,6 +8,21 @@ vollständige Dialog- und Cutscene-Fassung.
 
 ## Behobene Logikprobleme
 
+- Die scheinbar zweimal restaurierte Krone getrennt: Kapitel 34 erzeugt nur ein
+  provisorisches Echo; Kapitel 42 restauriert die historische Originalkrone.
+- Eternatus bleibt nach seiner Befreiung ein eigenständiges Wesen. Nidhoggr nutzt
+  im zweiten Finale eine eigene körperlose Void-Form statt erneut Eternatus.
+- Die falsche Aussage entfernt, Nidhoggrs Gefängnis sei nach Kapitel 35 für immer
+  verschwunden; nur der Zugang aus der sterblichen Welt schließt sich.
+- Nidhoggrs Standard-Bossreden durch gestohlene Erinnerungen, Hungerbilder und
+  Sätze der Verstorbenen ersetzt.
+- Hoopas drei Statuswechsel eindeutig getrennt: Befreiung aus dem alten Siegel,
+  Bergung aus Nidhoggr und körperliche Restaurierung durch Arceus.
+- Marcus und Aurora bleiben bis einschließlich True Ending lebendig und aktiv.
+- Den letzten aktiven Legacy-Namen Verdantia in Kapitel 49 entfernt.
+- Kapitel 43, 47, 49 und 51–55 um Entscheidungen, zivile Gegenstimmen,
+  Rettungsaufgaben, Familienentwicklung und selbstgewählte Zukunft ausgebaut.
+
 - Falscher Legacy-Name `ch24_elm_death` zu `ch24_aldric_death` geändert.
 - Nicht vorhandenen `SW::ELM_DIED` durch `SW::ALDRIC_DIED` ersetzt.
 - Eigene Kontinuitätsschalter für Aldric, Ragnar und Elena angelegt.
